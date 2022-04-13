@@ -532,7 +532,7 @@ main > .container {
   left: 5px;
   width: 20px;
   height: 20px;
-  background-image: url(./images/sun.png);
+  background-image: url(./src/images/sun.png);
   background-size: cover;
   border-radius: 90px;
   transition: 0.3s;
@@ -548,7 +548,7 @@ main > .container {
 .header-container > .h-container > .switch > input:checked + label:after {
   left: calc(100% - 5px);
   transform: translateX(-100%);
-  background-image: url(./images/moon.png);
+  background-image: url(../src/images/moon.png);
   background-size: cover;
 }
 .header-container > .h-container > .hamburger-icon {
