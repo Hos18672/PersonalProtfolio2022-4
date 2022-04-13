@@ -1,0 +1,213 @@
+.projects-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height:fit-content;
+    
+    & h1{
+        font-size:70px
+    }
+    ul {
+        padding: 50px 0;
+       & li {
+            position:relative;
+            list-style: none;
+            width: 3px;
+            background-color: rgb(0, 0, 0);
+            color: black;
+            margin: 0 auto;
+            padding-top: 50px;
+            
+            &  time {
+                font-weight: bold;
+                font-size: 50px;
+                display: block;
+                margin-top: -65px;
+                margin-bottom: 30px;
+                margin-left: 50px;
+            }
+            &  .timeTwo {
+                margin-left: -195px;
+            }
+            &  .timeFour {
+                margin-left: -195px;
+            }
+            &::after {
+                background: rgb(0, 0, 0);
+                content: '';
+                width: 25px;
+                height: 25px;
+                border-radius: 50%;
+                position:absolute;
+                left:50%;
+                transform: translateX(-50%);
+                top: 0px;
+                }
+            & div{
+                position: relative;
+                width: 400px;
+                padding: 10px;
+                border-radius: 10px;
+                bottom: 10px;
+                padding-bottom: 20px;
+                background: rgb(255, 255, 255);
+                box-shadow: 6px 9px 44px -14px rgba(0,0,0,0.24);
+                &:hover{
+                    box-shadow: 6px 9px 44px -14px rgba(0,0,0,0.64);
+                    transform:scale(1.2)
+                }
+                & h2{
+                    color: black;
+                    margin-left: 10px;
+                }
+                &  p {
+                    color: black;
+                    font-size:20px;
+                    padding: 10px;
+                }
+                &  a{
+                    cursor: pointer;
+                    font-size:25px;
+                    padding:15px;
+                    &:hover{
+                       color: red;
+                       font-size:25px;
+                       transform:scale(1.2)
+                    }
+
+                }
+            }
+            &:nth-child(odd) div {
+                left: 45px;
+            }
+            &:nth-child(even) div {
+                left: -470px;
+            }
+            & img{
+                max-width: 100%;
+                border-radius: 10px;
+                background-color: aliceblue;
+
+            }
+      
+            & div {
+                visibility: hidden;
+                opacity: 0;
+                transition: all .5s ease-in-out;
+            }
+              
+            &:nth-child(odd) div {
+                transform: translate3d(200px, 0, 0);
+            }
+            
+            &:nth-child(even) div {
+                transform: translate3d(-200px, 0, 0);
+            }   	
+        }
+        li.show div {
+            transform: none;
+            visibility: visible;
+            opacity: 1;
+        }
+    }
+    
+    @media screen and (max-width: 900px) {
+        ul li div {
+        width: 250px;
+      
+        }
+        ul li:nth-child(even) div {
+        left: -309px;
+        /*250+45-6*/
+        }
+    }
+
+    @media screen and (max-width: 750px) {
+        align-items: start;
+        div{
+            margin-left:20px;
+            h1{
+                font-size:60px
+            }
+            ul {
+                position: relative;
+                left: 10px;
+            & li {
+                padding-bottom: 40px;
+                    &  time {
+                    font-size: 40px;
+                    margin-left: 65px;
+                    }
+                    &  .timeTwo {
+                        margin-left: 65px;
+                    }
+                    &  .timeFour {
+                        margin-left: 65px;
+                    }
+                    & div{
+                        width: 250px;
+                        padding-bottom: 20px;
+                        &  p {
+                            font-size:20px;
+                            padding: 10px;
+                        }
+
+                        &  a{
+                            cursor: pointer;
+                            font-size:20px;
+                            &:hover{
+                                font-size:20px;
+                             }
+                        }
+                    }
+                    &:nth-child(odd) div {
+                        left: 45px;
+                        
+                    }
+                    &:nth-child(even) div {
+                        left: 45px;
+                    }    	
+                }
+            }
+        }
+    }
+    @media screen and (max-width: $media-width-450px) {
+        align-items: start;
+        h1{
+            font-size:40px
+        }
+        div{
+            margin-left:0px;
+          
+            ul {
+                position: relative;
+                left: 10px;
+            & li {
+                padding-bottom: 40px;
+                    &  time {
+                    font-size: 30px;
+                    padding-top: 10px;
+                    margin-left: 45px;
+                    }
+                    &  .timeTwo {
+                        margin-left: 45px;
+                    }
+                    &  .timeFour {
+                        margin-left: 45px;
+                    }
+                    & div{
+                        width: 200px;
+                        padding-bottom: 20px;
+                        &  p {
+                            font-size:15px;
+                            padding: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+}

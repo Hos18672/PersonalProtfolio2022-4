@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Reza Hossaini</title>
+  </head>
+  <body>
+    <main>
+      <div class="dark-container" id="dark-container"></div>
+      <header class="header-container">
+        <div class="h-container">
+          <div
+            class="hamburger-icon"
+            id="hamburger-icon"
+            onclick="toggleButton(this)"
+          >
+            <div class="bar1" id="bar1"></div>
+            <div class="bar2" id="bar2"></div>
+            <div class="bar3" id="bar3"></div>
+            <ul class="nav-list" id="nav-list-container1">
+              <li class="nav-item" id="nav-item">
+                <a class="nav-a-item" href="#landing-page">About</a>
+              </li>
+              <li class="nav-item" id="nav-item">
+                <a class="nav-a-item1" href="#projects-container">Projects</a>
+              </li>
+              <li class="nav-item" id="nav-item">
+                <a class="nav-a-item2" href="#works-container">Works</a>
+              </li>
+              <li class="nav-item" id="nav-item">
+                <a class="nav-a-item3" href="#edu-container">Educations</a>
+              </li>
+              <li class="nav-item" id="nav-item">
+                <a class="nav-a-item4" href="#contact-container">Contact</a>
+              </li>
+            </ul>
+          </div>
+          <div class="logo-container">
+            <span class="reza">R</span>
+            <span class="hossaini">H</span>
+          </div>
+          <ul class="nav-list" id="nav-list-container">
+            <li class="nav-item" id="nav-item">
+              <a class="nav-a-item" href="#landing-page">About</a>
+            </li>
+            <li class="nav-item" id="nav-item">
+              <a class="nav-a-item1" href="#projects-container">Projects</a>
+            </li>
+            <li class="nav-item" id="nav-item">
+              <a class="nav-a-item2" href="#works-container">Works</a>
+            </li>
+            <li class="nav-item" id="nav-item">
+              <a class="nav-a-item3" href="#edu-container">Educations</a>
+            </li>
+            <li class="nav-item" id="nav-item">
+              <a class="nav-a-item4" href="#contact-container">Contact</a>
+            </li>
+          </ul>
+          <div class="switch">
+            <input type="checkbox" id="switch" />
+            <label for="switch">Toggle</label>
+          </div>
+        </div>
+      </header>
+      <div class="socials">
+        <a
+          href="https://www.linkedin.com/in/reza-hossaini-bb5ab614b/"
+          class="items one"
+          ><i class="fa-brands fa-linkedin-in icon-likedin"></i
+        ></a>
+        <a
+          href="https://www.xing.com/profile/reza_hosseini15/cv"
+          class="items two"
+          ><i class="fa-brands fa-xing icon-xing"></i
+        ></a>
+        <a
+          href="https://www.facebook.com/profile.php?id=100008372049580"
+          class="items three"
+          ><i class="fa-brands fa-facebook-f icon-facebook"></i
+        ></a>
+      </div>
+      <!--     ----------------------Landing page--------------------- -->
+      <section class="landing-page container" id="landing-page">
+        <h1 class="container-title landing-title">Reza Hossaini</h1>
+        <img src="./images/foto1.png" alt="my Profile Photo" />
+        <svg
+          class="arrow-down"
+          id="arrow-down"
+          data-name="Layer 1"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 411.12 222.15"
+        >
+          <rect
+            class="cls-1"
+            x="213.86"
+            y="251.02"
+            width="32"
+            height="298.95"
+            rx="16"
+            transform="translate(-334.84 -9.39) rotate(-45)"
+          />
+          <rect
+            class="cls-1"
+            x="403.22"
+            y="250.62"
+            width="32"
+            height="298.95"
+            rx="16"
+            transform="translate(286.72 -468.46) rotate(45)"
+          />
+        </svg>
+      </section>
+      <!--      ------------------------About------------------------ -->
+      <section class="about-container container" id="about-container">
+        <div class="about-main-container">
+          <img src="./images/foto2.png" alt="my Profile Photo" />
+          <div class="text-container">
+            <div class="about-span" id="about-span"></div>
+            <div class="main-container">
+              <h1 class="container-title landing-title">Reza Hossaini</h1>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam,
+                facilis excepturi doloremque consectetur commodi perspiciatis
+                necessitatibus illum quis possimus laborum, quaerat provident?
+                Atque ex expedita beatae adipisci. Temporibus, repellendus
+                neque? Laudantium ex perferendis officia facilis voluptate
+                molestiae velit blanditiis magni tenetur modi. Voluptatem,
+                tenetur voluptates quos beatae explicabo facere fugiat rerum
+                expedita non provident, eius necessitatibus quaerat dolor quis?
+                Officiis!
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--   ----------------------Projects----------------------- -->
+      <section class="projects-container container" id="projects-container">
+        <h1 class="container-title projects-title">Projects</h1>
+        <div>
+          <div>
+            <ul>
+              <li>
+                <time class="timeOne">2022/3</time>
+                <div>    
+                  <img class="portfolio-img" src="./images/portfolio.png" />
+                  <h2>Personal Portfolio</h2>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                    sed diam nonummy nibh euismod tincidunt ut laoreet dolore
+                    magna aliquam erat volutpat. Ut wisi enim ad minim veniam,
+                    quis nostrud exerci tation ullamcorper suscipit lobortis
+                    nisl ut aliquip ex ea commodo consequat.
+                  </p>
+                  <a>Live</a> 
+                  <span><a>Code</a></span>
+                </div>
+              </li>
+              <li>  
+                 <time class="timeTwo">2022/2</time>
+                <div>
+                  <img class="mnf-img" src="./images/mfn.png" />
+                  <h2>Android App</h2>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                    sed diam nonummy nibh euismod tincidunt ut laoreet dolore
+                    magna aliquam erat volutpat. Ut wisi enim ad minim veniam,
+                    quis nostrud exerci tation ullamcorper suscipit lobortis
+                    nisl ut aliquip ex ea commodo consequat.
+                  </p>
+                  <span><a>Code</a></span>
+                </div>
+              </li>
+              <li>
+                <time class="timeThree">2021/12</time>
+                <div>
+                  <img class="cal-img" src="./images/cal.png" />
+                  <h2>Calculator</h2>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                    sed diam nonummy nibh euismod tincidunt ut laoreet dolore
+                    magna aliquam erat volutpat. Ut wisi enim ad minim veniam,
+                    quis nostrud exerci tation ullamcorper suscipit lobortis
+                    nisl ut aliquip ex ea commodo consequat.
+                  </p>
+                  <a>Live</a> 
+                  <span><a>Code</a></span>
+                </div>
+              </li>
+              <li>  
+                 <time class="timeFour">2021/11</time>
+                <div>
+                  <img class="graph-img" src="./images/graph.png" />
+                  <h2>Graph programm</h2>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                    sed diam nonummy nibh euismod tincidunt ut laoreet dolore
+                    magna aliquam erat volutpat. Ut wisi enim ad minim veniam,
+                    quis nostrud exerci tation ullamcorper suscipit lobortis
+                    nisl ut aliquip ex ea commodo consequat.
+                  </p>
+                  <span><a>Code</a></span>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <!--     ------------------------works------------------------- -->
+      <section class="works-container container" id="works-container">
+        <h1 class="container-title works-title">works</h1>
+      </section>
+      <!--     ----------------------Educations---------------------- -->
+      <section class="educations-container container" id="edu-container">
+        <h1 class="container-title edu-title">educations</h1>
+      </section>
+      <!--     -----------------------Contact------------------------ -->
+      <section class="contact-container container" id="contact-container">
+        <h1 class="container-title contact-title">contact</h1>
+      </section>
+    </main>
+
+    <script
+      src="https://kit.fontawesome.com/ac259ec328.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../src/js/main.js"></script>
+  </body>
+</html>

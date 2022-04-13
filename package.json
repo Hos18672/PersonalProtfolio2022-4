@@ -1,0 +1,11 @@
+{
+  "name": "personal-portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "startScss": "sass --watch ./src/scss/style.scss ./src/style.css"
+  },
+  "author": "Reza",
+  "license": "ISC"
+}

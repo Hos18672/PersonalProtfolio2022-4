@@ -1,0 +1,219 @@
+ .header-container {
+    	width: 100%;
+        display: flex;
+        justify-content: center;
+        position: relative;
+        transition: .8s;
+        animation: headerAnimation .8s linear;
+        z-index: 1000;
+        & > .h-container{
+                display: flex;
+                position: fixed;
+                justify-content: space-between;
+                align-items: center;
+                margin: 10px 30px;
+                border-radius: 50px;
+                width: 100%;        
+                & > .logo-container{
+                    margin-left: 50px;
+                    & > .reza, .hossaini{
+                        font-size: 40px;
+                    }
+                    & > .hossaini{
+                        color: $font-color-red;
+                    }
+                }
+                & > ul{
+                    width: 550px;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    & > .nav-item{
+                        cursor: pointer;
+                        list-style: none;
+                        font-size: 25px;
+                        text-decoration: dotted; 
+                        transition: 0.5s;
+                    }
+                    & > .nav-item:hover{
+                       transform: scale(1.2);
+                       
+                        & > a:hover{
+                            animation: animateItem .5s linear;
+                            border-bottom: 2px solid red;
+                        }
+                    }
+                    & > .nav-item:active{
+                        transform: scale(.9);
+                     }
+                    & > .active{
+                        transition: 0.8s;
+                        border-bottom: 2px solid rgb(255, 0, 0);
+                    }
+                    & > .dark-mode{
+                        color: white;
+                    }
+                }
+                & > .switch{
+                    display: flex;
+                    justify-content:center;
+                    align-items: center;
+                    margin:0 15px;
+                    z-index: 999999999;
+                    &> label {
+                        cursor: pointer;
+                        text-indent: -9999px;
+                        width: 70px;
+                        height: 30px;
+                        display: block;
+                        border-radius: 100px;
+                        position: relative;
+                        border: 2px solid black;
+                        z-index: 999;
+                    }
+                    & > label:after {
+                        content: '';
+                        position: absolute;
+                        top: 5px;
+                        left: 5px;
+                        width: 20px;
+                        height: 20px;
+                        background-image: url(./images/sun.png);
+                        background-size: cover;
+                        border-radius: 90px;
+                        transition: 0.3s;
+                    }
+                    & >  input[type=checkbox]{
+                        height: 0;
+                        width: 0;
+                        visibility: hidden;
+                    }    
+                    & > input:checked + label {
+                        background: #ffffff;                    
+                    }
+                    & > input:checked + label:after {
+                        left: calc(100% - 5px);
+                        transform: translateX(-100%);
+                        background-image: url(./images/moon.png);
+                        background-size: cover;
+                    }
+           
+                }
+                & > .hamburger-icon{
+                    display: none;
+                    z-index: 1111;
+                    & > div{
+                    width:35px;
+                    height: 3px;
+                    margin: 6px 0;
+                    transition: 0.4s;
+                    border-radius: 50px; 
+                    }
+                } 
+                & > .hamburger-icon{
+                    & > .nav-list{
+                        z-index: 11111;
+                        display:none;
+                        position: absolute;
+                        flex-direction: column;
+                        top: 50px;
+                        left:0;
+                        height: calc(100vh - 50px);
+                        width: 100%;
+                        & > li{
+                            display: none;
+                        }
+                    }
+                 }
+                & > .open .bar1{
+                    transform: rotate(-45deg) translate(-6px, 6px);
+                }
+                & > .open .bar2{
+                    opacity: 0
+                }
+                & > .open .bar3{
+                    transform: rotate(45deg) translate(-6px, -8px)
+                }
+                & > .open .nav-list{
+                    display:flex;
+                    flex-direction: column;
+                    justify-content:center;
+                    text-decoration: none;
+                    list-style: none;
+                    border-radius: 15px;
+                    width: 200px;
+                    height: 350px;
+                    background-color: rgb(237, 237, 237);
+                    box-shadow: -3px 14px 18px -10px rgba(131, 131, 131, 0.45);
+                    & > li{
+                        display: block;
+                        margin-left: 20px;
+                        margin-top: 15px;     
+                        font-size: 30px;        
+                    }
+                    & > .nav-item:hover{
+                        transform: scale(1.1);
+                         & > a:hover{
+                             animation: animateItem .5s linear;
+                             border-bottom: 2px solid red;
+                         }
+                     }
+                     & > .nav-item:active{
+                         transform: scale(.95);
+                      }
+                }      
+        }
+
+}
+
+
+@media only screen and(max-width: $media-width-850px) {
+  .header-container {
+      position: absolute;
+        .logo-container{
+            display: none;
+        }
+        & > .h-container{
+            & > ul{
+                display:none;
+            } 
+            & > .hamburger-icon{
+                display: block;
+                & > div{
+                width:35px;
+                height: 3px;
+                margin: 6px 0;
+                transition: 0.5s; 
+                background-color: black;
+                }
+                & > .hamburger-dark-mode{
+                    background-color: rgb(255, 255, 255);         
+                }
+                & > .open .nav-list{
+                    display:none;
+                    width: 200px;
+                    height: 350px;
+                    font-size:30px;
+                    border-radius: 10px;
+                    display: flex;
+                    justify-content:center;      
+                }
+            } 
+
+            & > .switch{
+                margin-right: 50px;
+            }
+        }
+    }
+}
+
+
+@keyframes headerAnimation {
+    0%{
+        transform: translateY(-100px);
+    }
+    100%{
+
+        transform: translateY(0);
+    }  
+}
