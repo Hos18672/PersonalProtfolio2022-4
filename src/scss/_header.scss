@@ -5,7 +5,8 @@
         position: relative;
         transition: .8s;
         animation: headerAnimation .8s linear;
-        z-index: 1000;
+        z-index: 19900;
+        width: 100%;
         & > .h-container{
                 display: flex;
                 position: fixed;

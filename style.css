@@ -457,7 +457,8 @@ main > .container {
   position: relative;
   transition: 0.8s;
   animation: headerAnimation 0.8s linear;
-  z-index: 1000;
+  z-index: 19900;
+  width: 100%;
 }
 .header-container > .h-container {
   display: flex;
@@ -1028,6 +1029,7 @@ main > .container {
   justify-content: center;
   align-items: center;
   height: fit-content;
+  overflow: hidden;
 }
 .projects-container h1 {
   font-size: 60px;
@@ -1071,7 +1073,7 @@ main > .container {
 }
 .projects-container ul li div {
   position: relative;
-  width: 400px;
+  width: 350px;
   padding: 10px;
   border-radius: 10px;
   bottom: 10px;
