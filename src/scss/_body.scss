@@ -1,163 +1,45 @@
 
-.dark-mode{
-    background-color: #1d2528;
-    color: white;
-    transition-delay: .5s;
-     &  .dark-container{
-            background-color: #1d2528;
-            z-index: -11;
-            width:350vh;
-            height: 350vh;
-            border-radius: 50%;;
-            position: fixed;
-            right: -1000px;
-            top: -1000px;
-        }
-    
-    .header-container {
-    	width: 100%;
-        display: flex; 
-        & > .dark-container{
-            background-color: rgb(0, 0, 0);
-            z-index: -11;
-            width:350vh;
-            height: 350vh;
-            border-radius: 50%;;
-            position: fixed;
-            right: -1000px;
-            top: -1000px;
-        }
-        & > .h-container{   
-            & > ul{
+@media screen and ( max-height: 600px ){
+    body{
+        & main{
+            margin-top: 200px;
+            & .header-container {
+                top: 0;
+                left: 0;
+                right: -30px;
+                position:fixed;
+                & .hamburger-icon{
+                    margin-left: 30px;
+                }
 
-                & > .nav-item{
-    
-                  & > a{
-            
-                      background-color: transparent !important;
-                  }
-                }
-                & > .nav-item:hover{
-                    transform: scale(1.1);
-                     & > a:hover{
-                         animation: animateItem .5s linear;
-                         border-bottom: 2px solid red;
-                     }
-                 }
-                 & > .nav-item:active{
-                     transform: scale(.95);
-                  }
-                & > .active{
-         
-                    border-bottom: 2px solid rgb(255, 0, 0);
-                }
-                & > .dark-mode{
-                    color: white;
-                }
-            }
-
-            & > .switch{
-                right: 0;
-                &> label {
-                    cursor: pointer;
-                    text-indent: -9999px;
-                    width: 70px;
-                    height: 30px;
-                    display: block;
-                    border-radius: 100px;
+                & .switch{
                     position: relative;
-                    border: 2px solid #5b696f;
-                    z-index: 999;
+                    transform: translateX(0px);
                 }
+            }
+        }
+
+    }
+ 
+}
+@media screen and ( max-height: 420px ){
+    body{
+        & main{
+            margin-top: 200px;
+            & .header-container {
+                position:fixed;
+            }
+
+            & .switch{
+                position: relative;
+                transform: translateX(50px);
             }
          
-         
-        }   
-     
-    }
-    .landing-page{   
-        -moz-transition: none;
-        -webkit-transition: none;
-        -o-transition: color 0 ease-in;
-        transition: none;
-        & > h1{
-            -moz-transition: none;
-            -webkit-transition: none;
-            -o-transition: color 0 ease-in;
-            transition: none;
-    
-        }
-
-    }
-    .about-container{
-        & > .about-main-container{
-     
-                & > .text-container{
-                    & > .about-span{
-                        transition: .5s;
-                        background-color: 	#37464d;
-                    }
-                  
-                & > .main-container{
-
-                    & > h1{
-                        transition: 0s;  
-                    }
-                    & > p{
-                        transition: 0s;  
-                   
-                    }
-                }
-            }
-            & > img{
-                transition: 0s;  
-            }
         }
     }
-    .projects-container{
-        ul {
-            padding: 50px 0;
-           & li {
-                background-color: #3c4d54;
-                color: rgb(255, 255, 255);
-            
-                &::after {
-                    background: rgb(45, 68, 77);
-                    } 	
-            }
-           & li div {
-                background-color:#232c31;
-                & h2{
-                    color: rgb(255, 255, 255);
-                    margin-left: 10px;
-                }
-                &  p {
-                    color: rgb(255, 255, 255);
-                    padding: 10px;
-                }
-                &  a{
-                    color: rgb(255, 255, 255);
-                }
-
-            }
-    
-        }
-    }
-        
-    
-.socials{
-    & > :before{
-        background: 	#425157;
-    }
-    & > :after{
-            background: 	#425157;
-        }
+ 
 }
 
-}
-.nav2-items-dark-mode{
-    color: rgb(0, 0, 0);
-}
 
 .socials{
     display: grid;
@@ -176,7 +58,7 @@
         left:10px;
         bottom:120px;
         border-radius: 20px;
-        background: black;
+        background: $background-color-dark-black;
     }
     & > :after{
             content: '';
@@ -207,4 +89,6 @@
     & > a .icon-facebook{
         color: rgb(0, 166, 255);
     }
+
 }
+

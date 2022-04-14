@@ -42,9 +42,9 @@ function isItemInView(item){
   var rect = item.getBoundingClientRect();
   return (
       rect.top >= 0 &&
-      rect.left >= 0 &&
+      rect.right >= 0 &&
       rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-      rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+      rect.left <= (window.innerWidth || document.documentElement.clientWidth)
     );
 }
 

@@ -10,7 +10,7 @@
         font-size:60px
     }
     ul {
-        padding: 50px 0;
+        padding: 50px 5px;
        & li {
             position:relative;
             list-style: none;
@@ -104,6 +104,9 @@
             
             &:nth-child(even) div {
                 transform: translate3d(-200px, 0, 0);
+              @media screen and (max-width: 750px) {
+                transform: translate3d(200px, 0, 0);
+              }
             }   	
         }
         li.show div {
@@ -113,14 +116,12 @@
         }
     }
     
-    @media screen and (max-width: 900px) {
+    @media screen and (max-width: 980px) {
         ul li div {
-        width: 250px;
-      
+            width: 250px;
         }
         ul li:nth-child(even) div {
-        left: -309px;
-        /*250+45-6*/
+            left: -309px;
         }
     }
 
