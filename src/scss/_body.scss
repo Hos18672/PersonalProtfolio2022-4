@@ -57,11 +57,7 @@
             }
 
             & > .switch{
-                display: flex;
-                justify-content:center;
-                align-items: center;
-                margin:0 15px;
-                z-index: 999999999;
+                right: 0;
                 &> label {
                     cursor: pointer;
                     text-indent: -9999px;

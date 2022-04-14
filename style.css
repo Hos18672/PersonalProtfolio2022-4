@@ -513,6 +513,7 @@ main > .container {
   align-items: center;
   margin: 0 15px;
   z-index: 999999999;
+  right: 0;
 }
 .header-container > .h-container > .switch > label {
   cursor: pointer;
@@ -706,11 +707,7 @@ main > .container {
   color: white;
 }
 .dark-mode .header-container > .h-container > .switch {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0 15px;
-  z-index: 999999999;
+  right: 0;
 }
 .dark-mode .header-container > .h-container > .switch > label {
   cursor: pointer;
@@ -838,7 +835,7 @@ main > .container {
 }
 .landing-page > h1 {
   margin-top: 10px;
-  font-size: 70px;
+  font-size: 60px;
   transition: 0.5s;
   animation: nameAnimation 0.8s linear;
   z-index: 3;
@@ -1033,7 +1030,7 @@ main > .container {
   height: fit-content;
 }
 .projects-container h1 {
-  font-size: 70px;
+  font-size: 60px;
 }
 .projects-container ul {
   padding: 50px 0;
@@ -1236,9 +1233,14 @@ main > .container {
   height: fit-content;
 }
 .works-container h1 {
-  font-size: 70px;
+  font-size: 60px;
 }
 
+@media only screen and (max-width: 450px) {
+  h1 {
+    font-size: 40px;
+  }
+}
 .educations-container {
   display: flex;
   flex-direction: column;
@@ -1247,9 +1249,14 @@ main > .container {
   height: fit-content;
 }
 .educations-container h1 {
-  font-size: 70px;
+  font-size: 60px;
 }
 
+@media only screen and (max-width: 450px) {
+  h1 {
+    font-size: 40px;
+  }
+}
 .contact-container {
   display: flex;
   flex-direction: column;
@@ -1259,6 +1266,12 @@ main > .container {
 }
 .contact-container h1 {
   font-size: 70px;
+}
+
+@media only screen and (max-width: 450px) {
+  h1 {
+    font-size: 40px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
