@@ -3,7 +3,7 @@
     flex-direction: column;
     justify-content: start;
     align-items: start;
-    margin-left: 37%;
+    padding-left: 35%;
     height:fit-content;
     transition: 1s;
     overflow:hidden;
@@ -12,6 +12,7 @@
         font-size:$font-size-60;
         margin-left: 15%;
     }
+
 
     & ul{
         list-style: none;
@@ -68,7 +69,7 @@
                     width: 450px;
                     height: 3px;
                     z-index:-11;
-                    border-radius: 2px;
+                
                     position:absolute;
                     left:-450px;
                     top: 0px;
@@ -121,7 +122,6 @@
                 width: 453px;
                 height: 3px;
                 z-index:-11;
-                border-radius: 2px;
                 position:absolute;
                 left:0px;
                 top: 0px;
@@ -132,9 +132,9 @@
                     content: '';
                     width: 20px;
                     height: 20px;
-                    border-radius: 2px;
+                    border-radius: 5px;
                     position:absolute;
-                    left:0px;
+                    left:1px;
                     transform: translateX(-50%);
                     top: -8px;
                     }
@@ -205,8 +205,20 @@
             opacity: 1;
         }
     }
+
+    @media screen and (max-width: 1100px) {
+     
+        
+        margin-left: -10%;
+        & h1{
+            margin-left: 25%;
+        }
+        
+    }
             
     @media screen and (max-width: $media-width-850px) {
+
+        padding-left: 0%;
         margin-left: 20%;
         & h1{
             font-size:$font-size-60;
@@ -302,6 +314,7 @@
                         transform: translateX(-50%);
                     }
                 &  div{
+                    margin-left:-20px;
                     & h2{
                         font-size:$font-size-30;
                     }
@@ -311,10 +324,12 @@
                     width: 300px;
                 }
                 & .work-two{
+                    margin-left:10px;
                     left:-350px
                 }
     
                 & .work-four{
+                    margin-left:10px;
                     left:-350px
                 }
             }
@@ -356,13 +371,16 @@
                     margin-left: 80px;
                 }
                 &  .timeTwo {
+                    font-size:$font-size-40;
                     margin-bottom: 30px;
                     margin-left: -180px;
                 }
                 &  .timeThree {
+                    font-size:$font-size-40;
                     margin-left: 80px;
                 }
                 &  .timeFour {
+                    font-size:$font-size-40;
                     margin-left: -180px;
                 }
                 &::after {

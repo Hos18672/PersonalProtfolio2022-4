@@ -407,7 +407,7 @@ main > .container {
   margin-top: 150px;
   width: 50px;
   transition: 1s;
-  animation: fotoAnimation 2s linear, arrowAnimation 0.7s linear 0.8s infinite;
+  animation: fotoAnimation 2s linear, arrowAnimation 1.2s linear 1s infinite;
 }
 
 @keyframes arrowAnimation {
@@ -685,6 +685,7 @@ main > .container {
 }
 @media screen and (max-height: 600px) {
   body main {
+    overflow: hidden;
     margin-top: 200px;
   }
   body main .header-container {
@@ -1180,7 +1181,7 @@ main > .container {
   flex-direction: column;
   justify-content: start;
   align-items: start;
-  margin-left: 37%;
+  padding-left: 35%;
   height: fit-content;
   transition: 1s;
   overflow: hidden;
@@ -1247,7 +1248,6 @@ main > .container {
   width: 450px;
   height: 3px;
   z-index: -11;
-  border-radius: 2px;
   position: absolute;
   left: -450px;
   top: 0px;
@@ -1298,7 +1298,6 @@ main > .container {
   width: 453px;
   height: 3px;
   z-index: -11;
-  border-radius: 2px;
   position: absolute;
   left: 0px;
   top: 0px;
@@ -1308,9 +1307,9 @@ main > .container {
   content: "";
   width: 20px;
   height: 20px;
-  border-radius: 2px;
+  border-radius: 5px;
   position: absolute;
-  left: 0px;
+  left: 1px;
   transform: translateX(-50%);
   top: -8px;
 }
@@ -1375,8 +1374,17 @@ main > .container {
   visibility: visible;
   opacity: 1;
 }
+@media screen and (max-width: 1100px) {
+  .works-container {
+    margin-left: -10%;
+  }
+  .works-container h1 {
+    margin-left: 25%;
+  }
+}
 @media screen and (max-width: 850px) {
   .works-container {
+    padding-left: 0%;
     margin-left: 20%;
   }
   .works-container h1 {
@@ -1461,6 +1469,7 @@ main > .container {
     transform: translateX(-50%);
   }
   .works-container ul li div {
+    margin-left: -20px;
     width: 300px;
   }
   .works-container ul li div h2 {
@@ -1470,9 +1479,11 @@ main > .container {
     font-size: 15px;
   }
   .works-container ul li .work-two {
+    margin-left: 10px;
     left: -350px;
   }
   .works-container ul li .work-four {
+    margin-left: 10px;
     left: -350px;
   }
 }
@@ -1510,13 +1521,16 @@ main > .container {
     margin-left: 80px;
   }
   .works-container ul li .timeTwo {
+    font-size: 40px;
     margin-bottom: 30px;
     margin-left: -180px;
   }
   .works-container ul li .timeThree {
+    font-size: 40px;
     margin-left: 80px;
   }
   .works-container ul li .timeFour {
+    font-size: 40px;
     margin-left: -180px;
   }
   .works-container ul li::after {

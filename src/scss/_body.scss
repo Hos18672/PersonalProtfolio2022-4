@@ -2,6 +2,7 @@
 @media screen and ( max-height: 600px ){
     body{
         & main{
+            overflow: hidden;
             margin-top: 200px;
             & .header-container {
                 top: 0;
