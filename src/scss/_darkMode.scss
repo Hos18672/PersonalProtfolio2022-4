@@ -6,8 +6,8 @@
      &  .dark-container{
             background-color: $background-color-dark-main;
             z-index: -11;
-            width:450vh;
-            height: 450vh;
+            width:400vh;
+            height: 400vh;
             border-radius: 50%;;
             position: fixed;
             right: -1000px;
@@ -18,6 +18,19 @@
     	width: 100%;
         display: flex; 
         & > .h-container{   
+
+            & .hamburger-icon{
+                & > div{
+                    background-color: $background-color-White;
+                }
+                & .nav-list{
+                    background-color: $background-color-dark-hell-1;
+                    box-shadow: 2px 5px 5px -5px $background-color-dark-hell-3;
+                    & a{
+                        color: $font-color-white;
+                    } 
+                }
+            }
             & > ul{
                 & > .nav-item{
                     transition: .0s;
@@ -61,6 +74,11 @@
         & > h1{
             transition: none;
         }
+
+        & .arrow-down{
+            fill : $background-color-White !important;
+        }
+
     }
     .about-container{
         & > .about-main-container{
@@ -97,7 +115,7 @@
                     } 	
             }
            & li div {
-                background-color:#232c31;
+                background-color: $background-color-dark-hell-4;
                 & h2{
                     color: $font-color-white;
                     margin-left: 10px;
@@ -113,6 +131,82 @@
     
         }
     }  
+
+    .works-container{
+        & ul{
+            & time{
+                color: $font-color-white;
+            }
+
+           & li {
+
+            background-color: $background-color-dark-hell-1;
+            color: $font-color-white;
+                &  time {
+                    color: $font-color-white;-size: $font-size-50;   
+                }
+                &::after {
+                    background: $background-color-dark-hell-1;
+                    content: '';
+                    width: 105px;
+                    height: 5px;
+                    border-radius: 2px;
+                    position:absolute;
+                    left:53px;
+                    transform: translateX(-50%);
+                    top: 0px;
+                    }
+                    &::before {
+                        background: $background-color-dark-hell-2;
+                        z-index: 1;
+                        content: '';
+                        width: 20px;
+                        height: 20px;
+                        border-radius: 2px;
+                        position:absolute;
+                        left:0px;
+                        transform: translateX(-50%);
+                        top: -5px;
+                        }
+                & div{
+                    background-color: $background-color-dark-hell-4;
+                    & h2{
+                        color: $font-color-white;
+                    }
+                    &  p {
+                        color: $font-color-white;
+                    }
+                }
+                & div {
+                    left: 45px;
+                }
+                & img{
+                    max-width: 100%;
+                    border-radius: 10px;
+                    background-color: $background-color-aliceblue-blue;
+                }
+          
+                & div {
+                    visibility: hidden;
+                    opacity: 0;
+                    transition: all .5s ease-in-out;
+                }
+                  
+                &:nth-child(odd) div {
+                    transform: translate3d(200px, 200px, 0);
+                }
+                
+                &:nth-child(even) div {
+                     transform: translate3d(200px, 200px, 0);
+                }   	
+            }
+            li.show div {
+                transform: none;
+                visibility: visible;
+                opacity: 1;
+            }
+        }
+    }
     .socials{
         & > :before{
             background: $background-color-dark-hell-1;
@@ -122,3 +216,4 @@
         }
     }
 }
+

@@ -18,7 +18,7 @@
                 & > .logo-container{
                     margin-left: 50px;
                     & > .reza, .hossaini{
-                        font-size: 40px;
+                        font-size: $font-size-40;
                     }
                     & > .hossaini{
                         color: $font-color-red;
@@ -32,17 +32,16 @@
                     & > .nav-item{
                         cursor: pointer;
                         list-style: none;
-                        font-size: 25px;
+                        font-size: $font-size-25;
                         text-decoration: dotted; 
                         transition: 0.5s;
                         font-weight: 500;
                     }
                     & > .nav-item:hover{
                        transform: scale(1.2);
-                       
                         & > a:hover{
                             animation: animateItem .5s linear;
-                            border-bottom: 2px solid red;
+                            border-bottom: 2px solid $background-color-red;
                             font-style: bold;
                             font-weight: 700;
                         }
@@ -52,10 +51,10 @@
                      }
                     & > .active{
                         transition: 0.8s;
-                        border-bottom: 2px solid rgb(255, 0, 0);
+                        border-bottom: 2px solid $background-color-red;
                     }
                     & > .dark-mode{
-                        color: white;
+                        color:$font-color-white;
                     }
                 }
                 & > .switch{
@@ -73,7 +72,7 @@
                         display: block;
                         border-radius: 100px;
                         position: relative;
-                        border: 2px solid black;
+                        border: 2px solid $background-color-dark-black;
                         z-index: 999;
                     }
                     & > label:after {
@@ -94,7 +93,7 @@
                         visibility: hidden;
                     }    
                     & > input:checked + label {
-                        background: #ffffff;                    
+                        background: $background-color-White;                    
                     }
                     & > input:checked + label:after {
                         left: calc(100% - 5px);
@@ -123,8 +122,9 @@
                         flex-direction: column;
                         top: 50px;
                         left:0;
-                        height: calc(100vh - 50px);
-                        width: 100%;
+                        width: 0;
+                        height: 0;
+                        transition: height .5s;
                         & > li{
                             display: none;
                         }
@@ -146,21 +146,25 @@
                     text-decoration: none;
                     list-style: none;
                     border-radius: 15px;
+                    background-color: red;
                     width: 200px;
                     height: 350px;
-                    background-color: rgb(237, 237, 237);
-                    box-shadow: -3px 14px 18px -10px rgba(131, 131, 131, 0.45);
+                    background-color: $background-color-light;
+                    box-shadow: 5px 9px 20px 1px $background-color-dark-hell-3;
+                    animation: nav-list .5s linear ease-in-out;
+                
                     & > li{
+                       
                         display: block;
                         margin-left: 20px;
                         margin-top: 15px;     
-                        font-size: 30px;        
+                        font-size: $font-size-30;        
                     }
                     & > .nav-item:hover{
                         transform: scale(1.1);
                          & > a:hover{
                              animation: animateItem .5s linear;
-                             border-bottom: 2px solid red;
+                             border-bottom: 2px solid $background-color-red;
                          }
                      }
                      & > .nav-item:active{
@@ -169,6 +173,24 @@
                 }      
         }
 
+}
+
+@keyframes nav-list {
+    0%{
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+    }
+    50%{
+        width: 50px;
+        height: 50px;
+        border-radius: 10%;
+    }
+    100%{
+        width: 200px;
+        height: 350px;
+        border-radius: 0%;
+    }
 }
 
 
@@ -189,16 +211,16 @@
                 height: 3px;
                 margin: 6px 0;
                 transition: 0.5s; 
-                background-color: black;
+                background-color: $background-color-dark-black;
                 }
                 & > .hamburger-dark-mode{
-                    background-color: rgb(255, 255, 255);         
+                    background-color: $background-color-White;         
                 }
                 & > .open .nav-list{
                     display:none;
                     width: 200px;
                     height: 350px;
-                    font-size:30px;
+                    font-size:$font-size-30;
                     border-radius: 10px;
                     display: flex;
                     justify-content:center;      
@@ -211,7 +233,6 @@
         }
     }
 }
-
 
 @keyframes headerAnimation {
     0%{

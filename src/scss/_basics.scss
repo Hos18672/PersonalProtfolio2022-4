@@ -20,19 +20,19 @@ body,header,main,footer{
     transition:0.5s
 }
 ::-webkit-scrollbar-track{
-    background: rgb(211, 211, 211);
+    background: $background-color-light-2;
     border-radius: 50px;
     margin-block: 60px;
 }
 ::-webkit-scrollbar-thumb{
-    background: rgb(1, 196, 255);
+    background: $background-color-blue-1;
     border-radius: 50px;
 }
 ::-webkit-scrollbar-thumb:hover{
-    background: rgb(1, 153, 255);
+    background: $background-color-blue-2;
     border-radius: 50px;
 }
-@supports(scrollbar-color: red blue){
+@supports(scrollbar-color: $background-color-red $background-color-blue){
     *{
     }
 }
@@ -56,11 +56,11 @@ main{
     animation:fotoAnimation .8s linear ,  arrowAnimation 1s linear 1s infinite ;
 }
 .dark-arrow-down{
-    fill: white !important;
+    fill: $background-color-White !important;
 }
 
 .dark-arrow-down2{
-    fill: white !important;
+    fill: $background-color-White !important;
 }
 
 @keyframes arrowAnimation {  

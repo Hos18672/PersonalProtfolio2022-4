@@ -22,9 +22,10 @@
     }
  
 }
-@media screen and ( max-height: 420px ){
+@media screen and ( max-height: $media-width-450px ){
     body{
         & main{
+            padding: 0;
             margin-top: 200px;
             & .header-container {
                 position:fixed;
@@ -33,11 +34,9 @@
             & .switch{
                 position: relative;
                 transform: translateX(50px);
-            }
-         
+            } 
         }
     }
- 
 }
 
 
@@ -50,6 +49,7 @@
     right:20px;
     row-gap: 10px;
     z-index: 999;
+    transition: .5s;
     & > :before{
         content: '';
         height:50px;
@@ -68,11 +68,12 @@
             left:11px;
             top:120px;
             border-radius: 20px;
-            background: black;
+            background: $background-color-dark-black;
         }
     & > a i{
-        font-size: 30px;
+        font-size: $font-size-30;
         transition: 5ms;
+        transition: .3s;
        
     }
     & > a i:hover{
@@ -80,14 +81,14 @@
        
     }
     & > a .icon-likedin {
-        color: rgb(0, 166, 255);
+        color: $background-color-blue-1;
     }
 
     & > a .icon-xing{
-        color: rgb(0, 247, 173);
+        color: $background-color-green-1;
     }
     & > a .icon-facebook{
-        color: rgb(0, 166, 255);
+        color: $background-color-blue-2;
     }
 
 }

@@ -7,7 +7,7 @@
     overflow: hidden;
     
     & h1{
-        font-size:60px
+        font-size:$font-size-60;
     }
     ul {
         padding: 50px 5px;
@@ -15,14 +15,14 @@
             position:relative;
             list-style: none;
             width: 3px;
-            background-color: rgb(0, 0, 0);
-            color: black;
+            background-color: $background-color-dark-black;
+            color: $font-color-black;
             margin: 0 auto;
             padding-top: 50px;
             
             &  time {
                 font-weight: bold;
-                font-size: 50px;
+                font-size: $font-size-50;
                 display: block;
                 margin-top: -65px;
                 margin-bottom: 30px;
@@ -35,7 +35,7 @@
                 margin-left: -195px;
             }
             &::after {
-                background: rgb(0, 0, 0);
+                background: $background-color-dark-black;
                 content: '';
                 width: 25px;
                 height: 25px;
@@ -52,28 +52,28 @@
                 border-radius: 10px;
                 bottom: 10px;
                 padding-bottom: 20px;
-                background: rgb(255, 255, 255);
-                box-shadow: 6px 9px 44px -14px rgba(0,0,0,0.24);
+                background: $background-color-White;
+                box-shadow: 6px 9px 35px -10px rgba(53, 53, 53, 0.24);
                 &:hover{
                     box-shadow: 6px 9px 44px -14px rgba(0,0,0,0.64);
                     transform:scale(1.2)
                 }
                 & h2{
-                    color: black;
+                    color: $font-color-black;
                     margin-left: 10px;
                 }
                 &  p {
-                    color: black;
-                    font-size:20px;
+                    color: $font-color-black;
+                    font-size:$font-size-20;
                     padding: 10px;
                 }
                 &  a{
                     cursor: pointer;
-                    font-size:25px;
+                    font-size:$font-size-25;
                     padding:15px;
                     &:hover{
-                       color: red;
-                       font-size:25px;
+                       color: $font-color-red;
+                       font-size:$font-size-25;
                        transform:scale(1.2)
                     }
 
@@ -83,13 +83,12 @@
                 left: 45px;
             }
             &:nth-child(even) div {
-                left: -470px;
+                left: -410px;
             }
             & img{
                 max-width: 100%;
                 border-radius: 10px;
-                background-color: aliceblue;
-
+                background-color: $background-color-aliceblue-blue;
             }
       
             & div {
@@ -104,8 +103,8 @@
             
             &:nth-child(even) div {
                 transform: translate3d(-200px, 0, 0);
-              @media screen and (max-width: 750px) {
-                transform: translate3d(200px, 0, 0);
+                  @media screen and (max-width: 750px) {
+                   transform: translate3d(200px, 0, 0);
               }
             }   	
         }
@@ -116,7 +115,7 @@
         }
     }
     
-    @media screen and (max-width: 980px) {
+    @media screen and (max-width: $media-width-980px) {
         ul li div {
             width: 250px;
         }
@@ -125,12 +124,12 @@
         }
     }
 
-    @media screen and (max-width: 750px) {
+    @media screen and (max-width: $media-width-750px) {
         align-items: start;
         div{
             margin-left:20px;
             h1{
-                font-size:60px
+                font-size:$font-size-60;
             }
             ul {
                 position: relative;
@@ -138,7 +137,7 @@
             & li {
                 padding-bottom: 40px;
                     &  time {
-                    font-size: 40px;
+                    font-size: $font-size-40;
                     margin-left: 65px;
                     }
                     &  .timeTwo {
@@ -151,16 +150,13 @@
                         width: 250px;
                         padding-bottom: 20px;
                         &  p {
-                            font-size:20px;
+                            font-size:$font-size-20;
                             padding: 10px;
                         }
 
                         &  a{
                             cursor: pointer;
-                            font-size:20px;
-                            &:hover{
-                                font-size:20px;
-                             }
+                            font-size:$font-size-20;
                         }
                     }
                     &:nth-child(odd) div {
@@ -177,7 +173,7 @@
     @media screen and (max-width: $media-width-450px) {
         align-items: start;
         h1{
-            font-size:40px
+            font-size:$font-size-40;
         }
         div{
             margin-left:0px;
@@ -188,8 +184,8 @@
             & li {
                 padding-bottom: 40px;
                     &  time {
-                    font-size: 30px;
-                    padding-top: 10px;
+                    font-size: $font-size-40;
+                    padding-top:5px;
                     margin-left: 45px;
                     }
                     &  .timeTwo {
@@ -202,7 +198,7 @@
                         width: 200px;
                         padding-bottom: 20px;
                         &  p {
-                            font-size:15px;
+                            font-size:$font-size-15;
                             padding: 10px;
                         }
                     }
