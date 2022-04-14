@@ -35,27 +35,98 @@
             margin: 0 auto;
             padding-top: 50px;
             padding-bottom: 50px;
+            &:nth-child(2){
+                width: 3px;
+                position: relative;
+                transform: translateX(450px);
+                margin: 0 auto;
+                z-index:-11;
+                padding-top: 50px;
+                padding-bottom: 50px;
+                &::after {
+                    background: $background-color-dark-black;
+                    content: '';
+                    width: 450px;
+                    height: 3px;
+                    z-index:-11;
+                    border-radius: 2px;
+                    position:absolute;
+                    left:-450px;
+                    top: 0px;
+                    }
+            }
+            &:nth-child(4){
+                width: 3px;
+                position: relative;
+                transform: translateX(450px);
+                margin: 0 auto;
+                padding-top: 50px;
+                padding-bottom: 50px;
+                &::after {
+                    background: $background-color-dark-black;
+                    content: '';
+                    width: 450px;
+                    height: 3px;
+                    z-index:-11;
+                    border-radius: 2px;
+                    position:absolute;
+                    left:-450px;
+                    top: 0px;
+                    }
+            }
             
             &  time {
                 font-weight: bold;
                 font-size: $font-size-50;
                 display: block;
-                margin-top: -75px;
+                border-radius: 10px;
+                padding: 5px;
+                margin-top: -80px;
                 margin-bottom: 30px;
-                margin-left: 155px;
-                
+                margin-left: 160px;
+            }
+            &  .timeOne {
+                background-color: $background-color-White;
+                z-index:11;
+                width: fit-content;
+            }
+            &  .timeTwo {
+                font-weight: bold;
+                background-color: $background-color-White;
+                z-index:11;
+                width: fit-content;
+                font-size: $font-size-50;
+                display: block;
+                margin-bottom: 30px;
+                margin-left: -280px;
+            }
+            &  .timeThree {
+                background-color: $background-color-White;
+                z-index:11;
+                width: fit-content;
+                margin-left: 165px;
+            }
+            &  .timeFour {
+                font-weight: bold;
+                font-size: $font-size-50;
+                width: fit-content;
+                background-color: $background-color-White;
+                display: block;
+                margin-bottom: 30px;
+                margin-left: -280px;
             }
             &::after {
                 background: $background-color-dark-black;
                 content: '';
-                width: 105px;
-                height: 5px;
+                width: 453px;
+                height: 3px;
+                z-index:-11;
                 border-radius: 2px;
                 position:absolute;
-                left:53px;
-                transform: translateX(-50%);
+                left:0px;
                 top: 0px;
                 }
+                
                 &::before {
                     background: $background-color-dark-black;
                     content: '';
@@ -65,17 +136,20 @@
                     position:absolute;
                     left:0px;
                     transform: translateX(-50%);
-                    top: -5px;
+                    top: -8px;
                     }
+
             & div{
                 position: relative;
                 width: 350px;
                 padding: 10px;
                 border-radius: 10px;
                 bottom: 10px;
+                left: 45px;
                 padding-bottom: 30px;
                 background: $background-color-White;
                 box-shadow: 6px 9px 35px -10px rgba(53, 53, 53, 0.24);
+
                 &:hover{
                     box-shadow: 6px 9px 44px -14px rgba(0,0,0,0.64);
                     transform:scale(1.2)
@@ -98,30 +172,31 @@
                        font-size:$font-size-25;
                        transform:scale(1.2)
                     }
-
                 }
             }
-            & div {
-                left: 45px;
+            & .work-two{
+                left:-405px
+            }
+
+            & .work-four{
+                left:-405px
             }
             & img{
                 max-width: 100%;
                 border-radius: 10px;
                 background-color: $background-color-aliceblue-blue;
-            }
-      
+            }   
             & div {
                 visibility: hidden;
                 opacity: 0;
                 transition: all .5s ease-in-out;
-            }
-              
+            }         
             &:nth-child(odd) div {
-                transform: translate3d(200px, 200px, 0);
+                transform: translate3d(200px, 0, 0);
             }
             
             &:nth-child(even) div {
-                 transform: translate3d(200px, 200px, 0);
+                 transform: translate3d(-200px,0, 0);
             }   	
         }
         li.show div {
@@ -130,7 +205,6 @@
             opacity: 1;
         }
     }
-
             
     @media screen and (max-width: $media-width-850px) {
         margin-left: 20%;
@@ -139,24 +213,113 @@
             margin-left: 5%;
         }
         & ul{
-            list-style: none;
-            max-width: 400px;
-            & li{
-
-                & time{
-                    margin-left: 145px;
-                    font-size: $font-size-40;
+            & li {
+                &:nth-child(2){
+                    transform: translateX(450px);
+                    &::after {
+                        width: 453px;                     
+                        left:-450px;
+                        }
                 }
-                & div{
-                    width: 250px;
+                &:nth-child(4){
+                    transform: translateX(450px);
+        
+                    &::after {
+                        width: 453px;
+                        left:-450px;
+                        }
                 }
+                
+                &  time {
+                    margin-left: 160px;
+                }
+                &  .timeTwo {
+                    margin-bottom: 30px;
+                    margin-left: -280px;
+                }
+                &  .timeThree {
+                    margin-left: 165px;
+                }
+                &  .timeFour {
+                    margin-left: -280px;
+                }
+                &::after {
+                    width: 453px;
+                    }   
+                    &::before {
+                        transform: translateX(-50%);
+                    }
             }
         }
     }
     @media screen and (max-width: $media-width-750px){
         margin-left: 2%;
     }
+       
+    @media screen and (max-width: $media-width-600px){
+        & ul{
+            & li {
+          
+                &:nth-child(2){
+                    transform: translateX(350px);
+                    &::after {
+                        width: 350px;                     
+                        left:-350px;
+                       
+                        }
+                }
+                &:nth-child(3){
+                    &::after {
+                        width: 350px;
+                        left:3px;
+                    }
+                }
+                &:nth-child(4){
+                    transform: translateX(350px);
+                    &::after {
+                        width: 350px;
+                        left:-350px;
+                    }
+                }
                 
+                &  time {
+                    margin-left: 120px;
+                }
+                &  .timeTwo {
+                    margin-bottom: 30px;
+                    margin-left: -220px;
+                }
+                &  .timeThree {
+                    margin-left: 130px;
+                }
+                &  .timeFour {
+                    margin-left: -220px;
+                }
+                &::after {
+                    width: 350px; 
+                    } 
+                    &::before {
+                        transform: translateX(-50%);
+                    }
+                &  div{
+                    & h2{
+                        font-size:$font-size-30;
+                    }
+                    & p{
+                        font-size:$font-size-15;
+                    }
+                    width: 300px;
+                }
+                & .work-two{
+                    left:-350px
+                }
+    
+                & .work-four{
+                    left:-350px
+                }
+            }
+        }
+    }
     @media screen and (max-width: $media-width-450px) {
         margin-left: -8%;
         & h1{
@@ -164,20 +327,59 @@
             margin-left: 5%;
         }
         & ul{
-            & li{
-                & time{
-                    margin-left: 130px;
-                    font-size: $font-size-40;
+            margin-left: 10%;
+            & li {
+          
+                &:nth-child(2){
+                    transform: translateX(250px);
+                    &::after {
+                        width: 250px;                     
+                        left:-250px;
+                       
+                        }
                 }
-                & div{
+                &:nth-child(3){
+                    &::after {
+                        width: 250px;
+                        left:3px;
+                    }
+                }
+                &:nth-child(4){
+                    transform: translateX(250px);
+                    &::after {
+                        width: 250px;
+                        left:-250px;
+                    }
+                }
+                &  time {
+                    font-size:$font-size-40;
+                    margin-left: 80px;
+                }
+                &  .timeTwo {
+                    margin-bottom: 30px;
+                    margin-left: -180px;
+                }
+                &  .timeThree {
+                    margin-left: 80px;
+                }
+                &  .timeFour {
+                    margin-left: -180px;
+                }
+                &::after {
+                    width: 250px; 
+                    } 
+                    &::before {
+                        transform: translateX(-50%);
+                    }
+                &  div{
                     width: 200px;
-
-                    & h2{
-                        font-size: $font-size-30; 
-                    }
-                    & p{
-                        font-size: $font-size-20; 
-                    }
+                }
+                & .work-two{
+                    left:-250px
+                }
+    
+                & .work-four{
+                    left:-250px
                 }
             }
         }

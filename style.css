@@ -407,25 +407,26 @@ main > .container {
   margin-top: 150px;
   width: 50px;
   transition: 1s;
-  animation: fotoAnimation 0.8s linear, arrowAnimation 1s linear 1s infinite;
-}
-
-.dark-arrow-down {
-  fill: white !important;
-}
-
-.dark-arrow-down2 {
-  fill: white !important;
+  animation: fotoAnimation 2s linear, arrowAnimation 0.7s linear 0.8s infinite;
 }
 
 @keyframes arrowAnimation {
   0% {
     transform: translateY(0px);
   }
-  50% {
+  10% {
+    transform: translateY(5px);
+  }
+  23% {
     transform: translateY(10px);
   }
-  75% {
+  50% {
+    transform: translateY(20px);
+  }
+  76% {
+    transform: translateY(10px);
+  }
+  86% {
     transform: translateY(5px);
   }
   100% {
@@ -1067,14 +1068,14 @@ main > .container {
   transition: all 0.5s ease-in-out;
 }
 .projects-container ul li:nth-child(odd) div {
-  transform: translate3d(200px, 0, 0);
+  transform: translate3d(200px, 200px, 0);
 }
 .projects-container ul li:nth-child(even) div {
-  transform: translate3d(-200px, 0, 0);
+  transform: translate3d(-200px, 200px, 0);
 }
 @media screen and (max-width: 750px) {
   .projects-container ul li:nth-child(even) div {
-    transform: translate3d(200px, 0, 0);
+    transform: translate3d(200px, 200px, 0);
   }
 }
 .projects-container ul li.show div {
@@ -1212,23 +1213,94 @@ main > .container {
   padding-top: 50px;
   padding-bottom: 50px;
 }
+.works-container ul li:nth-child(2) {
+  width: 3px;
+  position: relative;
+  transform: translateX(450px);
+  margin: 0 auto;
+  z-index: -11;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.works-container ul li:nth-child(2)::after {
+  background: black;
+  content: "";
+  width: 450px;
+  height: 3px;
+  z-index: -11;
+  border-radius: 2px;
+  position: absolute;
+  left: -450px;
+  top: 0px;
+}
+.works-container ul li:nth-child(4) {
+  width: 3px;
+  position: relative;
+  transform: translateX(450px);
+  margin: 0 auto;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.works-container ul li:nth-child(4)::after {
+  background: black;
+  content: "";
+  width: 450px;
+  height: 3px;
+  z-index: -11;
+  border-radius: 2px;
+  position: absolute;
+  left: -450px;
+  top: 0px;
+}
 .works-container ul li time {
   font-weight: bold;
   font-size: 50px;
   display: block;
-  margin-top: -75px;
+  border-radius: 10px;
+  padding: 5px;
+  margin-top: -80px;
   margin-bottom: 30px;
-  margin-left: 155px;
+  margin-left: 160px;
+}
+.works-container ul li .timeOne {
+  background-color: white;
+  z-index: 11;
+  width: fit-content;
+}
+.works-container ul li .timeTwo {
+  font-weight: bold;
+  background-color: white;
+  z-index: 11;
+  width: fit-content;
+  font-size: 50px;
+  display: block;
+  margin-bottom: 30px;
+  margin-left: -280px;
+}
+.works-container ul li .timeThree {
+  background-color: white;
+  z-index: 11;
+  width: fit-content;
+  margin-left: 165px;
+}
+.works-container ul li .timeFour {
+  font-weight: bold;
+  font-size: 50px;
+  width: fit-content;
+  background-color: white;
+  display: block;
+  margin-bottom: 30px;
+  margin-left: -280px;
 }
 .works-container ul li::after {
   background: black;
   content: "";
-  width: 105px;
-  height: 5px;
+  width: 453px;
+  height: 3px;
+  z-index: -11;
   border-radius: 2px;
   position: absolute;
-  left: 53px;
-  transform: translateX(-50%);
+  left: 0px;
   top: 0px;
 }
 .works-container ul li::before {
@@ -1240,7 +1312,7 @@ main > .container {
   position: absolute;
   left: 0px;
   transform: translateX(-50%);
-  top: -5px;
+  top: -8px;
 }
 .works-container ul li div {
   position: relative;
@@ -1248,6 +1320,7 @@ main > .container {
   padding: 10px;
   border-radius: 10px;
   bottom: 10px;
+  left: 45px;
   padding-bottom: 30px;
   background: white;
   box-shadow: 6px 9px 35px -10px rgba(53, 53, 53, 0.24);
@@ -1275,8 +1348,11 @@ main > .container {
   font-size: 25px;
   transform: scale(1.2);
 }
-.works-container ul li div {
-  left: 45px;
+.works-container ul li .work-two {
+  left: -405px;
+}
+.works-container ul li .work-four {
+  left: -405px;
 }
 .works-container ul li img {
   max-width: 100%;
@@ -1289,10 +1365,10 @@ main > .container {
   transition: all 0.5s ease-in-out;
 }
 .works-container ul li:nth-child(odd) div {
-  transform: translate3d(200px, 200px, 0);
+  transform: translate3d(200px, 0, 0);
 }
 .works-container ul li:nth-child(even) div {
-  transform: translate3d(200px, 200px, 0);
+  transform: translate3d(-200px, 0, 0);
 }
 .works-container ul li.show div {
   transform: none;
@@ -1307,21 +1383,97 @@ main > .container {
     font-size: 60px;
     margin-left: 5%;
   }
-  .works-container ul {
-    list-style: none;
-    max-width: 400px;
+  .works-container ul li:nth-child(2) {
+    transform: translateX(450px);
+  }
+  .works-container ul li:nth-child(2)::after {
+    width: 453px;
+    left: -450px;
+  }
+  .works-container ul li:nth-child(4) {
+    transform: translateX(450px);
+  }
+  .works-container ul li:nth-child(4)::after {
+    width: 453px;
+    left: -450px;
   }
   .works-container ul li time {
-    margin-left: 145px;
-    font-size: 40px;
+    margin-left: 160px;
   }
-  .works-container ul li div {
-    width: 250px;
+  .works-container ul li .timeTwo {
+    margin-bottom: 30px;
+    margin-left: -280px;
+  }
+  .works-container ul li .timeThree {
+    margin-left: 165px;
+  }
+  .works-container ul li .timeFour {
+    margin-left: -280px;
+  }
+  .works-container ul li::after {
+    width: 453px;
+  }
+  .works-container ul li::before {
+    transform: translateX(-50%);
   }
 }
 @media screen and (max-width: 750px) {
   .works-container {
     margin-left: 2%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .works-container ul li:nth-child(2) {
+    transform: translateX(350px);
+  }
+  .works-container ul li:nth-child(2)::after {
+    width: 350px;
+    left: -350px;
+  }
+  .works-container ul li:nth-child(3)::after {
+    width: 350px;
+    left: 3px;
+  }
+  .works-container ul li:nth-child(4) {
+    transform: translateX(350px);
+  }
+  .works-container ul li:nth-child(4)::after {
+    width: 350px;
+    left: -350px;
+  }
+  .works-container ul li time {
+    margin-left: 120px;
+  }
+  .works-container ul li .timeTwo {
+    margin-bottom: 30px;
+    margin-left: -220px;
+  }
+  .works-container ul li .timeThree {
+    margin-left: 130px;
+  }
+  .works-container ul li .timeFour {
+    margin-left: -220px;
+  }
+  .works-container ul li::after {
+    width: 350px;
+  }
+  .works-container ul li::before {
+    transform: translateX(-50%);
+  }
+  .works-container ul li div {
+    width: 300px;
+  }
+  .works-container ul li div h2 {
+    font-size: 30px;
+  }
+  .works-container ul li div p {
+    font-size: 15px;
+  }
+  .works-container ul li .work-two {
+    left: -350px;
+  }
+  .works-container ul li .work-four {
+    left: -350px;
   }
 }
 @media screen and (max-width: 450px) {
@@ -1332,18 +1484,55 @@ main > .container {
     font-size: 40px;
     margin-left: 5%;
   }
+  .works-container ul {
+    margin-left: 10%;
+  }
+  .works-container ul li:nth-child(2) {
+    transform: translateX(250px);
+  }
+  .works-container ul li:nth-child(2)::after {
+    width: 250px;
+    left: -250px;
+  }
+  .works-container ul li:nth-child(3)::after {
+    width: 250px;
+    left: 3px;
+  }
+  .works-container ul li:nth-child(4) {
+    transform: translateX(250px);
+  }
+  .works-container ul li:nth-child(4)::after {
+    width: 250px;
+    left: -250px;
+  }
   .works-container ul li time {
-    margin-left: 130px;
     font-size: 40px;
+    margin-left: 80px;
+  }
+  .works-container ul li .timeTwo {
+    margin-bottom: 30px;
+    margin-left: -180px;
+  }
+  .works-container ul li .timeThree {
+    margin-left: 80px;
+  }
+  .works-container ul li .timeFour {
+    margin-left: -180px;
+  }
+  .works-container ul li::after {
+    width: 250px;
+  }
+  .works-container ul li::before {
+    transform: translateX(-50%);
   }
   .works-container ul li div {
     width: 200px;
   }
-  .works-container ul li div h2 {
-    font-size: 30px;
+  .works-container ul li .work-two {
+    left: -250px;
   }
-  .works-container ul li div p {
-    font-size: 20px;
+  .works-container ul li .work-four {
+    left: -250px;
   }
 }
 
@@ -1495,31 +1684,15 @@ main > .container {
   color: white;
 }
 .dark-mode .works-container ul li time {
+  background-color: #37464d;
   color: white;
   -size: 50px;
 }
 .dark-mode .works-container ul li::after {
   background: #5b696f;
-  content: "";
-  width: 105px;
-  height: 5px;
-  border-radius: 2px;
-  position: absolute;
-  left: 53px;
-  transform: translateX(-50%);
-  top: 0px;
 }
 .dark-mode .works-container ul li::before {
   background: #37464d;
-  z-index: 1;
-  content: "";
-  width: 20px;
-  height: 20px;
-  border-radius: 2px;
-  position: absolute;
-  left: 0px;
-  transform: translateX(-50%);
-  top: -5px;
 }
 .dark-mode .works-container ul li div {
   background-color: #232c31;
@@ -1530,29 +1703,8 @@ main > .container {
 .dark-mode .works-container ul li div p {
   color: white;
 }
-.dark-mode .works-container ul li div {
-  left: 45px;
-}
 .dark-mode .works-container ul li img {
-  max-width: 100%;
-  border-radius: 10px;
   background-color: aliceblue;
-}
-.dark-mode .works-container ul li div {
-  visibility: hidden;
-  opacity: 0;
-  transition: all 0.5s ease-in-out;
-}
-.dark-mode .works-container ul li:nth-child(odd) div {
-  transform: translate3d(200px, 200px, 0);
-}
-.dark-mode .works-container ul li:nth-child(even) div {
-  transform: translate3d(200px, 200px, 0);
-}
-.dark-mode .works-container ul li.show div {
-  transform: none;
-  visibility: visible;
-  opacity: 1;
 }
 .dark-mode .socials > :before {
   background: #5b696f;

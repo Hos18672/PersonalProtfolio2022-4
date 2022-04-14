@@ -143,30 +143,14 @@
             background-color: $background-color-dark-hell-1;
             color: $font-color-white;
                 &  time {
+                    background-color: $background-color-dark-hell-2;
                     color: $font-color-white;-size: $font-size-50;   
                 }
                 &::after {
                     background: $background-color-dark-hell-1;
-                    content: '';
-                    width: 105px;
-                    height: 5px;
-                    border-radius: 2px;
-                    position:absolute;
-                    left:53px;
-                    transform: translateX(-50%);
-                    top: 0px;
                     }
                     &::before {
                         background: $background-color-dark-hell-2;
-                        z-index: 1;
-                        content: '';
-                        width: 20px;
-                        height: 20px;
-                        border-radius: 2px;
-                        position:absolute;
-                        left:0px;
-                        transform: translateX(-50%);
-                        top: -5px;
                         }
                 & div{
                     background-color: $background-color-dark-hell-4;
@@ -177,33 +161,9 @@
                         color: $font-color-white;
                     }
                 }
-                & div {
-                    left: 45px;
-                }
                 & img{
-                    max-width: 100%;
-                    border-radius: 10px;
                     background-color: $background-color-aliceblue-blue;
-                }
-          
-                & div {
-                    visibility: hidden;
-                    opacity: 0;
-                    transition: all .5s ease-in-out;
-                }
-                  
-                &:nth-child(odd) div {
-                    transform: translate3d(200px, 200px, 0);
-                }
-                
-                &:nth-child(even) div {
-                     transform: translate3d(200px, 200px, 0);
-                }   	
-            }
-            li.show div {
-                transform: none;
-                visibility: visible;
-                opacity: 1;
+                } 	
             }
         }
     }
