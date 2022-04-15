@@ -1840,46 +1840,7 @@ main > .container {
   background-color: #232c31;
   box-shadow: 6px 9px 35px -10px rgba(0, 0, 0, 0.24);
 }
-.dark-mode .contact-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  height: fit-content;
-  padding-bottom: 50px;
-}
-.dark-mode .contact-container .container {
-  height: fit-content;
-}
-.dark-mode .contact-container .container .screen .screen-body {
-  display: flex;
-}
-.dark-mode .contact-container .container .screen .screen-body .screen-body-item .app-contact {
-  margin-top: 400px;
-  font-size: 25px;
-  transition: 0.5s;
-}
-.dark-mode .contact-container .container .screen .screen-body .screen-body-item .app-title {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  padding-top: 25px;
-  padding-bottom: 5px;
-  position: relative;
-  font-size: 40px;
-  font-weight: 900;
-  line-height: 30px;
-  transition: 0.5s;
-}
-.dark-mode .contact-container .container .screen .screen-body .screen-body-item .app-title > div:nth-child(1) {
-  margin-top: 45px;
-}
 .dark-mode .contact-container .container .screen .screen-body .screen-body-item .app-form {
-  width: 350px;
-  height: 720px;
-  background-image: url(src/images/iphone1.png);
-  background-size: cover;
-  transition: 0.5s;
   filter: drop-shadow(10px 5px 3px rgba(0, 0, 0, 0.23));
 }
 .dark-mode .footer .line-one {
