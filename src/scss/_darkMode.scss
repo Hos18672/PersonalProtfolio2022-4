@@ -1,179 +1,211 @@
-
-.dark-mode{
+.dark-mode {
     background-color: $background-color-dark-main;
     color: $font-color-white;
     transition-delay: .5s;
-     &  .dark-container{
-            background-color: $background-color-dark-main;
-            z-index: -11;
-            width:400vh;
-            height: 400vh;
-            border-radius: 50%;;
-            position: fixed;
-            right: -1000px;
-            top: -1000px;
-        }
-    
-    .header-container {
-    	width: 100%;
-        display: flex; 
-        & > .h-container{   
 
-            & .hamburger-icon{
-                & > div{
+    & .dark-container {
+        background-color: $background-color-dark-main;
+        z-index: -11;
+        width: 400vh;
+        height: 400vh;
+        border-radius: 50%;
+        position: fixed;
+        right: -1000px;
+        top: -1000px;
+    }    
+    ///////////////////////   header Container  /////////////////////////////////////////
+    .header-container {
+        width: 100%;
+        display: flex;
+
+        &>.h-container {
+
+            & .hamburger-icon {
+                &>div {
                     background-color: $background-color-White;
                 }
-                & .nav-list{
+
+                & .nav-list {
+
                     background-color: $background-color-dark-hell-1;
                     box-shadow: 2px 5px 5px -5px $background-color-dark-hell-3;
-                    & a{
+
+                    & a {
                         color: $font-color-white;
-                    } 
-                }
-            }
-            & > ul{
-                & > .nav-item{
-                    transition: .0s;
-                  & > a{  
-                      transition: .3s;
-                      background-color: transparent !important;
-                  }
-                }
-                & > .nav-item:hover{
-                    transform: scale(1.1);
-                     & > a:hover{
-                         border-bottom: 2px solid $background-color-red;
-                     }
-                 }
-                 & > .nav-item:active{
-                     transform: scale(.95);
-                  }
-                & > .dark-mode{
-                    color: $font-color-white;
+                    }
                 }
             }
 
-            & > .switch{
-                right: 0;
-                &> label {
-                    cursor: pointer;
-                    text-indent: -9999px;
-                    width: 70px;
-                    height: 30px;
-                    display: block;
-                    border-radius: 100px;
-                    position: relative;
+            &>.switch {
+                &>label {
                     border: 2px solid $background-color-dark-hell-1;
-                    z-index: 999;
                 }
             }
-        }   
+        }
     }
-    .landing-page{   
+
+    ///////////////////////   Landing Container  /////////////////////////////////////////
+    .landing-page {
         transition: none;
-        & > h1{
+
+        &>h1 {
             transition: none;
         }
 
-        & .arrow-down{
-            fill : $background-color-White !important;
+        & .arrow-down {
+            fill: $background-color-White !important;
         }
 
     }
-    .about-container{
-        & > .about-main-container{
-     
-                & > .text-container{
-                    & > .about-span{
-                        transition: .5s;
-                        background-color: 	$background-color-dark-hell-2;
-                    }
-                & > .main-container{
 
-                    & > h1{
-                        transition: 0s;  
-                    }
-                    & > p{
-                        transition: 0s;    
-                    }
+    ///////////////////////   About Container  /////////////////////////////////////////
+    .about-container {
+        &>.about-main-container {
+            &>.text-container {
+                &>.about-span {
+                    transition: .5s;
+                    background-color: $background-color-dark-hell-2;
                 }
             }
-            & > img{
-                transition: 0s;  
-            }
         }
     }
-    .projects-container{
+
+    ///////////////////////   Projects Container  /////////////////////////////////////////
+    .projects-container {
         ul {
-            padding: 50px 5px;
-           & li {
+            & li {
                 background-color: $background-color-dark-hell-1;
                 color: $font-color-white;
-            
+
                 &::after {
                     background: $background-color-dark-hell-2;
-                    } 	
+                }
             }
-           & li div {
+
+            & li div {
                 background-color: $background-color-dark-hell-4;
-                & h2{
+                box-shadow: 6px 9px 35px -10px rgba(0, 0, 0, 0.24);
+
+                & h2 {
                     color: $font-color-white;
-                    margin-left: 10px;
                 }
-                &  p {
+
+                & p {
                     color: $font-color-white;
-                    padding: 10px;
                 }
-                &  a{
+
+                & a {
                     color: $font-color-white;
                 }
             }
-    
+
         }
-    }  
+    }
 
-    .works-container{
-        & ul{
-            & time{
-                color: $font-color-white;
+    ///////////////////////   Works Container  /////////////////////////////////////////
+    .works-container {
+        & .works-items {
+            & .work-item {
+                & time {
+                    background-color: $background-color-dark-hell-2;
+                }
             }
 
-           & li {
+            & div.work-item {
+                padding: 10px;
+                border: 3px solid $background-color-dark-hell-1;
+                transition: all 0s;
 
-            background-color: $background-color-dark-hell-1;
-            color: $font-color-white;
-                &  time {
-                    background-color: $background-color-dark-hell-2;
-                    color: $font-color-white;-size: $font-size-50;   
-                }
-                &::after {
-                    background: $background-color-dark-hell-1;
-                    }
-                    &::before {
-                        background: $background-color-dark-hell-2;
-                        }
-                & div{
+                & div.item {
+
                     background-color: $background-color-dark-hell-4;
-                    & h2{
-                        color: $font-color-white;
-                    }
-                    &  p {
-                        color: $font-color-white;
-                    }
+                    box-shadow: 6px 9px 35px -10px rgba(0, 0, 0, 0.24);
+
                 }
-                & img{
-                    background-color: $background-color-aliceblue-blue;
-                } 	
+
+                &::after {
+                    background-color: $background-color-dark-hell-2;
+                }
+
+            }
+
+            & div.work-item:nth-of-type(even) {
+                border-top: 3px solid transparent;
+                border-left: 3px solid transparent;
+                border-bottom: 3px solid transparent;
+
+                &:nth-child(4) {
+                    border-bottom: 3px solid $background-color-dark-hell-1;
+                }
+
+                &::after {
+                    background-color: $background-color-dark-hell-1;
+                }
+
+                &::before {
+
+                    background-color: $background-color-dark-hell-1;
+                }
+            }
+
+            & div.work-item:nth-of-type(odd) {
+                border-right: 3px solid transparent;
+
+                &::after {
+                    background-color: $background-color-dark-hell-1;
+                }
+
+                &::before {
+                    background-color: $background-color-dark-hell-1;
+                }
+            }
+        }
+
+    }
+
+
+    ////////////////////////// Education Container //////////////////////////////////////
+
+    .educations-container {
+        & .education-items {
+            & .education-item {
+                & time {
+                    color: $font-color-white;
+                    background-color: transparent;
+                }
+            }
+
+            & div.education-item {
+                & div.item {
+                    background-color: $background-color-dark-hell-4;
+                    box-shadow: 6px 9px 35px -10px rgba(0, 0, 0, 0.24);
+                }
+
             }
         }
     }
-    .socials{
-        & > :before{
+
+    ////////////////////////// Contact Container //////////////////////////////////////
+
+
+
+
+
+
+
+
+
+
+
+
+    ////////////////////////// //////////////////////////////////////
+    .socials {
+        &> :before {
             background: $background-color-dark-hell-1;
         }
-        & > :after{
-                background: $background-color-dark-hell-1;
+
+        &> :after {
+            background: $background-color-dark-hell-1;
         }
     }
 }
-

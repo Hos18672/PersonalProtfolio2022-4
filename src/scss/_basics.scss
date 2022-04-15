@@ -1,100 +1,124 @@
-body,header,main,footer{
+body,
+header,
+main,
+footer {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
- .dark-container{
-        width:10px;
-        height: 10px;
-        border-radius: 50%;;
-        position: fixed;
-        right: 30px;
-        top: 30px;
-        transition: 0.7s;
-        z-index:-100;
+.dark-container {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    ;
+    position: fixed;
+    right: 30px;
+    top: 30px;
+    transition: 0.7s;
+    z-index: -100;
 }
 
-::-webkit-scrollbar{
-    width:15px;
-    transition:0.5s
+::-webkit-scrollbar {
+    width: 15px;
+    transition: 0.5s
 }
-::-webkit-scrollbar-track{
+
+::-webkit-scrollbar-track {
     background: $background-color-light-2;
     border-radius: 50px;
     margin-block: 60px;
 }
-::-webkit-scrollbar-thumb{
+
+::-webkit-scrollbar-thumb {
     background: $background-color-blue-1;
     border-radius: 50px;
 }
-::-webkit-scrollbar-thumb:hover{
+
+::-webkit-scrollbar-thumb:hover {
     background: $background-color-blue-2;
     border-radius: 50px;
 }
-@supports(scrollbar-color: $background-color-red $background-color-blue){
-    *{
-    }
+
+@supports(scrollbar-color: $background-color-red $background-color-blue) {
+    * {}
 }
-.container{
+
+.container {
     height: 100vh;
 }
 
-main{
+main {
     display: flex;
     flex-direction: column;
-    padding : 0 30px;
-   & > .container {
+    padding: 0 30px;
+
+    &>.container {
         padding-top: 50px;
     }
 }
 
-.arrow-down{
+.arrow-down {
     margin-top: 150px;
-    width:50px;
-    transition: 1s;
-    animation:fotoAnimation 2s linear ,  arrowAnimation 1.2s   linear 1s   infinite  ;
+    width: 50px;
+    transition: .4s;
+    animation: fotoAnimation 2s linear, arrowAnimation 1.2s linear 1s infinite;
+
+    &:hover {
+        fill: red;
+        transform: scale(2.1)
+    }
 }
 
-@keyframes arrowAnimation {  
-    0%{
+
+@keyframes arrowAnimation {
+    0% {
         transform: translateY(0px);
     }
-    10%{
+
+    10% {
         transform: translateY(5px);
     }
-    23%{
+
+    23% {
         transform: translateY(10px);
     }
-    50%{
+
+    50% {
         transform: translateY(20px);
     }
-    76%{
+
+    76% {
         transform: translateY(10px);
     }
-    86%{
+
+    86% {
         transform: translateY(5px);
     }
-    
-    100%{
+
+    100% {
         transform: translateY(0px);
 
     }
 }
-@keyframes fotoAnimation {  
-    0%{
+
+@keyframes fotoAnimation {
+    0% {
         opacity: 0;
         transform: scale(0);
     }
-    50%{
+
+    50% {
         opacity: 30%;
         transform: scale(.35);
     }
-    75%{
+
+    75% {
         opacity: 60%;
         transform: scale(.75);
     }
-    100%{
+
+    100% {
         opacity: 100%;
         transform: scale(1);
     }

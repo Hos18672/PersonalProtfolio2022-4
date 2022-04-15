@@ -1,148 +1,134 @@
-.about-container{
+.about-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    & > .about-main-container{
+
+    &>.about-main-container {
         display: flex;
         justify-content: center;
         align-items: center;
-            & > .text-container{
+        position: relative;
+        transform: translateY(150px);
+        opacity: 0;
+        transition: .5s all ease;
+
+        &>.text-container {
             display: flex;
             flex-direction: row;
             justify-content: space-between;
-            & > .about-span{
+
+            &>.about-span {
                 background-color: $background-color-dark-black;
-                width:2px;
-                height:400px;
-                margin:0 30px
+                width: 2px;
+                height: 400px;
+                margin: 0 30px
             }
-          
-        
-            & > .main-container{
-                width:500px;
-                & > h1{
+
+
+            &>.main-container {
+                width: 500px;
+
+                &>h1 {
                     transition: .5s;
                     font-size: $font-size-60;
                     margin-top: -10px;
                 }
-                & > p{
+
+                &>p {
                     transition: .5s;
                     font-size: $font-size-20;
                 }
             }
         }
-        & > img{
+
+        &>img {
             transition: .5s;
             width: 300px
         }
     }
 }
 
-.about-main-container{
-    position: relative;
-    transform: translateY(150px);
-    opacity: 0;
-    transition: 1s all ease;
-  }
-  
-.about-main-container.active{
+
+.about-main-container.active {
     transform: translateY(0);
     opacity: 1;
-  }
-
- 
-
-
-
+}
 
 @media only screen and(max-width: $media-width-850px) {
-    
-    .about-container{
-        & > .about-main-container{
+
+    .about-container {
+        &>.about-main-container {
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-                & > .text-container{
+
+            &>.text-container {
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;
-                & > .about-span{
-                    display:none;
+
+                &>.about-span {
+                    display: none;
                 }
-                & > .dark-span{
+
+                &>.dark-span {
                     background-color: $background-color-White;
                 }
-            
-                & > .main-container{
+
+                &>.main-container {
                     display: flex;
                     flex-direction: column;
                     justify-content: center;
                     align-items: center;
                     margin-top: 50px;
-                    width:400px;
-                    & > h1{
+                    width: 400px;
+
+                    &>h1 {
                         font-size: $font-size-50;
                         margin-top: -10px;
                     }
-                    & > p{
+
+                    &>p {
                         text-align: center;
                         font-size: $font-size-15;
                     }
                 }
             }
-            & > img{
-                transition: 1s;
+
+            &>img {
                 width: 250px
             }
         }
     }
-  }
-  
+}
+
 @media only screen and(max-width: $media-width-450px) {
-    
-    .about-container{
-        & > .about-main-container{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-                & > .text-container{
-                display: flex;
-                flex-direction: column;
-                justify-content: space-between;
-                & > .about-span{
-                    display:none;
-                }
-                & > .dark-span{
-                    background-color: $background-color-White;
-                }
-                & > .main-container{
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    align-items: center;
+
+    .about-container {
+        &>.about-main-container {
+            &>.text-container {
+                &>.main-container {
                     margin-top: 50px;
-                    width:280px;
-                    transition: 1s;
-                    & > h1{
-                        transition: 1s;
+                    width: 280px;
+
+                    &>h1 {
                         font-size: $font-size-40;
                         margin-top: -10px;
                     }
-                    & > p{
+
+                    &>p {
                         text-align: center;
-                        transition: 1s;
                         font-size: $font-size-15;
                     }
                 }
             }
-            & > img{
-                transition: 1s;
+
+            &>img {
                 width: 200px
             }
         }
     }
-     
-  }
+
+}

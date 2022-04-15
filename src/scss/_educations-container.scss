@@ -1,18 +1,206 @@
-.educations-container{
+.educations-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height:fit-content;
-    & h1{
-        font-size:$font-size-60;
+    height: fit-content;
+    margin-bottom: 30px;
+    & h1 {   
+        font-size: $font-size-60;
     }
-}
 
-@media only screen and(max-width: $media-width-450px) {
+    & .education-items {
+        position: relative;
+        & .education-item {
 
-        h1{
-            font-size: $font-size-40;     
+            & time {
+                font-weight: bold;
+                font-size: $font-size-50;
+                position: relative;
+                top: -45px;
+                left: 40%;
+                padding: 0px 5px;
+                border-radius: 5px;
+                background-color: $background-color-White;
+            }
         }
- 
-  }
+
+        & div.education-item {
+            padding: 10px;
+            & div.item {
+                transition: .5s ease-in-out;
+                opacity: 0;
+                position: relative;
+                top: -30px;
+                margin: 40px;
+                width: 450px;
+                padding: 20px;
+                border-radius: 10px;
+                bottom: 10px;
+                padding-bottom: 20px;
+                background: $background-color-White;
+                box-shadow: 6px 9px 35px -10px rgba(53, 53, 53, 0.24);
+                border-top: 3px solid $background-color-blue;
+
+                &:hover {
+                    box-shadow: 6px 9px 44px -14px rgba(0, 0, 0, 0.64);
+                }
+
+                & h2 {
+                    font-size: $font-size-30;
+                    transition: all 0s;
+                }
+
+                & p {
+                    font-size: $font-size-20;
+                    transition: all 0s;
+                }
+            }
+
+        }
+
+
+
+        ///////////// Transition /////////////////
+        & div.education-item div {
+            transform: translate3d(0,200px,  0);
+        }
+
+        & div.education-item.active div {
+            transform: none;
+            visibility: visible;
+            opacity: 1;
+        }
+    }
+
+
+    //////////////////////////// Media Queries ////////////////////////////////
+
+    @media screen and (max-width: $media-width-850px) {
+        & h1 {
+            font-size: $font-size-60;
+            margin-left: 5%;
+        }
+
+        & .education-items {
+            margin: 50px;
+
+            & .education-item {
+                & time {
+                    font-size: $font-size-50;
+                    top: -45px;
+                    left: 40%;
+                }
+            }
+
+            & div.education-item {
+                padding: 10px;
+
+                & div.item {
+                    width: 350px;
+                    margin-left: 15px;
+
+                    & h2 {
+                        font-size: $font-size-30;
+                    }
+
+                    & p {
+                        font-size: $font-size-20;
+                    }
+                }
+            }
+
+            & div.education-item:nth-of-type(even) {
+                width: 400px;
+            }
+
+            & div.education-item:nth-of-type(odd) {
+                width: 400px;
+            }
+        }
+    }
+
+    @media screen and (max-width: $media-width-600px) {
+        & .education-items {
+            margin: 50px;
+
+            & .education-item {
+
+                & time {
+                    font-size: $font-size-50;
+                    top: -45px;
+                    left: 35%;
+                }
+            }
+
+            & div.education-item {
+                padding: 10px;
+
+                & div.item {
+                    width: 250px;
+                    margin-left: 15px;
+
+                    & h2 {
+                        font-size: $font-size-25;
+                    }
+
+                    & p {
+                        font-size: $font-size-20;
+                    }
+                }
+            }
+
+            & div.education-item:nth-of-type(even) {
+                width: 300px;
+            }
+
+            & div.education-item:nth-of-type(odd) {
+                width: 300px;
+            }
+        }
+    }
+
+    @media screen and (max-width: $media-width-450px) {
+        h1 {
+            font-size: $font-size-40;
+        }
+
+        & .education-items {
+            margin: 50px;
+
+            & .education-item {
+                & time {
+                    font-size: $font-size-40;
+                    top: -37px;
+                    left: 35%;
+                }
+            }
+
+            & div.education-item {
+                padding: 10px;
+
+                & div.item {
+                    width: 200px;
+                    margin-left: 15px;
+
+                    & h2 {
+                        font-size: $font-size-20;
+                    }
+
+                    & p {
+                        font-size: $font-size-15;
+                    }
+                }
+            }
+
+            & div.education-item:nth-of-type(even) {
+                width: 250px;
+            }
+
+            & div.education-item:nth-of-type(odd) {
+                width: 250px;
+            }
+        }
+    }
+
+}

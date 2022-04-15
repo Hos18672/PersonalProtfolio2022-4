@@ -15,7 +15,8 @@
           <div
             class="hamburger-icon"
             id="hamburger-icon"
-            onclick="toggleButton(this)">
+            onclick="toggleButton(this)"
+          >
             <div class="bar1" id="bar1"></div>
             <div class="bar2" id="bar2"></div>
             <div class="bar3" id="bar3"></div>
@@ -85,37 +86,43 @@
       <section class="landing-page container" id="landing-page">
         <h1 class="container-title landing-title">Reza Hossaini</h1>
         <img src="./src/images/foto1.png" alt="my Profile Photo" />
-        <svg
-          class="arrow-down"
-          id="arrow-down"
-          data-name="Layer 1"
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 411.12 222.15"
-        >
-          <rect
-            class="cls-1"
-            x="213.86"
-            y="251.02"
-            width="32"
-            height="298.95"
-            rx="16"
-            transform="translate(-334.84 -9.39) rotate(-45)"
-          />
-          <rect
-            class="cls-1"
-            x="403.22"
-            y="250.62"
-            width="32"
-            height="298.95"
-            rx="16"
-            transform="translate(286.72 -468.46) rotate(45)"
-          />
-        </svg>
+        <a href="#about-container">
+          <svg
+            class="arrow-down"
+            id="arrow-down"
+            data-name="Layer 1"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 411.12 222.15"
+          >
+            <rect
+              class="cls-1"
+              x="213.86"
+              y="251.02"
+              width="32"
+              height="298.95"
+              rx="16"
+              transform="translate(-334.84 -9.39) rotate(-45)"
+            />
+            <rect
+              class="cls-1"
+              x="403.22"
+              y="250.62"
+              width="32"
+              height="298.95"
+              rx="16"
+              transform="translate(286.72 -468.46) rotate(45)"
+            />
+          </svg>
+        </a>
       </section>
       <!--      ------------------------About------------------------ -->
       <section class="about-container container" id="about-container">
         <div class="about-main-container">
-          <img class="about-foto" src="./src/images/foto2.png" alt="my Profile Photo" />
+          <img
+            class="about-foto"
+            src="./src/images/foto2.png"
+            alt="my Profile Photo"
+          />
           <div class="text-container">
             <div class="about-span" id="about-span"></div>
             <div class="main-container">
@@ -137,9 +144,9 @@
         <div>
           <div>
             <ul>
-              <li>
+              <li class="projects-item">
                 <time class="timeOne">2022/3</time>
-                <div>    
+                <div>
                   <img class="portfolio-img" src="./src/images/portfolio.png" />
                   <h2>Personal Portfolio</h2>
                   <p>
@@ -147,12 +154,12 @@
                     sed diam nonummy nibh euismod tincidunt ut laoreet dolore
                     magna aliquam erat volutpat. Ut wisi enim ad minim veniam
                   </p>
-                  <a>Live</a> 
+                  <a>Live</a>
                   <span><a>Code</a></span>
                 </div>
               </li>
-              <li>  
-                 <time class="timeTwo">2022/2</time>
+              <li class="projects-item">
+                <time class="timeTwo">2022/2</time>
                 <div>
                   <img class="mnf-img" src="./src/images/mfn.png" />
                   <h2>Android App</h2>
@@ -164,7 +171,7 @@
                   <span><a>Code</a></span>
                 </div>
               </li>
-              <li>
+              <li class="projects-item">
                 <time class="timeThree">2021/12</time>
                 <div>
                   <img class="cal-img" src="./src/images/cal.png" />
@@ -174,12 +181,12 @@
                     sed diam nonummy nibh euismod tincidunt ut laoreet dolore
                     magna aliquam erat volutpat. Ut wisi enim ad minim veniam
                   </p>
-                  <a>Live</a> 
+                  <a>Live</a>
                   <span><a>Code</a></span>
                 </div>
               </li>
-              <li>  
-                 <time class="timeFour">2021/11</time>
+              <li class="projects-item">
+                <time class="timeFour">2021/11</time>
                 <div>
                   <img class="graph-img" src="./src/images/graph.png" />
                   <h2>Graph programm</h2>
@@ -197,67 +204,97 @@
       <!--     ------------------------works------------------------- -->
       <section class="works-container container" id="works-container">
         <h1 class="container-title works-title">works</h1>
-        <div>
-          <div>
-            <ul>
-              <li>
-                <time class="timeOne">2022</time>
-                <div class="work-one">    
-                  <h2  data-splitting>Liferando</h2>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-                    sed diam nonummy nibh euismod tincidunt ut laoreet dolore
-                    magna aliquam erat volutpat. Ut wisi enim ad minim veniam
-                  </p>
-                </div>
-              </li>
-              <li>  
-                 <time class="timeTwo">2021</time>
-                <div class="work-two">
-                  <h2  data-splitting>Reintegra</h2>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-                    sed diam nonummy nibh euismod tincidunt ut laoreet dolore
-                    magna aliquam erat volutpat. Ut wisi enim ad minim veniam
-                  </p>
-                </div>
-              </li>
-              <li>
-                <time class="timeThree">2021</time>
-                <div class="work-three">
-                  <h2  data-splitting>Bauhaus</h2>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-                    sed diam nonummy nibh euismod tincidunt ut laoreet dolore
-                    magna aliquam erat volutpat. Ut wisi enim ad minim veniam
-                  </p>
-                </div>
-              </li>
-              <li>  
-                 <time class="timeFour">2020</time>
-                <div class="work-four">
-                  <h2  data-splitting>Praktikum</h2>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-                    sed diam nonummy nibh euismod tincidunt ut laoreet dolore
-                    magna aliquam erat volutpat. Ut wisi enim ad minim veniam
-                  </p>
-                </div>
-              </li>
-            </ul>
+        <div class="works-items">
+          <div class="work-item">
+            <time class="timeOne">2022</time>
+            <div class="work-one item">
+              <h2 data-splitting>Liferando</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+                diam nonummy nibh euismod tincidunt ut laoreet dolore magna
+                aliquam erat volutpat. Ut wisi enim ad minim veniam
+              </p>
+            </div>
+          </div>
+          <div class="work-item">
+            <time class="timeTwo">2021</time>
+            <div class="work-two item">
+              <h2 data-splitting>Reintegra</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+                diam nonummy nibh euismod tincidunt ut laoreet dolore magna
+                aliquam erat volutpat. Ut wisi enim ad minim veniam
+              </p>
+            </div>
+          </div>
+          <div class="work-item">
+            <time class="timeThree">2021</time>
+            <div class="work-three item">
+              <h2 data-splitting>Bauhaus</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+                diam nonummy nibh euismod tincidunt ut laoreet dolore magna
+                aliquam erat volutpat. Ut wisi enim ad minim veniam
+              </p>
+            </div>
+          </div>
+          <div class="work-item">
+            <time class="timeFour">2020</time>
+            <div class="work-four item">
+              <h2 data-splitting>Praktikum</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+                diam nonummy nibh euismod tincidunt ut laoreet dolore magna
+                aliquam erat volutpat. Ut wisi enim ad minim veniam
+              </p>
+            </div>
           </div>
         </div>
       </section>
       <!--     ----------------------Educations---------------------- -->
       <section class="educations-container container" id="edu-container">
-        <h1 class="container-title edu-title">educations</h1>
+        <h1 class="container-title edu-title">Educations</h1>
+        <div class="education-items">
+          <div class="education-item">
+            <time class="timeOne">2022</time>
+            <div class="education-one item">
+              <h2 data-splitting>Coding School</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+                diam nonummy nibh euismod tincidunt ut laoreet dolore magna
+                aliquam erat volutpat. Ut wisi enim ad minim veniam
+              </p>
+            </div>
+          </div>
+          <div class="education-item">
+            <time class="timeTwo">2021</time>
+            <div class="education-two item">
+              <h2 data-splitting>HTL Spengergasse</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+                diam nonummy nibh euismod tincidunt ut laoreet dolore magna
+                aliquam erat volutpat. Ut wisi enim ad minim veniam
+              </p>
+            </div>
+          </div>
+          <div class="education-item">
+            <time class="timeThree">2017</time>
+            <div class="education-three item">
+              <h2 data-splitting>Voklsschule</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+                diam nonummy nibh euismod tincidunt ut laoreet dolore magna
+                aliquam erat volutpat. Ut wisi enim ad minim veniam
+              </p>
+            </div>
+          </div>
+        </div>
       </section>
       <!--     -----------------------Contact------------------------ -->
       <section class="contact-container container" id="contact-container">
         <h1 class="container-title contact-title">contact</h1>
       </section>
     </main>
-
     <script
       src="https://kit.fontawesome.com/ac259ec328.js"
       crossorigin="anonymous"

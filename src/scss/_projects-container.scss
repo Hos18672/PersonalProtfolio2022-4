@@ -1,26 +1,28 @@
-.projects-container{
+.projects-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height:fit-content;
+    height: fit-content;
     overflow: hidden;
-    
-    & h1{
-        font-size:$font-size-60;
+
+    & h1 {
+        font-size: $font-size-60;
     }
+
     ul {
         padding: 50px 5px;
-       & li {
-            position:relative;
+
+        & li {
+            position: relative;
             list-style: none;
             width: 3px;
             background-color: $background-color-dark-black;
             color: $font-color-black;
             margin: 0 auto;
             padding-top: 50px;
-            
-            &  time {
+
+            & time {
                 font-weight: bold;
                 font-size: $font-size-50;
                 display: block;
@@ -28,24 +30,28 @@
                 margin-bottom: 30px;
                 margin-left: 50px;
             }
-            &  .timeTwo {
+
+            & .timeTwo {
                 margin-left: -195px;
             }
-            &  .timeFour {
+
+            & .timeFour {
                 margin-left: -195px;
             }
+
             &::after {
                 background: $background-color-dark-black;
                 content: '';
                 width: 25px;
                 height: 25px;
                 border-radius: 50%;
-                position:absolute;
-                left:50%;
+                position: absolute;
+                left: 50%;
                 transform: translateX(-50%);
                 top: 0px;
-                }
-            & div{
+            }
+
+            & div {
                 position: relative;
                 width: 350px;
                 padding: 10px;
@@ -54,71 +60,82 @@
                 padding-bottom: 20px;
                 background: $background-color-White;
                 box-shadow: 6px 9px 35px -10px rgba(53, 53, 53, 0.24);
-                &:hover{
-                    box-shadow: 6px 9px 44px -14px rgba(0,0,0,0.64);
-                    transform:scale(1.2)
+
+                &:hover {
+                    box-shadow: 6px 9px 44px -14px rgba(0, 0, 0, 0.64);
+                    transform: scale(1.2)
                 }
-                & h2{
+
+                & h2 {
                     color: $font-color-black;
                     margin-left: 10px;
                 }
-                &  p {
+
+                & p {
                     color: $font-color-black;
-                    font-size:$font-size-20;
+                    font-size: $font-size-20;
                     padding: 10px;
                 }
-                &  a{
+
+                & a {
                     cursor: pointer;
-                    font-size:$font-size-25;
-                    padding:15px;
-                    &:hover{
-                       color: $font-color-red;
-                       font-size:$font-size-25;
-                       transform:scale(1.2)
+                    font-size: $font-size-25;
+                    padding: 15px;
+
+                    &:hover {
+                        color: $font-color-red;
+                        font-size: $font-size-25;
+                        transform: scale(1.2)
                     }
 
                 }
             }
+
             &:nth-child(odd) div {
                 left: 45px;
             }
+
             &:nth-child(even) div {
                 left: -410px;
             }
-            & img{
+
+            & img {
                 max-width: 100%;
                 border-radius: 10px;
                 background-color: $background-color-aliceblue-blue;
             }
-      
+
             & div {
                 visibility: hidden;
                 opacity: 0;
                 transition: all .5s ease-in-out;
             }
-              
+
             &:nth-child(odd) div {
                 transform: translate3d(200px, 200px, 0);
             }
-            
+
             &:nth-child(even) div {
                 transform: translate3d(-200px, 200px, 0);
-                  @media screen and (max-width: 750px) {
-                   transform: translate3d(200px,200px, 0);
-              }
-            }   	
+
+                @media screen and (max-width: 750px) {
+                    transform: translate3d(200px, 200px, 0);
+                }
+            }
         }
+
         li.show div {
             transform: none;
             visibility: visible;
             opacity: 1;
         }
     }
-    
+
     @media screen and (max-width: $media-width-980px) {
         ul li div {
             width: 250px;
         }
+
         ul li:nth-child(even) div {
             left: -309px;
         }
@@ -126,79 +143,99 @@
 
     @media screen and (max-width: $media-width-750px) {
         align-items: start;
-        div{
-            margin-left:20px;
-            h1{
-                font-size:$font-size-60;
+
+        div {
+            margin-left: 20px;
+
+            h1 {
+                font-size: $font-size-60;
             }
+
             ul {
                 position: relative;
                 left: 10px;
-            & li {
-                padding-bottom: 40px;
-                    &  time {
-                    font-size: $font-size-40;
-                    margin-left: 65px;
-                    }
-                    &  .timeTwo {
+
+                & li {
+                    padding-bottom: 40px;
+
+                    & time {
+                        font-size: $font-size-40;
                         margin-left: 65px;
                     }
-                    &  .timeFour {
+
+                    & .timeTwo {
                         margin-left: 65px;
                     }
-                    & div{
+
+                    & .timeFour {
+                        margin-left: 65px;
+                    }
+
+                    & div {
                         width: 250px;
                         padding-bottom: 20px;
-                        &  p {
-                            font-size:$font-size-20;
+
+                        & p {
+                            font-size: $font-size-20;
                             padding: 10px;
                         }
 
-                        &  a{
+                        & a {
                             cursor: pointer;
-                            font-size:$font-size-20;
+                            font-size: $font-size-20;
                         }
                     }
+
                     &:nth-child(odd) div {
                         left: 45px;
-                        
+
                     }
+
                     &:nth-child(even) div {
                         left: 45px;
-                    }    	
+                    }
                 }
             }
         }
     }
+
     @media screen and (max-width: $media-width-450px) {
         align-items: start;
-        h1{
-            font-size:$font-size-40;
+
+        h1 {
+            font-size: $font-size-40;
         }
-        div{
-            margin-left:0px;
-          
+
+        div {
+            margin-left: 0px;
+
             ul {
                 position: relative;
                 left: 10px;
-            & li {
-                padding-bottom: 40px;
-                    &  time {
-                    font-size: $font-size-40;
-                    padding-top:5px;
-                    margin-left: 45px;
-                    }
-                    &  .timeTwo {
+
+                & li {
+                    padding-bottom: 40px;
+
+                    & time {
+                        font-size: $font-size-40;
+                        padding-top: 5px;
                         margin-left: 45px;
                     }
-                    &  .timeFour {
+
+                    & .timeTwo {
                         margin-left: 45px;
                     }
-                    & div{
+
+                    & .timeFour {
+                        margin-left: 45px;
+                    }
+
+                    & div {
                         width: 200px;
                         padding-bottom: 20px;
-                        &  p {
-                            font-size:$font-size-15;
+
+                        & p {
+                            font-size: $font-size-15;
                             padding: 10px;
                         }
                     }

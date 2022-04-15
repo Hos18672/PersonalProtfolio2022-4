@@ -1,90 +1,102 @@
-.landing-page{
+.landing-page {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    & > h1{
+
+    &>h1 {
         margin-top: 10px;
         font-size: $font-size-60;
         transition: .5s;
- 
-        animation: nameAnimation .8s linear ;
+
+        animation: nameAnimation .8s linear;
         z-index: 3;
     }
-    & > img {
+
+    &>img {
         z-index: 3;
         margin-top: 20px;
         width: 300px;
         position: relative;
-        transition: .5s ;
-        animation:  fotoAnimation .8s linear;
+        transition: .5s;
+        animation: fotoAnimation .8s linear;
     }
-    & > img:hover{
-      transform: scale(1.1);
-      filter: drop-shadow(10px 20px 30px rgba(55, 55, 55, 0.23));
+
+    &>img:hover {
+        transform: scale(1.1);
+        filter: drop-shadow(10px 20px 30px rgba(55, 55, 55, 0.23));
     }
 
 
 }
 
 @media only screen and(max-width: $media-width-850px) {
-    .landing-page{
-       
-        & > h1{
-            font-size: $font-size-60;     
+    .landing-page {
+
+        &>h1 {
+            font-size: $font-size-60;
         }
-        & > img{
+
+        &>img {
             margin-top: 20px;
             width: 250px;
-   
-        }
-    }
-     
-  }
-@media only screen and(max-width: $media-width-450px) {
-    
-    .landing-page{
-       
-        & > h1{
-            font-size: $font-size-40;     
-        }
-        & > img{
-            width: 200px;         
-        }
-    }
-     
-  }
 
-@keyframes fotoAnimation {  
-    0%{
+        }
+    }
+
+}
+
+@media only screen and(max-width: $media-width-450px) {
+
+    .landing-page {
+
+        &>h1 {
+            font-size: $font-size-40;
+        }
+
+        &>img {
+            width: 200px;
+        }
+    }
+
+}
+
+@keyframes fotoAnimation {
+    0% {
         opacity: 0;
         transform: scale(0);
     }
-    50%{
+
+    50% {
         opacity: 30%;
         transform: scale(.35);
     }
-    75%{
+
+    75% {
         opacity: 60%;
         transform: scale(.75);
     }
-    100%{
+
+    100% {
         opacity: 100%;
         transform: scale(1);
     }
 }
 
-@keyframes nameAnimation {  
-    0%{
+@keyframes nameAnimation {
+    0% {
         transform: scale(0);
     }
-    50%{
+
+    50% {
         transform: scale(.35);
     }
-    75%{
+
+    75% {
         transform: scale(.75);
     }
-    100%{
+
+    100% {
         transform: scale(1);
     }
 }
