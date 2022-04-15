@@ -5,16 +5,20 @@
     align-items: center;
     height: fit-content;
     padding-bottom: 50px;
+
     & .container {
         height: fit-content;
+
         & .screen .screen-body {
             display: flex;
+
             & .screen-body-item {
                 & .app-contact {
                     margin-top: 400px;
                     font-size: 25px;
                     transition: 0.5s;
                 }
+
                 & .app-title {
                     display: flex;
                     flex-direction: column;
@@ -26,88 +30,96 @@
                     font-weight: 900;
                     line-height: 30px;
                     transition: 0.5s;
-                    & > div:nth-child(1){
+
+                    &>div:nth-child(1) {
                         margin-top: 45px;
                     }
                 }
+
                 & .app-form {
                     width: 350px;
-                    height:720px;
+                    height: 720px;
                     background-image: url(src/images/iphone1.png);
                     background-size: cover;
                     transition: 0.5s;
                     filter: drop-shadow(1px 10px 10px rgba(64, 64, 64, 0.23));
-                    & .app-from-container{
-                    border-radius: 44px;
-                    padding:30px;
-                    display:flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    align-items: center;
-                    position: relative;
-                    padding-top: 140px;
-                    margin:5px;
-                    margin-bottom: 13px;
-                    margin-left: 30px;
-                    & .app-form-group {
-                        z-index: 111;
-                        margin-bottom: 15px;
-                        margin-left: -15px;
-                        & textarea {
-                            background-color: $background-color-red;
-                            height: 100px;
-                            max-height: 200px;
-                            min-height: 100px;
-                            max-width: 250px;
-                            min-width: 250px;
-                        }
-                        & .app-form-control {
-                            width: 260px;
-                            padding: 10px 0;
-                            background: none;
-                            border: none;
-                            border-bottom: 1px solid #666;
-                            font-size: 14px;
-                            font-weight: 600;
-                            outline: none;
-                            transition: border-color .2s;
-                            &::placeholder {
-                                color: #666;
-                            }
-                            &:focus {
-                                border-bottom-color: #ddd;
-                            }
-                        }
-                        
-                       & .app-form-button {  
-                            background: none;
-                            border: none;
-                            min-width: 200px;
-                            font-size: 14px;
-                            font-weight: 700;
-                            cursor: pointer;
-                            outline: none;
-                            padding: 10px;
-                            width: 100%;
-                            margin: 0 auto;
-                            border-radius: 5px;
-                            background-color: black;
-                            color: white;
-                            position: relative;
-                            bottom: -140px;
 
-                            &:hover {
+                    & .app-from-container {
+                        border-radius: 44px;
+                        padding: 30px;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        position: relative;
+                        padding-top: 140px;
+                        margin: 5px;
+                        margin-bottom: 13px;
+                        margin-left: 30px;
+
+                        & .app-form-group {
+                            z-index: 111;
+                            margin-bottom: 15px;
+                            margin-left: -15px;
+
+                            & textarea {
+                                background-color: $background-color-red;
+                                height: 100px;
+                                max-height: 200px;
+                                min-height: 100px;
+                                max-width: 250px;
+                                min-width: 250px;
+                            }
+
+                            & .app-form-control {
+                                width: 260px;
+                                padding: 10px 0;
+                                background: none;
+                                border: none;
+                                border-bottom: 1px solid #666;
+                                font-size: 14px;
+                                font-weight: 600;
+                                outline: none;
+                                transition: border-color .2s;
+
+                                &::placeholder {
+                                    color: #666;
+                                }
+
+                                &:focus {
+                                    border-bottom-color: #ddd;
+                                }
+                            }
+
+                            & .app-form-button {
+                                background: none;
+                                border: none;
+                                min-width: 200px;
+                                font-size: 14px;
+                                font-weight: 700;
+                                cursor: pointer;
+                                outline: none;
+                                padding: 10px;
+                                width: 100%;
+                                margin: 0 auto;
+                                border-radius: 5px;
+                                background-color: black;
                                 color: white;
-                                -webkit-box-shadow: 5px 5px 50px 5px rgba(165, 165, 165, 0.267);
-                                box-shadow: 5px 5px 50px 5px rgba(151, 151, 151, 0.322);
-                                transform: scale(1.02);
-                                transition: 0.3s ease-out;
-                            }
-                        }
+                                position: relative;
+                                bottom: -140px;
 
+                                &:hover {
+                                    color: white;
+                                    -webkit-box-shadow: 5px 5px 50px 5px rgba(165, 165, 165, 0.267);
+                                    box-shadow: 5px 5px 50px 5px rgba(151, 151, 151, 0.322);
+                                    transform: scale(1.02);
+                                    transition: 0.3s ease-out;
+                                }
+                            }
+
+                        }
                     }
                 }
-             }
             }
         }
     }
@@ -117,74 +129,86 @@
             & .screen .screen-body {
                 display: flex;
                 flex-direction: column;
-                    & .left{
-                        justify-content: start;
-                        height:280px;
-                        padding:10px;
-                        & .app-contact {
-                            margin-top: 40px;
-                            font-size: 25px;
-                        }
+
+                & .left {
+                    justify-content: start;
+                    height: 280px;
+                    padding: 10px;
+
+                    & .app-contact {
+                        margin-top: 40px;
+                        font-size: 25px;
                     }
-                & .screen-body-item{
+                }
+
+                & .screen-body-item {
                     & .app-form {
                         width: 290px;
-                        height:600px;
+                        height: 600px;
                         filter: drop-shadow(1px 10px 10px rgba(64, 64, 64, 0.23));
-                        & .app-from-container{
-                        & .app-form-group {
-                            & input{
-                                max-width: 200px;
-                                min-width: 200px;
-                            }
-                            & textarea {
-                                height: 10px;
-                                max-height: 170px;
-                                min-height: 100px;
-                                max-width: 200px;
-                                min-width: 200px;
-                            }
-                            & .app-form-control {
-                                width: 260px;
-                                &::placeholder {
-                                    color: #666;
+
+                        & .app-from-container {
+                            & .app-form-group {
+                                & input {
+                                    max-width: 200px;
+                                    min-width: 200px;
                                 }
-                                &:focus {
-                                    border-bottom-color: #ddd;
+
+                                & textarea {
+                                    height: 10px;
+                                    max-height: 170px;
+                                    min-height: 100px;
+                                    max-width: 200px;
+                                    min-width: 200px;
                                 }
+
+                                & .app-form-control {
+                                    width: 260px;
+
+                                    &::placeholder {
+                                        color: #666;
+                                    }
+
+                                    &:focus {
+                                        border-bottom-color: #ddd;
+                                    }
+                                }
+
+                                & .app-form-button {
+                                    bottom: -100px;
+                                }
+
                             }
-                           & .app-form-button {  
-                                bottom: -100px;
-                            }
-    
                         }
                     }
-                 }
                 }
-                  
-                
+
+
             }
-         }
+        }
     }
+
     @media only screen and(max-width: $media-width-450px) {
         & .container {
             & .screen .screen-body {
                 display: flex;
                 flex-direction: column;
-                    & .left{
-                        justify-content: start;
-                        height:280px;
-                        & .app-title {
-                            font-size: 30px;
-                        }
-                        & .app-contact {
-                            margin-top: 40px;
-                            font-size: 20px;
-                        }
+
+                & .left {
+                    justify-content: start;
+                    height: 280px;
+
+                    & .app-title {
+                        font-size: 30px;
                     }
-                
+
+                    & .app-contact {
+                        margin-top: 40px;
+                        font-size: 20px;
+                    }
+                }
+
             }
-         }
+        }
     }
 }
-

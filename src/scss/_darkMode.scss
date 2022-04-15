@@ -12,7 +12,8 @@
         position: fixed;
         right: -1000px;
         top: -1000px;
-    }    
+    }
+
     ///////////////////////   header Container  /////////////////////////////////////////
     .header-container {
         width: 100%;
@@ -187,62 +188,23 @@
     ////////////////////////// Contact Container //////////////////////////////////////
 
     .contact-container {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        height: fit-content;
-        padding-bottom: 50px;
         & .container {
-            height: fit-content;
             & .screen .screen-body {
-                display: flex;
                 & .screen-body-item {
-                    & .app-contact {
-                        margin-top: 400px;
-                        font-size: 25px;
-                        transition: 0.5s;
-                    }
-                    & .app-title {
-                        display: flex;
-                        flex-direction: column;
-                        position: relative;
-                        padding-top: 25px;
-                        padding-bottom: 5px;
-                        position: relative;
-                        font-size: 40px;
-                        font-weight: 900;
-                        line-height: 30px;
-                        transition: 0.5s;
-                        & > div:nth-child(1){
-                            margin-top: 45px;
-                        }
-                    }
                     & .app-form {
-                        width: 350px;
-                        height:720px;
-                        background-image: url(src/images/iphone1.png);
-                        background-size: cover;
-                        transition: 0.5s;
                         filter: drop-shadow(10px 5px 3px rgba(0, 0, 0, 0.23));
-                 }
+                    }
                 }
             }
         }
-    
-    
     }
-    
-
-
-
 
     ////////////////////////// Footer Container //////////////////////////////////////
 
 
-    .footer{
-        & .line-one{
-            background-color:$background-color-dark-hell-1;
+    .footer {
+        & .line-one {
+            background-color: $background-color-dark-hell-1;
         }
     }
 
