@@ -26,8 +26,7 @@
                 }
 
                 & .nav-list {
-
-                    background-color: $background-color-dark-hell-1;
+                    background-color: $background-color-dark-hell-2;
                     box-shadow: 2px 5px 5px -5px $background-color-dark-hell-3;
 
                     & a {
@@ -192,9 +191,14 @@
 
 
 
+    ////////////////////////// Footer Container //////////////////////////////////////
 
 
-
+    .footer{
+        & .line-one{
+            background-color:$background-color-dark-hell-1;
+        }
+    }
 
 
 

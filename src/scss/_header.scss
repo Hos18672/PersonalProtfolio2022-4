@@ -86,6 +86,7 @@
                  display: block;
                  border-radius: 100px;
                  position: relative;
+                 background-color: $background-color-White;
                  border: 2px solid $background-color-dark-black;
                  z-index: 999;
              }
@@ -264,7 +265,7 @@
                  }
              }
 
-             &>.switch {
+             & .switch {
                  margin-right: 50px;
              }
          }

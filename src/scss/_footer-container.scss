@@ -1,0 +1,17 @@
+.footer{
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+    height:50vh;
+    & .line-one{
+        height:2px;
+        width:50%;
+        transition: 0.5s;
+        background-color:black;
+    }
+    & p{
+        font-size: $font-size-25;
+        transition: 0.5s;
+    }
+}
