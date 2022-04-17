@@ -11,12 +11,18 @@
 
         & .screen .screen-body {
             display: flex;
-
             & .screen-body-item {
+                width: fit-content;
+                margin-right: 50px;
                 & .app-contact {
                     margin-top: 400px;
-                    font-size: 25px;
+                    font-size: $font-size-25;
                     transition: 0.5s;
+                    line-height: 35px;;
+                    & i{
+                        margin-right: 5px;
+                        font-size: $font-size-20;
+                    }
                 }
 
                 & .app-title {
@@ -39,6 +45,7 @@
                 & .app-form {
                     width: 350px;
                     height: 720px;
+                    margin-left: 20%;
                     background-image: url(src/images/iphone1.png);
                     background-size: cover;
                     transition: 0.5s;
@@ -129,13 +136,16 @@
             & .screen .screen-body {
                 display: flex;
                 flex-direction: column;
+                justify-content: center;
 
                 & .left {
                     justify-content: start;
                     height: 280px;
-                    padding: 10px;
-
+                    min-width: 370px;
+                    width: fit-content;
+                    padding: 5px;
                     & .app-contact {
+                        width:fit-content;
                         margin-top: 40px;
                         font-size: 25px;
                     }
@@ -182,8 +192,6 @@
                         }
                     }
                 }
-
-
             }
         }
     }
@@ -193,20 +201,35 @@
             & .screen .screen-body {
                 display: flex;
                 flex-direction: column;
+                justify-content: center;
+                align-items: center;
 
                 & .left {
                     justify-content: start;
                     height: 280px;
-
+                    margin-left: 20%;
+                    min-width: 270px;
                     & .app-title {
                         font-size: 30px;
                     }
-
                     & .app-contact {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
                         margin-top: 40px;
                         font-size: 20px;
+                        font-size: $font-size-17;
+                        & i{
+                            font-size: $font-size-17;
+                        }
                     }
                 }
+                & .screen-body-item {
+                    & .app-form {
+                        margin-left: 5%;
+                    }
+                
+                }  
 
             }
         }

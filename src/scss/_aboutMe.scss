@@ -14,6 +14,7 @@
         transition: .5s all ease;
 
         &>.text-container {
+            transition-delay: 0s;
             display: flex;
             flex-direction: row;
             justify-content: space-between;
@@ -30,13 +31,14 @@
                 width: 500px;
 
                 &>h1 {
-                    transition: .5s;
+                    transition-delay: 0s;
+                    
                     font-size: $font-size-60;
                     margin-top: -10px;
                 }
 
                 &>p {
-                    transition: .5s;
+                    transition-delay: 0s;
                     font-size: $font-size-20;
                 }
             }

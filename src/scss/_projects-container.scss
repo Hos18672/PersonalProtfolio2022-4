@@ -143,14 +143,15 @@
 
     @media screen and (max-width: $media-width-750px) {
         align-items: start;
+        h1 {
+            font-size: $font-size-60;
+            margin-left: 30%;
+        }
 
         div {
             margin-left: 20px;
 
-            h1 {
-                font-size: $font-size-60;
-            }
-
+        
             ul {
                 position: relative;
                 left: 10px;

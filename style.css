@@ -479,10 +479,11 @@ main > .container {
 }
 .header-container > .h-container > .logo-container {
   margin-left: 50px;
+  transition: 0.2s;
 }
-.header-container > .h-container > .logo-container > .reza,
-.header-container > .h-container > .logo-container .hossaini {
+.header-container > .h-container > .logo-container span {
   font-size: 40px;
+  transition: 0s;
 }
 .header-container > .h-container > .logo-container > .hossaini {
   color: red;
@@ -516,9 +517,6 @@ main > .container {
 .header-container > .h-container > ul > .active {
   transition: 0.8s;
   border-bottom: 2px solid red;
-}
-.header-container > .h-container > ul > .dark-mode {
-  color: white;
 }
 .header-container > .h-container > .switch {
   display: flex;
@@ -690,6 +688,24 @@ main > .container {
   }
   100% {
     transform: translateY(0);
+  }
+}
+body {
+  transition: 0.4s;
+}
+
+@keyframes darkAnimation {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  99% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
   }
 }
 @media screen and (max-height: 600px) {
@@ -864,6 +880,7 @@ main > .container {
   transition: 0.5s all ease;
 }
 .about-container > .about-main-container > .text-container {
+  transition-delay: 0s;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -878,12 +895,12 @@ main > .container {
   width: 500px;
 }
 .about-container > .about-main-container > .text-container > .main-container > h1 {
-  transition: 0.5s;
+  transition-delay: 0s;
   font-size: 60px;
   margin-top: -10px;
 }
 .about-container > .about-main-container > .text-container > .main-container > p {
-  transition: 0.5s;
+  transition-delay: 0s;
   font-size: 20px;
 }
 .about-container > .about-main-container > img {
@@ -1076,11 +1093,12 @@ main > .container {
   .projects-container {
     align-items: start;
   }
+  .projects-container h1 {
+    font-size: 60px;
+    margin-left: 30%;
+  }
   .projects-container div {
     margin-left: 20px;
-  }
-  .projects-container div h1 {
-    font-size: 60px;
   }
   .projects-container div ul {
     position: relative;
@@ -1185,7 +1203,6 @@ main > .container {
 .works-container .works-items div.work-item {
   padding: 10px;
   border: 3px solid black;
-  transition: 0.5s;
   border-radius: 10px;
 }
 .works-container .works-items div.work-item div.item {
@@ -1208,11 +1225,19 @@ main > .container {
 }
 .works-container .works-items div.work-item div.item h2 {
   font-size: 30px;
-  transition: all 0s;
+  -webkit-transition: 0s;
+  -moz-transition: 0s;
+  -o-transition: 0s;
+  -ms-transition: 0s;
+  transition: 0s;
 }
 .works-container .works-items div.work-item div.item p {
   font-size: 20px;
-  transition: all 0s;
+  -webkit-transition: 0s;
+  -moz-transition: 0s;
+  -o-transition: 0s;
+  -ms-transition: 0s;
+  transition: 0s;
 }
 .works-container .works-items div.work-item::after {
   content: "";
@@ -1432,11 +1457,11 @@ main > .container {
 }
 .educations-container .education-items div.education-item div.item h2 {
   font-size: 30px;
-  transition: all 0s;
+  transition: 0s;
 }
 .educations-container .education-items div.education-item div.item p {
   font-size: 20px;
-  transition: all 0s;
+  transition: 0s;
 }
 .educations-container .education-items div.education-item div {
   transform: translate3d(0, 200px, 0);
@@ -1555,10 +1580,19 @@ main > .container {
 .contact-container .container .screen .screen-body {
   display: flex;
 }
+.contact-container .container .screen .screen-body .screen-body-item {
+  width: fit-content;
+  margin-right: 50px;
+}
 .contact-container .container .screen .screen-body .screen-body-item .app-contact {
   margin-top: 400px;
   font-size: 25px;
   transition: 0.5s;
+  line-height: 35px;
+}
+.contact-container .container .screen .screen-body .screen-body-item .app-contact i {
+  margin-right: 5px;
+  font-size: 20px;
 }
 .contact-container .container .screen .screen-body .screen-body-item .app-title {
   display: flex;
@@ -1578,6 +1612,7 @@ main > .container {
 .contact-container .container .screen .screen-body .screen-body-item .app-form {
   width: 350px;
   height: 720px;
+  margin-left: 20%;
   background-image: url(src/images/iphone1.png);
   background-size: cover;
   transition: 0.5s;
@@ -1654,13 +1689,17 @@ main > .container {
   .contact-container .container .screen .screen-body {
     display: flex;
     flex-direction: column;
+    justify-content: center;
   }
   .contact-container .container .screen .screen-body .left {
     justify-content: start;
     height: 280px;
-    padding: 10px;
+    min-width: 370px;
+    width: fit-content;
+    padding: 5px;
   }
   .contact-container .container .screen .screen-body .left .app-contact {
+    width: fit-content;
     margin-top: 40px;
     font-size: 25px;
   }
@@ -1697,17 +1736,31 @@ main > .container {
   .contact-container .container .screen .screen-body {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   .contact-container .container .screen .screen-body .left {
     justify-content: start;
     height: 280px;
+    margin-left: 20%;
+    min-width: 270px;
   }
   .contact-container .container .screen .screen-body .left .app-title {
     font-size: 30px;
   }
   .contact-container .container .screen .screen-body .left .app-contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     margin-top: 40px;
     font-size: 20px;
+    font-size: 17px;
+  }
+  .contact-container .container .screen .screen-body .left .app-contact i {
+    font-size: 17px;
+  }
+  .contact-container .container .screen .screen-body .screen-body-item .app-form {
+    margin-left: 5%;
   }
 }
 
@@ -1728,25 +1781,32 @@ main > .container {
   font-size: 25px;
   transition: 0.5s;
 }
+@media only screen and (max-width: 450px) {
+  .footer .line-one {
+    width: 80%;
+  }
+  .footer p {
+    font-size: 20px;
+  }
+}
 
 .dark-mode {
   background-color: #1d2528;
   color: white;
-  transition-delay: 0.5s;
-}
-.dark-mode .dark-container {
-  background-color: #1d2528;
-  z-index: -11;
-  width: 400vh;
-  height: 400vh;
-  border-radius: 50%;
-  position: fixed;
-  right: -1000px;
-  top: -1000px;
+  transition: 1s;
 }
 .dark-mode .header-container {
   width: 100%;
   display: flex;
+}
+.dark-mode .header-container > .h-container > ul {
+  width: 550px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.dark-mode .header-container > .h-container > ul > .nav-item a {
+  color: white;
 }
 .dark-mode .header-container > .h-container .hamburger-icon > div {
   background-color: white;
@@ -1763,15 +1823,26 @@ main > .container {
 }
 .dark-mode .landing-page {
   transition: none;
+  transition-delay: 0s;
 }
 .dark-mode .landing-page > h1 {
   transition: none;
+  transition-delay: 0s;
 }
 .dark-mode .landing-page .arrow-down {
   fill: white !important;
 }
+.dark-mode .about-container {
+  transition-delay: 0s;
+}
+.dark-mode .about-container > .about-main-container {
+  transition-delay: 0s;
+  transition: 0s;
+}
+.dark-mode .about-container > .about-main-container > .text-container {
+  transition-delay: 0s;
+}
 .dark-mode .about-container > .about-main-container > .text-container > .about-span {
-  transition: 0.5s;
   background-color: #37464d;
 }
 .dark-mode .projects-container ul li {
@@ -1800,11 +1871,24 @@ main > .container {
 .dark-mode .works-container .works-items div.work-item {
   padding: 10px;
   border: 3px solid #5b696f;
-  transition: all 0s;
 }
 .dark-mode .works-container .works-items div.work-item div.item {
   background-color: #232c31;
   box-shadow: 6px 9px 35px -10px rgba(0, 0, 0, 0.24);
+}
+.dark-mode .works-container .works-items div.work-item div.item h2 {
+  -webkit-transition: 0s;
+  -moz-transition: 0s;
+  -o-transition: 0s;
+  -ms-transition: 0s;
+  transition: 0s;
+}
+.dark-mode .works-container .works-items div.work-item div.item p {
+  -webkit-transition: 0s;
+  -moz-transition: 0s;
+  -o-transition: 0s;
+  -ms-transition: 0s;
+  transition: color 0s;
 }
 .dark-mode .works-container .works-items div.work-item::after {
   background-color: #37464d;

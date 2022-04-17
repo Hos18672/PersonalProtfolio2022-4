@@ -1,15 +1,11 @@
 const switchButton = document.getElementById("switch");
 var container = document.querySelector("#nav-list-container");
-var container2 = document.querySelector("#nav-list-container1");
 
 // Dark mode Switch onClick
 switchButton.addEventListener("click", () => {
   var element = document.body;
   element.classList.toggle("dark-mode");
-  var items = container.querySelectorAll(
-    ".nav-a-item , .nav-a-item1 , .nav-a-item2 , .nav-a-item3 , .nav-a-item4"
-  );
-  items.forEach((item) => item.classList.toggle("dark-mode"));
+
 });
 
 // Hamburger Icon onClick

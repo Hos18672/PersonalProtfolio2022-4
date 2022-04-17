@@ -19,15 +19,15 @@
 
          &>.logo-container {
              margin-left: 50px;
-
-             &>.reza,
-             .hossaini {
-                 font-size: $font-size-40;
+             transition: .2s;
+             & span{
+                font-size: $font-size-40;
+                transition: 0s;
              }
-
              &>.hossaini {
                  color: $font-color-red;
              }
+      
          }
 
          &>ul {
@@ -63,10 +63,6 @@
              &>.active {
                  transition: 0.8s;
                  border-bottom: 2px solid $background-color-red;
-             }
-
-             &>.dark-mode {
-                 color: $font-color-white;
              }
          }
 

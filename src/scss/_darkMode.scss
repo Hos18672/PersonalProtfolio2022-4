@@ -1,25 +1,26 @@
 .dark-mode {
     background-color: $background-color-dark-main;
     color: $font-color-white;
-    transition-delay: .5s;
-
-    & .dark-container {
-        background-color: $background-color-dark-main;
-        z-index: -11;
-        width: 400vh;
-        height: 400vh;
-        border-radius: 50%;
-        position: fixed;
-        right: -1000px;
-        top: -1000px;
-    }
-
+    transition: 1s;
     ///////////////////////   header Container  /////////////////////////////////////////
     .header-container {
         width: 100%;
         display: flex;
-
         &>.h-container {
+
+            &>ul {
+                width: 550px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+   
+                &>.nav-item {
+                    & a {
+                        color: white;
+                    }
+                   
+                }
+            }   
 
             & .hamburger-icon {
                 &>div {
@@ -47,9 +48,10 @@
     ///////////////////////   Landing Container  /////////////////////////////////////////
     .landing-page {
         transition: none;
-
+        transition-delay: 0s;
         &>h1 {
             transition: none;
+            transition-delay: 0s;
         }
 
         & .arrow-down {
@@ -60,10 +62,13 @@
 
     ///////////////////////   About Container  /////////////////////////////////////////
     .about-container {
+        transition-delay: 0s;
         &>.about-main-container {
+            transition-delay: 0s;
+            transition: 0s;
             &>.text-container {
+                transition-delay: 0s;
                 &>.about-span {
-                    transition: .5s;
                     background-color: $background-color-dark-hell-2;
                 }
             }
@@ -85,7 +90,6 @@
             & li div {
                 background-color: $background-color-dark-hell-4;
                 box-shadow: 6px 9px 35px -10px rgba(0, 0, 0, 0.24);
-
                 & h2 {
                     color: $font-color-white;
                 }
@@ -114,12 +118,27 @@
             & div.work-item {
                 padding: 10px;
                 border: 3px solid $background-color-dark-hell-1;
-                transition: all 0s;
+
 
                 & div.item {
-
                     background-color: $background-color-dark-hell-4;
                     box-shadow: 6px 9px 35px -10px rgba(0, 0, 0, 0.24);
+                    
+                    & h2 {    
+                        -webkit-transition: 0s;
+                        -moz-transition: 0s;
+                        -o-transition: 0s;
+                        -ms-transition: 0s;
+                        transition: 0s;
+                    }
+
+                    & p {                          
+                        -webkit-transition: 0s;
+                        -moz-transition: 0s;
+                        -o-transition: 0s;
+                        -ms-transition: 0s;
+                        transition: color 0s;
+                    }
 
                 }
 
@@ -210,7 +229,7 @@
 
 
 
-    ////////////////////////// //////////////////////////////////////
+    ////////////////////////////////////////////////////////////////
     .socials {
         &> :before {
             background: $background-color-dark-hell-1;

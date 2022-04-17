@@ -23,7 +23,8 @@
                 top: -45px;
                 left: 40%;
                 padding: 0px 5px;
-                border-radius: 5px;     border-radius: 5px;
+                border-radius: 5px;
+                border-radius: 5px;
                 background-color: $background-color-White;
 
             }
@@ -32,7 +33,6 @@
         & div.work-item {
             padding: 10px;
             border: 3px solid $background-color-dark-black;
-            transition: .5s;
             border-radius: 10px;
 
             & div.item {
@@ -56,12 +56,20 @@
 
                 & h2 {
                     font-size: $font-size-30;
-                    transition: all 0s;
+                    -webkit-transition: 0s;
+                    -moz-transition: 0s;
+                    -o-transition: 0s;
+                    -ms-transition: 0s;
+                    transition: 0s;
                 }
 
                 & p {
                     font-size: $font-size-20;
-                    transition: all 0s;
+                    -webkit-transition: 0s;
+                    -moz-transition: 0s;
+                    -o-transition: 0s;
+                    -ms-transition: 0s;
+                    transition: 0s;
                 }
             }
 

@@ -16,4 +16,13 @@
         font-size: $font-size-25;
         transition: 0.5s;
     }
+
+    @media only screen and(max-width: $media-width-450px) {
+        & .line-one {
+            width: 80%;
+        }
+        & p {
+            font-size: $font-size-20;
+        }
+    }
 }
