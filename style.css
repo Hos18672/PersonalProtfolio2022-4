@@ -1799,12 +1799,6 @@ body {
   width: 100%;
   display: flex;
 }
-.dark-mode .header-container > .h-container > ul {
-  width: 550px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
 .dark-mode .header-container > .h-container > ul > .nav-item a {
   color: white;
 }
