@@ -695,7 +695,7 @@ main > .container {
     justify-content: center;
   }
   .header-container > .h-container .switch {
-    margin-right: 50px;
+    margin-right: 30px;
   }
 }
 @keyframes headerAnimation {
