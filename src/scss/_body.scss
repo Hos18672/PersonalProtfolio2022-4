@@ -126,8 +126,8 @@ body{
     $text-shadow: ();
     @for $i from 0 through $count {
       $text-shadow: $text-shadow,
-                   (-.7+(random()) * 3) + em
-                   (-.7+(random()) * 3) + em
+                   (-.5+(random()) * 3) + em
+                   (-.5+(random()) * 3) + em
                    7px
                    hsla(random() * 360, 100%, 50%,.9);
     }
@@ -156,9 +156,9 @@ body{
 
   
   head::after {
-    @include dots(40);
+    @include dots(50);
     animation-duration: 41s;
-    animation-delay: -19s;
+    animation-delay: -29s;
   }
   
 

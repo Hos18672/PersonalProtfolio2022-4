@@ -539,7 +539,7 @@ main > .container {
   display: block;
   border-radius: 100px;
   position: relative;
-  background-color: white;
+  background-color: transparent;
   border: 2px solid black;
   z-index: 999;
 }
@@ -561,7 +561,7 @@ main > .container {
   visibility: hidden;
 }
 .header-container > .h-container > .switch > input:checked + label {
-  background: white;
+  background: transparent;
 }
 .header-container > .h-container > .switch > input:checked + label:after {
   left: calc(100% - 5px);
@@ -823,9 +823,9 @@ body::before, body::after {
 }
 
 head::after {
-  text-shadow: 1.3142230959em -0.2740472977em 7px hsla(249.3350277589deg, 100%, 50%, 0.9), 1.962437008em 0.327091869em 7px hsla(180.9171096565deg, 100%, 50%, 0.9), 1.0152437941em 0.5761283491em 7px hsla(102.6289434778deg, 100%, 50%, 0.9), 1.357642178em 0.8189769514em 7px hsla(181.2471921401deg, 100%, 50%, 0.9), 1.3451535061em 2.2777436785em 7px hsla(146.2109563224deg, 100%, 50%, 0.9), 0.9750774706em 0.8587237199em 7px hsla(230.236386855deg, 100%, 50%, 0.9), 1.835108088em 1.4289833089em 7px hsla(113.8701684223deg, 100%, 50%, 0.9), 1.3726327899em 0.0669739593em 7px hsla(133.7484891027deg, 100%, 50%, 0.9), -0.0873093731em 1.0480775097em 7px hsla(345.8395813586deg, 100%, 50%, 0.9), -0.5606372767em 2.252758379em 7px hsla(3.750669982deg, 100%, 50%, 0.9), 1.3623931903em 1.9145788836em 7px hsla(214.4259556651deg, 100%, 50%, 0.9), 1.3679970856em 0.4864173299em 7px hsla(277.0028859324deg, 100%, 50%, 0.9), -0.1239821794em 0.8501399435em 7px hsla(155.7843671907deg, 100%, 50%, 0.9), -0.0888898362em 2.1941084166em 7px hsla(289.8301527487deg, 100%, 50%, 0.9), 0.2128152575em 2.0329057755em 7px hsla(335.5083971549deg, 100%, 50%, 0.9), -0.4896432565em -0.2035567881em 7px hsla(200.3110904398deg, 100%, 50%, 0.9), 1.8636931047em 1.740834708em 7px hsla(142.6494643072deg, 100%, 50%, 0.9), 0.9770709373em 0.9727801778em 7px hsla(336.5155191419deg, 100%, 50%, 0.9), 0.3405687893em 2.1813670609em 7px hsla(52.4872913257deg, 100%, 50%, 0.9), -0.2471515794em -0.3468596042em 7px hsla(205.8174705836deg, 100%, 50%, 0.9), 1.8098736356em 1.2366181659em 7px hsla(332.0417528411deg, 100%, 50%, 0.9), -0.6453969105em 0.1330872128em 7px hsla(58.9736401442deg, 100%, 50%, 0.9), 1.5275205193em -0.0481371547em 7px hsla(185.5057829122deg, 100%, 50%, 0.9), -0.6655440877em 1.6409384287em 7px hsla(193.4205422274deg, 100%, 50%, 0.9), 2.2010653707em 1.203611968em 7px hsla(270.7236635939deg, 100%, 50%, 0.9), -0.3431590964em 2.018794065em 7px hsla(104.9776584562deg, 100%, 50%, 0.9), 1.4554961502em 1.0403954553em 7px hsla(52.1804677358deg, 100%, 50%, 0.9), 0.4620576941em 1.9748996858em 7px hsla(184.9598988209deg, 100%, 50%, 0.9), 0.2748571659em 1.4380633359em 7px hsla(243.8810898677deg, 100%, 50%, 0.9), 1.6776172949em 1.5637274209em 7px hsla(76.803584844deg, 100%, 50%, 0.9), 0.597912216em -0.1417409413em 7px hsla(99.0959686875deg, 100%, 50%, 0.9), 2.2291747773em 1.8248697078em 7px hsla(46.1968255258deg, 100%, 50%, 0.9), -0.2384691421em 0.7379646141em 7px hsla(128.1112729998deg, 100%, 50%, 0.9), 0.7188497114em 0.6277479381em 7px hsla(277.9362833094deg, 100%, 50%, 0.9), 0.2890505828em 1.3280544415em 7px hsla(314.0382735433deg, 100%, 50%, 0.9), 0.2003003517em 1.6922644997em 7px hsla(336.7526479765deg, 100%, 50%, 0.9), 0.0768204377em 0.5454350397em 7px hsla(254.1216493129deg, 100%, 50%, 0.9), -0.5519142312em 2.2557722567em 7px hsla(339.036283753deg, 100%, 50%, 0.9), 0.7401654486em 2.2974456265em 7px hsla(227.5700345072deg, 100%, 50%, 0.9), 0.3444986921em 0.9648777em 7px hsla(79.0152568932deg, 100%, 50%, 0.9), 1.4611874303em 1.813082267em 7px hsla(284.7463835689deg, 100%, 50%, 0.9);
+  text-shadow: 0.7985443504em 2.0350714168em 7px hsla(144.303008617deg, 100%, 50%, 0.9), 0.0405468581em 2.0458621627em 7px hsla(147.1254568457deg, 100%, 50%, 0.9), 0.5299174426em 0.873577937em 7px hsla(348.3985161358deg, 100%, 50%, 0.9), 1.4838694945em -0.1024460205em 7px hsla(244.5697036326deg, 100%, 50%, 0.9), 1.9210281111em 1.1887652698em 7px hsla(351.2862390605deg, 100%, 50%, 0.9), 0.4809157472em 1.5038533218em 7px hsla(105.5124677106deg, 100%, 50%, 0.9), 1.888206064em -0.1310004149em 7px hsla(314.1882582515deg, 100%, 50%, 0.9), 1.7209475603em 0.5662772247em 7px hsla(302.5097639147deg, 100%, 50%, 0.9), 1.5153492052em 1.9232899056em 7px hsla(48.0713343639deg, 100%, 50%, 0.9), 1.463237987em 1.7549056789em 7px hsla(344.594789336deg, 100%, 50%, 0.9), 1.2572698452em 1.5459785961em 7px hsla(304.2762231294deg, 100%, 50%, 0.9), 1.8309056836em 0.6362082338em 7px hsla(137.5386048629deg, 100%, 50%, 0.9), -0.1541040734em -0.0642539206em 7px hsla(182.5260282384deg, 100%, 50%, 0.9), 2.4640671053em 2.3298902088em 7px hsla(193.4530384132deg, 100%, 50%, 0.9), 0.7666335399em 1.5432028638em 7px hsla(283.5303517138deg, 100%, 50%, 0.9), 1.5975388883em 0.1157669945em 7px hsla(343.4677410976deg, 100%, 50%, 0.9), 0.2385373111em 0.4033560243em 7px hsla(115.0182784098deg, 100%, 50%, 0.9), 1.3849866633em 1.4884929705em 7px hsla(191.6920496953deg, 100%, 50%, 0.9), 0.7440419064em -0.0469724767em 7px hsla(326.8668498928deg, 100%, 50%, 0.9), 2.1593974254em 1.7604701963em 7px hsla(339.6217271658deg, 100%, 50%, 0.9), 0.5554812264em 2.025027092em 7px hsla(323.9555490938deg, 100%, 50%, 0.9), -0.0169416329em 1.9059436351em 7px hsla(290.6201863635deg, 100%, 50%, 0.9), 1.8590914458em 0.0858596127em 7px hsla(155.9556307101deg, 100%, 50%, 0.9), -0.1315931373em 1.8401664657em 7px hsla(24.0618948608deg, 100%, 50%, 0.9), 2.2026571707em 1.5488290844em 7px hsla(101.5118265746deg, 100%, 50%, 0.9), 0.2389052575em 1.3290540882em 7px hsla(349.5264397605deg, 100%, 50%, 0.9), 0.5489465852em 0.8890866668em 7px hsla(30.3173401702deg, 100%, 50%, 0.9), 1.0134163678em 0.9803712074em 7px hsla(176.9174127372deg, 100%, 50%, 0.9), 1.4207204438em 0.3236812098em 7px hsla(21.5673602141deg, 100%, 50%, 0.9), -0.1802417284em 1.5087254905em 7px hsla(218.7678839496deg, 100%, 50%, 0.9), 0.4447431719em 2.0371837889em 7px hsla(94.5485026438deg, 100%, 50%, 0.9), -0.443298594em 2.1575508041em 7px hsla(45.1986025254deg, 100%, 50%, 0.9), 2.4172149515em 0.9388501523em 7px hsla(74.9946377253deg, 100%, 50%, 0.9), 2.1762676254em 1.0348477344em 7px hsla(68.7752868378deg, 100%, 50%, 0.9), 0.2847839383em 1.4324668073em 7px hsla(155.8615580004deg, 100%, 50%, 0.9), 1.6538694473em -0.1492640605em 7px hsla(196.848312333deg, 100%, 50%, 0.9), 1.5158947325em 1.6422916295em 7px hsla(312.1017885406deg, 100%, 50%, 0.9), 1.0050271461em 0.9352722725em 7px hsla(58.289501342deg, 100%, 50%, 0.9), -0.3285019281em 1.2973463813em 7px hsla(358.7649998063deg, 100%, 50%, 0.9), 0.1645020381em 1.8424332146em 7px hsla(202.9896826948deg, 100%, 50%, 0.9), 0.6118639838em 0.0249325816em 7px hsla(218.5021839226deg, 100%, 50%, 0.9), 2.1363254814em 0.9162635849em 7px hsla(75.3037553033deg, 100%, 50%, 0.9), 0.803832221em 0.5375789436em 7px hsla(176.1290914325deg, 100%, 50%, 0.9), -0.2709593015em 0.5764334948em 7px hsla(146.2092384125deg, 100%, 50%, 0.9), -0.4518521239em 1.1418226733em 7px hsla(179.5512757671deg, 100%, 50%, 0.9), 0.8062181279em 0.7751931493em 7px hsla(59.1764472297deg, 100%, 50%, 0.9), -0.074335795em 1.3557698356em 7px hsla(92.0432846119deg, 100%, 50%, 0.9), 1.1182762383em 1.8380015077em 7px hsla(62.6320858671deg, 100%, 50%, 0.9), 2.177082441em 0.9064880698em 7px hsla(73.3392616165deg, 100%, 50%, 0.9), -0.1520869784em 0.8832804108em 7px hsla(42.4732071534deg, 100%, 50%, 0.9), 1.5475424917em 1.6116332846em 7px hsla(240.3186373618deg, 100%, 50%, 0.9);
   animation-duration: 41s;
-  animation-delay: -19s;
+  animation-delay: -29s;
 }
 
 @keyframes move {
@@ -917,7 +917,6 @@ head::after {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  z-index: -111111;
 }
 .about-container > .about-main-container {
   display: flex;
@@ -927,7 +926,6 @@ head::after {
   transform: translateY(150px);
   opacity: 0;
   transition: 0.5s all ease;
-  z-index: -111111;
 }
 .about-container > .about-main-container .text-container {
   color: black;
@@ -935,27 +933,22 @@ head::after {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  z-index: -111111;
 }
 .about-container > .about-main-container .text-container .about-span {
   background-color: black;
   width: 2px;
   height: 400px;
   margin: 0 30px;
-  z-index: -111111;
 }
 .about-container > .about-main-container .text-container > .main-container {
   width: 500px;
-  z-index: -111111;
 }
 .about-container > .about-main-container .text-container > .main-container > h1 {
   transition-delay: 0s;
-  z-index: -111111;
   font-size: 60px;
   margin-top: -10px;
 }
 .about-container > .about-main-container .text-container > .main-container > p {
-  z-index: -111111;
   font-size: 20px;
 }
 .about-container > .about-main-container > img {
@@ -1893,19 +1886,9 @@ head::after {
   }
   .contact-container .container .screen .screen-body .left .app-title {
     font-size: 30px;
-    color: black;
-  }
-  .contact-container .container .screen .screen-body .left .app-title > div {
-    color: black;
   }
   .contact-container .container .screen .screen-body .left .app-contact {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-top: 40px;
-    font-size: 20px;
     font-size: 17px;
-    color: black;
   }
   .contact-container .container .screen .screen-body .left .app-contact i {
     font-size: 17px;
@@ -1976,8 +1959,17 @@ head::after {
 .dark-mode .header-container > .h-container .hamburger-icon .nav-list a {
   color: white;
 }
-.dark-mode .header-container > .h-container > .switch > label {
-  border: 2px solid #5b696f;
+.dark-mode .header-container > .h-container .switch label {
+  background-color: transparent;
+  border: 2px solid white;
+}
+.dark-mode .header-container > .h-container .switch > input:checked + label:after {
+  left: calc(100% - 5px);
+  transform: translateX(-100%);
+  background-image: url(../src/images/moon.png);
+  filter: yellow;
+  -webkit-filter: invert(100%);
+  background-size: cover;
 }
 .dark-mode .landing-page {
   transition: none;

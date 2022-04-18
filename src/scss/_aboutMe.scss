@@ -3,7 +3,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    z-index: -111111;
+
     &>.about-main-container {
         display: flex;
         justify-content: center;
@@ -12,34 +12,29 @@
         transform: translateY(150px);
         opacity: 0;
         transition: .5s all ease;
-        z-index: -111111;
         & .text-container {
             color: black;
             transition-delay: 0s;
             display: flex;
             flex-direction: row;
             justify-content: space-between;
-            z-index: -111111;
+    
             & .about-span {
                 background-color: $background-color-dark-black;
                 width: 2px;
                 height: 400px;
                 margin: 0 30px;
-                z-index: -111111;  
             }
             &>.main-container {
                 width: 500px;
-                z-index: -111111;
                 &>h1 {
                     transition-delay: 0s;
-                    z-index: -111111;
                     font-size: $font-size-60;
                     margin-top: -10px;
                   
                 }
 
                 &>p {
-                    z-index: -111111;
                     font-size: $font-size-20;
 
                 }

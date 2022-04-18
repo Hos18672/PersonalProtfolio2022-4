@@ -99,7 +99,7 @@
                  display: block;
                  border-radius: 100px;
                  position: relative;
-                 background-color: $background-color-White;
+                 background-color: transparent;
                  border: 2px solid $background-color-dark-black;
                  z-index: 999;
              }
@@ -124,7 +124,7 @@
              }
 
              &>input:checked+label {
-                 background: $background-color-White;
+                 background: transparent;
              }
 
              &>input:checked+label:after {

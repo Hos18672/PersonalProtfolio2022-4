@@ -44,10 +44,21 @@
                 }
             }
 
-            &>.switch {
-                &>label {
-                    border: 2px solid $background-color-dark-hell-1;
+            & .switch {
+                & label {
+                    background-color: transparent;
+                    border: 2px solid $background-color-White;
                 }
+
+                
+             &>input:checked+label:after {
+                left: calc(100% - 5px);
+                transform: translateX(-100%);
+                background-image: url(../src/images/moon.png);
+                filter: yellow;
+                -webkit-filter: invert(100%);
+                background-size: cover;
+            }
             }
         }
     }
