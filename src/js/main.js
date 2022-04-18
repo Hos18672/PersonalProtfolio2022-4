@@ -27,7 +27,7 @@ for (var i = 0; i < it.length; i++) {
 
 // Scroll animation About Page
 function reveal() {
-  var reveals = document.querySelectorAll(".about-main-container, .work-item, .education-item");
+  var reveals = document.querySelectorAll(".about-main-container, .work-item, .education-item , .skills");
   for (var i = 0; i < reveals.length; i++) {
     var windowHeight = window.innerHeight;
     var elementTop = reveals[i].getBoundingClientRect().top;

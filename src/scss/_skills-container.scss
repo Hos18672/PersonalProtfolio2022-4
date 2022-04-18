@@ -12,7 +12,10 @@
         font-size: $font-size-60;
         transition:  0.5s linear ease-in-out;
     }
-
+    .skills.active {
+        transform: translateY(0);
+        opacity: 1;
+    }
     & .skills{
         display:flex;
         justify-content:center;;
@@ -20,7 +23,9 @@
         flex-direction:row;
         flex-wrap: wrap;
         max-width: 600px;
-        transition:  0.5s linear ease-in-out;
+        transform: translateY(150px);
+        opacity: 0;
+        transition: .5s all ease;
         & .skill{
             display:flex;
             justify-content:center;;
@@ -89,3 +94,4 @@
     	}
     }
 }
+

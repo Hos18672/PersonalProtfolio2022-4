@@ -1589,6 +1589,10 @@ body {
   font-size: 60px;
   transition: 0.5s linear ease-in-out;
 }
+.skills-container .skills.active {
+  transform: translateY(0);
+  opacity: 1;
+}
 .skills-container .skills {
   display: flex;
   justify-content: center;
@@ -1596,7 +1600,9 @@ body {
   flex-direction: row;
   flex-wrap: wrap;
   max-width: 600px;
-  transition: 0.5s linear ease-in-out;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 0.5s all ease;
 }
 .skills-container .skills .skill {
   display: flex;
