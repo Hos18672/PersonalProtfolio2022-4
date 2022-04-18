@@ -1,5 +1,16 @@
 const switchButton = document.getElementById("switch");
 var container = document.querySelector("#nav-list-container");
+var navbar = document.querySelector('.h-container')
+var con = document.getElementById("nav-list-container");
+var it = con.getElementsByClassName("nav-item");
+var items = document.querySelectorAll("li");
+var navbar = document.getElementById("h-container")
+var work_item = document.querySelector(".work-one")
+
+
+var windowHeight = window.innerHeight;
+var navbar1 = navbar.getBoundingClientRect().bottom;
+var elementVisible = 60;
 
 // Dark mode Switch onClick
 switchButton.addEventListener("click", () => {
@@ -8,12 +19,11 @@ switchButton.addEventListener("click", () => {
 
 });
 
+
 // Hamburger Icon onClick
 function toggleButton(menu) {
   menu.classList.toggle("open");
 }
-var con = document.getElementById("nav-list-container");
-var it = con.getElementsByClassName("nav-item");
 
 for (var i = 0; i < it.length; i++) {
   it[i].addEventListener("click", function () {
@@ -44,8 +54,6 @@ function reveal() {
 // Scroll animation Projects Page
 window.addEventListener("scroll", reveal);
 
-var items = document.querySelectorAll("li");
-
 function isItemInView(item) {
   var rect = item.getBoundingClientRect();
   return (
@@ -55,7 +63,6 @@ function isItemInView(item) {
   );
 }
 
-var navbar = document.getElementById("h-container")
 
 function callbackFunc() {
   for (var i = 0; i < items.length; i++) {
@@ -65,9 +72,6 @@ function callbackFunc() {
       items[i].classList.remove("show");
     }
   }
-  var windowHeight = window.innerHeight;
-  var navbar1 = navbar.getBoundingClientRect().bottom;
-  var elementVisible = 60;
 
   if (navbar1 < windowHeight - elementVisible) {
     navbar1.classList.add("scrolled");
@@ -82,10 +86,8 @@ window.addEventListener("load", callbackFunc);
 window.addEventListener("resize", callbackFunc);
 window.addEventListener("scroll", callbackFunc);
 
-var navbar = document.querySelector('.h-container')
 
 window.onscroll = function() {
-
   // pageYOffset or scrollY
   if (window.pageYOffset > 0) {
     navbar.classList.add('scrolled')
@@ -93,3 +95,6 @@ window.onscroll = function() {
     navbar.classList.remove('scrolled')
   }
 }
+work_item.addEventListener("click", function(){
+  console.log("worked")
+})

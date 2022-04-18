@@ -6,11 +6,12 @@
     transition:  0.5s linear ease-in-out;
     height:100vh;
     min-height: fit-content;
-    
+    z-index: 1;
 
     & h1 {   
         font-size: $font-size-60;
         transition:  0.5s linear ease-in-out;
+        color: $font-color-black;
     }
     .skills.active {
         transform: translateY(0);
@@ -60,6 +61,7 @@
         }
         & span{
             font-size: $font-size-30;
+            color: $font-color-black;
         }
     }
     @media screen and (max-width: $media-width-600px) {

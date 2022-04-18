@@ -5,9 +5,10 @@
     align-items: center;
     height: fit-content;
     overflow: hidden;
-
+    z-index: 1;
     & h1 {
         font-size: $font-size-60;
+        color: $font-color-black;
     }
 
     ul {
@@ -69,6 +70,7 @@
                 & h2 {
                     color: $font-color-black;
                     margin-left: 10px;
+                    font-size: $font-size-30;
                 }
 
                 & p {

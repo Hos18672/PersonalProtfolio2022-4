@@ -86,13 +86,15 @@ body{
         transform: scale(1.2);
         color: $background-color-blue-1;
     }
- 
+    & a::before{
+        font-size: 20px;
+    }
 
     & a:nth-child(1)::before,a:nth-child(2)::before,a:nth-child(3)::before{
         content:"LinkedIn";
         position: absolute;
         right: 0px;
-        font-size: 1.5em;
+        font-size: inherit;
         font-weight: 700;
         transition:0.6s;
         opacity: 0;
@@ -118,7 +120,55 @@ body{
 
 
 }
+///////////////// body background animation ///////////////////////////////////
+
+@mixin dots($count) {
+    $text-shadow: ();
+    @for $i from 0 through $count {
+      $text-shadow: $text-shadow,
+                   (-.7+(random()) * 3) + em
+                   (-.7+(random()) * 3) + em
+                   7px
+                   hsla(random() * 360, 100%, 50%,.9);
+    }
+    text-shadow: $text-shadow;
+  }
+  
+
+  body, head {
+    display: block;
+    color: transparent;
+  }
+  
+  head::before, head::after,
+  body::before, body::after {
+    position: fixed;
+    font-size: 52px;
+    top: 50%;
+    left: 50%;
+    width: 3em;
+    height: 3em;
+    content: '.';
+    z-index: -1111;
+    animation: 44s -27s move infinite ease-in-out alternate;
+  }
+  
+
+  
+  head::after {
+    @include dots(40);
+    animation-duration: 41s;
+    animation-delay: -19s;
+  }
+  
 
 
-
+  @keyframes move {
+    from {
+      transform: rotate(0deg) scale(12) translateX(-20px);
+    }
+    to {
+      transform: rotate(360deg) scale(18) translateX(20px);
+    }
+  }
   

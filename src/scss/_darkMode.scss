@@ -12,7 +12,7 @@
         &>.h-container {
             & .logo-container{
                 & .reza {
-                    color:white;
+                    color:$font-color-white;
                 }     
                 & .hossaini{
                     font-weight: 700;
@@ -59,6 +59,7 @@
         &>h1 {
             transition: none;
             transition-delay: 0s;
+            color: $font-color-white;
         }
 
         & .arrow-down {
@@ -70,9 +71,14 @@
     ///////////////////////   About Container  /////////////////////////////////////////
     .about-container {
         &>.about-main-container {
-            &>.text-container {
+            & >.text-container {
                 &>.about-span {
                     background-color: $background-color-dark-hell-2;
+                    color:$font-color-white;
+                }
+
+                & .main-container{
+                    color:$font-color-white;
                 }
             }
         }
@@ -80,6 +86,9 @@
 
     ///////////////////////   Projects Container  /////////////////////////////////////////
     .projects-container {
+        & h1{
+            color: $font-color-white;
+        }
         ul {
             & li {
                 background-color: $background-color-dark-hell-1;
@@ -111,36 +120,32 @@
 
     ///////////////////////   Works Container  /////////////////////////////////////////
     .works-container {
+        & h1{
+            color:$font-color-white;
+        }
         & .works-items {
             & .work-item {
                 & time {
                     background-color: $background-color-dark-hell-2;
+                    color:$font-color-white;
                 }
             }
 
             & div.work-item {
                 padding: 10px;
                 border: 3px solid $background-color-dark-hell-1;
-
+               
 
                 & div.item {
                     background-color: $background-color-dark-hell-4;
                     box-shadow: 6px 9px 35px -10px rgba(0, 0, 0, 0.24);
                     
                     & h2 {    
-                        -webkit-transition: 0s;
-                        -moz-transition: 0s;
-                        -o-transition: 0s;
-                        -ms-transition: 0s;
-                        transition: 0s;
+                        color:$font-color-white;
                     }
 
                     & p {                          
-                        -webkit-transition: 0s;
-                        -moz-transition: 0s;
-                        -o-transition: 0s;
-                        -ms-transition: 0s;
-                        transition: color 0s;
+                        color:$font-color-white;
                     }
 
                 }
@@ -189,6 +194,9 @@
     ////////////////////////// Education Container //////////////////////////////////////
 
     .educations-container {
+        & h1{
+            color:$font-color-white;
+        }
         & .education-items {
             & .education-item {
                 & time {
@@ -197,11 +205,21 @@
                 }
             }
 
-            & div.education-item {
-                & div.item {
+            & .education-item {
+
+            
+                & .item {
                     background-color: $background-color-dark-hell-4;
                     box-shadow: 6px 9px 35px -10px rgba(0, 0, 0, 0.24);
+                    &  h2{
+                        color:$font-color-white;
+                    }
+                    &  p{
+                        color:$font-color-white;
+                    }
                 }
+              
+
 
             }
         }
@@ -210,6 +228,10 @@
 
     ////////////////////////// Skills Container //////////////////////////////////////
     .skills-container {
+
+        & h1{
+            color: $font-color-white;
+        }
         & .skills{
             & .skill{
 
@@ -228,8 +250,15 @@
         & .container {
             & .screen .screen-body {
                 & .screen-body-item {
+                    & .app-title{
+                           color:$font-color-white;
+                    }
+                    & .app-contact{
+                        color:$font-color-white;
+                 }
                     & .app-form {
                         filter: drop-shadow(10px 5px 3px rgba(0, 0, 0, 0.23));
+                        
                     }
                 }
             }
@@ -243,6 +272,10 @@
         & .line-one {
             background-color: $background-color-dark-hell-1;
         }
+        & p{
+            color:$font-color-white;
+        }
+
     }
 
 

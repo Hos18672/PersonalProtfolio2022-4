@@ -9,6 +9,7 @@
         transition: .5s;
         animation: nameAnimation .8s linear;
         z-index: 3;
+        color: $font-color-black;
     }
 
     &>img {

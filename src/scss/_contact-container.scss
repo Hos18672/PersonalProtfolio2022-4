@@ -14,11 +14,14 @@
             & .screen-body-item {
                 width: fit-content;
                 margin-right: 50px;
+                color: $font-color-black;
                 & .app-contact {
                     margin-top: 400px;
                     font-size: $font-size-25;
                     transition: 0.5s;
-                    line-height: 35px;;
+                    line-height: 35px;
+                    z-index: -11;
+                    
                     & i{
                         margin-right: 5px;
                         font-size: $font-size-20;
@@ -36,6 +39,8 @@
                     font-weight: 900;
                     line-height: 30px;
                     transition: 0.5s;
+                    z-index: -1111;
+                    color: $font-color-black;
 
                     &>div:nth-child(1) {
                         margin-top: 45px;
@@ -203,7 +208,7 @@
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
-
+                color: $font-color-black;
                 & .left {
                     justify-content: start;
                     height: 280px;
@@ -211,6 +216,10 @@
                     min-width: 270px;
                     & .app-title {
                         font-size: 30px;
+                        color: $font-color-black;
+                        & > div{
+                            color: $font-color-black;
+                        }
                     }
                     & .app-contact {
                         display: flex;
@@ -219,6 +228,7 @@
                         margin-top: 40px;
                         font-size: 20px;
                         font-size: $font-size-17;
+                        color: $font-color-black;
                         & i{
                             font-size: $font-size-17;
                         }
