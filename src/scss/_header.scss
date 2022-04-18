@@ -22,7 +22,7 @@
         height:80px;
         transition: .5s;
          &>.logo-container {
-             margin-left: 50px;
+             margin-left: 40px;
              transition: .2s;
              & span{
                 font-size: $font-size-40;
@@ -34,11 +34,12 @@
       
          }
 
-         &>ul {
-             width: 550px;
+         & ul {
+             width: fit-content;
              display: flex;
              justify-content: space-between;
              align-items: center;
+             padding-left: 0;
 
              & >.nav-item {
                 font-weight: bold;
@@ -62,7 +63,7 @@
                     color: white;
                     position: absolute;
                     border-radius: 5px;
-                    background-color: #031D44;
+                    background-color: $background-color-blue-1;
                   }
                   
                  &::before {
@@ -147,12 +148,12 @@
              }
          }
 
-         & > .hamburger-icon {
+         &  .hamburger-icon {
              & > .nav-list {
                 background-color: $background-color-White;
                 overflow: hidden;
                  margin-left:20px;
-                 z-index: 11111;
+                 z-index: 99999;
                  display: inline-block;
                  position: absolute;
                  flex-direction: column;
@@ -160,11 +161,10 @@
                  left: 50px;
                  width: 0;
                  height: 0;
-                 transition:  .4s;
+                transition:  .5s;
 
                  &>li {
                      display: none;
-                     transition: .4s;
                  }
              }
          }
@@ -188,25 +188,17 @@
              text-decoration: none;
              list-style: none;
              border-radius: 15px;
-             width: 200px;
-             height: 350px;
+             width: 250px;
+             height: 420px;
+             z-index: 99111999;
              box-shadow: 5px 9px 20px 1px $background-color-dark-hell-3;
-             animation: nav-list .5s linear ease-in-out;
+             animation: nav-list .5s linear ease-out;
 
              &>li {
                  display: block;
                  margin-left: 20px;
-                 margin-top: 15px;
-                 font-size: $font-size-30;
-             }
-
-             &>.nav-item:hover {
-                 transform: scale(1.1);
-
-                 &>a:hover {
-                     animation: animateItem .5s linear;
-                     border-bottom: 2px solid $background-color-red;
-                 }
+                 margin-top: 1px;
+                 font-size: $font-size-20;
              }
 
              &>.nav-item:active {
@@ -217,25 +209,6 @@
 
  }
 
- @keyframes nav-list {
-     0% {
-         width: 10px;
-         height: 10px;
-         border-radius: 50%;
-     }
-
-     50% {
-         width: 50px;
-         height: 50px;
-         border-radius: 10%;
-     }
-
-     100% {
-         width: 200px;
-         height: 350px;
-         border-radius: 0%;
-     }
- }
 
 
  @media only screen and(max-width: $media-width-850px) {
@@ -300,3 +273,21 @@
          transform: translateY(0);
      }
  }
+ @keyframes nav-list {
+    0% {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+    }
+
+    50% {
+        width: 50px;
+        height: 50px;
+        border-radius: 10%;
+    }
+
+    100% {
+        width: 200px;
+        border-radius: 5%;
+    }
+}

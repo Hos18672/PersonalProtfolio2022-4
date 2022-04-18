@@ -39,8 +39,6 @@
                     box-shadow: 0px 3px 34px 9px #05071862;
 
                     & a {
-                        -webkit-backdrop-filter: blur(50px);
-                        backdrop-filter: blur(50px);
                         color: $font-color-white;
                     }
                 }
@@ -209,6 +207,21 @@
         }
     }
 
+
+    ////////////////////////// Skills Container //////////////////////////////////////
+    .skills-container {
+        & .skills{
+            & .skill{
+
+                background-color:$background-color-dark-hell-4;
+                box-shadow: 6px 9px 15px 1px rgba(8, 8, 8, 0.172);
+            }
+            & span{
+                color: $font-color-white;
+            }
+        }
+    }
+
     ////////////////////////// Contact Container //////////////////////////////////////
 
     .contact-container {
@@ -242,6 +255,23 @@
 
         &> :after {
             background: $background-color-dark-hell-1;
+        }
+        & > a i{
+
+            color: $background-color-White;
+           
+        }
+        & a:hover{
+            color: $background-color-blue-1;
+        }
+        & > a i:hover{
+            transform: scale(1.2);
+            color: $background-color-blue-1;
+        }
+     
+        & a:nth-child(1)::before,a:nth-child(2)::before,a:nth-child(3)::before{
+            color: $font-color-white;
+            background-color:transparent;
         }
     }
 
