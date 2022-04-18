@@ -7,18 +7,6 @@ footer {
     box-sizing: border-box;
 }
 
-.dark-container {
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    ;
-    position: fixed;
-    right: 30px;
-    top: 30px;
-    transition: 0.7s;
-    z-index: -100;
-}
-
 ::-webkit-scrollbar {
     width: 15px;
     transition: 0.5s
@@ -46,16 +34,18 @@ footer {
 
 .container {
     height: 100vh;
+    padding: 0 30px;
 }
 
 main {
     display: flex;
     flex-direction: column;
-    padding: 0 30px;
 
-    &>.container {
+
+    & >.container {
         padding-top: 50px;
     }
+
 }
 
 .arrow-down {

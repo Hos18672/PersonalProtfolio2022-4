@@ -55,6 +55,8 @@ function isItemInView(item) {
   );
 }
 
+var navbar = document.getElementById("h-container")
+
 function callbackFunc() {
   for (var i = 0; i < items.length; i++) {
     if (isItemInView(items[i])) {
@@ -63,9 +65,31 @@ function callbackFunc() {
       items[i].classList.remove("show");
     }
   }
+  var windowHeight = window.innerHeight;
+  var navbar1 = navbar.getBoundingClientRect().bottom;
+  var elementVisible = 60;
+
+  if (navbar1 < windowHeight - elementVisible) {
+    navbar1.classList.add("scrolled");
+  } else {
+    navbar1.classList.remove("scrolled");
+  }
+
 }
 
 // listen for events
 window.addEventListener("load", callbackFunc);
 window.addEventListener("resize", callbackFunc);
 window.addEventListener("scroll", callbackFunc);
+
+var navbar = document.querySelector('.h-container')
+
+window.onscroll = function() {
+
+  // pageYOffset or scrollY
+  if (window.pageYOffset > 0) {
+    navbar.classList.add('scrolled')
+  } else {
+    navbar.classList.remove('scrolled')
+  }
+}
