@@ -35,14 +35,16 @@
       
          }
 
-         & ul {
+         & #nav-list-container {
              width: fit-content;
              display: flex;
+             flex-direction: row;
              justify-content: space-between;
              align-items: center;
              padding-left: 0;
+             z-index: 111;
 
-             & >.nav-item {
+             & li {
                 font-weight: bold;
                 font-size: $font-size-20;
                 text-transform: uppercase;
@@ -150,7 +152,7 @@
          }
 
          &  .hamburger-icon {
-             & > .nav-list {
+             & ul {
                 background-color: $background-color-White;
                 overflow: hidden;
                  margin-left:20px;
@@ -164,8 +166,13 @@
                  height: 0;
                 transition:  .5s;
 
-                 &>li {
+                 & li {
                      display: none;
+
+                     & a{
+                         font-size: $font-size-30;
+                         margin:10px ;
+                     }
                  }
              }
          }
@@ -182,28 +189,66 @@
              transform: rotate(45deg) translate(-6px, -8px)
          }
 
-         &>.open .nav-list {
+         & .open #nav-list-container1{
              display: flex;
              flex-direction: column;
              justify-content: center;
+             align-items: center;
              text-decoration: none;
              list-style: none;
              border-radius: 15px;
              width: 250px;
              height: 420px;
              z-index: 99111999;
+             padding:20px;
              box-shadow: 5px 9px 20px 1px $background-color-dark-hell-3;
              animation: nav-list .5s linear ease-out;
 
-             &>li {
+             & li {
                  display: block;
                  margin-left: 20px;
-                 margin-top: 1px;
+                 margin: 10px;
                  font-size: $font-size-20;
-             }
+                 &:hover {
+                    opacity: 1;
+                  }
+                  
+                  &::before {
+                    transition: 400ms;
+                    height: 5px;
+                    content: "";
+                    color: white;
+                    position: absolute;
+                    border-radius: 5px;
+                    background-color: $background-color-blue-1;
+                  }
+                  
+                 &::before {
+                    margin-top: 40px;
+                    width: 0%;
+                    max-width: 100px;
+                  }
 
-             &>.nav-item:active {
-                 transform: scale(.95);
+                  &:hover::before {
+                    width: 100%;
+                    max-width: 100px;
+                  }
+                  &:nth-child(4):hover::before {
+                    width: 100%;
+                    max-width: 150px;
+                  }
+                  &:nth-child(2):hover::before {
+                    width: 100%;
+                    max-width: 110px;
+                  }
+                  &:nth-child(5):hover::before {
+                    width: 100%;
+                    max-width: 80px;
+                  }
+                  &:nth-child(6):hover::before {
+                    width: 100%;
+                    max-width: 110px;
+                  }
              }
          }
      }
@@ -214,10 +259,7 @@
 
  @media only screen and(max-width: $media-width-850px) {
      .header-container {
-         position: absolute;
-         width: 100%;
-         height: 50px;
-         margin:0;
+
          .logo-container {
              display: none;
          }
@@ -232,31 +274,19 @@
                 width: 100%;
                 margin:0;
                 padding: 10px 0;
-             &>ul {
+             & #nav-list-container{
                  display: none;
              }
 
              &>.hamburger-icon {
                  display: block;
 
-                 &>div {
-                     width: 35px;
-                     height: 3px;
-                     margin: 6px 0;
-                     transition: 0.5s;
+                 & div {
                      background-color: $background-color-dark-black;
                  }
 
                  &>.hamburger-dark-mode {
                      background-color: $background-color-White;
-                 }
-
-                 &>.open .nav-list {
-                     overflow:hidden;
-                     font-size: $font-size-30;
-                     border-radius: 10px;
-                     display: flex;
-                     justify-content: center;
                  }
              }
 

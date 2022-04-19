@@ -483,14 +483,16 @@ main > .container {
 .header-container > .h-container > .logo-container > .hossaini {
   color: red;
 }
-.header-container > .h-container ul {
+.header-container > .h-container #nav-list-container {
   width: fit-content;
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
   padding-left: 0;
+  z-index: 111;
 }
-.header-container > .h-container ul > .nav-item {
+.header-container > .h-container #nav-list-container li {
   font-weight: bold;
   font-size: 20px;
   text-transform: uppercase;
@@ -501,10 +503,10 @@ main > .container {
   position: relative;
   opacity: 0.75;
 }
-.header-container > .h-container ul > .nav-item:hover {
+.header-container > .h-container #nav-list-container li:hover {
   opacity: 1;
 }
-.header-container > .h-container ul > .nav-item::before {
+.header-container > .h-container #nav-list-container li::before {
   transition: 400ms;
   height: 5px;
   content: "";
@@ -513,14 +515,14 @@ main > .container {
   border-radius: 5px;
   background-color: rgb(1, 196, 255);
 }
-.header-container > .h-container ul > .nav-item::before {
+.header-container > .h-container #nav-list-container li::before {
   width: 0%;
   bottom: 10px;
 }
-.header-container > .h-container ul > .nav-item:hover::before {
+.header-container > .h-container #nav-list-container li:hover::before {
   width: 100%;
 }
-.header-container > .h-container ul > .nav-item:active {
+.header-container > .h-container #nav-list-container > .nav-item:active {
   transform: scale(0.9);
 }
 .header-container > .h-container > .switch {
@@ -581,7 +583,7 @@ main > .container {
   transition: 0.4s;
   border-radius: 50px;
 }
-.header-container > .h-container .hamburger-icon > .nav-list {
+.header-container > .h-container .hamburger-icon ul {
   background-color: white;
   overflow: hidden;
   margin-left: 20px;
@@ -595,8 +597,12 @@ main > .container {
   height: 0;
   transition: 0.5s;
 }
-.header-container > .h-container .hamburger-icon > .nav-list > li {
+.header-container > .h-container .hamburger-icon ul li {
   display: none;
+}
+.header-container > .h-container .hamburger-icon ul li a {
+  font-size: 30px;
+  margin: 10px;
 }
 .header-container > .h-container > .open .bar1 {
   transform: rotate(-45deg) translate(-6px, 6px);
@@ -607,36 +613,66 @@ main > .container {
 .header-container > .h-container > .open .bar3 {
   transform: rotate(45deg) translate(-6px, -8px);
 }
-.header-container > .h-container > .open .nav-list {
+.header-container > .h-container .open #nav-list-container1 {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   text-decoration: none;
   list-style: none;
   border-radius: 15px;
   width: 250px;
   height: 420px;
   z-index: 99111999;
+  padding: 20px;
   box-shadow: 5px 9px 20px 1px rgba(103, 110, 113, 0.4039215686);
   animation: nav-list 0.5s linear ease-out;
 }
-.header-container > .h-container > .open .nav-list > li {
+.header-container > .h-container .open #nav-list-container1 li {
   display: block;
   margin-left: 20px;
-  margin-top: 1px;
+  margin: 10px;
   font-size: 20px;
 }
-.header-container > .h-container > .open .nav-list > .nav-item:active {
-  transform: scale(0.95);
+.header-container > .h-container .open #nav-list-container1 li:hover {
+  opacity: 1;
+}
+.header-container > .h-container .open #nav-list-container1 li::before {
+  transition: 400ms;
+  height: 5px;
+  content: "";
+  color: white;
+  position: absolute;
+  border-radius: 5px;
+  background-color: rgb(1, 196, 255);
+}
+.header-container > .h-container .open #nav-list-container1 li::before {
+  margin-top: 40px;
+  width: 0%;
+  max-width: 100px;
+}
+.header-container > .h-container .open #nav-list-container1 li:hover::before {
+  width: 100%;
+  max-width: 100px;
+}
+.header-container > .h-container .open #nav-list-container1 li:nth-child(4):hover::before {
+  width: 100%;
+  max-width: 150px;
+}
+.header-container > .h-container .open #nav-list-container1 li:nth-child(2):hover::before {
+  width: 100%;
+  max-width: 110px;
+}
+.header-container > .h-container .open #nav-list-container1 li:nth-child(5):hover::before {
+  width: 100%;
+  max-width: 80px;
+}
+.header-container > .h-container .open #nav-list-container1 li:nth-child(6):hover::before {
+  width: 100%;
+  max-width: 110px;
 }
 
 @media only screen and (max-width: 850px) {
-  .header-container {
-    position: absolute;
-    width: 100%;
-    height: 50px;
-    margin: 0;
-  }
   .header-container .logo-container {
     display: none;
   }
@@ -650,28 +686,17 @@ main > .container {
     margin: 0;
     padding: 10px 0;
   }
-  .header-container > .h-container > ul {
+  .header-container > .h-container #nav-list-container {
     display: none;
   }
   .header-container > .h-container > .hamburger-icon {
     display: block;
   }
-  .header-container > .h-container > .hamburger-icon > div {
-    width: 35px;
-    height: 3px;
-    margin: 6px 0;
-    transition: 0.5s;
+  .header-container > .h-container > .hamburger-icon div {
     background-color: black;
   }
   .header-container > .h-container > .hamburger-icon > .hamburger-dark-mode {
     background-color: white;
-  }
-  .header-container > .h-container > .hamburger-icon > .open .nav-list {
-    overflow: hidden;
-    font-size: 30px;
-    border-radius: 10px;
-    display: flex;
-    justify-content: center;
   }
   .header-container > .h-container .switch {
     margin-right: 30px;
@@ -823,7 +848,7 @@ body::before, body::after {
 }
 
 head::after {
-  text-shadow: 0.7985443504em 2.0350714168em 7px hsla(144.303008617deg, 100%, 50%, 0.9), 0.0405468581em 2.0458621627em 7px hsla(147.1254568457deg, 100%, 50%, 0.9), 0.5299174426em 0.873577937em 7px hsla(348.3985161358deg, 100%, 50%, 0.9), 1.4838694945em -0.1024460205em 7px hsla(244.5697036326deg, 100%, 50%, 0.9), 1.9210281111em 1.1887652698em 7px hsla(351.2862390605deg, 100%, 50%, 0.9), 0.4809157472em 1.5038533218em 7px hsla(105.5124677106deg, 100%, 50%, 0.9), 1.888206064em -0.1310004149em 7px hsla(314.1882582515deg, 100%, 50%, 0.9), 1.7209475603em 0.5662772247em 7px hsla(302.5097639147deg, 100%, 50%, 0.9), 1.5153492052em 1.9232899056em 7px hsla(48.0713343639deg, 100%, 50%, 0.9), 1.463237987em 1.7549056789em 7px hsla(344.594789336deg, 100%, 50%, 0.9), 1.2572698452em 1.5459785961em 7px hsla(304.2762231294deg, 100%, 50%, 0.9), 1.8309056836em 0.6362082338em 7px hsla(137.5386048629deg, 100%, 50%, 0.9), -0.1541040734em -0.0642539206em 7px hsla(182.5260282384deg, 100%, 50%, 0.9), 2.4640671053em 2.3298902088em 7px hsla(193.4530384132deg, 100%, 50%, 0.9), 0.7666335399em 1.5432028638em 7px hsla(283.5303517138deg, 100%, 50%, 0.9), 1.5975388883em 0.1157669945em 7px hsla(343.4677410976deg, 100%, 50%, 0.9), 0.2385373111em 0.4033560243em 7px hsla(115.0182784098deg, 100%, 50%, 0.9), 1.3849866633em 1.4884929705em 7px hsla(191.6920496953deg, 100%, 50%, 0.9), 0.7440419064em -0.0469724767em 7px hsla(326.8668498928deg, 100%, 50%, 0.9), 2.1593974254em 1.7604701963em 7px hsla(339.6217271658deg, 100%, 50%, 0.9), 0.5554812264em 2.025027092em 7px hsla(323.9555490938deg, 100%, 50%, 0.9), -0.0169416329em 1.9059436351em 7px hsla(290.6201863635deg, 100%, 50%, 0.9), 1.8590914458em 0.0858596127em 7px hsla(155.9556307101deg, 100%, 50%, 0.9), -0.1315931373em 1.8401664657em 7px hsla(24.0618948608deg, 100%, 50%, 0.9), 2.2026571707em 1.5488290844em 7px hsla(101.5118265746deg, 100%, 50%, 0.9), 0.2389052575em 1.3290540882em 7px hsla(349.5264397605deg, 100%, 50%, 0.9), 0.5489465852em 0.8890866668em 7px hsla(30.3173401702deg, 100%, 50%, 0.9), 1.0134163678em 0.9803712074em 7px hsla(176.9174127372deg, 100%, 50%, 0.9), 1.4207204438em 0.3236812098em 7px hsla(21.5673602141deg, 100%, 50%, 0.9), -0.1802417284em 1.5087254905em 7px hsla(218.7678839496deg, 100%, 50%, 0.9), 0.4447431719em 2.0371837889em 7px hsla(94.5485026438deg, 100%, 50%, 0.9), -0.443298594em 2.1575508041em 7px hsla(45.1986025254deg, 100%, 50%, 0.9), 2.4172149515em 0.9388501523em 7px hsla(74.9946377253deg, 100%, 50%, 0.9), 2.1762676254em 1.0348477344em 7px hsla(68.7752868378deg, 100%, 50%, 0.9), 0.2847839383em 1.4324668073em 7px hsla(155.8615580004deg, 100%, 50%, 0.9), 1.6538694473em -0.1492640605em 7px hsla(196.848312333deg, 100%, 50%, 0.9), 1.5158947325em 1.6422916295em 7px hsla(312.1017885406deg, 100%, 50%, 0.9), 1.0050271461em 0.9352722725em 7px hsla(58.289501342deg, 100%, 50%, 0.9), -0.3285019281em 1.2973463813em 7px hsla(358.7649998063deg, 100%, 50%, 0.9), 0.1645020381em 1.8424332146em 7px hsla(202.9896826948deg, 100%, 50%, 0.9), 0.6118639838em 0.0249325816em 7px hsla(218.5021839226deg, 100%, 50%, 0.9), 2.1363254814em 0.9162635849em 7px hsla(75.3037553033deg, 100%, 50%, 0.9), 0.803832221em 0.5375789436em 7px hsla(176.1290914325deg, 100%, 50%, 0.9), -0.2709593015em 0.5764334948em 7px hsla(146.2092384125deg, 100%, 50%, 0.9), -0.4518521239em 1.1418226733em 7px hsla(179.5512757671deg, 100%, 50%, 0.9), 0.8062181279em 0.7751931493em 7px hsla(59.1764472297deg, 100%, 50%, 0.9), -0.074335795em 1.3557698356em 7px hsla(92.0432846119deg, 100%, 50%, 0.9), 1.1182762383em 1.8380015077em 7px hsla(62.6320858671deg, 100%, 50%, 0.9), 2.177082441em 0.9064880698em 7px hsla(73.3392616165deg, 100%, 50%, 0.9), -0.1520869784em 0.8832804108em 7px hsla(42.4732071534deg, 100%, 50%, 0.9), 1.5475424917em 1.6116332846em 7px hsla(240.3186373618deg, 100%, 50%, 0.9);
+  text-shadow: 1.2016914533em 1.247610158em 7px hsla(294.687559649deg, 100%, 50%, 0.9), 1.9447725697em 1.2321110631em 7px hsla(271.9393662315deg, 100%, 50%, 0.9), -0.0767272245em 1.5259902314em 7px hsla(47.3901126497deg, 100%, 50%, 0.9), 2.4093014445em 0.5542739034em 7px hsla(160.9053251682deg, 100%, 50%, 0.9), 2.1378584353em 0.3562697839em 7px hsla(302.2927878607deg, 100%, 50%, 0.9), 2.0483107361em 0.8185752021em 7px hsla(298.4361144167deg, 100%, 50%, 0.9), 2.1361123086em 1.5568178677em 7px hsla(353.9185827188deg, 100%, 50%, 0.9), -0.1482124485em 1.7742615301em 7px hsla(165.5061863159deg, 100%, 50%, 0.9), -0.179716107em 0.3477029149em 7px hsla(31.8156025284deg, 100%, 50%, 0.9), -0.0282671448em 1.9953395057em 7px hsla(223.4152386707deg, 100%, 50%, 0.9), 0.9254353767em 2.2666381757em 7px hsla(105.675553439deg, 100%, 50%, 0.9), 2.2460192331em 0.1902359513em 7px hsla(352.4952720665deg, 100%, 50%, 0.9), 0.3913096957em 1.0905893535em 7px hsla(326.0946968028deg, 100%, 50%, 0.9), 0.8555083554em 1.5458460676em 7px hsla(165.9640933028deg, 100%, 50%, 0.9), -0.2355145914em 0.9878557153em 7px hsla(134.0890023328deg, 100%, 50%, 0.9), -0.0440519947em 2.3583141114em 7px hsla(176.4944883537deg, 100%, 50%, 0.9), 0.0056935474em 0.8025076001em 7px hsla(129.0311675871deg, 100%, 50%, 0.9), 1.652305548em -0.0427685518em 7px hsla(65.3892407827deg, 100%, 50%, 0.9), 2.317520728em 1.083499437em 7px hsla(186.2694575823deg, 100%, 50%, 0.9), 1.2249631515em 1.6450950955em 7px hsla(257.9174670211deg, 100%, 50%, 0.9), 1.496011495em 0.8590561507em 7px hsla(138.9621905861deg, 100%, 50%, 0.9), 2.1077400963em -0.4140957366em 7px hsla(273.1726931071deg, 100%, 50%, 0.9), 1.3957847573em -0.4593572454em 7px hsla(313.2324665143deg, 100%, 50%, 0.9), 0.7619048521em 0.5912638568em 7px hsla(116.0544801862deg, 100%, 50%, 0.9), 1.5469895469em 0.6186948913em 7px hsla(295.6755697798deg, 100%, 50%, 0.9), -0.2009327719em 0.8251080739em 7px hsla(160.2109236523deg, 100%, 50%, 0.9), 2.0333381344em -0.1042066104em 7px hsla(326.2913733965deg, 100%, 50%, 0.9), 1.0648065679em -0.395499207em 7px hsla(174.5738672385deg, 100%, 50%, 0.9), 0.0193920181em 0.3785082472em 7px hsla(269.4378454076deg, 100%, 50%, 0.9), 1.136444865em 2.047819946em 7px hsla(239.2632567924deg, 100%, 50%, 0.9), 0.6567405713em 0.6771906532em 7px hsla(2.2639960315deg, 100%, 50%, 0.9), 0.4684148607em 0.6264473914em 7px hsla(197.1944079314deg, 100%, 50%, 0.9), 0.3962188815em -0.3459754697em 7px hsla(69.3199727083deg, 100%, 50%, 0.9), 0.1828442898em 1.2265528185em 7px hsla(4.5403002858deg, 100%, 50%, 0.9), -0.1716999238em 2.2008693124em 7px hsla(114.2956067084deg, 100%, 50%, 0.9), 1.2332685508em 0.0574227309em 7px hsla(73.8918343353deg, 100%, 50%, 0.9), 1.9535173619em 1.7941753204em 7px hsla(277.4696235091deg, 100%, 50%, 0.9), 2.2958023214em 0.0263695818em 7px hsla(164.6199867636deg, 100%, 50%, 0.9), 2.2499597194em 1.1821377504em 7px hsla(134.1377117532deg, 100%, 50%, 0.9), 0.9012266353em -0.0268157713em 7px hsla(135.8622657299deg, 100%, 50%, 0.9), 0.1431978319em 0.925873108em 7px hsla(306.5417971513deg, 100%, 50%, 0.9), 1.977741164em -0.3602404574em 7px hsla(175.9050885259deg, 100%, 50%, 0.9), -0.2766151196em -0.2461984814em 7px hsla(258.709732226deg, 100%, 50%, 0.9), 0.7428054032em 2.1550104313em 7px hsla(143.2326190192deg, 100%, 50%, 0.9), 0.4589361565em -0.2974051908em 7px hsla(350.6532837455deg, 100%, 50%, 0.9), 0.8851444546em 2.0952469066em 7px hsla(69.2980929118deg, 100%, 50%, 0.9), 2.1187451602em 2.0115784002em 7px hsla(285.6758919735deg, 100%, 50%, 0.9), 2.0524797804em 1.8703005957em 7px hsla(2.3702175038deg, 100%, 50%, 0.9), 1.534732127em 1.2255913904em 7px hsla(332.557217619deg, 100%, 50%, 0.9), 2.3212570765em 2.063655653em 7px hsla(10.8224850197deg, 100%, 50%, 0.9), 0.0486047095em 2.4191248945em 7px hsla(268.7751278313deg, 100%, 50%, 0.9);
   animation-duration: 41s;
   animation-delay: -29s;
 }
@@ -1042,18 +1067,13 @@ head::after {
   padding-top: 50px;
 }
 .projects-container ul li time {
+  width: 300px;
   font-weight: bold;
   font-size: 50px;
   display: block;
   margin-top: -65px;
   margin-bottom: 30px;
   margin-left: 50px;
-}
-.projects-container ul li .timeTwo {
-  margin-left: -195px;
-}
-.projects-container ul li .timeFour {
-  margin-left: -195px;
 }
 .projects-container ul li::after {
   background: black;
@@ -1066,8 +1086,11 @@ head::after {
   transform: translateX(-50%);
   top: 0px;
 }
-.projects-container ul li div {
+.projects-container ul li .project-item {
   position: relative;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
   width: 350px;
   padding: 10px;
   border-radius: 10px;
@@ -1076,26 +1099,26 @@ head::after {
   background: white;
   box-shadow: 6px 9px 35px -10px rgba(53, 53, 53, 0.24);
 }
-.projects-container ul li div:hover {
+.projects-container ul li .project-item:hover {
   box-shadow: 6px 9px 44px -14px rgba(0, 0, 0, 0.64);
   transform: scale(1.2);
 }
-.projects-container ul li div h2 {
+.projects-container ul li .project-item h2 {
   color: black;
   margin-left: 10px;
   font-size: 30px;
 }
-.projects-container ul li div p {
+.projects-container ul li .project-item p {
   color: black;
   font-size: 20px;
   padding: 10px;
 }
-.projects-container ul li div a {
+.projects-container ul li .project-item a {
   cursor: pointer;
   font-size: 25px;
   padding: 15px;
 }
-.projects-container ul li div a:hover {
+.projects-container ul li .project-item a:hover {
   color: red;
   font-size: 25px;
   transform: scale(1.2);
@@ -1111,29 +1134,27 @@ head::after {
   border-radius: 10px;
   background-color: aliceblue;
 }
-.projects-container ul li div {
-  visibility: hidden;
-  opacity: 0;
-  transition: all 0.5s ease-in-out;
+.projects-container ul li:nth-child(even) time {
+  margin-left: -195px;
 }
-.projects-container ul li:nth-child(odd) div {
+.projects-container ul li:nth-child(odd) > .project-item {
   transform: translate3d(200px, 200px, 0);
 }
-.projects-container ul li:nth-child(even) div {
+.projects-container ul li:nth-child(even) .project-item {
   transform: translate3d(-200px, 200px, 0);
 }
 @media screen and (max-width: 750px) {
-  .projects-container ul li:nth-child(even) div {
+  .projects-container ul li:nth-child(even) .project-item {
     transform: translate3d(200px, 200px, 0);
   }
 }
-.projects-container ul li.show div {
+.projects-container ul li.active .project-item {
   transform: none;
   visibility: visible;
   opacity: 1;
 }
 @media screen and (max-width: 980px) {
-  .projects-container ul li div {
+  .projects-container ul li .project-item {
     width: 250px;
   }
   .projects-container ul li:nth-child(even) div {
@@ -1162,21 +1183,24 @@ head::after {
     font-size: 40px;
     margin-left: 65px;
   }
+  .projects-container div ul li:nth-child(even) time {
+    margin-left: 65px;
+  }
   .projects-container div ul li .timeTwo {
     margin-left: 65px;
   }
   .projects-container div ul li .timeFour {
     margin-left: 65px;
   }
-  .projects-container div ul li div {
+  .projects-container div ul li .project-item {
     width: 250px;
     padding-bottom: 20px;
   }
-  .projects-container div ul li div p {
+  .projects-container div ul li .project-item p {
     font-size: 20px;
     padding: 10px;
   }
-  .projects-container div ul li div a {
+  .projects-container div ul li .project-item a {
     cursor: pointer;
     font-size: 20px;
   }
@@ -1215,11 +1239,14 @@ head::after {
   .projects-container div ul li .timeFour {
     margin-left: 45px;
   }
-  .projects-container div ul li div {
-    width: 200px;
+  .projects-container div ul li .project-item {
+    width: 190px;
     padding-bottom: 20px;
   }
-  .projects-container div ul li div p {
+  .projects-container div ul li .project-item h2 {
+    font-size: 25px;
+  }
+  .projects-container div ul li .project-item p {
     font-size: 15px;
     padding: 10px;
   }
@@ -1247,7 +1274,7 @@ head::after {
   color: black;
   position: relative;
   top: -45px;
-  left: 40%;
+  left: 35%;
   padding: 0px 5px;
   border-radius: 5px;
   border-radius: 5px;
@@ -1370,7 +1397,7 @@ head::after {
   .works-container .works-items .work-item time {
     font-size: 50px;
     top: -45px;
-    left: 40%;
+    left: 30%;
   }
   .works-container .works-items div.work-item {
     padding: 10px;
@@ -1399,7 +1426,7 @@ head::after {
   .works-container .works-items .work-item time {
     font-size: 50px;
     top: -45px;
-    left: 35%;
+    left: 30%;
   }
   .works-container .works-items div.work-item {
     padding: 10px;
@@ -1431,7 +1458,7 @@ head::after {
   .works-container .works-items .work-item time {
     font-size: 40px;
     top: -37px;
-    left: 35%;
+    left: 25%;
   }
   .works-container .works-items div.work-item {
     padding: 10px;
@@ -1470,13 +1497,18 @@ head::after {
 .educations-container .education-items {
   position: relative;
 }
+.educations-container .education-items .education-item {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
 .educations-container .education-items .education-item time {
   font-weight: bold;
   font-size: 50px;
   color: black;
   position: relative;
   top: -45px;
-  left: 40%;
   padding: 0px 5px;
   border-radius: 5px;
   background-color: white;
@@ -1529,7 +1561,6 @@ head::after {
   .educations-container .education-items .education-item time {
     font-size: 50px;
     top: -45px;
-    left: 40%;
   }
   .educations-container .education-items div.education-item {
     padding: 10px;
@@ -1558,7 +1589,6 @@ head::after {
   .educations-container .education-items .education-item time {
     font-size: 50px;
     top: -45px;
-    left: 35%;
   }
   .educations-container .education-items div.education-item {
     padding: 10px;
@@ -1588,9 +1618,8 @@ head::after {
     margin: 50px;
   }
   .educations-container .education-items .education-item time {
-    font-size: 40px;
+    font-size: 30px;
     top: -37px;
-    left: 35%;
   }
   .educations-container .education-items div.education-item {
     padding: 10px;
@@ -1943,20 +1972,20 @@ head::after {
 .dark-mode .header-container > .h-container .logo-container .hossaini {
   font-weight: 700;
 }
-.dark-mode .header-container > .h-container > ul > .nav-item::before {
+.dark-mode .header-container > .h-container #nav-list-container li::before {
   background-color: #ff0000;
 }
-.dark-mode .header-container > .h-container > ul > .nav-item a {
+.dark-mode .header-container > .h-container #nav-list-container li a {
   color: white;
 }
-.dark-mode .header-container > .h-container .hamburger-icon > div {
+.dark-mode .header-container > .h-container .hamburger-icon div {
   background-color: white;
 }
-.dark-mode .header-container > .h-container .hamburger-icon .nav-list {
+.dark-mode .header-container > .h-container .hamburger-icon #nav-list-container1 {
   background-color: #37464d;
-  box-shadow: 0px 3px 34px 9px rgba(5, 7, 24, 0.3843137255);
+  box-shadow: 0px 3px 34px 9px rgba(32, 31, 31, 0.3843137255);
 }
-.dark-mode .header-container > .h-container .hamburger-icon .nav-list a {
+.dark-mode .header-container > .h-container .hamburger-icon #nav-list-container1 a {
   color: white;
 }
 .dark-mode .header-container > .h-container .switch label {
@@ -2118,7 +2147,9 @@ head::after {
   transform: scale(1.2);
   color: rgb(1, 196, 255);
 }
-.dark-mode .socials a:nth-child(1)::before, .dark-mode .socials a:nth-child(2)::before, .dark-mode .socials a:nth-child(3)::before {
+.dark-mode .socials a:nth-child(1)::before,
+.dark-mode .socials a:nth-child(2)::before,
+.dark-mode .socials a:nth-child(3)::before {
   color: white;
   background-color: transparent;
 }

@@ -1,9 +1,11 @@
+
 const switchButton = document.getElementById("switch");
 var container = document.querySelector("#nav-list-container");
 var navbar = document.querySelector('.h-container')
 var con = document.getElementById("nav-list-container");
 var it = con.getElementsByClassName("nav-item");
-var items = document.querySelectorAll("li");
+var ul = document.querySelector('ul')
+var items = ul.querySelectorAll("li");
 var navbar = document.getElementById("h-container")
 var work_item = document.querySelector(".work-one")
 
@@ -21,9 +23,14 @@ switchButton.addEventListener("click", () => {
 
 
 // Hamburger Icon onClick
-function toggleButton(menu) {
-  menu.classList.toggle("open");
-}
+
+
+let hm = document.querySelector('.hamburger-icon')
+hm.addEventListener("click", () => {
+  hm.classList.toggle("open");
+  console.log("click")
+})
+
 
 for (var i = 0; i < it.length; i++) {
   it[i].addEventListener("click", function () {
@@ -37,7 +44,7 @@ for (var i = 0; i < it.length; i++) {
 
 // Scroll animation About Page
 function reveal() {
-  var reveals = document.querySelectorAll(".about-main-container, .work-item, .education-item , .skills");
+  var reveals = document.querySelectorAll(".about-main-container, .work-item, .education-item , .skills, .project-list-item");
   for (var i = 0; i < reveals.length; i++) {
     var windowHeight = window.innerHeight;
     var elementTop = reveals[i].getBoundingClientRect().top;
@@ -95,6 +102,4 @@ window.onscroll = function() {
     navbar.classList.remove('scrolled')
   }
 }
-work_item.addEventListener("click", function(){
-  console.log("worked")
-})
+

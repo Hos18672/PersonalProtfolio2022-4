@@ -13,9 +13,7 @@
         <div class="h-container" id="h-container">
           <div
             class="hamburger-icon"
-            id="hamburger-icon"
-            onclick="toggleButton(this)"
-          >
+            id="hamburger-icon">
             <div class="bar1" id="bar1"></div>
             <div class="bar2" id="bar2"></div>
             <div class="bar3" id="bar3"></div>
@@ -127,14 +125,14 @@
         <div class="about-main-container">
           <img
             class="about-foto"
-            src="./src/images/foto2.png"
+            src='./src/images/foto2.png'
             alt="my Profile Photo"
           />
           <div class="text-container">
             <div class="about-span" id="about-span"></div>
             <div class="main-container">
               <h1 class="container-title landing-title">About me</h1>
-              <p>
+              <p class="about-description">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam,
                 facilis excepturi doloremque consectetur commodi perspiciatis
                 necessitatibus illum quis possimus laborum, quaerat provident?
@@ -150,60 +148,8 @@
         <h1 class="container-title projects-title">Projects</h1>
         <div>
           <div>
-            <ul>
-              <li class="projects-item">
-                <time class="timeOne">2022/3</time>
-                <div>
-                  <img class="portfolio-img" src="./src/images/portfolio.png" />
-                  <h2>Personal Portfolio</h2>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-                    sed diam nonummy nibh euismod tincidunt ut laoreet dolore
-                    magna aliquam erat volutpat. Ut wisi enim ad minim veniam
-                  </p>
-                  <a>Live</a>
-                  <span><a>Code</a></span>
-                </div>
-              </li>
-              <li class="projects-item">
-                <time class="timeTwo">2022/2</time>
-                <div>
-                  <img class="mnf-img" src="./src/images/mfn.png" />
-                  <h2>Android App</h2>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-                    sed diam nonummy nibh euismod tincidunt ut laoreet dolore
-                    magna aliquam erat volutpat. Ut wisi enim ad minim veniam
-                  </p>
-                  <span><a>Code</a></span>
-                </div>
-              </li>
-              <li class="projects-item">
-                <time class="timeThree">2021/12</time>
-                <div>
-                  <img class="cal-img" src="./src/images/cal.png" />
-                  <h2>Calculator</h2>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-                    sed diam nonummy nibh euismod tincidunt ut laoreet dolore
-                    magna aliquam erat volutpat. Ut wisi enim ad minim veniam
-                  </p>
-                  <a>Live</a>
-                  <span><a>Code</a></span>
-                </div>
-              </li>
-              <li class="projects-item">
-                <time class="timeFour">2021/11</time>
-                <div>
-                  <img class="graph-img" src="./src/images/graph.png" />
-                  <h2>Graph programm</h2>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-                    sed diam nonummy nibh euismod tincidunt ut laoreet dolore
-                    magna aliquam erat volutpat. Ut wisi enim ad minim veniam
-                  </p>
-                </div>
-              </li>
+            <ul class="projects-list" id="projects-list">
+ 
             </ul>
           </div>
         </div>
@@ -212,89 +158,13 @@
       <section class="works-container container" id="works-container">
         <h1 class="container-title works-title">works</h1>
         <div class="works-items">
-          <div class="work-item">
-            <time class="timeOne">2022</time>
-            <div class="work-one item">
-              <h2 >Liferando</h2>
-              <p>
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
-                diam nonummy nibh euismod tincidunt ut laoreet dolore magna
-                aliquam erat volutpat. Ut wisi enim ad minim veniam
-              </p>
-            </div>
-          </div>
-          <div class="work-item">
-            <time class="timeTwo">2021</time>
-            <div class="work-two item">
-              <h2>Reintegra</h2>
-              <p>
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
-                diam nonummy nibh euismod tincidunt ut laoreet dolore magna
-                aliquam erat volutpat. Ut wisi enim ad minim veniam
-              </p>
-            </div>
-          </div>
-          <div class="work-item">
-            <time class="timeThree">2021</time>
-            <div class="work-three item">
-              <h2>Bauhaus</h2>
-              <p>
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
-                diam nonummy nibh euismod tincidunt ut laoreet dolore magna
-                aliquam erat volutpat. Ut wisi enim ad minim veniam
-              </p>
-            </div>
-          </div>
-          <div class="work-item">
-            <time class="timeFour">2020</time>
-            <div class="work-four item">
-              <h2 >Praktikum</h2>
-              <p>
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
-                diam nonummy nibh euismod tincidunt ut laoreet dolore magna
-                aliquam erat volutpat. Ut wisi enim ad minim veniam
-              </p>
-            </div>
-          </div>
         </div>
       </section>
       <!--     ----------------------Educations---------------------- -->
       <section class="educations-container container" id="edu-container">
         <h1 class="container-title edu-title">Educations</h1>
         <div class="education-items">
-          <div class="education-item">
-            <time class="timeOne">2022</time>
-            <div class="education-one item">
-              <h2 >Coding School</h2>
-              <p>
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
-                diam nonummy nibh euismod tincidunt ut laoreet dolore magna
-                aliquam erat volutpat. Ut wisi enim ad minim veniam
-              </p>
-            </div>
-          </div>
-          <div class="education-item">
-            <time class="timeTwo">2021</time>
-            <div class="education-two item">
-              <h2 >HTL Spengergasse</h2>
-              <p>
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
-                diam nonummy nibh euismod tincidunt ut laoreet dolore magna
-                aliquam erat volutpat. Ut wisi enim ad minim veniam
-              </p>
-            </div>
-          </div>
-          <div class="education-item">
-            <time class="timeThree">2017</time>
-            <div class="education-three item">
-              <h2>Voklsschule</h2>
-              <p>
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
-                diam nonummy nibh euismod tincidunt ut laoreet dolore magna
-                aliquam erat volutpat. Ut wisi enim ad minim veniam
-              </p>
-            </div>
-          </div>
+          
         </div>
       </section>
 
@@ -323,8 +193,8 @@
                   <div>CONTACT</div><div>ME</div>
                 </div>
                 <div class="app-contact">CONTACT INFO
-                  <div><i class="fa-solid fa-phone"></i>  0670 / 4099219 </div>
-                  <div><i class="fa-solid fa-envelope"></i>  Hos18672@spengergasse.at </div>
+                  <div class="telefon"><i class="fa-solid fa-phone"></i>  </div>
+                  <div class="email"><i class="fa-solid fa-envelope"></i>   </div>
                 </div>
               </div>
               <div class="screen-body-item right">
@@ -359,8 +229,10 @@
     </main>
     <script
       src="https://kit.fontawesome.com/ac259ec328.js"
-      crossorigin="anonymous"
-    ></script>
-    <script src="../src/js/main.js"></script>
+      crossorigin="anonymous"></script>
+
+    <script src="src/js/db.js"></script>
+    <script src="src/js/main.js"></script>
+    <script type="module" src="src/js/setData.js"></script>
   </body>
 </html>

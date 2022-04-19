@@ -8,9 +8,9 @@
     z-index: 1;
     & h1 {
         font-size: $font-size-60;
+    
         color: $font-color-black;
     }
-
     ul {
         padding: 50px 5px;
 
@@ -24,6 +24,7 @@
             padding-top: 50px;
 
             & time {
+                width: 300px;
                 font-weight: bold;
                 font-size: $font-size-50;
                 display: block;
@@ -32,13 +33,6 @@
                 margin-left: 50px;
             }
 
-            & .timeTwo {
-                margin-left: -195px;
-            }
-
-            & .timeFour {
-                margin-left: -195px;
-            }
 
             &::after {
                 background: $background-color-dark-black;
@@ -52,8 +46,11 @@
                 top: 0px;
             }
 
-            & div {
+            & .project-item {
                 position: relative;
+                visibility: hidden;
+                opacity: 0;
+                transition: all .5s ease-in-out;
                 width: 350px;
                 padding: 10px;
                 border-radius: 10px;
@@ -107,17 +104,14 @@
                 background-color: $background-color-aliceblue-blue;
             }
 
-            & div {
-                visibility: hidden;
-                opacity: 0;
-                transition: all .5s ease-in-out;
+            &:nth-child(even) time{
+                margin-left: -195px;
             }
-
-            &:nth-child(odd) div {
+            &:nth-child(odd) > .project-item {
                 transform: translate3d(200px, 200px, 0);
             }
 
-            &:nth-child(even) div {
+            &:nth-child(even) .project-item {
                 transform: translate3d(-200px, 200px, 0);
 
                 @media screen and (max-width: 750px) {
@@ -126,15 +120,17 @@
             }
         }
 
-        li.show div {
+        & li.active  {
+            & .project-item {
             transform: none;
             visibility: visible;
             opacity: 1;
+            }
         }
     }
 
     @media screen and (max-width: $media-width-980px) {
-        ul li div {
+        ul li .project-item{
             width: 250px;
         }
 
@@ -165,6 +161,10 @@
                         font-size: $font-size-40;
                         margin-left: 65px;
                     }
+                    
+                    &:nth-child(even) time{
+                        margin-left: 65px;
+                    }
 
                     & .timeTwo {
                         margin-left: 65px;
@@ -174,7 +174,7 @@
                         margin-left: 65px;
                     }
 
-                    & div {
+                    & .project-item {
                         width: 250px;
                         padding-bottom: 20px;
 
@@ -233,10 +233,12 @@
                         margin-left: 45px;
                     }
 
-                    & div {
-                        width: 200px;
+                    & .project-item {
+                        width: 190px;
                         padding-bottom: 20px;
-
+                        & h2 {
+                            font-size: $font-size-25;
+                        }
                         & p {
                             font-size: $font-size-15;
                             padding: 10px;
@@ -246,6 +248,4 @@
             }
         }
     }
-
-
 }

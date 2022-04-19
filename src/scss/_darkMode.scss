@@ -2,41 +2,47 @@
     background-color: $background-color-dark-main;
     color: $font-color-white;
     transition: 1s;
+
     ///////////////////////   header Container  /////////////////////////////////////////
     .header-container {
         width: 100%;
         display: flex;
+
         & .h-container.scrolled {
             box-shadow: 0px 10px 13px -13px #000000, 5px 5px 150px 5px rgba(0, 0, 0, 0);
         }
+
         &>.h-container {
-            & .logo-container{
+            & .logo-container {
                 & .reza {
-                    color:$font-color-white;
-                }     
-                & .hossaini{
+                    color: $font-color-white;
+                }
+
+                & .hossaini {
                     font-weight: 700;
-                }         
+                }
             }
 
-            &>ul {
-                & >.nav-item {
-                      &::before {
+            & #nav-list-container {
+                & li {
+                    &::before {
                         background-color: #ff0000;
-                      }
-                      & a{
-                          color: $font-color-white;
-                      }
-                 }
-            }   
+                    }
+
+                    & a {
+                        color: $font-color-white;
+                    }
+                }
+            }
 
             & .hamburger-icon {
-                &>div {
+                & div {
                     background-color: $background-color-White;
                 }
-                & .nav-list {
+
+                & #nav-list-container1 {
                     background-color: $background-color-dark-hell-2;
-                    box-shadow: 0px 3px 34px 9px #05071862;
+                    box-shadow: 0px 3px 34px 9px #201f1f62;
 
                     & a {
                         color: $font-color-white;
@@ -50,15 +56,15 @@
                     border: 2px solid $background-color-White;
                 }
 
-                
-             &>input:checked+label:after {
-                left: calc(100% - 5px);
-                transform: translateX(-100%);
-                background-image: url(../src/images/moon.png);
-                filter: yellow;
-                -webkit-filter: invert(100%);
-                background-size: cover;
-            }
+
+                &>input:checked+label:after {
+                    left: calc(100% - 5px);
+                    transform: translateX(-100%);
+                    background-image: url(../src/images/moon.png);
+                    filter: yellow;
+                    -webkit-filter: invert(100%);
+                    background-size: cover;
+                }
             }
         }
     }
@@ -67,6 +73,7 @@
     .landing-page {
         transition: none;
         transition-delay: 0s;
+
         &>h1 {
             transition: none;
             transition-delay: 0s;
@@ -82,14 +89,14 @@
     ///////////////////////   About Container  /////////////////////////////////////////
     .about-container {
         &>.about-main-container {
-            & >.text-container {
+            &>.text-container {
                 &>.about-span {
                     background-color: $background-color-dark-hell-2;
-                    color:$font-color-white;
+                    color: $font-color-white;
                 }
 
-                & .main-container{
-                    color:$font-color-white;
+                & .main-container {
+                    color: $font-color-white;
                 }
             }
         }
@@ -97,9 +104,10 @@
 
     ///////////////////////   Projects Container  /////////////////////////////////////////
     .projects-container {
-        & h1{
+        & h1 {
             color: $font-color-white;
         }
+
         ul {
             & li {
                 background-color: $background-color-dark-hell-1;
@@ -113,6 +121,7 @@
             & li div {
                 background-color: $background-color-dark-hell-4;
                 box-shadow: 6px 9px 35px -10px rgba(0, 0, 0, 0.24);
+
                 & h2 {
                     color: $font-color-white;
                 }
@@ -131,32 +140,33 @@
 
     ///////////////////////   Works Container  /////////////////////////////////////////
     .works-container {
-        & h1{
-            color:$font-color-white;
+        & h1 {
+            color: $font-color-white;
         }
+
         & .works-items {
             & .work-item {
                 & time {
                     background-color: $background-color-dark-hell-2;
-                    color:$font-color-white;
+                    color: $font-color-white;
                 }
             }
 
             & div.work-item {
                 padding: 10px;
                 border: 3px solid $background-color-dark-hell-1;
-               
+
 
                 & div.item {
                     background-color: $background-color-dark-hell-4;
                     box-shadow: 6px 9px 35px -10px rgba(0, 0, 0, 0.24);
-                    
-                    & h2 {    
-                        color:$font-color-white;
+
+                    & h2 {
+                        color: $font-color-white;
                     }
 
-                    & p {                          
-                        color:$font-color-white;
+                    & p {
+                        color: $font-color-white;
                     }
 
                 }
@@ -205,9 +215,10 @@
     ////////////////////////// Education Container //////////////////////////////////////
 
     .educations-container {
-        & h1{
-            color:$font-color-white;
+        & h1 {
+            color: $font-color-white;
         }
+
         & .education-items {
             & .education-item {
                 & time {
@@ -218,18 +229,20 @@
 
             & .education-item {
 
-            
+
                 & .item {
                     background-color: $background-color-dark-hell-4;
                     box-shadow: 6px 9px 35px -10px rgba(0, 0, 0, 0.24);
-                    &  h2{
-                        color:$font-color-white;
+
+                    & h2 {
+                        color: $font-color-white;
                     }
-                    &  p{
-                        color:$font-color-white;
+
+                    & p {
+                        color: $font-color-white;
                     }
                 }
-              
+
 
 
             }
@@ -240,16 +253,18 @@
     ////////////////////////// Skills Container //////////////////////////////////////
     .skills-container {
 
-        & h1{
+        & h1 {
             color: $font-color-white;
         }
-        & .skills{
-            & .skill{
 
-                background-color:$background-color-dark-hell-4;
+        & .skills {
+            & .skill {
+
+                background-color: $background-color-dark-hell-4;
                 box-shadow: 6px 9px 15px 1px rgba(8, 8, 8, 0.172);
             }
-            & span{
+
+            & span {
                 color: $font-color-white;
             }
         }
@@ -261,15 +276,17 @@
         & .container {
             & .screen .screen-body {
                 & .screen-body-item {
-                    & .app-title{
-                           color:$font-color-white;
+                    & .app-title {
+                        color: $font-color-white;
                     }
-                    & .app-contact{
-                        color:$font-color-white;
-                 }
+
+                    & .app-contact {
+                        color: $font-color-white;
+                    }
+
                     & .app-form {
                         filter: drop-shadow(10px 5px 3px rgba(0, 0, 0, 0.23));
-                        
+
                     }
                 }
             }
@@ -283,8 +300,9 @@
         & .line-one {
             background-color: $background-color-dark-hell-1;
         }
-        & p{
-            color:$font-color-white;
+
+        & p {
+            color: $font-color-white;
         }
 
     }
@@ -300,40 +318,47 @@
         &> :after {
             background: $background-color-dark-hell-1;
         }
-        & > a i{
+
+        &>a i {
 
             color: $background-color-White;
-           
+
         }
-        & a:hover{
+
+        & a:hover {
             color: $background-color-blue-1;
         }
-        & > a i:hover{
+
+        &>a i:hover {
             transform: scale(1.2);
             color: $background-color-blue-1;
         }
-     
-        & a:nth-child(1)::before,a:nth-child(2)::before,a:nth-child(3)::before{
+
+        & a:nth-child(1)::before,
+        a:nth-child(2)::before,
+        a:nth-child(3)::before {
             color: $font-color-white;
-            background-color:transparent;
+            background-color: transparent;
         }
     }
 
 
-        @media only screen and(max-width: $media-width-850px) {
-            .header-container {
-                position: absolute;
-                width: 100%;
-                height: 50px;
-                margin:0;
-                .logo-container {
-                    display: none;
-                }
-                & .h-container.scrolled {
-                backdrop-filter:blur(0px);
+    @media only screen and(max-width: $media-width-850px) {
+        .header-container {
+            position: absolute;
+            width: 100%;
+            height: 50px;
+            margin: 0;
+
+            .logo-container {
+                display: none;
+            }
+
+            & .h-container.scrolled {
+                backdrop-filter: blur(0px);
                 box-shadow: 0px 0px 0px;
             }
-            
+
         }
     }
 }
