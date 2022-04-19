@@ -9,6 +9,7 @@
    & h1 {   
         font-size: $font-size-60;
         color: $font-color-black;
+        margin-bottom: 80px;
     }
  
     & .education-items {
@@ -26,7 +27,6 @@
                 top: -45px;
                 padding: 0px 5px;
                 border-radius: 5px;
-                background-color: $background-color-White;
             }
         }
 
@@ -84,11 +84,9 @@
     @media screen and (max-width: $media-width-850px) {
         & h1 {
             font-size: $font-size-60;
-            margin-left: 5%;
         }
 
         & .education-items {
-            margin: 50px;
 
             & .education-item {
                 & time {
@@ -131,7 +129,7 @@
             & .education-item {
 
                 & time {
-                    font-size: $font-size-50;
+                    font-size: $font-size-40;
                     top: -45px;
                 }
             }
@@ -140,8 +138,8 @@
                 padding: 10px;
 
                 & div.item {
+                    margin-left: 50px;
                     width: 250px;
-                    margin-left: 15px;
 
                     & h2 {
                         font-size: $font-size-25;
@@ -170,11 +168,13 @@
 
         & .education-items {
             margin: 50px;
-
+            margin-left: 40px;
             & .education-item {
+                margin-left: 50px;
                 & time {
                     font-size: $font-size-30;
                     top: -37px;
+                    left:-10px;
                 }
             }
 

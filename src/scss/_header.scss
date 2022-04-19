@@ -161,7 +161,7 @@
                  position: absolute;
                  flex-direction: column;
                  top: 70px;
-                 left: 50px;
+                 left: 40px;
                  width: 0;
                  height: 0;
                 transition:  .5s;
@@ -197,7 +197,7 @@
              text-decoration: none;
              list-style: none;
              border-radius: 15px;
-             width: 250px;
+             width: 220px;
              height: 420px;
              z-index: 99111999;
              padding:20px;
@@ -206,7 +206,7 @@
 
              & li {
                  display: block;
-                 margin-left: 20px;
+                 margin-left: 10px;
                  margin: 10px;
                  font-size: $font-size-20;
                  &:hover {
@@ -239,7 +239,7 @@
                   }
                   &:nth-child(2):hover::before {
                     width: 100%;
-                    max-width: 110px;
+                    max-width: 115px;
                   }
                   &:nth-child(5):hover::before {
                     width: 100%;
