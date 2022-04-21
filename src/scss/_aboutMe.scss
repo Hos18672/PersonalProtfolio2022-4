@@ -19,6 +19,7 @@
             display: flex;
             flex-direction: row;
             justify-content: space-between;
+            transform: uppercase;
 
             & .about-span {
                 background-color: $background-color-dark-black;
@@ -41,6 +42,7 @@
                     font-size: $font-size-60;
                     margin-top: -10px;
                     animation: textAnim 1.5s linear both;
+                    text-transform: uppercase;
                 }
 
                 & p {

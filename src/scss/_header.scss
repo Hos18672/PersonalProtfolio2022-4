@@ -96,12 +96,11 @@
              &>label {
                  cursor: pointer;
                  text-indent: -9999px;
-                 width: 70px;
-                 height: 30px;
+                 width: 60px;
+                 height: 25px;
                  display: block;
                  border-radius: 100px;
                  position: relative;
-                 background-color: transparent;
                  border: 2px solid $background-color-dark-black;
                  z-index: 999;
              }
@@ -111,8 +110,8 @@
                  position: absolute;
                  top: 5px;
                  left: 5px;
-                 width: 20px;
-                 height: 20px;
+                 width: 15px;
+                 height: 15px;
                  background-image: url(./src/images/sun.png);
                  background-size: cover;
                  border-radius: 90px;
@@ -161,9 +160,9 @@
                  position: absolute;
                  flex-direction: column;
                  top: 70px;
-                 left: 40px;
-                 width: 0;
-                 height: 0;
+                 left:-340px;
+                 width: 220px;
+                 height: 420px;
                 transition:  .5s;
 
                  & li {
@@ -197,6 +196,7 @@
              text-decoration: none;
              list-style: none;
              border-radius: 15px;
+             left:40px;
              width: 220px;
              height: 420px;
              z-index: 99111999;
@@ -252,75 +252,76 @@
              }
          }
      }
-     
-        @media only screen and(max-width: $media-width-850px) {
-
-            & .logo-container {
-                display: none;
-            }
-
-            & .h-container.scrolled {
-            transition: .5s;
-            backdrop-filter:blur(0px);
-            box-shadow: 0px 0px 0px;
-        }
-            &>.h-container {
-                width: 100%;
-                margin:0;
-                padding: 10px 0;
-                & #nav-list-container{
-                    display: none;
-                }
-
-                &>.hamburger-icon {
-                    display: block;
-
-                    & div {
-                        background-color: $background-color-dark-black;
-                    }
-
-                    &>.hamburger-dark-mode {
-                        background-color: $background-color-White;
-                    }
-                }
-
-                & .switch {
-                    margin-right: 30px;
-                }
-            }
-        }
-
-
-        @keyframes headerAnimation {
-        0% {
-            transform: translateY(-100px);
-        }
-
-        100% {
-
-            transform: translateY(0);
-        }
-        }
-        @keyframes nav-list {
-        0% {
-        width: 10px;
-        height: 10px;
-        border-radius: 50%;
-        }
-
-        50% {
-        width: 50px;
-        height: 50px;
-        border-radius: 10%;
-        }
-
-        100% {
-        width: 200px;
-        border-radius: 5%;
-        }
-        }
-
 
  }
 
 
+
+ @media only screen and(max-width: $media-width-850px) {
+     .header-container {
+
+         .logo-container {
+             display: none;
+         }
+
+         & .h-container.scrolled {
+     
+            transition: .5s;
+            backdrop-filter:blur(0px);
+            box-shadow: 0px 0px 0px;
+        }
+         &>.h-container {
+                width: 100%;
+                margin:0;
+                padding: 10px 0;
+             & #nav-list-container{
+                 display: none;
+             }
+
+             &>.hamburger-icon {
+                 display: block;
+
+                 & div {
+                     background-color: $background-color-dark-black;
+                 }
+
+                 &>.hamburger-dark-mode {
+                     background-color: $background-color-White;
+                 }
+             }
+
+             & .switch {
+                 margin-right: 30px;
+             }
+         }
+     }
+ }
+
+ @keyframes headerAnimation {
+     0% {
+         transform: translateY(-100px);
+     }
+
+     100% {
+
+         transform: translateY(0);
+     }
+ }
+ @keyframes nav-list {
+    0% {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+    }
+
+    50% {
+        width: 50px;
+        height: 50px;
+        border-radius: 10%;
+    }
+
+    100% {
+        width: 200px;
+        border-radius: 5%;
+    }
+}

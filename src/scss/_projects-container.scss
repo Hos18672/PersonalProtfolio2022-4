@@ -6,9 +6,12 @@
     height: fit-content;
     overflow: hidden;
     z-index: 1;
+    position: relative;
+    padding-top: 100px;
     & h1 {
         font-size: $font-size-60;
         color: $font-color-black;
+        text-transform: uppercase;
     }
     ul {
         padding: 50px 5px;

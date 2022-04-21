@@ -7,6 +7,9 @@ body {
     }
 }
 
+body.modalOpen{
+    overflow-y: hidden;
+}
 ///////////////// body background animation ///////////////////////////////////
 
 @mixin dots($count) {
