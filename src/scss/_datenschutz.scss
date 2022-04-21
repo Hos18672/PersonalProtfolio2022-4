@@ -11,8 +11,25 @@
         height: 100%; /* Full height */
         z-index: 111;
         transition: 0.5s;
-   
         backdrop-filter: blur(5px);
+        /* The Close Button */
+        & #closeDa{
+                    cursor: pointer;
+                    position: fixed !important;
+                    color: #aaaaaa;
+                    right:10%;
+                    font-size: $font-size-40;
+                    font-weight: bold;
+                    z-index: 11;
+                    &:hover,
+                    &:focus {
+                        color: #000;
+                        text-decoration: none;
+                        cursor: pointer;
+                        transform: scale(1.2);
+                    }
+        }
+        
         & .datenschutz-content{
             background-color: rgba(247, 247, 247, 0.881);
             backdrop-filter: blur(50px);
@@ -41,21 +58,6 @@
             }
             & ul{
                 font-size: $font-size-25;
-            }
-        }
-          /* The Close Button */
-         & #closeDa{
-            cursor: pointer;
-            color: #aaaaaa;
-            float: right;
-            font-size: $font-size-40;
-            font-weight: bold;
-            &:hover,
-            &:focus {
-                color: #000;
-                text-decoration: none;
-                cursor: pointer;
-                transform: scale(1.2);
             }
         }
 

@@ -821,7 +821,7 @@ body::before, body::after {
 }
 
 head::after {
-  text-shadow: 1.9753264404em -0.3577154327em 7px hsla(349.3042153737deg, 100%, 50%, 0.9), -0.1792421577em -0.0812507563em 7px hsla(220.6516302461deg, 100%, 50%, 0.9), 2.2074769778em 2.0174908673em 7px hsla(161.7987554048deg, 100%, 50%, 0.9), 2.2942417725em 0.3878057619em 7px hsla(243.0503241088deg, 100%, 50%, 0.9), -0.3705129901em 1.9111665777em 7px hsla(210.1575705725deg, 100%, 50%, 0.9), 2.4189796322em -0.2069091349em 7px hsla(21.593625131deg, 100%, 50%, 0.9), 0.0590314482em 0.6131301495em 7px hsla(136.6378668596deg, 100%, 50%, 0.9), 0.8087786368em 0.483073365em 7px hsla(133.0607579918deg, 100%, 50%, 0.9), 2.1530065301em 1.5131824341em 7px hsla(159.5885276702deg, 100%, 50%, 0.9), -0.3655298401em -0.3344592618em 7px hsla(200.554327553deg, 100%, 50%, 0.9), 1.431171945em 1.679957353em 7px hsla(69.7150405179deg, 100%, 50%, 0.9), 1.6241490527em 2.0544076075em 7px hsla(218.4315048049deg, 100%, 50%, 0.9), 2.3778581795em 0.1512454804em 7px hsla(95.7523952198deg, 100%, 50%, 0.9), 1.466484724em 0.4455375794em 7px hsla(238.7766138464deg, 100%, 50%, 0.9), 1.0417932798em 1.9131662506em 7px hsla(185.0531875579deg, 100%, 50%, 0.9), 0.0788030016em 2.4001278657em 7px hsla(52.2526025196deg, 100%, 50%, 0.9), 2.3761356425em 1.8377840844em 7px hsla(205.7992727056deg, 100%, 50%, 0.9), 1.4026077867em 2.1215369477em 7px hsla(339.4480980217deg, 100%, 50%, 0.9), -0.2018738208em -0.1049922272em 7px hsla(317.8594431507deg, 100%, 50%, 0.9), 1.3341375728em 0.3578066412em 7px hsla(57.1858115109deg, 100%, 50%, 0.9), 2.4783655252em 0.8207256732em 7px hsla(329.4817569036deg, 100%, 50%, 0.9), 0.3587163068em 1.719251556em 7px hsla(234.3591208483deg, 100%, 50%, 0.9), 0.3949084314em 1.130639809em 7px hsla(254.8911572253deg, 100%, 50%, 0.9), 1.4146851111em 2.4836588773em 7px hsla(193.6320088533deg, 100%, 50%, 0.9), -0.3848107471em 0.5788477162em 7px hsla(34.2010103509deg, 100%, 50%, 0.9), 2.3355314885em -0.4820617771em 7px hsla(131.972523237deg, 100%, 50%, 0.9), -0.0567783803em 1.8166485098em 7px hsla(272.5155743832deg, 100%, 50%, 0.9), 0.5601618412em 1.2195377476em 7px hsla(179.3850967705deg, 100%, 50%, 0.9), 0.6320011211em 0.9721509403em 7px hsla(1.0286428707deg, 100%, 50%, 0.9), 1.7615763217em -0.3636472953em 7px hsla(16.5755690135deg, 100%, 50%, 0.9), 2.372343287em 1.5600914896em 7px hsla(82.0300359405deg, 100%, 50%, 0.9), 2.3813499368em 0.6502312462em 7px hsla(46.4829274476deg, 100%, 50%, 0.9), 0.7407645585em 1.4088172606em 7px hsla(214.2140146724deg, 100%, 50%, 0.9), 0.3609438367em 0.9496920108em 7px hsla(132.9722252243deg, 100%, 50%, 0.9), 0.1105194331em 1.505574497em 7px hsla(245.17300957deg, 100%, 50%, 0.9), 0.1953892384em 1.7182941999em 7px hsla(115.1344804071deg, 100%, 50%, 0.9), 0.4762567578em -0.475643038em 7px hsla(44.9309623982deg, 100%, 50%, 0.9), 1.4028122719em 1.2360923871em 7px hsla(282.0324752963deg, 100%, 50%, 0.9), 1.777087672em 1.0633893828em 7px hsla(254.8446528849deg, 100%, 50%, 0.9), 1.1117054943em 2.4178746105em 7px hsla(165.7081611782deg, 100%, 50%, 0.9), 1.1136781041em 1.5706511617em 7px hsla(148.8938991703deg, 100%, 50%, 0.9), -0.3462790861em 2.299889519em 7px hsla(137.8517464109deg, 100%, 50%, 0.9), 1.6602419159em -0.3763766947em 7px hsla(190.7911581025deg, 100%, 50%, 0.9), 0.7647241002em 1.6451622331em 7px hsla(289.6348028226deg, 100%, 50%, 0.9), 0.2807700229em 2.2833552549em 7px hsla(251.0796167501deg, 100%, 50%, 0.9), 0.4979999207em -0.3579992339em 7px hsla(328.2567510604deg, 100%, 50%, 0.9), 0.7532941916em 1.2517621837em 7px hsla(316.1902623227deg, 100%, 50%, 0.9), -0.4783172172em 1.8469247202em 7px hsla(180.6463603899deg, 100%, 50%, 0.9), 1.9469555369em 1.6977255054em 7px hsla(334.2780673224deg, 100%, 50%, 0.9), -0.3567302161em 0.0891736128em 7px hsla(331.8343091343deg, 100%, 50%, 0.9), 0.5307430825em 1.169545721em 7px hsla(94.5668193812deg, 100%, 50%, 0.9);
+  text-shadow: -0.0720903517em 0.7263020216em 7px hsla(6.6302836058deg, 100%, 50%, 0.9), 1.8474351739em -0.1707499684em 7px hsla(3.8385560835deg, 100%, 50%, 0.9), 1.5694521715em 1.5004952297em 7px hsla(308.8788452325deg, 100%, 50%, 0.9), 1.5248689174em 0.5432048492em 7px hsla(252.3067449759deg, 100%, 50%, 0.9), 2.0749039154em -0.0353229128em 7px hsla(116.9407804482deg, 100%, 50%, 0.9), 1.5790520095em 1.5514093525em 7px hsla(65.7085929773deg, 100%, 50%, 0.9), 0.9027302126em -0.1607308602em 7px hsla(25.7609856433deg, 100%, 50%, 0.9), 1.0480052979em 1.5203357556em 7px hsla(316.1898615559deg, 100%, 50%, 0.9), 0.3915988216em 0.1423738964em 7px hsla(107.6505322857deg, 100%, 50%, 0.9), 0.8157125853em 2.0546166523em 7px hsla(122.0541142496deg, 100%, 50%, 0.9), 2.4659808085em 2.2423828568em 7px hsla(126.1752451175deg, 100%, 50%, 0.9), -0.2056459189em 2.2530156369em 7px hsla(276.8604132467deg, 100%, 50%, 0.9), 0.3701219768em 2.2509062497em 7px hsla(259.9519340936deg, 100%, 50%, 0.9), 0.7968585149em 0.0847626583em 7px hsla(16.7244671645deg, 100%, 50%, 0.9), 0.1513648223em 0.8631377036em 7px hsla(133.4668113045deg, 100%, 50%, 0.9), 0.030909311em -0.1849372108em 7px hsla(82.9287122207deg, 100%, 50%, 0.9), 0.2939032516em 0.5307973083em 7px hsla(339.1891005879deg, 100%, 50%, 0.9), 1.3691782559em -0.3368564648em 7px hsla(221.7164209074deg, 100%, 50%, 0.9), -0.4700810051em 1.4185208928em 7px hsla(127.7064936472deg, 100%, 50%, 0.9), 0.869315107em 0.1429727424em 7px hsla(105.2030625781deg, 100%, 50%, 0.9), 1.9358877071em 0.0265057078em 7px hsla(88.7730013695deg, 100%, 50%, 0.9), 1.3098024861em 0.0286113736em 7px hsla(262.3979353403deg, 100%, 50%, 0.9), 2.0688830486em 0.7451375181em 7px hsla(219.6507815903deg, 100%, 50%, 0.9), -0.3423934053em -0.1402733699em 7px hsla(109.8177208856deg, 100%, 50%, 0.9), 1.3630430005em 2.3184420323em 7px hsla(350.1159777236deg, 100%, 50%, 0.9), 1.0476158435em 0.8021059315em 7px hsla(345.0247815438deg, 100%, 50%, 0.9), 0.6689181244em -0.2366369358em 7px hsla(109.4102333562deg, 100%, 50%, 0.9), 1.066781235em 0.9016948043em 7px hsla(86.7828860201deg, 100%, 50%, 0.9), 2.1311668158em 1.3797011934em 7px hsla(164.2513219563deg, 100%, 50%, 0.9), 2.0925027266em 1.8697532618em 7px hsla(296.81233832deg, 100%, 50%, 0.9), 1.8305120021em 2.3414284844em 7px hsla(238.058092834deg, 100%, 50%, 0.9), 1.7179429175em 0.1320608136em 7px hsla(225.3180095042deg, 100%, 50%, 0.9), -0.3635980061em 0.9128567544em 7px hsla(30.2247791128deg, 100%, 50%, 0.9), 2.1231581078em 0.8400629958em 7px hsla(144.6220834212deg, 100%, 50%, 0.9), 0.7132562814em 1.0183314692em 7px hsla(43.406466229deg, 100%, 50%, 0.9), 1.3749091635em 1.178331514em 7px hsla(26.1932520144deg, 100%, 50%, 0.9), 2.1802021765em -0.3460934229em 7px hsla(242.320816293deg, 100%, 50%, 0.9), 1.1764658147em 2.0677562844em 7px hsla(229.9313149626deg, 100%, 50%, 0.9), 0.8885792702em 2.0967910407em 7px hsla(122.8618234831deg, 100%, 50%, 0.9), 1.6003410434em 1.4483062953em 7px hsla(284.4850389834deg, 100%, 50%, 0.9), 2.4446322647em -0.0623013689em 7px hsla(36.6018862438deg, 100%, 50%, 0.9), 0.7834106649em 2.3295840718em 7px hsla(21.0721880661deg, 100%, 50%, 0.9), 0.9885982879em -0.0609018814em 7px hsla(168.9508924853deg, 100%, 50%, 0.9), 1.595885969em -0.1462292332em 7px hsla(318.8150676727deg, 100%, 50%, 0.9), 0.4480574155em 0.6403425305em 7px hsla(107.2625037545deg, 100%, 50%, 0.9), -0.0969337009em 0.8911463366em 7px hsla(335.740373392deg, 100%, 50%, 0.9), 1.6333043026em 2.2948416641em 7px hsla(258.4628077917deg, 100%, 50%, 0.9), 1.9492586377em 0.9386951123em 7px hsla(145.2174481845deg, 100%, 50%, 0.9), 1.6666997597em 0.2308740197em 7px hsla(201.8686310005deg, 100%, 50%, 0.9), 2.0152384296em 0.0640436686em 7px hsla(132.4110769857deg, 100%, 50%, 0.9), 0.3988637217em 1.7131220152em 7px hsla(319.2216714976deg, 100%, 50%, 0.9);
   animation-duration: 41s;
   animation-delay: -29s;
 }
@@ -2398,6 +2398,21 @@ head::after {
   backdrop-filter: blur(5px);
   /* The Close Button */
 }
+.datenschutzBox #closeDa {
+  cursor: pointer;
+  position: fixed !important;
+  color: #aaaaaa;
+  right: 10%;
+  font-size: 40px;
+  font-weight: bold;
+  z-index: 11;
+}
+.datenschutzBox #closeDa:hover, .datenschutzBox #closeDa:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+  transform: scale(1.2);
+}
 .datenschutzBox .datenschutz-content {
   background-color: rgba(247, 247, 247, 0.881);
   backdrop-filter: blur(50px);
@@ -2427,19 +2442,6 @@ head::after {
 }
 .datenschutzBox .datenschutz-content ul {
   font-size: 25px;
-}
-.datenschutzBox #closeDa {
-  cursor: pointer;
-  color: #aaaaaa;
-  float: right;
-  font-size: 40px;
-  font-weight: bold;
-}
-.datenschutzBox #closeDa:hover, .datenschutzBox #closeDa:focus {
-  color: #000;
-  text-decoration: none;
-  cursor: pointer;
-  transform: scale(1.2);
 }
 @media only screen and (max-width: 850px) {
   .datenschutzBox .datenschutz-content {
@@ -2485,7 +2487,8 @@ head::after {
   /* Stay in place */
   z-index: 1;
   /* Sit on top */
-  margin-top: 130px;
+  margin-top: -250px;
+  padding-top: 340px;
   /* Location of the box */
   left: 0;
   top: 0;
@@ -2497,6 +2500,21 @@ head::after {
   transition: 0.5s;
   backdrop-filter: blur(5px);
   /* The Close Button */
+}
+.impressumBox #closeIm {
+  cursor: pointer;
+  position: fixed !important;
+  color: #aaaaaa;
+  right: 10%;
+  font-size: 40px;
+  font-weight: bold;
+  z-index: 11;
+}
+.impressumBox #closeIm:hover, .impressumBox #closeIm:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+  transform: scale(1.2);
 }
 .impressumBox .impressum-content {
   background-color: rgba(247, 247, 247, 0.881);
@@ -2522,19 +2540,6 @@ head::after {
 }
 .impressumBox .impressum-content p {
   font-size: 25px;
-}
-.impressumBox #closeIm {
-  cursor: pointer;
-  color: #aaaaaa;
-  float: right;
-  font-size: 40px;
-  font-weight: bold;
-}
-.impressumBox #closeIm:hover, .impressumBox #closeIm:focus {
-  color: #000;
-  text-decoration: none;
-  cursor: pointer;
-  transform: scale(1.2);
 }
 @media only screen and (max-width: 850px) {
   .impressumBox .impressum-content {
