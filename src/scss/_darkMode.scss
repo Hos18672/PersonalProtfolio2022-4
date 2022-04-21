@@ -7,7 +7,6 @@
     .header-container {
         width: 100%;
         display: flex;
-
         & .h-container.scrolled {
             box-shadow: 0px 10px 13px -13px #000000, 5px 5px 150px 5px rgba(0, 0, 0, 0);
         }
@@ -74,12 +73,11 @@
         transition: none;
         transition-delay: 0s;
 
-        &>h1 {
-            transition: none;
-            transition-delay: 0s;
-            color: $font-color-white;
+        & .name-container {
+            & div{
+                color:$font-color-white;
+            }
         }
-
         & .arrow-down {
             fill: $background-color-White !important;
         }
@@ -180,7 +178,6 @@
                 border-top: 3px solid transparent;
                 border-left: 3px solid transparent;
                 border-bottom: 3px solid transparent;
-
                 &:nth-child(4) {
                     border-bottom: 3px solid $background-color-dark-hell-1;
                 }

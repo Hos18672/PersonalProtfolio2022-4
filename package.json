@@ -4,8 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "startScss": "sass --watch ./src/scss/style.scss ./style.css"
+    "startScss": "sass --watch ./src/scss/style.scss ./style.css && node index.js",
+
+    "startPug": " node index.js"
   },
   "author": "Reza",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "pug": "^3.0.2"
+  }
 }

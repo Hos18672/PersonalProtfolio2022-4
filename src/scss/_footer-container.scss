@@ -17,7 +17,21 @@
         transition: 0.5s;
         color: $font-color-black;
     }
-
+   & .imda {
+       display:flex;
+       justify-content: space-between;
+       align-items: center;
+       color: $font-color-black;
+       font-size: $font-size-25;
+        & .impressum ,.datenschutz{
+            cursor: pointer;
+            margin-right: 15px;
+            &:hover{
+                color: rgb(0, 85, 255);
+                font-weight: 600;
+            }
+        }
+    }
     @media only screen and(max-width: $media-width-450px) {
         & .line-one {
             width: 80%;

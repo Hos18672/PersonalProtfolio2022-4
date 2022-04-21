@@ -1,21 +1,19 @@
-import { user } from "../js/db.js";
-
-let worksList = user.works;
-let educationList = user.educations;
-let projectsList = user.projects;
+let worksList = data.works;
+let educationList = data.educations;
+let projectsList = data.projects;
 /* ----------------------- set User Data ------------------------ */
 
 /* ------------------ set aboutMe Data  -------------------- */
 
 let aboutDescription = document.querySelector(".about-description");
-aboutDescription.innerHTML = user.aboutMe;
+aboutDescription.innerHTML = data.aboutMe;
 
 /* ----------------------- set Contact Data ------------------------ */
 
 let tel = document.querySelector(".telefon");
 let email = document.querySelector(".email");
-tel.innerHTML = '<i class="fa-solid fa-phone"></i>' + user.tel;
-email.innerHTML = '<i class="fa-solid fa-envelope"></i>' + user.Email;
+tel.innerHTML = '<i class="fa-solid fa-phone"></i>' + data.tel;
+email.innerHTML = '<i class="fa-solid fa-envelope"></i>' + data.Email;
 
 /* ----------------------- set Projects Data ------------------------ */
 
@@ -42,8 +40,9 @@ function setProjectsData(data) {
               <h2>${item.title} </h2>
               <p>
               ${item.description} 
-              </p>     
+              </p>    
               <span><a href="${item.githubLink}"> Code </a></span>
+              <span data-text=${item.githubLink} id="gitHubLink"></span> 
             </div> `;
     }
 

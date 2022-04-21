@@ -8,12 +8,11 @@
     z-index: 1;
     & h1 {
         font-size: $font-size-60;
-    
         color: $font-color-black;
     }
     ul {
         padding: 50px 5px;
-
+        display: inline-block;
         & li {
             position: relative;
             list-style: none;
@@ -22,6 +21,13 @@
             color: $font-color-black;
             margin: 0 auto;
             padding-top: 50px;
+
+            
+            &:hover > .project-item {
+                box-shadow: 6px 9px 44px -14px rgba(0, 0, 0, 0.64);
+                transform: scale(1.1);
+            }
+        
 
             & time {
                 width: 300px;
@@ -44,9 +50,11 @@
                 left: 50%;
                 transform: translateX(-50%);
                 top: 0px;
+         
             }
 
             & .project-item {
+                display:inline-block;
                 position: relative;
                 visibility: hidden;
                 opacity: 0;
@@ -58,12 +66,12 @@
                 padding-bottom: 20px;
                 background: $background-color-White;
                 box-shadow: 6px 9px 35px -10px rgba(53, 53, 53, 0.24);
-
+     
                 &:hover {
                     box-shadow: 6px 9px 44px -14px rgba(0, 0, 0, 0.64);
-                    transform: scale(1.2)
+                    transform: scale(1.1);
                 }
-
+        
                 & h2 {
                     color: $font-color-black;
                     margin-left: 10px;
@@ -75,16 +83,19 @@
                     font-size: $font-size-20;
                     padding: 10px;
                 }
+         
 
                 & a {
+                    display:inline-block;
                     cursor: pointer;
                     font-size: $font-size-25;
                     padding: 15px;
-
+                    transition: all .3s ease-in-out;
                     &:hover {
-                        color: $font-color-red;
+                        color: rgb(0, 119, 255);
                         font-size: $font-size-25;
-                        transform: scale(1.2)
+                        font-weight: bold;
+                        transform: scale(1.3)
                     }
 
                 }
@@ -105,7 +116,7 @@
             }
 
             &:nth-child(even) time{
-                margin-left: -195px;
+                margin-left: -150px;
             }
             &:nth-child(odd) > .project-item {
                 transform: translate3d(200px, 200px, 0);

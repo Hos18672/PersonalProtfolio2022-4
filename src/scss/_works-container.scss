@@ -53,6 +53,8 @@
 
                 &:hover {
                     box-shadow: 6px 9px 44px -14px rgba(0, 0, 0, 0.64);
+                    transform:scale(1.1);
+                    transform: perspective(600px) rotateY(25deg);
                 }
                 & h2{
                     color: $font-color-black;
@@ -116,7 +118,7 @@
         & div.work-item:nth-of-type(odd) {
             width: 500px;
             border-right: 3px solid transparent;
-
+        
             &::after {
                 content: "";
                 width: 20px;
@@ -144,11 +146,22 @@
         & div.work-item:nth-of-type(even) div {
             transform: translate3d(-200px, 0, 0);
             border-left: 3px solid $background-color-blue;
+            &:hover {
+                box-shadow: 6px 9px 44px -14px rgba(0, 0, 0, 0.64);
+                transform:scale(1.1);
+                transform: perspective(600px) rotateY(10deg);
+            }
+        
         }
 
         & div.work-item:nth-of-type(odd) div {
             transform: translate3d(200px, 0, 0);
             border-right: 3px solid $background-color-green;
+            &:hover {
+                box-shadow: 6px 9px 44px -14px rgba(0, 0, 0, 0.64);
+                transform:scale(1.1);
+                transform: perspective(600px) rotateY(-10deg);
+            }
         }
 
         & div.work-item.active div {
@@ -267,7 +280,7 @@
                 & div.item {
                     width: 200px;
                     margin-left: 15px;
-
+                  
                     & h2 {
                         font-size: $font-size-20;
                     }

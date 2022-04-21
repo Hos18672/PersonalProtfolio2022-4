@@ -14,6 +14,8 @@ var windowHeight = window.innerHeight;
 var navbar1 = navbar.getBoundingClientRect().bottom;
 var elementVisible = 60;
 
+
+
 // Dark mode Switch onClick
 switchButton.addEventListener("click", () => {
   var element = document.body;
@@ -40,7 +42,8 @@ for (var i = 0; i < it.length; i++) {
   });
 }
 
-//--------- Scroll Animation -----------------
+//--------- Scroll Animation ----------------- //
+
 
 // Scroll animation About Page
 function reveal() {
@@ -69,7 +72,7 @@ function isItemInView(item) {
     rect.left <= (window.innerWidth || document.documentElement.clientWidth)
   );
 }
-
+/* ------------------------------------------- */
 
 function callbackFunc() {
   for (var i = 0; i < items.length; i++) {
@@ -103,3 +106,5 @@ window.onscroll = function() {
   }
 }
 
+
+/* ------------------------------------------- */
