@@ -176,15 +176,6 @@
                     &:nth-child(even) time{
                         margin-left: 65px;
                     }
-
-                    & .timeTwo {
-                        margin-left: 65px;
-                    }
-
-                    & .timeFour {
-                        margin-left: 65px;
-                    }
-
                     & .project-item {
                         width: 250px;
                         padding-bottom: 20px;
@@ -236,12 +227,8 @@
                         margin-left: 45px;
                     }
 
-                    & .timeTwo {
-                        margin-left: 45px;
-                    }
-
-                    & .timeFour {
-                        margin-left: 45px;
+                    &:nth-child(even) time{
+                        margin-left: 50px;
                     }
 
                     & .project-item {
