@@ -86,7 +86,9 @@
 
     ///////////////////////   About Container  /////////////////////////////////////////
     .about-container {
+   
         &>.about-main-container {
+    
             &>.text-container {
                 &>.about-span {
                     background-color: $background-color-dark-hell-2;
@@ -94,6 +96,9 @@
                 }
                 & .main-container {
                     color: $font-color-white;
+                    & h1{
+                        color: $font-color-white;
+                    }
                 }
             }
         }

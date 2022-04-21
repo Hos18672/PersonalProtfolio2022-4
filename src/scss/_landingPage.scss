@@ -84,12 +84,13 @@
         transition: .5s;
         animation: fotoAnimation 1.2s linear;
         z-index: 11;
+        &:hover {
+            transform: scale(1.1);
+            filter: drop-shadow(10px 20px 30px rgba(55, 55, 55, 0.23));
+     
+        }
     }   
-     & img:hover {
-        transform: scale(1.1);
-        filter: drop-shadow(10px 20px 30px rgba(55, 55, 55, 0.23));
- 
-    }
+   
 
     
     .arrow-down {
@@ -100,8 +101,7 @@
         transition: .4s;
         animation: fotoAnimation 2s linear, arrowAnimation 1.2s linear 1s infinite;
         &:hover {
-            fill: red;
-            transform: scale(2.1)
+            fill: rgb(0, 170, 255);
         }
     }
     

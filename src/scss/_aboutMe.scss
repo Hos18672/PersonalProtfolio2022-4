@@ -64,6 +64,11 @@
             transition: .5s;
             width: 300px;
             z-index:11;
+            &:hover {
+                transform: scale(1.1);
+                filter: drop-shadow(10px 20px 30px rgba(55, 55, 55, 0.23));
+         
+            }
         }
     }
 }
