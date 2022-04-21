@@ -11,7 +11,7 @@
     z-index: 111;
     transition: 0.5s;
     backdrop-filter: blur(5px);
-    overscroll-behavior: contain;
+    overflow-y: hidden;
     & #closeIm {
         cursor: pointer;
         position: fixed !important;

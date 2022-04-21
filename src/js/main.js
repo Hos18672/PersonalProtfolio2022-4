@@ -1,3 +1,4 @@
+var element = document.body;
 const switchButton = document.getElementById("switch");
 var container = document.querySelector("#nav-list-container");
 var navbar = document.querySelector(".h-container");
@@ -113,25 +114,31 @@ var spanDa = document.getElementById("closeDa");
 // When the user clicks the button, open the modal
 im.onclick = function () {
   modal.style.display = "block";
+  element.classList.toggle("modalOpen");
 };
 ds.onclick = function () {
-  modal2.style.display = "block";
+  modal2.style.display = "block"; 
+  element.classList.toggle("modalOpen");
 };
 
 // When the user clicks on <span> (x), close the modal
 spanIm.onclick = function () {
   modal.style.display = "none";
   console.log("cliked btn");
+  element.classList.remove("modalOpen");
 };
 spanDa.onclick = function () {
   modal2.style.display = "none";
+  element.classList.remove("modalOpen");
 };
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function (event) {
   if (event.target == modal) {
     modal.style.display = "none";
+    element.classList.remove("modalOpen");
   }
   if (event.target == modal2) {
     modal2.style.display = "none";
+    element.classList.remove("modalOpen");
   }
 };

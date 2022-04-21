@@ -1,24 +1,17 @@
 .datenschutzBox {
     display: none;
-    /* Hidden by default */
-    position: fixed;
-    /* Stay in place */
-    z-index: 1;
-    /* Sit on top */
+    position: fixed;  
+      z-index: 1;
     margin-top: -250px;
     padding-top: 340px;
-    /* Location of the box */
     left: 0;
     top: 0;
     width: 100%;
-    /* Full width */
     height: 100%;
-    /* Full height */
     z-index: 111;
     transition: 0.5s;
     backdrop-filter: blur(5px);
-
-    /* The Close Button */
+    overflow-y: hidden;
     & #closeDa {
         cursor: pointer;
         position: fixed !important;
