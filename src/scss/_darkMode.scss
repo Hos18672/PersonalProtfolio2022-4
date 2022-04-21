@@ -353,4 +353,49 @@
 
         }
     }
+//-------------------------------------------------------------
+ & .impressum , .datenschutz{
+    color: $font-color-white;
+ }
+   
+///------------------------------Impressum -------------------     
+    & .impressumBox{
+        & .impressum-content{
+            background-color: rgba(17, 24, 32, 0.95);
+            box-shadow: 6px 9px 15px 1px rgba(0, 0, 0, 0.172);
+            backdrop-filter: blur(50px);
+            color: $font-color-white;
+
+        }
+        /* The Close Button */
+        #closeIm{
+            color: #d1d1d1;
+            &:hover,
+            &:focus {
+                color: $font-color-white;
+            }
+        }
+    }
+
+///------------------------------Datenschutz -------------------
+    & .datenschutzBox{
+        & .datenschutz-content{
+            background-color: rgba(17, 24, 32, 0.95);
+            box-shadow: 6px 9px 15px 1px rgba(0, 0, 0, 0.172);
+            backdrop-filter: blur(50px);
+            color: $font-color-white;;
+
+        }
+        /* The Close Button */
+        #closeDa{
+            color: #d1d1d1;
+            &:hover,
+            &:focus {
+                color: $font-color-white;
+            }
+        }
+        
+        
+    }
 }
+

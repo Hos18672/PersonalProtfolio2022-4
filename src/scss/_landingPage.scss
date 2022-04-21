@@ -83,10 +83,12 @@
         margin-top: 5%;
         transition: .5s;
         animation: fotoAnimation 1.2s linear;
+        z-index: 11;
     }   
      & img:hover {
         transform: scale(1.1);
         filter: drop-shadow(10px 20px 30px rgba(55, 55, 55, 0.23));
+ 
     }
 
     

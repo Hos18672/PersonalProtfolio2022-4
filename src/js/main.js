@@ -8,6 +8,7 @@ var ul = document.querySelector('ul')
 var items = ul.querySelectorAll("li");
 var navbar = document.getElementById("h-container")
 var work_item = document.querySelector(".work-one")
+var ds = document.querySelector('.datenschutz')
 
 
 var windowHeight = window.innerHeight;
@@ -106,5 +107,48 @@ window.onscroll = function() {
   }
 }
 
+ds.addEventListener("click", ()=>{
+  console.log("clicked s")
+})
+
 
 /* ------------------------------------------- */
+
+
+// Get the modal
+var modal = document.getElementById("impressumBox");
+var modal2 = document.getElementById("datenschutzBox");
+
+// Get the button that opens the modal
+var im = document.getElementById("impressum");
+var ds = document.getElementById("datenschutz");
+
+// Get the <span> element that closes the modal
+var spanIm = document.getElementById("closeIm")
+var spanDa = document.getElementById("closeDa")
+
+// When the user clicks the button, open the modal 
+im.onclick = function() {
+  modal.style.display = "block";
+}
+ds.onclick = function() {
+  modal2.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+spanIm.onclick = function() {
+  modal.style.display = "none";
+  console.log("cliked btn")
+}
+spanDa.onclick = function() {
+  modal2.style.display = "none";
+}
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+  if (event.target == modal2) {
+    modal2.style.display = "none";
+  }
+}

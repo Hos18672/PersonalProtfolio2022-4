@@ -27,7 +27,7 @@
             cursor: pointer;
             margin-right: 15px;
             &:hover{
-                color: rgb(0, 85, 255);
+                color: rgb(0, 136, 255);
                 font-weight: 600;
             }
         }
@@ -39,5 +39,9 @@
         & p {
             font-size: $font-size-20;
         }
+
+        & .imda {
+            font-size: $font-size-20;
+         }
     }
 }
