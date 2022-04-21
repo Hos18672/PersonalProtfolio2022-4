@@ -4,27 +4,29 @@
     justify-content: center;
     align-items: center;
 
+
     &>.about-main-container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        display: Grid;
+        grid-template-columns: 1fr 1fr;
+        place-items: center;
         position: relative;
-        transform: translateY(150px);
         opacity: 0;
         transition: .5s all ease;
+
         & .text-container {
             color: black;
             transition-delay: 0s;
             display: flex;
             flex-direction: row;
             justify-content: space-between;
-    
+
             & .about-span {
                 background-color: $background-color-dark-black;
                 width: 2px;
                 height: 400px;
                 margin: 0 30px;
             }
+
             & .main-container {
                 width: 500px;
                 & h1 {
@@ -34,16 +36,16 @@
                     z-index: -1;
                     opacity: 0;
                     transition: 1s;
-                    color:$font-color-black;
+                    color: $font-color-black;
                     transition-delay: 0s;
                     font-size: $font-size-60;
                     margin-top: -10px;
-                    animation: textAnim 1.5s linear both;        
+                    animation: textAnim 1.5s linear both;
                 }
 
                 & p {
                     font-size: $font-size-25;
-                    animation: textAnim 1s linear 0.5s  both;    
+                    animation: textAnim 1s linear 0.5s both;
 
                 }
 
@@ -52,10 +54,12 @@
                         opacity: 0;
                         transform: translate(-100px, 0px);
                     }
-                
-                    to {opacity: 1;
+
+                    to {
+                        opacity: 1;
                         transform: translate(10px, 0px);
-                        animation-timing-function: ease-in-out;}
+                        animation-timing-function: ease-in-out;
+                    }
                 }
             }
         }
@@ -63,11 +67,12 @@
         &>img {
             transition: .5s;
             width: 300px;
-            z-index:11;
+            z-index: 11;
+
             &:hover {
                 transform: scale(1.1);
                 filter: drop-shadow(10px 20px 30px rgba(55, 55, 55, 0.23));
-         
+
             }
         }
     }
@@ -141,8 +146,8 @@
                     & h1 {
                         font-size: $font-size-40;
                         margin-top: -10px;
-              }
-         
+                    }
+
 
 
                     & p {
@@ -159,4 +164,3 @@
     }
 
 }
-

@@ -7,6 +7,7 @@
     .header-container {
         width: 100%;
         display: flex;
+
         & .h-container.scrolled {
             box-shadow: 0px 10px 13px -13px #000000, 5px 5px 150px 5px rgba(0, 0, 0, 0);
         }
@@ -74,10 +75,11 @@
         transition-delay: 0s;
 
         & .name-container {
-            & div{
-                color:$font-color-white;
+            & div {
+                color: $font-color-white;
             }
         }
+
         & .arrow-down {
             fill: $background-color-White !important;
         }
@@ -86,17 +88,19 @@
 
     ///////////////////////   About Container  /////////////////////////////////////////
     .about-container {
-   
+
         &>.about-main-container {
-    
+
             &>.text-container {
                 &>.about-span {
                     background-color: $background-color-dark-hell-2;
                     color: $font-color-white;
                 }
+
                 & .main-container {
                     color: $font-color-white;
-                    & h1{
+
+                    & h1 {
                         color: $font-color-white;
                     }
                 }
@@ -183,6 +187,7 @@
                 border-top: 3px solid transparent;
                 border-left: 3px solid transparent;
                 border-bottom: 3px solid transparent;
+
                 &:nth-child(4) {
                     border-bottom: 3px solid $background-color-dark-hell-1;
                 }
@@ -358,23 +363,27 @@
 
         }
     }
-//-------------------------------------------------------------
- & .impressum , .datenschutz{
-    color: $font-color-white;
- }
-   
-///------------------------------Impressum -------------------     
-    & .impressumBox{
-        & .impressum-content{
+
+    //-------------------------------------------------------------
+    & .impressum,
+    .datenschutz {
+        color: $font-color-white;
+    }
+
+    ///------------------------------Impressum -------------------     
+    & .impressumBox {
+        & .impressum-content {
             background-color: rgba(17, 24, 32, 0.95);
             box-shadow: 6px 9px 15px 1px rgba(0, 0, 0, 0.172);
             backdrop-filter: blur(50px);
             color: $font-color-white;
 
         }
+
         /* The Close Button */
-        #closeIm{
+        #closeIm {
             color: #d1d1d1;
+
             &:hover,
             &:focus {
                 color: $font-color-white;
@@ -382,25 +391,27 @@
         }
     }
 
-///------------------------------Datenschutz -------------------
-    & .datenschutzBox{
-        & .datenschutz-content{
+    ///------------------------------Datenschutz -------------------
+    & .datenschutzBox {
+        & .datenschutz-content {
             background-color: rgba(17, 24, 32, 0.95);
             box-shadow: 6px 9px 15px 1px rgba(0, 0, 0, 0.172);
             backdrop-filter: blur(50px);
-            color: $font-color-white;;
+            color: $font-color-white;
+            ;
 
         }
+
         /* The Close Button */
-        #closeDa{
+        #closeDa {
             color: #d1d1d1;
+
             &:hover,
             &:focus {
                 color: $font-color-white;
             }
         }
-        
-        
+
+
     }
 }
-

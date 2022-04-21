@@ -391,14 +391,6 @@ main {
   padding: 0 30px;
 }
 
-main {
-  display: flex;
-  flex-direction: column;
-}
-main > .container {
-  padding-top: 50px;
-}
-
 @keyframes fotoAnimation {
   0% {
     opacity: 0;
@@ -641,7 +633,6 @@ main > .container {
   width: 100%;
   max-width: 110px;
 }
-
 @media only screen and (max-width: 850px) {
   .header-container .logo-container {
     display: none;
@@ -696,13 +687,50 @@ main > .container {
     border-radius: 5%;
   }
 }
+
 body {
   transition: 0.5s;
 }
-body .impressum, body .datenschutz {
+body .impressum,
+body .datenschutz {
   transition: 0.5s;
 }
 
+body,
+head {
+  display: block;
+  color: transparent;
+}
+
+head::before,
+head::after,
+body::before,
+body::after {
+  position: fixed;
+  font-size: 52px;
+  top: 50%;
+  left: 50%;
+  width: 3em;
+  height: 3em;
+  content: ".";
+  z-index: -1111;
+  animation: 44s -27s move infinite ease-in-out alternate;
+}
+
+head::after {
+  text-shadow: 0.7659411191em 2.2890373007em 7px hsla(174.1438140637deg, 100%, 50%, 0.9), 1.7307779162em 2.0590573994em 7px hsla(93.1298653792deg, 100%, 50%, 0.9), 0.6662073078em 1.0722580718em 7px hsla(347.1557649119deg, 100%, 50%, 0.9), 0.3092529336em 1.168559399em 7px hsla(260.0643446971deg, 100%, 50%, 0.9), 2.4440629972em -0.374133842em 7px hsla(104.147460904deg, 100%, 50%, 0.9), 0.6975180449em 0.9937620134em 7px hsla(118.9496743003deg, 100%, 50%, 0.9), 0.9930506934em 0.5746776242em 7px hsla(78.2213291035deg, 100%, 50%, 0.9), 0.9186178741em 0.2217164454em 7px hsla(157.0085836426deg, 100%, 50%, 0.9), 2.2107479722em 2.3536677893em 7px hsla(101.5173781658deg, 100%, 50%, 0.9), 0.4413451867em 1.4515573069em 7px hsla(108.1738211951deg, 100%, 50%, 0.9), -0.009196962em 1.4218330778em 7px hsla(92.1698339332deg, 100%, 50%, 0.9), 1.9919764569em -0.355980182em 7px hsla(19.9745967536deg, 100%, 50%, 0.9), 2.2138490312em 2.0382155868em 7px hsla(330.3269506481deg, 100%, 50%, 0.9), 1.0397877783em 1.5832648914em 7px hsla(346.2185855431deg, 100%, 50%, 0.9), 0.0927422494em 0.1958476302em 7px hsla(142.9439487855deg, 100%, 50%, 0.9), 0.5362603758em -0.2734723632em 7px hsla(209.2017835364deg, 100%, 50%, 0.9), 0.0411022889em 0.9965895787em 7px hsla(121.7890703511deg, 100%, 50%, 0.9), -0.4822626738em 1.9467820634em 7px hsla(145.6002923244deg, 100%, 50%, 0.9), 1.6762932748em 2.2788294076em 7px hsla(243.2389771167deg, 100%, 50%, 0.9), 2.1526241203em 2.0674882834em 7px hsla(221.8692673907deg, 100%, 50%, 0.9), 2.0797041435em -0.4634886044em 7px hsla(202.7473772997deg, 100%, 50%, 0.9), 0.9239893854em 0.623109834em 7px hsla(138.6393614649deg, 100%, 50%, 0.9), 1.5894399496em 0.7426344382em 7px hsla(275.1072739632deg, 100%, 50%, 0.9), 1.93571558em -0.0023936694em 7px hsla(74.9828618142deg, 100%, 50%, 0.9), -0.2792122471em -0.4995285912em 7px hsla(356.6583509994deg, 100%, 50%, 0.9), 1.3520064553em 0.8559432255em 7px hsla(169.9375355346deg, 100%, 50%, 0.9), -0.4894349414em 1.4224822021em 7px hsla(4.0579740392deg, 100%, 50%, 0.9), 1.3985244105em 0.4101882912em 7px hsla(77.2640926433deg, 100%, 50%, 0.9), 1.8248503467em 0.2065989257em 7px hsla(320.4823108067deg, 100%, 50%, 0.9), 0.7846864565em 0.3176413041em 7px hsla(143.3769165371deg, 100%, 50%, 0.9), 0.3561777155em 2.1511575488em 7px hsla(354.952397687deg, 100%, 50%, 0.9), 1.3022593962em 2.2208906005em 7px hsla(35.3853496766deg, 100%, 50%, 0.9), 1.9660659332em 1.4924233128em 7px hsla(258.0491843751deg, 100%, 50%, 0.9), 0.5803173506em 0.5533226835em 7px hsla(301.9660016742deg, 100%, 50%, 0.9), 0.8372317514em 1.2378891198em 7px hsla(95.6892285721deg, 100%, 50%, 0.9), 0.6519518002em 0.5932488968em 7px hsla(39.6505224118deg, 100%, 50%, 0.9), 0.9893785395em 1.992543477em 7px hsla(31.7226250194deg, 100%, 50%, 0.9), 2.2788090172em 2.0412260789em 7px hsla(29.3032034239deg, 100%, 50%, 0.9), 1.8873999227em 1.6265838436em 7px hsla(343.6897033439deg, 100%, 50%, 0.9), 0.920161445em 0.2487560623em 7px hsla(172.4635606987deg, 100%, 50%, 0.9), -0.0316532663em 0.5291042475em 7px hsla(174.6717616277deg, 100%, 50%, 0.9), 2.3067013385em 1.9469822396em 7px hsla(294.418227052deg, 100%, 50%, 0.9), 1.8134452472em 2.4199524854em 7px hsla(35.9950367485deg, 100%, 50%, 0.9), 0.1340097804em 0.1367146138em 7px hsla(214.8685281847deg, 100%, 50%, 0.9), 0.5750533191em 0.6375454549em 7px hsla(294.8856175693deg, 100%, 50%, 0.9), 0.415833768em -0.4769123943em 7px hsla(52.3649347194deg, 100%, 50%, 0.9), 2.0270886245em -0.3676626769em 7px hsla(71.1011094111deg, 100%, 50%, 0.9), 1.0997594687em 0.3712948342em 7px hsla(339.465788933deg, 100%, 50%, 0.9), 0.0355329233em -0.4201603466em 7px hsla(255.6639412805deg, 100%, 50%, 0.9), 0.1043934234em -0.4161729196em 7px hsla(258.4245949791deg, 100%, 50%, 0.9), -0.3710695265em 1.8266823808em 7px hsla(43.7991781559deg, 100%, 50%, 0.9);
+  animation-duration: 41s;
+  animation-delay: -29s;
+}
+
+@keyframes move {
+  from {
+    transform: rotate(0deg) scale(12) translateX(-20px);
+  }
+  to {
+    transform: rotate(360deg) scale(18) translateX(20px);
+  }
+}
 @keyframes darkAnimation {
   0% {
     opacity: 1;
@@ -776,7 +804,9 @@ body .impressum, body .datenschutz {
 .socials a::before {
   font-size: 20px;
 }
-.socials a:nth-child(1)::before, .socials a:nth-child(2)::before, .socials a:nth-child(3)::before {
+.socials a:nth-child(1)::before,
+.socials a:nth-child(2)::before,
+.socials a:nth-child(3)::before {
   content: "LinkedIn";
   position: absolute;
   right: 0px;
@@ -794,7 +824,9 @@ body .impressum, body .datenschutz {
 .socials a:nth-child(3)::before {
   content: "Facebook";
 }
-.socials a:nth-child(1):hover::before, .socials a:nth-child(2):hover::before, .socials a:nth-child(3):hover::before {
+.socials a:nth-child(1):hover::before,
+.socials a:nth-child(2):hover::before,
+.socials a:nth-child(3):hover::before {
   position: absolute;
   right: 100px;
   font-size: 1.5em;
@@ -802,41 +834,10 @@ body .impressum, body .datenschutz {
   width: 100%;
 }
 
-body, head {
-  display: block;
-  color: transparent;
-}
-
-head::before, head::after,
-body::before, body::after {
-  position: fixed;
-  font-size: 52px;
-  top: 50%;
-  left: 50%;
-  width: 3em;
-  height: 3em;
-  content: ".";
-  z-index: -1111;
-  animation: 44s -27s move infinite ease-in-out alternate;
-}
-
-head::after {
-  text-shadow: 0.0547916995em 1.9145467391em 7px hsla(324.9631844565deg, 100%, 50%, 0.9), -0.0798004715em 0.4426536254em 7px hsla(2.2841454266deg, 100%, 50%, 0.9), 0.1708377872em 0.6208781251em 7px hsla(204.4532047166deg, 100%, 50%, 0.9), 0.0722746822em 1.706568283em 7px hsla(214.2542587767deg, 100%, 50%, 0.9), 1.7813274507em 0.9869226721em 7px hsla(165.1541999582deg, 100%, 50%, 0.9), 1.7943700967em 0.6346043959em 7px hsla(51.1072194908deg, 100%, 50%, 0.9), 1.3182723071em 2.4579516394em 7px hsla(210.6506086674deg, 100%, 50%, 0.9), 0.762053731em 2.2496347719em 7px hsla(233.2299246467deg, 100%, 50%, 0.9), 0.7881967312em 1.2561832786em 7px hsla(338.445598139deg, 100%, 50%, 0.9), 2.1116897105em 0.2743113363em 7px hsla(332.2192858246deg, 100%, 50%, 0.9), 1.631492892em -0.0391687771em 7px hsla(29.1841750606deg, 100%, 50%, 0.9), 0.1955458897em 1.4299912013em 7px hsla(110.9043567428deg, 100%, 50%, 0.9), -0.3450631248em 1.5451514461em 7px hsla(96.3306528546deg, 100%, 50%, 0.9), 2.1541731476em 1.4191241338em 7px hsla(296.7149552202deg, 100%, 50%, 0.9), 0.0297067259em -0.0363290864em 7px hsla(323.6078277727deg, 100%, 50%, 0.9), 0.5881663375em -0.3504755338em 7px hsla(138.7648429039deg, 100%, 50%, 0.9), 0.0823456196em 0.2330664735em 7px hsla(240.6954992712deg, 100%, 50%, 0.9), 1.0270817614em 0.767460443em 7px hsla(14.7230912207deg, 100%, 50%, 0.9), 1.9653372898em 2.4530020262em 7px hsla(296.1121836947deg, 100%, 50%, 0.9), 1.2744986089em 0.2796702489em 7px hsla(202.8690407221deg, 100%, 50%, 0.9), 2.4332491726em 0.4208535467em 7px hsla(297.3803932348deg, 100%, 50%, 0.9), 1.0163554352em 0.7073800114em 7px hsla(62.0873790307deg, 100%, 50%, 0.9), 2.2363451607em 2.0101160085em 7px hsla(34.7411793326deg, 100%, 50%, 0.9), 1.641516615em 0.9817183546em 7px hsla(268.4893138558deg, 100%, 50%, 0.9), 1.7887193018em -0.2116613166em 7px hsla(37.4611368237deg, 100%, 50%, 0.9), 0.0739130491em 2.1512018858em 7px hsla(316.8296185097deg, 100%, 50%, 0.9), 0.1451131839em -0.2712616542em 7px hsla(4.4569797206deg, 100%, 50%, 0.9), 2.2071775082em 0.4160318365em 7px hsla(61.9583639201deg, 100%, 50%, 0.9), -0.331292478em -0.4120867915em 7px hsla(94.941413954deg, 100%, 50%, 0.9), -0.0551154437em 0.6058394501em 7px hsla(205.3538237337deg, 100%, 50%, 0.9), 1.831084624em -0.4502939049em 7px hsla(88.6163660216deg, 100%, 50%, 0.9), -0.0319948986em 1.8707422577em 7px hsla(255.0719553deg, 100%, 50%, 0.9), 0.6254387316em 2.2423814388em 7px hsla(239.1349893814deg, 100%, 50%, 0.9), 1.0192495906em 0.8653392929em 7px hsla(24.4876195265deg, 100%, 50%, 0.9), 0.7580715623em 1.9889543108em 7px hsla(55.0037209924deg, 100%, 50%, 0.9), 2.3993867693em 1.5154824791em 7px hsla(321.8108247646deg, 100%, 50%, 0.9), 2.0733036689em 1.1112132234em 7px hsla(193.6090932317deg, 100%, 50%, 0.9), -0.4611991593em -0.2469383634em 7px hsla(30.3345828773deg, 100%, 50%, 0.9), 1.4711427655em 2.1083071426em 7px hsla(236.2088363685deg, 100%, 50%, 0.9), 1.2863597437em -0.2470833668em 7px hsla(289.8898572252deg, 100%, 50%, 0.9), -0.0003770798em 1.7471430385em 7px hsla(331.089241182deg, 100%, 50%, 0.9), 0.2869655223em 0.0163644016em 7px hsla(126.5717786346deg, 100%, 50%, 0.9), 0.326235243em -0.0321171646em 7px hsla(291.2107235614deg, 100%, 50%, 0.9), 1.7149704704em 0.244654287em 7px hsla(16.17597493deg, 100%, 50%, 0.9), 1.9633932946em 1.0419176884em 7px hsla(277.0949183797deg, 100%, 50%, 0.9), 0.6007224705em -0.4664746753em 7px hsla(345.774064091deg, 100%, 50%, 0.9), 0.5207513424em 0.3324017161em 7px hsla(126.2534360679deg, 100%, 50%, 0.9), 1.4401861663em 0.68540678em 7px hsla(147.283901729deg, 100%, 50%, 0.9), 0.2788199111em 2.328595349em 7px hsla(329.3623644488deg, 100%, 50%, 0.9), 1.8589301661em 0.7948679808em 7px hsla(242.7991409697deg, 100%, 50%, 0.9), -0.1786120473em 2.1051907822em 7px hsla(265.454427174deg, 100%, 50%, 0.9);
-  animation-duration: 41s;
-  animation-delay: -29s;
-}
-
-@keyframes move {
-  from {
-    transform: rotate(0deg) scale(12) translateX(-20px);
-  }
-  to {
-    transform: rotate(360deg) scale(18) translateX(20px);
-  }
-}
 .landing-page {
-  display: flex;
-  flex-direction: column;
+  display: Grid;
+  grid-template-rows: 1fr 2fr 1fr;
+  place-items: center;
   align-items: center;
 }
 .landing-page .name-container {
@@ -845,7 +846,7 @@ head::after {
   align-items: center;
   width: 100%;
   height: 100px;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
   position: relative;
   right: 10px;
   animation: fotoAnimation 1s linear ease;
@@ -910,7 +911,6 @@ head::after {
   z-index: 3;
   width: 300px;
   position: relative;
-  margin-top: 5%;
   transition: 0.5s;
   animation: fotoAnimation 1.2s linear;
   z-index: 11;
@@ -921,8 +921,6 @@ head::after {
 }
 .landing-page .arrow-down {
   position: relative;
-  margin-bottom: 10px;
-  top: 140px;
   width: 50px;
   transition: 0.4s;
   animation: fotoAnimation 2s linear, arrowAnimation 1.2s linear 1s infinite;
@@ -959,7 +957,6 @@ head::after {
     font-size: 50px;
   }
   .landing-page > img {
-    margin-top: 20px;
     width: 250px;
   }
 }
@@ -969,7 +966,6 @@ head::after {
   }
   .landing-page > img {
     width: 200px;
-    margin-top: 80px;
   }
 }
 @keyframes fotoAnimation {
@@ -1057,11 +1053,10 @@ head::after {
   align-items: center;
 }
 .about-container > .about-main-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: Grid;
+  grid-template-columns: 1fr 1fr;
+  place-items: center;
   position: relative;
-  transform: translateY(150px);
   opacity: 0;
   transition: 0.5s all ease;
 }
@@ -2106,11 +2101,13 @@ head::after {
   color: black;
   font-size: 25px;
 }
-.footer .imda .impressum, .footer .imda .datenschutz {
+.footer .imda .impressum,
+.footer .imda .datenschutz {
   cursor: pointer;
   margin-right: 15px;
 }
-.footer .imda .impressum:hover, .footer .imda .datenschutz:hover {
+.footer .imda .impressum:hover,
+.footer .imda .datenschutz:hover {
   color: rgb(0, 136, 255);
   font-weight: 600;
 }
@@ -2341,7 +2338,8 @@ head::after {
     box-shadow: 0px 0px 0px;
   }
 }
-.dark-mode .impressum, .dark-mode .datenschutz {
+.dark-mode .impressum,
+.dark-mode .datenschutz {
   color: white;
 }
 .dark-mode .impressumBox {
@@ -2480,24 +2478,17 @@ head::after {
 
 .impressumBox {
   display: none;
-  /* Hidden by default */
   position: fixed;
-  /* Stay in place */
   z-index: 1;
-  /* Sit on top */
   margin-top: -250px;
   padding-top: 340px;
-  /* Location of the box */
   left: 0;
   top: 0;
   width: 100%;
-  /* Full width */
   height: 100%;
-  /* Full height */
   z-index: 111;
   transition: 0.5s;
   backdrop-filter: blur(5px);
-  /* The Close Button */
 }
 .impressumBox #closeIm {
   cursor: pointer;

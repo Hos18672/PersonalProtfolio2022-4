@@ -1,151 +1,36 @@
-body{
+body {
     transition: .5s;
 
-    & .impressum , .datenschutz{
+    & .impressum,
+    .datenschutz {
         transition: .5s;
-     }
-}
-
-
-@keyframes darkAnimation {
-
-    0%{
-        opacity: 1;
-
-    }
-    50%{
-        opacity: 1;
-    }
-    99%{
-        opacity: 1;
-    }
-    100%{
-        opacity: 0;
-    }
-    
-}
-
-@media screen and ( max-height: 600px ){
-    body{
-        & main{
-            overflow: hidden;
-            margin-top: 200px;
-            & .header-container {
-                top: 0;
-                left: 0;
-                right: -30px;
-                position:fixed;
-                & .hamburger-icon{
-                    margin-left: 30px;
-                }
-
-                & .switch{
-                    position: relative;
-                    transform: translateX(0px);
-                }
-            }
-        }
-    }
- 
-}
-@media screen and ( max-height: $media-width-450px ){
-    body{
-        & main{
-            padding: 0;
-            margin-top: 200px;
-            & .header-container {
-                position:fixed;
-            }
-
-            & .switch{
-                position: relative;
-                transform: translateX(50px);
-            } 
-        }
     }
 }
 
-
-.socials{
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
-    place-items: center;
-    position: fixed;
-    top:40%;
-    right:20px;
-    row-gap: 10px;
-    z-index: 9;
-    transition: .5s;
-    & > a i{
-        font-size: $font-size-30;
-        transition: 5ms;
-        transition: .3s;
-        color: $background-color-dark-black;
-       
-    }
-    & a:hover{
-        color: $background-color-blue-1;
-    }
-    & > a i:hover{
-        transform: scale(1.2);
-        color: $background-color-blue-1;
-    }
-    & a::before{
-        font-size: 20px;
-    }
-
-    & a:nth-child(1)::before,a:nth-child(2)::before,a:nth-child(3)::before{
-        content:"LinkedIn";
-        position: absolute;
-        right: 0px;
-        font-size: inherit;
-        font-weight: 700;
-        transition:0.6s;
-        opacity: 0;
-        border-radius:5px;
-        padding: 5px;
-        width:0px;
-    }
-    & a:nth-child(2)::before{
-        content:"XING";
-    }
-    & a:nth-child(3)::before{
-        content:"Facebook";
-    }
-    
-    & a:nth-child(1):hover::before,a:nth-child(2):hover::before,a:nth-child(3):hover::before{
-        position: absolute;
-        right: 100px;
-        font-size: 1.5em;
-        opacity: 1;
-        width:100%;
-    }
-    
-
-
-}
 ///////////////// body background animation ///////////////////////////////////
 
 @mixin dots($count) {
     $text-shadow: ();
-    @for $i from 0 through $count {
-      $text-shadow: $text-shadow,
-                   (-.5+(random()) * 3) + em
-                   (-.5+(random()) * 3) + em
-                   7px
-                   hsla(random() * 360, 100%, 50%,.9);
-    }
-    text-shadow: $text-shadow;
-  }
-  
 
-  body, head {
+    @for $i from 0 through $count {
+        $text-shadow: $text-shadow,
+            (-.5+(random()) * 3) + em (-.5+(random()) * 3) + em 7px hsla(random() * 360, 100%, 50%, .9);
+    }
+
+    text-shadow: $text-shadow;
+}
+
+
+body,
+head {
     display: block;
     color: transparent;
-  }
-  
-  head::before, head::after,
-  body::before, body::after {
+}
+
+head::before,
+head::after,
+body::before,
+body::after {
     position: fixed;
     font-size: 52px;
     top: 50%;
@@ -155,24 +40,161 @@ body{
     content: '.';
     z-index: -1111;
     animation: 44s -27s move infinite ease-in-out alternate;
-  }
-  
+}
 
-  
-  head::after {
+
+
+head::after {
     @include dots(50);
     animation-duration: 41s;
     animation-delay: -29s;
-  }
-  
+}
 
 
-  @keyframes move {
+
+@keyframes move {
     from {
-      transform: rotate(0deg) scale(12) translateX(-20px);
+        transform: rotate(0deg) scale(12) translateX(-20px);
     }
+
     to {
-      transform: rotate(360deg) scale(18) translateX(20px);
+        transform: rotate(360deg) scale(18) translateX(20px);
     }
-  }
-  
+}
+
+
+
+@keyframes darkAnimation {
+
+    0% {
+        opacity: 1;
+
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    99% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+
+}
+
+@media screen and (max-height: 600px) {
+    body {
+        & main {
+            overflow: hidden;
+            margin-top: 200px;
+
+            & .header-container {
+                top: 0;
+                left: 0;
+                right: -30px;
+                position: fixed;
+
+                & .hamburger-icon {
+                    margin-left: 30px;
+                }
+
+                & .switch {
+                    position: relative;
+                    transform: translateX(0px);
+                }
+            }
+        }
+    }
+
+}
+
+@media screen and (max-height: $media-width-450px) {
+    body {
+        & main {
+            padding: 0;
+            margin-top: 200px;
+
+            & .header-container {
+                position: fixed;
+            }
+
+            & .switch {
+                position: relative;
+                transform: translateX(50px);
+            }
+        }
+    }
+}
+
+
+.socials {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    place-items: center;
+    position: fixed;
+    top: 40%;
+    right: 20px;
+    row-gap: 10px;
+    z-index: 9;
+    transition: .5s;
+
+    &>a i {
+        font-size: $font-size-30;
+        transition: 5ms;
+        transition: .3s;
+        color: $background-color-dark-black;
+
+    }
+
+    & a:hover {
+        color: $background-color-blue-1;
+    }
+
+    &>a i:hover {
+        transform: scale(1.2);
+        color: $background-color-blue-1;
+    }
+
+    & a::before {
+        font-size: 20px;
+    }
+
+    & a:nth-child(1)::before,
+    a:nth-child(2)::before,
+    a:nth-child(3)::before {
+        content: "LinkedIn";
+        position: absolute;
+        right: 0px;
+        font-size: inherit;
+        font-weight: 700;
+        transition: 0.6s;
+        opacity: 0;
+        border-radius: 5px;
+        padding: 5px;
+        width: 0px;
+    }
+
+    & a:nth-child(2)::before {
+        content: "XING";
+    }
+
+    & a:nth-child(3)::before {
+        content: "Facebook";
+    }
+
+    & a:nth-child(1):hover::before,
+    a:nth-child(2):hover::before,
+    a:nth-child(3):hover::before {
+        position: absolute;
+        right: 100px;
+        font-size: 1.5em;
+        opacity: 1;
+        width: 100%;
+    }
+
+
+
+}
