@@ -14,10 +14,11 @@
     & #closeDa {
         cursor: pointer;
         position: fixed !important;
-        color: #aaaaaa;
+        color: #979797;
         right: 10%;
         font-size: $font-size-40;
         font-weight: bold;
+        z-index:11;
         &:hover,
         &:focus {
             color: $font-color-black;
