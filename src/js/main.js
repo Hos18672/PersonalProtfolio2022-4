@@ -148,3 +148,23 @@ window.onclick = function (event) {
 };
 
 
+document.querySelector('.projects-container div div ul li').addEventListener("click", (e)=> {
+      console.log("item clicked")
+})
+
+function itemOnClickF(item){
+  shareOnFacebook(item)
+}
+function itemOnClickT(item){
+  shareOnTwitter(item)
+}
+function shareOnFacebook(link){
+      const navUrl = 'https://www.facebook.com/sharer/sharer.php?u=' + link;
+      window.open(navUrl , '_blank');
+}
+
+function shareOnTwitter(link) {
+      const navUrl =
+        'https://twitter.com/intent/tweet?text=' + link;
+      window.open(navUrl, '_blank');
+}

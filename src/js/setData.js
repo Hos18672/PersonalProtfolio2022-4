@@ -27,7 +27,7 @@ function setProjectsData(data) {
     let li = document.createElement("li");
     if (item.webLink) {
       li.innerHTML = `<time class="time">${item.date}</time>
-            <div class="project-item">
+            <div  class="project-item">
               <img class="portfolio-img" src=${encodeURI(item.img)}/>
               <h2>${item.title} </h2>
               <p>
@@ -35,6 +35,11 @@ function setProjectsData(data) {
               </p>     
               <a href="${item.webLink}">Live</a>
               <span><a href="${item.githubLink}"> Code </a></span>
+              <div>
+                <div onClick='itemOnClickT("${item.githubLink}")'> <i class="fa-brands fa-twitter-square"></i></div>
+                <div onClick='itemOnClickF("${item.githubLink}")'> <i class="fa-brands fa-facebook-square"></i></div>
+              </div>
+
             </div> `;
     } else {
       li.innerHTML = `<time class="time">${item.date}</time>
@@ -46,6 +51,10 @@ function setProjectsData(data) {
               </p>    
               <span><a href="${item.githubLink}"> Code </a></span>
               <span data-text=${item.githubLink} id="gitHubLink"></span> 
+              <div>
+                <div onClick='itemOnClickT("${item.githubLink}")'> <i class="fa-brands fa-twitter-square"></i></div>
+                <div onClick='itemOnClickF("${item.githubLink}")'> <i class="fa-brands fa-facebook-square"></i></div>
+              </div>
             </div> `;
     }
 
