@@ -62,7 +62,8 @@
                 visibility: hidden;
                 opacity: 0;
                 transition: all .5s ease-in-out;
-                width: 350px;
+                width: 340px;
+                height:fit-content;
                 padding: 10px;
                 border-radius: 10px;
                 bottom: 10px;
@@ -147,7 +148,7 @@
                             cursor: pointer;
                             position: relative;
                             transform:translateX(300px);
-                            bottom: 40px;
+                            bottom: 30px;
                             margin: 5px;
                             transition: 0.5s;
 
@@ -205,8 +206,8 @@
                             position: relative;
                             transition: .5s;
                             right:0;
-                            transform:translateY(-46px);
-                            margin: 5px;
+                            transform:translateY(-43px);
+                            margin:  5px 0;
                             &:hover{
                                 color: $background-color-blue-2;
                             }
@@ -285,18 +286,19 @@
                     display:inline-block;
                     flex-direction: column;
                     position: relative;
-                    transform:translateX(670px);
+                    transform:translateX(650px);
                     transition: .5s;
                      & i{
 
-                        transform:translateY(-46px);
-            
+                        transform:translateY(-45px);
                     }
                     & li:nth-child(1){
                         top:10px;
+                        margin-right: -20px;
                     }
                     & li:nth-child(2){
-                        top:-10px;
+                        top:-10px; 
+                        margin-right: -60px;
                     }
                 }
            

@@ -47,17 +47,17 @@
 
         & h1 {
             z-index: 111;
-            font-size: $font-size-50;
+            font-size: $font-size-30;
             transition: 0.5s;
         }
 
         & h2 {
-            font-size: $font-size-40;
+            font-size: $font-size-25;
             transition: 0.5s;
         }
 
         & p {
-            font-size: $font-size-25;
+            font-size: $font-size-20;
             transition: 0.5s;
         }
     }
@@ -69,15 +69,15 @@
             height: 65%;
 
             & h1 {
-                font-size: $font-size-35;
+                font-size: $font-size-25;
             }
 
             & h2 {
-                font-size: $font-size-30;
+                font-size: $font-size-20;
             }
 
             & p {
-                font-size: $font-size-20;
+                font-size: $font-size-15;
             }
         }
     }
@@ -88,15 +88,15 @@
             height: 60%;
 
             & h1 {
-                font-size: $font-size-30;
+                font-size: $font-size-20;
             }
 
             & h2 {
-                font-size: $font-size-25;
+                font-size: $font-size-17;
             }
 
             & p {
-                font-size: $font-size-17;
+                font-size: $font-size-15;
             }
         }
     }

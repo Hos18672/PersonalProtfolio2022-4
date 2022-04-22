@@ -49,22 +49,22 @@
         }
 
         & h1 {
-            font-size: $font-size-50;
+            font-size: $font-size-30;
             transition: 0.5s;
         }
 
         & h2 {
-            font-size: $font-size-40;
+            font-size: $font-size-25;
             transition: 0.5s;
         }
 
         & p {
-            font-size: $font-size-25;
+            font-size: $font-size-20;
             transition: 0.5s;
         }
 
         & ul {
-            font-size: $font-size-25;
+            font-size: $font-size-20;
             transition: 0.5s;
         }
     }
@@ -76,19 +76,19 @@
             height: 65%;
 
             & h1 {
-                font-size: $font-size-35;
-            }
-
-            & h2 {
                 font-size: $font-size-30;
             }
 
-            & p {
+            & h2 {
                 font-size: $font-size-20;
             }
 
+            & p {
+                font-size: $font-size-15;
+            }
+
             & ul {
-                font-size: $font-size-20;
+                font-size: $font-size-15;
             }
         }
     }
@@ -99,19 +99,19 @@
             height: 70%;
 
             & h1 {
-                font-size: $font-size-30;
+                font-size: $font-size-20;
             }
 
             & h2 {
-                font-size: $font-size-25;
+                font-size: $font-size-15;
             }
 
             & p {
-                font-size: $font-size-17;
+                font-size: $font-size-15;
             }
 
             & ul {
-                font-size: $font-size-17;
+                font-size: $font-size-15;
             }
         }
     }
