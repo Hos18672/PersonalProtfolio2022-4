@@ -13,6 +13,10 @@ var windowHeight = window.innerHeight;
 var navbar1 = navbar.getBoundingClientRect().bottom;
 var elementVisible = 60;
 
+
+const metaViewport = document.querySelector('meta[name=viewport]')
+metaViewport.setAttribute('content', 'width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0')
+
 // Dark mode Switch onClick
 switchButton.addEventListener("click", () => {
   var element = document.body;
