@@ -77,9 +77,12 @@
                             z-index: 111;
                             margin-bottom: 15px;
                             margin-left: -15px;
-
+                            & input[type="text"]  {  font-size:$font-size-20; }
+                            & input[type="email"] { font-size:$font-size-20; }
+                            & #message {  font-size:$font-size-20;}
                             & textarea {
                                 background-color: $background-color-red;
+                                font-size: 32px;
                                 height: 100px;
                                 max-height: 200px;
                                 min-height: 100px;
@@ -169,6 +172,7 @@
 
                         & .app-from-container {
                             & .app-form-group {
+
                                 & input {
                                     max-width: 200px;
                                     min-width: 200px;
@@ -237,6 +241,14 @@
                 & .screen-body-item {
                     & .app-form {
                         margin-left: 5%;
+                        & .app-form-container{
+                            & .app-form-group {
+                                & input[type="text"]  {  font-size:$font-size-17; }
+                                & input[type="email"] { font-size:$font-size-17; }
+                                & #message {  font-size:$font-size-25;}
+
+                            }
+                        }
                     }
 
                 }

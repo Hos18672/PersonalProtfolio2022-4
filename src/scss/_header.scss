@@ -63,7 +63,7 @@
                     transition: 400ms;
                     height: 5px;
                     content: "";
-                    color: white;
+                    color: $font-color-white;
                     position: absolute;
                     border-radius: 5px;
                     background-color: $background-color-blue-1;
@@ -82,6 +82,27 @@
 
              &>.nav-item:active {
                  transform: scale(.9);
+             }
+             & .nav-item.is-active {                  
+                 &::before {
+                    transition: 400ms;
+                    height: 5px;
+                    content: "";
+                    color: $font-color-white;
+                    position: absolute;
+                    border-radius: 5px;
+                    background-color: $background-color-blue-1;
+                  }
+                  
+                 &::before {
+                     
+                    width: 100%;
+                    bottom: 10px;
+                  }
+
+                  &:hover::before {
+                    width: 100%;
+                  }
              }
          }
 
@@ -217,7 +238,7 @@
                     transition: 400ms;
                     height: 5px;
                     content: "";
-                    color: white;
+                    color: $font-color-white;
                     position: absolute;
                     border-radius: 5px;
                     background-color: $background-color-blue-1;

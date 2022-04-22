@@ -365,6 +365,11 @@ main {
   position: relative;
 }
 
+.container {
+  height: 100vh;
+  padding: 0 30px;
+}
+
 ::-webkit-scrollbar {
   width: 15px;
   transition: 0.5s;
@@ -386,29 +391,6 @@ main {
   border-radius: 50px;
 }
 
-.container {
-  height: 100vh;
-  padding: 0 30px;
-}
-
-@keyframes fotoAnimation {
-  0% {
-    opacity: 0;
-    transform: scale(0);
-  }
-  50% {
-    opacity: 30%;
-    transform: scale(0.35);
-  }
-  75% {
-    opacity: 60%;
-    transform: scale(0.75);
-  }
-  100% {
-    opacity: 100%;
-    transform: scale(1);
-  }
-}
 .header-container {
   width: 100%;
   display: flex;
@@ -486,6 +468,22 @@ main {
 }
 .header-container > .h-container #nav-list-container > .nav-item:active {
   transform: scale(0.9);
+}
+.header-container > .h-container #nav-list-container .nav-item.is-active::before {
+  transition: 400ms;
+  height: 5px;
+  content: "";
+  color: white;
+  position: absolute;
+  border-radius: 5px;
+  background-color: rgb(1, 196, 255);
+}
+.header-container > .h-container #nav-list-container .nav-item.is-active::before {
+  width: 100%;
+  bottom: 10px;
+}
+.header-container > .h-container #nav-list-container .nav-item.is-active:hover::before {
+  width: 100%;
 }
 .header-container > .h-container > .switch {
   display: flex;
@@ -722,7 +720,7 @@ body::after {
 }
 
 head::after {
-  text-shadow: 1.5329517423em 2.3034468069em 7px hsla(118.0238085815deg, 100%, 50%, 0.9), 0.7050181097em 2.1220345197em 7px hsla(55.6881789591deg, 100%, 50%, 0.9), 1.948512492em 1.0123050675em 7px hsla(265.1154582447deg, 100%, 50%, 0.9), 0.0691526119em 2.321126516em 7px hsla(285.142552298deg, 100%, 50%, 0.9), 1.217731235em 0.3290336564em 7px hsla(312.1300380089deg, 100%, 50%, 0.9), 0.8685331114em 1.2263073546em 7px hsla(302.9399810781deg, 100%, 50%, 0.9), 0.5576887555em 0.5029529976em 7px hsla(229.8166326152deg, 100%, 50%, 0.9), 2.3407586877em -0.3798136628em 7px hsla(310.5707993447deg, 100%, 50%, 0.9), 0.2754511526em 0.4374784767em 7px hsla(216.7022578085deg, 100%, 50%, 0.9), 1.2936404826em 0.8812537661em 7px hsla(288.657709031deg, 100%, 50%, 0.9), -0.1044783834em -0.4432602259em 7px hsla(177.5264177564deg, 100%, 50%, 0.9), 1.9117099221em 1.4797875066em 7px hsla(99.4189369684deg, 100%, 50%, 0.9), -0.408185871em 2.0382843977em 7px hsla(199.8411934837deg, 100%, 50%, 0.9), -0.1772811529em 1.6138267991em 7px hsla(122.4430549298deg, 100%, 50%, 0.9), 0.1735798782em 1.6939428449em 7px hsla(353.9217485656deg, 100%, 50%, 0.9), 1.9733101999em 1.3884695305em 7px hsla(125.4029346102deg, 100%, 50%, 0.9), 2.2613381422em -0.1992282861em 7px hsla(135.0846964541deg, 100%, 50%, 0.9), 0.1854589003em 1.8414526357em 7px hsla(323.6748693951deg, 100%, 50%, 0.9), 2.4325116368em 1.7468230627em 7px hsla(193.6603316246deg, 100%, 50%, 0.9), 1.0845946165em 1.9820003025em 7px hsla(186.5874973496deg, 100%, 50%, 0.9), 0.1015051811em 1.6992780142em 7px hsla(166.8336150284deg, 100%, 50%, 0.9), 0.0520407735em -0.2665890609em 7px hsla(128.2335550673deg, 100%, 50%, 0.9), 1.8832337309em -0.1247183004em 7px hsla(291.2617267384deg, 100%, 50%, 0.9), 1.1414230061em 1.304520436em 7px hsla(127.5634278767deg, 100%, 50%, 0.9), -0.0224767011em 2.1387413412em 7px hsla(66.3438563923deg, 100%, 50%, 0.9), -0.2192686136em 1.6702545312em 7px hsla(220.3454531383deg, 100%, 50%, 0.9), -0.2869559941em 0.565482794em 7px hsla(122.2492554694deg, 100%, 50%, 0.9), 1.9013548208em 2.0609146066em 7px hsla(158.7028055729deg, 100%, 50%, 0.9), 0.162113514em 2.1993453549em 7px hsla(79.1882901514deg, 100%, 50%, 0.9), 0.0530285628em 1.2801544078em 7px hsla(288.2819134861deg, 100%, 50%, 0.9), 0.1419697126em 2.3120054289em 7px hsla(269.2767219299deg, 100%, 50%, 0.9), -0.1434370369em 1.1347703336em 7px hsla(323.3055111835deg, 100%, 50%, 0.9), 2.322671516em -0.2984048072em 7px hsla(234.6372533023deg, 100%, 50%, 0.9), 2.2272373577em 0.6292207887em 7px hsla(271.0965420532deg, 100%, 50%, 0.9), 1.188275405em 1.6007339557em 7px hsla(82.0473188424deg, 100%, 50%, 0.9), 0.6679178179em 1.5979530517em 7px hsla(34.14086372deg, 100%, 50%, 0.9), 2.2428949792em 0.2832800233em 7px hsla(258.6906103899deg, 100%, 50%, 0.9), -0.2364687127em -0.256370768em 7px hsla(38.6360879299deg, 100%, 50%, 0.9), 1.1318132345em 0.782466039em 7px hsla(133.1343969978deg, 100%, 50%, 0.9), 0.7306584196em 1.3548854578em 7px hsla(8.5265039703deg, 100%, 50%, 0.9), 2.1627531583em 0.9158364357em 7px hsla(256.2202768902deg, 100%, 50%, 0.9), 1.2420140574em 1.1129888304em 7px hsla(310.8371150549deg, 100%, 50%, 0.9), 0.9819584492em 0.0998361935em 7px hsla(22.9847014897deg, 100%, 50%, 0.9), 0.3763822602em 1.6543992496em 7px hsla(103.2376973365deg, 100%, 50%, 0.9), 0.7050981267em 0.3016151504em 7px hsla(204.149138044deg, 100%, 50%, 0.9), 0.6080947683em -0.1484221868em 7px hsla(355.7257491411deg, 100%, 50%, 0.9), 0.9459637165em 2.239123856em 7px hsla(127.0647289735deg, 100%, 50%, 0.9), -0.2999738562em -0.1670114969em 7px hsla(173.3332069224deg, 100%, 50%, 0.9), -0.0334596919em 1.8785341696em 7px hsla(287.4700697505deg, 100%, 50%, 0.9), 0.967547947em 0.7280028522em 7px hsla(244.5251391954deg, 100%, 50%, 0.9), 1.9586293989em 1.143948414em 7px hsla(45.7051629795deg, 100%, 50%, 0.9);
+  text-shadow: 1.7094648738em 0.7130079793em 7px hsla(61.273324293deg, 100%, 50%, 0.9), 0.8432907742em 1.3903232708em 7px hsla(323.2140488924deg, 100%, 50%, 0.9), 2.102477528em 0.3553648413em 7px hsla(341.9614533302deg, 100%, 50%, 0.9), 1.3189855082em 1.1256939955em 7px hsla(67.0378979946deg, 100%, 50%, 0.9), 0.9197028375em 0.6690287143em 7px hsla(125.9929817798deg, 100%, 50%, 0.9), 0.2985556701em -0.3420561318em 7px hsla(323.3524707356deg, 100%, 50%, 0.9), 0.9864979698em 1.036549602em 7px hsla(27.9705875981deg, 100%, 50%, 0.9), 0.3298496616em 0.2750511492em 7px hsla(330.0132864957deg, 100%, 50%, 0.9), 1.4320999556em 1.2607274693em 7px hsla(122.2874189308deg, 100%, 50%, 0.9), -0.4254382459em 1.7302675009em 7px hsla(160.6690745929deg, 100%, 50%, 0.9), 0.4715363816em 0.3940973611em 7px hsla(147.9476652367deg, 100%, 50%, 0.9), 2.1980239497em -0.3049216424em 7px hsla(338.6975537319deg, 100%, 50%, 0.9), 0.4544489473em 0.7900584262em 7px hsla(34.6144504811deg, 100%, 50%, 0.9), -0.2906774031em 1.1809141126em 7px hsla(181.0361531112deg, 100%, 50%, 0.9), 0.6665697418em 0.0009071066em 7px hsla(161.5666680509deg, 100%, 50%, 0.9), 1.6628471177em 2.0774405247em 7px hsla(100.7660498282deg, 100%, 50%, 0.9), 1.0166708639em 0.4732826656em 7px hsla(258.9813744402deg, 100%, 50%, 0.9), -0.4158333819em 2.4926536982em 7px hsla(65.4399707686deg, 100%, 50%, 0.9), 0.6121248815em 1.3081782751em 7px hsla(157.9472940575deg, 100%, 50%, 0.9), 0.2709690349em 1.2157735731em 7px hsla(175.7790907145deg, 100%, 50%, 0.9), 2.0654303569em 2.427003702em 7px hsla(18.7463022757deg, 100%, 50%, 0.9), 0.6185046451em 0.0968567293em 7px hsla(210.7185875328deg, 100%, 50%, 0.9), 1.8218708202em 0.0760864208em 7px hsla(28.5986518534deg, 100%, 50%, 0.9), 0.8494073167em 0.9140352456em 7px hsla(43.7885891303deg, 100%, 50%, 0.9), 0.9006631599em 1.7261887193em 7px hsla(110.0972778722deg, 100%, 50%, 0.9), -0.2729925352em 1.8491714896em 7px hsla(311.8729316895deg, 100%, 50%, 0.9), -0.0400343422em 2.2556858309em 7px hsla(128.1440845741deg, 100%, 50%, 0.9), 0.3752391263em 1.7649115859em 7px hsla(61.1335356007deg, 100%, 50%, 0.9), 0.9367458457em 2.3003169583em 7px hsla(350.8907645425deg, 100%, 50%, 0.9), 1.4068963683em 2.2024971512em 7px hsla(38.7969892712deg, 100%, 50%, 0.9), 0.1253161845em -0.4933705874em 7px hsla(241.7523744574deg, 100%, 50%, 0.9), 2.0242242163em -0.1163545751em 7px hsla(273.3286089036deg, 100%, 50%, 0.9), 0.7142236905em 0.1942066983em 7px hsla(221.9015445708deg, 100%, 50%, 0.9), 1.1315470382em 0.0567576496em 7px hsla(86.2143774636deg, 100%, 50%, 0.9), 0.3115918667em 2.4945646034em 7px hsla(200.2549784288deg, 100%, 50%, 0.9), -0.1256396424em 0.2171560554em 7px hsla(16.1969015634deg, 100%, 50%, 0.9), 0.8590564504em 2.071413268em 7px hsla(306.5280579934deg, 100%, 50%, 0.9), 1.4995130266em 2.2446624992em 7px hsla(170.7479764878deg, 100%, 50%, 0.9), 2.2905017695em 0.231148956em 7px hsla(165.8725110074deg, 100%, 50%, 0.9), 2.0214526459em 1.3219542117em 7px hsla(198.1819762037deg, 100%, 50%, 0.9), 0.6434648494em 1.581627141em 7px hsla(130.0965592684deg, 100%, 50%, 0.9), -0.1840540285em -0.4533330423em 7px hsla(264.4836022074deg, 100%, 50%, 0.9), 2.4313803962em 2.1166989563em 7px hsla(57.6804563353deg, 100%, 50%, 0.9), 1.9583815888em 1.648800365em 7px hsla(32.6291131761deg, 100%, 50%, 0.9), 1.2356038826em 0.6658525025em 7px hsla(39.0137783368deg, 100%, 50%, 0.9), 1.9628034834em 1.8643611674em 7px hsla(213.1201121146deg, 100%, 50%, 0.9), 1.7164841491em 0.3951316124em 7px hsla(107.6657899515deg, 100%, 50%, 0.9), -0.2390746754em -0.3622487843em 7px hsla(315.7849640663deg, 100%, 50%, 0.9), 1.6729795888em -0.0916066832em 7px hsla(14.3966632672deg, 100%, 50%, 0.9), 2.1827410926em 2.3807118316em 7px hsla(84.6347312175deg, 100%, 50%, 0.9), 2.3255399068em 0.5779714307em 7px hsla(28.3985743928deg, 100%, 50%, 0.9);
   animation-duration: 41s;
   animation-delay: -29s;
 }
@@ -911,15 +909,15 @@ head::after {
     animation-timing-function: ease-in-out;
   }
 }
-.landing-page > img {
+.landing-page img {
   z-index: 3;
   width: 300px;
   position: relative;
   transition: 0.5s;
-  animation: fotoAnimation 1.2s linear;
+  animation: fotoAnimation 1.5s linear;
   z-index: 11;
 }
-.landing-page > img:hover {
+.landing-page img:hover {
   transform: scale(1.1);
   filter: drop-shadow(10px 20px 30px rgba(55, 55, 55, 0.23));
 }
@@ -927,7 +925,8 @@ head::after {
   position: relative;
   width: 50px;
   transition: 0.4s;
-  animation: fotoAnimation 2s linear, arrowAnimation 1.2s linear 1s infinite;
+  opacity: 0;
+  animation: fotoAnimation 2s linear 2s both, arrowAnimation 1.2s linear 2s infinite both;
 }
 .landing-page .arrow-down:hover {
   fill: rgb(0, 170, 255);
@@ -988,66 +987,6 @@ head::after {
   100% {
     opacity: 100%;
     transform: scale(1);
-  }
-}
-@keyframes nameAnimation {
-  0% {
-    transform: scale(0);
-  }
-  50% {
-    transform: scale(0.35);
-  }
-  75% {
-    transform: scale(0.75);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-@-webkit-keyframes boingInUp {
-  0% {
-    opacity: 0;
-    -webkit-transform-origin: 50% 0%;
-    transform-origin: 50% 0%;
-    -webkit-transform: perspective(800px) rotateX(-90deg);
-    transform: perspective(800px) rotateX(-90deg);
-  }
-  50% {
-    opacity: 1;
-    -webkit-transform-origin: 50% 0%;
-    transform-origin: 50% 0%;
-    -webkit-transform: perspective(800px) rotateX(50deg);
-    transform: perspective(800px) rotateX(50deg);
-  }
-  100% {
-    opacity: 1;
-    -webkit-transform-origin: 50% 0%;
-    transform-origin: 50% 0%;
-    -webkit-transform: perspective(800px) rotateX(0deg);
-    transform: perspective(800px) rotateX(0deg);
-  }
-}
-@keyframes boingInUp {
-  0% {
-    opacity: 0;
-    -webkit-transform-origin: 50% 0%;
-    transform-origin: 50% 0%;
-    -webkit-transform: perspective(800px) rotateX(-90deg);
-    transform: perspective(800px) rotateX(-90deg);
-  }
-  50% {
-    opacity: 1;
-    -webkit-transform-origin: 50% 0%;
-    transform-origin: 50% 0%;
-    -webkit-transform: perspective(800px) rotateX(50deg);
-    transform: perspective(800px) rotateX(50deg);
-  }
-  100% {
-    opacity: 1;
-    -webkit-transform-origin: 50% 0%;
-    transform-origin: 50% 0%;
-    -webkit-transform: perspective(800px) rotateX(0deg);
-    transform: perspective(800px) rotateX(0deg);
   }
 }
 .about-container {
@@ -1266,13 +1205,13 @@ head::after {
   cursor: pointer;
   font-size: 25px;
   padding: 15px;
-  transition: all 0.3s ease-in-out;
+  transition: 0.3s;
 }
 .projects-container ul li .project-item a:hover {
   color: rgb(0, 119, 255);
-  font-size: 25px;
+  font-size: 20px;
   font-weight: bold;
-  transform: scale(1.3);
+  transform: scale(1.1);
 }
 .projects-container ul li:nth-child(odd) div {
   left: 45px;
@@ -1346,7 +1285,6 @@ head::after {
     padding: 10px;
   }
   .projects-container div ul li .project-item a {
-    cursor: pointer;
     font-size: 20px;
   }
   .projects-container div ul li:nth-child(odd) div {
@@ -1971,8 +1909,18 @@ head::after {
   margin-bottom: 15px;
   margin-left: -15px;
 }
+.contact-container .container .screen .screen-body .screen-body-item .app-form .app-from-container .app-form-group input[type=text] {
+  font-size: 20px;
+}
+.contact-container .container .screen .screen-body .screen-body-item .app-form .app-from-container .app-form-group input[type=email] {
+  font-size: 20px;
+}
+.contact-container .container .screen .screen-body .screen-body-item .app-form .app-from-container .app-form-group #message {
+  font-size: 20px;
+}
 .contact-container .container .screen .screen-body .screen-body-item .app-form .app-from-container .app-form-group textarea {
   background-color: red;
+  font-size: 32px;
   height: 100px;
   max-height: 200px;
   min-height: 100px;
@@ -2093,6 +2041,15 @@ head::after {
   .contact-container .container .screen .screen-body .screen-body-item .app-form {
     margin-left: 5%;
   }
+  .contact-container .container .screen .screen-body .screen-body-item .app-form .app-form-container .app-form-group input[type=text] {
+    font-size: 17px;
+  }
+  .contact-container .container .screen .screen-body .screen-body-item .app-form .app-form-container .app-form-group input[type=email] {
+    font-size: 17px;
+  }
+  .contact-container .container .screen .screen-body .screen-body-item .app-form .app-form-container .app-form-group #message {
+    font-size: 25px;
+  }
 }
 
 .footer {
@@ -2127,7 +2084,7 @@ head::after {
 }
 .footer .imda .impressum:hover,
 .footer .imda .datenschutz:hover {
-  color: rgb(0, 179, 255);
+  color: rgb(1, 153, 255);
   transform: scale(1.1);
 }
 @media only screen and (max-width: 450px) {
@@ -2146,10 +2103,6 @@ head::after {
   background-color: #1d2528;
   color: white;
   transition: 1s;
-}
-.dark-mode .header-container {
-  width: 100%;
-  display: flex;
 }
 .dark-mode .header-container .h-container.scrolled {
   box-shadow: 0px 10px 13px -13px #000000, 5px 5px 150px 5px rgba(0, 0, 0, 0);
@@ -2185,10 +2138,6 @@ head::after {
   background-image: url(../src/images/moon.png);
   -webkit-filter: invert(100%);
 }
-.dark-mode .landing-page {
-  transition: none;
-  transition-delay: 0s;
-}
 .dark-mode .landing-page .name-container div {
   color: white;
 }
@@ -2197,12 +2146,8 @@ head::after {
 }
 .dark-mode .about-container > .about-main-container > .text-container > .about-span {
   background-color: #37464d;
-  color: white;
 }
-.dark-mode .about-container > .about-main-container > .text-container .main-container {
-  color: white;
-}
-.dark-mode .about-container > .about-main-container > .text-container .main-container h1 {
+.dark-mode .about-container > .about-main-container > .text-container .main-container h1, .dark-mode .about-container > .about-main-container > .text-container .main-container p {
   color: white;
 }
 .dark-mode .projects-container h1 {
@@ -2219,13 +2164,7 @@ head::after {
   background-color: #232c31;
   box-shadow: 6px 9px 35px -10px rgba(0, 0, 0, 0.24);
 }
-.dark-mode .projects-container ul li div h2 {
-  color: white;
-}
-.dark-mode .projects-container ul li div p {
-  color: white;
-}
-.dark-mode .projects-container ul li div a {
+.dark-mode .projects-container ul li div h2, .dark-mode .projects-container ul li div p, .dark-mode .projects-container ul li div a {
   color: white;
 }
 .dark-mode .works-container h1 {
@@ -2243,10 +2182,7 @@ head::after {
   background-color: #232c31;
   box-shadow: 6px 9px 35px -10px rgba(0, 0, 0, 0.24);
 }
-.dark-mode .works-container .works-items div.work-item div.item h2 {
-  color: white;
-}
-.dark-mode .works-container .works-items div.work-item div.item p {
+.dark-mode .works-container .works-items div.work-item div.item h2, .dark-mode .works-container .works-items div.work-item div.item p {
   color: white;
 }
 .dark-mode .works-container .works-items div.work-item::after {
@@ -2260,19 +2196,13 @@ head::after {
 .dark-mode .works-container .works-items div.work-item:nth-of-type(even):nth-child(4) {
   border-bottom: 3px solid #5b696f;
 }
-.dark-mode .works-container .works-items div.work-item:nth-of-type(even)::after {
-  background-color: #5b696f;
-}
-.dark-mode .works-container .works-items div.work-item:nth-of-type(even)::before {
+.dark-mode .works-container .works-items div.work-item:nth-of-type(even)::after, .dark-mode .works-container .works-items div.work-item:nth-of-type(even)::before {
   background-color: #5b696f;
 }
 .dark-mode .works-container .works-items div.work-item:nth-of-type(odd) {
   border-right: 3px solid transparent;
 }
-.dark-mode .works-container .works-items div.work-item:nth-of-type(odd)::after {
-  background-color: #5b696f;
-}
-.dark-mode .works-container .works-items div.work-item:nth-of-type(odd)::before {
+.dark-mode .works-container .works-items div.work-item:nth-of-type(odd)::after, .dark-mode .works-container .works-items div.work-item:nth-of-type(odd)::before {
   background-color: #5b696f;
 }
 .dark-mode .educations-container h1 {
@@ -2286,10 +2216,7 @@ head::after {
   background-color: #232c31;
   box-shadow: 6px 9px 35px -10px rgba(0, 0, 0, 0.24);
 }
-.dark-mode .educations-container .education-items .education-item .item h2 {
-  color: white;
-}
-.dark-mode .educations-container .education-items .education-item .item p {
+.dark-mode .educations-container .education-items .education-item .item h2, .dark-mode .educations-container .education-items .education-item .item p {
   color: white;
 }
 .dark-mode .skills-container h1 {
@@ -2391,7 +2318,6 @@ head::after {
 .datenschutzBox {
   display: none;
   position: fixed;
-  z-index: 1;
   margin-top: -250px;
   padding-top: 340px;
   left: 0;
@@ -2410,10 +2336,9 @@ head::after {
   right: 10%;
   font-size: 40px;
   font-weight: bold;
-  z-index: 11;
 }
 .datenschutzBox #closeDa:hover, .datenschutzBox #closeDa:focus {
-  color: #000;
+  color: black;
   text-decoration: none;
   cursor: pointer;
   transform: scale(1.2);
@@ -2438,15 +2363,19 @@ head::after {
 }
 .datenschutzBox .datenschutz-content h1 {
   font-size: 50px;
+  transition: 0.5s;
 }
 .datenschutzBox .datenschutz-content h2 {
   font-size: 40px;
+  transition: 0.5s;
 }
 .datenschutzBox .datenschutz-content p {
   font-size: 25px;
+  transition: 0.5s;
 }
 .datenschutzBox .datenschutz-content ul {
   font-size: 25px;
+  transition: 0.5s;
 }
 @media only screen and (max-width: 850px) {
   .datenschutzBox .datenschutz-content {
@@ -2533,12 +2462,15 @@ head::after {
 .impressumBox .impressum-content h1 {
   z-index: 111;
   font-size: 50px;
+  transition: 0.5s;
 }
 .impressumBox .impressum-content h2 {
   font-size: 40px;
+  transition: 0.5s;
 }
 .impressumBox .impressum-content p {
   font-size: 25px;
+  transition: 0.5s;
 }
 @media only screen and (max-width: 850px) {
   .impressumBox .impressum-content {

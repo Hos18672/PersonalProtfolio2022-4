@@ -9,7 +9,7 @@
         height: 2px;
         width: 50%;
         transition: 0.5s;
-        background-color: black;
+        background-color: $background-color-dark-black;
     }
 
     & p {
@@ -31,7 +31,7 @@
             margin-right: 15px;
 
             &:hover {
-                color: rgb(0, 179, 255);
+                color: $background-color-blue-2;
                 transform:scale(1.1);
             }
         }

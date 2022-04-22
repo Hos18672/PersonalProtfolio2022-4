@@ -93,12 +93,12 @@
                     cursor: pointer;
                     font-size: $font-size-25;
                     padding: 15px;
-                    transition: all .3s ease-in-out;
+                    transition: .3s ;
                     &:hover {
                         color: rgb(0, 119, 255);
-                        font-size: $font-size-25;
+                        font-size: $font-size-20;
                         font-weight: bold;
-                        transform: scale(1.3)
+                        transform: scale(1.1)
                     }
 
                 }
@@ -189,7 +189,6 @@
                         }
 
                         & a {
-                            cursor: pointer;
                             font-size: $font-size-20;
                         }
                     }

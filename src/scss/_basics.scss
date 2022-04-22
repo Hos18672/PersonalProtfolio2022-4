@@ -9,6 +9,10 @@ footer {
 main{
     position: relative;
 }
+.container {
+    height: 100vh;
+    padding: 0 30px;
+}
 ::-webkit-scrollbar {
     width: 15px;
     transition: 0.5s
@@ -34,33 +38,3 @@ main{
     * {}
 }
 
-.container {
-    height: 100vh;
-    padding: 0 30px;
-}
-
-
-
-
-
-@keyframes fotoAnimation {
-    0% {
-        opacity: 0;
-        transform: scale(0);
-    }
-
-    50% {
-        opacity: 30%;
-        transform: scale(.35);
-    }
-
-    75% {
-        opacity: 60%;
-        transform: scale(.75);
-    }
-
-    100% {
-        opacity: 100%;
-        transform: scale(1);
-    }
-}

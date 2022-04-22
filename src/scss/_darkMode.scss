@@ -2,21 +2,16 @@
     background-color: $background-color-dark-main;
     color: $font-color-white;
     transition: 1s;
-
     ///////////////////////   header Container  /////////////////////////////////////////
     .header-container {
-        width: 100%;
-        display: flex;
         & .h-container.scrolled {
             box-shadow: 0px 10px 13px -13px #000000, 5px 5px 150px 5px rgba(0, 0, 0, 0);
         }
-
         &>.h-container {
             & .logo-container {
                 & .reza {
                     color: $font-color-white;
                 }
-
                 & .hossaini {
                     font-weight: 700;
                 }
@@ -42,7 +37,6 @@
                 & #nav-list-container1 {
                     background-color: $background-color-dark-hell-2;
                     box-shadow: 0px 3px 34px 9px #201f1f62;
-
                     & a {
                         color: $font-color-white;
                     }
@@ -53,7 +47,6 @@
                 & > label {
                     border: 2px solid $background-color-White;
                 }
-
                 &>input:checked+label:after {
                     left: calc(100% - 5px);
                     transform: translateX(-100%);
@@ -67,9 +60,6 @@
 
     ///////////////////////   Landing Container  /////////////////////////////////////////
     .landing-page {
-        transition: none;
-        transition-delay: 0s;
-
         & .name-container {
             & div{
                 color:$font-color-white;
@@ -89,11 +79,9 @@
             &>.text-container {
                 &>.about-span {
                     background-color: $background-color-dark-hell-2;
-                    color: $font-color-white;
                 }
                 & .main-container {
-                    color: $font-color-white;
-                    & h1{
+                    & h1, p{
                         color: $font-color-white;
                     }
                 }
@@ -121,15 +109,7 @@
                 background-color: $background-color-dark-hell-4;
                 box-shadow: 6px 9px 35px -10px rgba(0, 0, 0, 0.24);
 
-                & h2 {
-                    color: $font-color-white;
-                }
-
-                & p {
-                    color: $font-color-white;
-                }
-
-                & a {
+                & h2 , p, a{
                     color: $font-color-white;
                 }
             }
@@ -160,11 +140,7 @@
                     background-color: $background-color-dark-hell-4;
                     box-shadow: 6px 9px 35px -10px rgba(0, 0, 0, 0.24);
 
-                    & h2 {
-                        color: $font-color-white;
-                    }
-
-                    & p {
+                    & h2, p {
                         color: $font-color-white;
                     }
 
@@ -184,12 +160,7 @@
                     border-bottom: 3px solid $background-color-dark-hell-1;
                 }
 
-                &::after {
-                    background-color: $background-color-dark-hell-1;
-                }
-
-                &::before {
-
+                &::after, &::before {
                     background-color: $background-color-dark-hell-1;
                 }
             }
@@ -197,11 +168,7 @@
             & div.work-item:nth-of-type(odd) {
                 border-right: 3px solid transparent;
 
-                &::after {
-                    background-color: $background-color-dark-hell-1;
-                }
-
-                &::before {
+                &::after, &::before {
                     background-color: $background-color-dark-hell-1;
                 }
             }
@@ -215,7 +182,6 @@
         & h1 {
             color: $font-color-white;
         }
-
         & .education-items {
             & .education-item {
                 & time {
@@ -226,16 +192,11 @@
 
             & .education-item {
 
-
                 & .item {
                     background-color: $background-color-dark-hell-4;
                     box-shadow: 6px 9px 35px -10px rgba(0, 0, 0, 0.24);
 
-                    & h2 {
-                        color: $font-color-white;
-                    }
-
-                    & p {
+                    & h2 , p{
                         color: $font-color-white;
                     }
                 }
