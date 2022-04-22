@@ -1,6 +1,7 @@
 let worksList = data.works;
 let educationList = data.educations;
 let projectsList = data.projects;
+let skillsList = data.skills;
 /* ----------------------- set User Data ------------------------ */
 
 /* ------------------ set aboutMe Data  -------------------- */
@@ -15,6 +16,8 @@ let email = document.querySelector(".email");
 tel.innerHTML = '<i class="fa-solid fa-phone"></i>' + data.tel;
 email.innerHTML = '<i class="fa-solid fa-envelope"></i>' + data.Email;
 
+
+
 /* ----------------------- set Projects Data ------------------------ */
 
 function setProjectsData(data) {
@@ -25,7 +28,7 @@ function setProjectsData(data) {
     if (item.webLink) {
       li.innerHTML = `<time class="time">${item.date}</time>
             <div class="project-item">
-              <img class="portfolio-img" src=${item.img.src}/>
+              <img class="portfolio-img" src=${encodeURI(item.img)}/>
               <h2>${item.title} </h2>
               <p>
               ${item.description} 
@@ -36,7 +39,7 @@ function setProjectsData(data) {
     } else {
       li.innerHTML = `<time class="time">${item.date}</time>
             <div class="project-item">
-              <img class="portfolio-img" src=${item.img.src}/>
+              <img class="portfolio-img" src=${encodeURI(item.img)}/>
               <h2>${item.title} </h2>
               <p>
               ${item.description} 
@@ -87,6 +90,20 @@ function setEducationsData(data) {
   });
 }
 
+/* ----------------------- set Works Data ------------------------ */
+
+function setSkillsData(data) {
+  let skills = document.querySelector(".skills");
+  data.forEach((item) => {
+    let div = document.createElement("div");
+    div.innerHTML = `<img src=${encodeURI(item.img)} alt=${item.title} />
+                        <span> ${item.title}</span>`;
+    div.classList.add("skill");
+    skills.appendChild(div);
+  });
+}
+
 setProjectsData(projectsList);
 setWorksData(worksList);
 setEducationsData(educationList);
+setSkillsData(skillsList);
