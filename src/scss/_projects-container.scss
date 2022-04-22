@@ -124,23 +124,30 @@
             }
             &:nth-child(odd) > .project-item {
                 transform: translate3d(200px, 200px, 0);
+                z-index:11;
+                transition: all .5s ease-in-out;
                 & div{
                     font-size: $font-size-30;
                     display:flex;
                     position: absolute;
                     bottom: 0;
+                    right:0;
+                    height:40px;
                     width:fit-content;
-                    right: -10px;
+                    background-color:transparent;
+
                     & div{
                         position: relative;
                         display:flex;
                         flex-direction: row;
                         right:0;
+                        background-color:transparent;
                         & i{
+                            background-color:transparent;
                             cursor: pointer;
                             position: relative;
                             transform:translateX(300px);
-                            bottom: 30px;
+                            bottom: 40px;
                             margin: 5px;
                             transition: 0.5s;
 
@@ -173,6 +180,7 @@
                             transform:translateX(175px);
                             bottom: 30px;
                             margin: 5px;
+                            z-index:111;
                         }
 
                     }
