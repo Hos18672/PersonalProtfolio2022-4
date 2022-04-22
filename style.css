@@ -382,12 +382,12 @@ main {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: rgb(1, 196, 255);
+  background: #01c4ff;
   border-radius: 50px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: rgb(1, 153, 255);
+  background: #0199ff;
   border-radius: 50px;
 }
 
@@ -404,7 +404,7 @@ main {
 .header-container .h-container.scrolled {
   transition: 0.5s;
   backdrop-filter: blur(5px);
-  box-shadow: 0px 10px 13px -7px rgba(187, 187, 187, 0.0745098039), 5px 5px 15px 5px rgba(197, 197, 197, 0.237);
+  box-shadow: 0px 10px 13px -7px #bbbbbb13, 5px 5px 15px 5px rgba(197, 197, 197, 0.237);
 }
 .header-container > .h-container {
   display: flex;
@@ -457,7 +457,7 @@ main {
   color: white;
   position: absolute;
   border-radius: 5px;
-  background-color: rgb(1, 196, 255);
+  background-color: #01c4ff;
 }
 .header-container > .h-container #nav-list-container li::before {
   width: 0%;
@@ -476,7 +476,7 @@ main {
   color: white;
   position: absolute;
   border-radius: 5px;
-  background-color: rgb(1, 196, 255);
+  background-color: #01c4ff;
 }
 .header-container > .h-container #nav-list-container .nav-item.is-active::before {
   width: 100%;
@@ -585,7 +585,7 @@ main {
   height: 420px;
   z-index: 99111999;
   padding: 20px;
-  box-shadow: 5px 9px 20px 1px rgba(103, 110, 113, 0.4039215686);
+  box-shadow: 5px 9px 20px 1px #676e7167;
   animation: nav-list 0.5s linear ease-out;
 }
 .header-container > .h-container .open #nav-list-container1 li {
@@ -604,7 +604,7 @@ main {
   color: white;
   position: absolute;
   border-radius: 5px;
-  background-color: rgb(1, 196, 255);
+  background-color: #01c4ff;
 }
 .header-container > .h-container .open #nav-list-container1 li::before {
   margin-top: 40px;
@@ -720,7 +720,7 @@ body::after {
 }
 
 head::after {
-  text-shadow: 2.3393979134em -0.0014534024em 7px hsla(0.498668193deg, 100%, 50%, 0.9), 0.5072397274em 1.2902424821em 7px hsla(191.2825843464deg, 100%, 50%, 0.9), 1.5079165933em 1.9840205694em 7px hsla(157.4476901097deg, 100%, 50%, 0.9), 0.067611056em 1.1765089565em 7px hsla(351.6599723882deg, 100%, 50%, 0.9), 0.675308967em 1.3087480124em 7px hsla(205.2835938187deg, 100%, 50%, 0.9), -0.0565471em 0.2070537328em 7px hsla(307.4420397769deg, 100%, 50%, 0.9), 0.4333456736em 1.608539278em 7px hsla(64.5287483752deg, 100%, 50%, 0.9), 0.9326865286em 2.3859891769em 7px hsla(346.7442861067deg, 100%, 50%, 0.9), 0.6214957378em 2.3825640784em 7px hsla(90.4972135029deg, 100%, 50%, 0.9), 1.6279222968em 1.9535285745em 7px hsla(136.8961295883deg, 100%, 50%, 0.9), 2.1410801355em 1.1612422659em 7px hsla(323.4771340977deg, 100%, 50%, 0.9), 0.6928681332em -0.4002023182em 7px hsla(2.3872272086deg, 100%, 50%, 0.9), 0.0349251543em 1.5861544433em 7px hsla(166.669031126deg, 100%, 50%, 0.9), 0.2157871634em 2.0292857684em 7px hsla(107.4631398173deg, 100%, 50%, 0.9), 0.7326170018em 1.5379969599em 7px hsla(53.6393688985deg, 100%, 50%, 0.9), 1.5718735089em 1.7954267259em 7px hsla(300.3792422346deg, 100%, 50%, 0.9), 0.4117813199em 1.095034622em 7px hsla(244.7961368003deg, 100%, 50%, 0.9), 0.9556192228em 1.3610440375em 7px hsla(287.1970016673deg, 100%, 50%, 0.9), 1.5328669542em 0.2369803334em 7px hsla(45.4958740211deg, 100%, 50%, 0.9), 1.5728839687em 1.6366985388em 7px hsla(144.7394389511deg, 100%, 50%, 0.9), 1.867648162em 0.3309797934em 7px hsla(296.7039170686deg, 100%, 50%, 0.9), -0.3866170826em 2.2965201893em 7px hsla(227.9750319887deg, 100%, 50%, 0.9), 0.4561155302em 1.2628459913em 7px hsla(87.3208798654deg, 100%, 50%, 0.9), 0.0447965349em -0.1107506063em 7px hsla(13.169604369deg, 100%, 50%, 0.9), 0.3518146437em 1.2340680911em 7px hsla(53.0759380514deg, 100%, 50%, 0.9), 2.4584780776em -0.3212816102em 7px hsla(308.0036039984deg, 100%, 50%, 0.9), 1.8165263188em 0.2508627307em 7px hsla(89.1062334546deg, 100%, 50%, 0.9), 1.4910437483em 2.3434442488em 7px hsla(286.0758117118deg, 100%, 50%, 0.9), 0.3726268239em 0.1230158939em 7px hsla(338.553166667deg, 100%, 50%, 0.9), 1.070356225em -0.3416404195em 7px hsla(199.1042814921deg, 100%, 50%, 0.9), 0.1515757026em 1.4446884841em 7px hsla(64.8441726006deg, 100%, 50%, 0.9), 0.3800230338em 0.1923930767em 7px hsla(104.8756697664deg, 100%, 50%, 0.9), 0.5858380233em 0.0478573642em 7px hsla(339.1643219717deg, 100%, 50%, 0.9), -0.1288098987em 2.0434630693em 7px hsla(113.8974346425deg, 100%, 50%, 0.9), 1.6094666393em 1.9797380744em 7px hsla(80.5154673319deg, 100%, 50%, 0.9), 0.9491147643em 0.0450225199em 7px hsla(1.3317633531deg, 100%, 50%, 0.9), -0.1484220543em 0.727710889em 7px hsla(121.0638911925deg, 100%, 50%, 0.9), 1.7543859461em 2.2704846181em 7px hsla(34.8555510656deg, 100%, 50%, 0.9), 0.9185679746em 0.3151655704em 7px hsla(290.9459901906deg, 100%, 50%, 0.9), 1.7517653564em 0.3538795497em 7px hsla(214.8057631049deg, 100%, 50%, 0.9), 0.4766668723em 1.6435311402em 7px hsla(60.7594931651deg, 100%, 50%, 0.9), 1.0170374317em 2.1805593879em 7px hsla(307.5751196407deg, 100%, 50%, 0.9), 0.4884885843em 0.4745455502em 7px hsla(342.0231465721deg, 100%, 50%, 0.9), 0.2125755355em 0.4687534147em 7px hsla(349.2247570274deg, 100%, 50%, 0.9), 1.3349057004em 0.2908229191em 7px hsla(106.484237743deg, 100%, 50%, 0.9), -0.1195468334em 0.1422028649em 7px hsla(66.4884521425deg, 100%, 50%, 0.9), 1.4410537726em 1.0021718891em 7px hsla(85.258073259deg, 100%, 50%, 0.9), 1.613008869em 0.4583310538em 7px hsla(11.6964452833deg, 100%, 50%, 0.9), 2.4703754107em -0.436481021em 7px hsla(356.2916001641deg, 100%, 50%, 0.9), 2.4930659636em 0.9781830852em 7px hsla(131.273311314deg, 100%, 50%, 0.9), 0.2340852439em 2.3459001423em 7px hsla(273.2575344959deg, 100%, 50%, 0.9);
+  text-shadow: 1.749889277em 0.321917609em 7px rgba(255, 19, 0, 0.9), 1.2561433848em 2.1059764445em 7px rgba(255, 201, 0, 0.9), 1.6560162122em 0.8050259255em 7px rgba(116, 255, 0, 0.9), 0.5416077836em 1.1308297768em 7px rgba(171, 0, 255, 0.9), 0.4353098922em 0.2836734498em 7px rgba(231, 0, 255, 0.9), -0.0495216694em 0.0485789238em 7px rgba(241, 0, 255, 0.9), 0.3588875683em 1.1723974045em 7px rgba(13, 255, 0, 0.9), 2.1206709178em -0.2993093911em 7px rgba(255, 205, 0, 0.9), 0.5933393587em 2.2578171179em 7px rgba(0, 255, 121, 0.9), 0.1574923027em 1.9135974445em 7px rgba(151, 255, 0, 0.9), 1.1982118055em -0.4329402465em 7px rgba(0, 255, 150, 0.9), -0.424151625em -0.1074395253em 7px rgba(0, 49, 255, 0.9), 2.178012754em 0.7441251895em 7px rgba(0, 79, 255, 0.9), 1.8763417863em 2.1390360758em 7px rgba(0, 230, 255, 0.9), 0.5241711844em 0.1240895623em 7px rgba(255, 83, 0, 0.9), -0.1446372918em 0.9404851477em 7px rgba(255, 0, 9, 0.9), 1.495853251em -0.2078293682em 7px rgba(255, 0, 194, 0.9), 0.2236596272em 0.2369994624em 7px rgba(0, 130, 255, 0.9), 1.1294037566em 1.4926633993em 7px rgba(165, 0, 255, 0.9), -0.248612473em 0.7925321126em 7px rgba(255, 0, 188, 0.9), 1.0646248022em 2.4195332324em 7px rgba(255, 0, 199, 0.9), 1.7856429433em 0.8486395236em 7px rgba(255, 49, 0, 0.9), 0.77564219em -0.1416960437em 7px rgba(255, 221, 0, 0.9), 2.4622866316em -0.0883141827em 7px rgba(0, 255, 121, 0.9), 1.2834919056em 1.5430659204em 7px rgba(0, 255, 3, 0.9), 2.404522317em 1.2725536375em 7px rgba(0, 255, 150, 0.9), -0.292230758em 2.3718056234em 7px rgba(255, 14, 0, 0.9), 1.2988053906em 1.7977999585em 7px rgba(0, 255, 68, 0.9), -0.1626611755em 2.0870312312em 7px rgba(0, 88, 255, 0.9), 0.5516158769em 1.9682946441em 7px rgba(255, 0, 182, 0.9), 0.99655472em 1.300928484em 7px rgba(162, 0, 255, 0.9), 2.1728362037em 1.8432421324em 7px rgba(147, 0, 255, 0.9), 2.05303378em 1.3601979674em 7px rgba(0, 255, 162, 0.9), 0.7400557313em -0.0730687707em 7px rgba(22, 255, 0, 0.9), 0.2725674643em 1.2942449581em 7px rgba(0, 255, 152, 0.9), -0.0842422852em 0.2249433181em 7px rgba(143, 0, 255, 0.9), 0.7156334868em 2.2670892307em 7px rgba(0, 214, 255, 0.9), 1.7978233159em 1.9190126237em 7px rgba(177, 255, 0, 0.9), 1.040299468em 2.0859039092em 7px rgba(191, 255, 0, 0.9), 1.298253932em 0.0975445346em 7px rgba(234, 255, 0, 0.9), 2.2199616275em 1.3183364976em 7px rgba(0, 255, 100, 0.9), -0.4855371769em 1.3996161594em 7px rgba(242, 0, 255, 0.9), 0.4571552733em 1.0206015158em 7px rgba(255, 70, 0, 0.9), -0.3409451732em 0.1325801143em 7px rgba(0, 255, 2, 0.9), -0.2064306232em 1.1538285339em 7px rgba(0, 230, 255, 0.9), 0.0278870371em 0.9945160766em 7px rgba(0, 255, 11, 0.9), 2.1187869196em 1.2829179994em 7px rgba(0, 255, 102, 0.9), 1.5748279011em 0.0862042533em 7px rgba(255, 0, 180, 0.9), 0.4012052853em 2.4826934315em 7px rgba(255, 0, 63, 0.9), 0.6638471158em 0.1432829957em 7px rgba(160, 255, 0, 0.9), 0.1851188699em 0.4430172377em 7px rgba(255, 0, 10, 0.9);
   animation-duration: 41s;
   animation-delay: -29s;
 }
@@ -797,11 +797,11 @@ head::after {
   color: black;
 }
 .socials a:hover {
-  color: rgb(1, 196, 255);
+  color: #01c4ff;
 }
 .socials > a i:hover {
   transform: scale(1.2);
-  color: rgb(1, 196, 255);
+  color: #01c4ff;
 }
 .socials a::before {
   font-size: 20px;
@@ -913,6 +913,7 @@ head::after {
   z-index: 3;
   width: 300px;
   position: relative;
+  top: 50px;
   transition: 0.5s;
   animation: fotoAnimation 1.5s linear;
   z-index: 11;
@@ -929,7 +930,7 @@ head::after {
   animation: fotoAnimation 2s linear 2s both, arrowAnimation 1.2s linear 2s infinite both;
 }
 .landing-page .arrow-down:hover {
-  fill: rgb(0, 170, 255);
+  fill: #00aaff;
 }
 @keyframes arrowAnimation {
   0% {
@@ -1209,7 +1210,7 @@ head::after {
   transition: 0.3s;
 }
 .projects-container ul li .project-item a:hover {
-  color: rgb(0, 119, 255);
+  color: #0077ff;
   font-size: 25px;
   font-weight: bold;
   transform: scale(1.1);
@@ -1260,7 +1261,7 @@ head::after {
   transition: 0.5s;
 }
 .projects-container ul li:nth-child(odd) > .project-item div div i:hover {
-  color: rgb(1, 153, 255);
+  color: #0199ff;
 }
 .projects-container ul li:nth-child(odd) > .project-item div div li:nth-child(1) {
   top: 10px;
@@ -1303,7 +1304,7 @@ head::after {
   margin: 5px;
 }
 .projects-container ul li:nth-child(even) .project-item div div i:hover {
-  color: rgb(1, 153, 255);
+  color: #0199ff;
 }
 .projects-container ul li:nth-child(even) .project-item div div li:nth-child(1) {
   top: 10px;
@@ -1625,7 +1626,7 @@ head::after {
 }
 .works-container .works-items div.work-item:nth-of-type(even) div {
   transform: translate3d(-200px, 0, 0);
-  border-left: 3px solid rgb(0, 136, 255);
+  border-left: 3px solid #0088ff;
 }
 .works-container .works-items div.work-item:nth-of-type(even) div:hover {
   box-shadow: -30px 5px 20px -2px rgba(0, 0, 0, 0.42);
@@ -1634,7 +1635,7 @@ head::after {
 }
 .works-container .works-items div.work-item:nth-of-type(odd) div {
   transform: translate3d(200px, 0, 0);
-  border-right: 3px solid rgb(0, 255, 0);
+  border-right: 3px solid lime;
 }
 .works-container .works-items div.work-item:nth-of-type(odd) div:hover {
   box-shadow: 30px 5px 20px -2px rgba(0, 0, 0, 0.42);
@@ -1792,7 +1793,7 @@ head::after {
   padding-bottom: 20px;
   background: white;
   box-shadow: 6px 9px 35px -10px rgba(53, 53, 53, 0.24);
-  border-top: 3px solid rgb(0, 136, 255);
+  border-top: 3px solid #0088ff;
 }
 .educations-container .education-items div.education-item div.item:hover {
   box-shadow: 6px 9px 44px -14px rgba(0, 0, 0, 0.64);
@@ -2246,7 +2247,7 @@ head::after {
 }
 .footer .imda .impressum:hover,
 .footer .imda .datenschutz:hover {
-  color: rgb(1, 153, 255);
+  color: #0199ff;
   transform: scale(1.1);
 }
 @media only screen and (max-width: 450px) {
@@ -2286,7 +2287,7 @@ head::after {
 }
 .dark-mode .header-container > .h-container .hamburger-icon #nav-list-container1 {
   background-color: #37464d;
-  box-shadow: 0px 3px 34px 9px rgba(32, 31, 31, 0.3843137255);
+  box-shadow: 0px 3px 34px 9px #201f1f62;
 }
 .dark-mode .header-container > .h-container .hamburger-icon #nav-list-container1 a {
   color: white;
@@ -2416,11 +2417,11 @@ head::after {
   color: white;
 }
 .dark-mode .socials a:hover {
-  color: rgb(1, 196, 255);
+  color: #01c4ff;
 }
 .dark-mode .socials > a i:hover {
   transform: scale(1.2);
-  color: rgb(1, 196, 255);
+  color: #01c4ff;
 }
 .dark-mode .socials a:nth-child(1)::before,
 .dark-mode .socials a:nth-child(2)::before,
@@ -2513,7 +2514,7 @@ head::after {
   padding: 30px;
   border-radius: 15px;
   width: 80%;
-  height: 80%;
+  height: 75%;
   font-size: 100px;
   z-index: 9999;
   transition: 0.5s;
@@ -2615,7 +2616,7 @@ head::after {
   padding: 30px;
   border-radius: 15px;
   width: 80%;
-  height: 80%;
+  height: 75%;
   font-size: 100px;
   transition: 0.5s;
   overflow-y: scroll;

@@ -80,7 +80,9 @@
     & img {
         z-index: 3;
         width: 300px;
+
         position: relative;
+        top:50px;
         transition: .5s;
         animation: fotoAnimation 1.5s linear;
         z-index: 11;
