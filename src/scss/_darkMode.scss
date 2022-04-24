@@ -360,4 +360,14 @@
         
         
     }
+
+
+    .dots{
+        & a{
+            border:1px solid white;
+        }
+        & a.dot-active{
+            background-color:rgb(255, 255, 255);
+        }
+    }
 }

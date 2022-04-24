@@ -92,6 +92,11 @@ window.addEventListener("load", callbackFunc)
 window.addEventListener("resize", callbackFunc)
 window.addEventListener("scroll", callbackFunc)
 
+const sections = document.querySelectorAll("section");
+const navLi = document.querySelectorAll("main header .h-container ul li a");
+const dots = document.querySelectorAll("main .dots .dot");
+
+
 window.onscroll = function () {
   // pageYOffset or scrollY
   if (window.pageYOffset > 0) {
@@ -99,6 +104,26 @@ window.onscroll = function () {
   } else {
     navbar.classList.remove("scrolled")
   }
+  var current = "";
+  sections.forEach((section) => {
+    const sectionTop = section.offsetTop;
+    if (pageYOffset >= sectionTop - 100) {
+      current = section.getAttribute("id"); }
+  });
+
+  navLi.forEach((a) => {
+    a.classList.remove("nav-active");
+    if (a.classList.contains(current)) {
+      a.classList.add("nav-active");
+    }
+  });
+
+  dots.forEach((a) => {
+    a.classList.remove("dot-active");
+    if (a.classList.contains(current)) {
+      a.classList.add("dot-active");
+    }
+  });
 };
 
 /* ------------------------------------------- */
@@ -171,20 +196,3 @@ function shareOnTwitter(link) {
 
 ///-------------------------------------------------------
 
-const sections = document.querySelectorAll("section");
-const navLi = document.querySelectorAll("main header .h-container ul li a");
-window.onscroll = () => {
-  var current = "";
-  sections.forEach((section) => {
-    const sectionTop = section.offsetTop;
-    if (pageYOffset >= sectionTop - 100) {
-      current = section.getAttribute("id"); }
-  });
-
-  navLi.forEach((a) => {
-    a.classList.remove("nav-active");
-    if (a.classList.contains(current)) {
-      a.classList.add("nav-active");
-    }
-  });
-};

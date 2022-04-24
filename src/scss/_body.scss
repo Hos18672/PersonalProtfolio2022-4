@@ -197,7 +197,29 @@ head::after {
         opacity: 1;
         width: 100%;
     }
+}
 
-
-
+.dots{
+    position:fixed;
+    left:0;
+    top:40%;
+    display:flex;
+    flex-direction:column;
+    margin: 0 auto;
+    & a{
+        border:1px solid black;
+        border-radius: 50%;
+        height:8px;
+        width:8px;
+        margin: 5px 15px;
+        transition: 0.5s;
+        cursor: pointer;
+        cursor: pointer;
+    }
+    
+    & a.dot-active{
+        transform:scale(1.7);
+        background-color:rgb(0, 0, 0);
+        cursor: pointer;
+    }
 }
