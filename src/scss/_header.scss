@@ -1,3 +1,4 @@
+
 .header-container {
     width: 100%;
     display: flex;
@@ -13,7 +14,7 @@
         backdrop-filter:blur(5px);
         box-shadow: 0px 10px 13px -7px #bbbbbb13, 5px 5px 15px 5px rgba(197, 197, 197, 0.237);
     }
-    &>.h-container {
+    & .h-container {
         display: flex;
         position: fixed;
         justify-content: space-between;
@@ -32,7 +33,6 @@
              &>.hossaini {
                  color: $font-color-red;
              }
-      
          }
 
          & #nav-list-container {
@@ -66,7 +66,7 @@
                     color: $font-color-white;
                     position: absolute;
                     border-radius: 5px;
-                    background-color: $background-color-blue-1;
+                    background-color: $background-color-red;
                   }
                   
                  &::before {
@@ -78,12 +78,13 @@
                   &:hover::before {
                     width: 100%;
                   }
+           
              }
 
              &>.nav-item:active {
                  transform: scale(.9);
              }
-             & .nav-item.is-active {                  
+             & .nav-item a.nav-active {                  
                  &::before {
                     transition: 400ms;
                     height: 5px;
@@ -346,3 +347,5 @@
         border-radius: 5%;
     }
 }
+
+

@@ -168,3 +168,23 @@ function shareOnTwitter(link) {
         'https://twitter.com/intent/tweet?text=' + link;
       window.open(navUrl, '_blank');
 }
+
+///-------------------------------------------------------
+
+const sections = document.querySelectorAll("section");
+const navLi = document.querySelectorAll("main header .h-container ul li a");
+window.onscroll = () => {
+  var current = "";
+  sections.forEach((section) => {
+    const sectionTop = section.offsetTop;
+    if (pageYOffset >= sectionTop - 100) {
+      current = section.getAttribute("id"); }
+  });
+
+  navLi.forEach((a) => {
+    a.classList.remove("nav-active");
+    if (a.classList.contains(current)) {
+      a.classList.add("nav-active");
+    }
+  });
+};

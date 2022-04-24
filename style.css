@@ -406,7 +406,7 @@ main {
   backdrop-filter: blur(5px);
   box-shadow: 0px 10px 13px -7px rgba(187, 187, 187, 0.0745098039), 5px 5px 15px 5px rgba(197, 197, 197, 0.237);
 }
-.header-container > .h-container {
+.header-container .h-container {
   display: flex;
   position: fixed;
   justify-content: space-between;
@@ -416,18 +416,18 @@ main {
   transition: 0.5s;
   z-index: 99900;
 }
-.header-container > .h-container > .logo-container {
+.header-container .h-container > .logo-container {
   margin-left: 40px;
   transition: 0.2s;
 }
-.header-container > .h-container > .logo-container span {
+.header-container .h-container > .logo-container span {
   font-size: 40px;
   transition: 0s;
 }
-.header-container > .h-container > .logo-container > .hossaini {
+.header-container .h-container > .logo-container > .hossaini {
   color: red;
 }
-.header-container > .h-container #nav-list-container {
+.header-container .h-container #nav-list-container {
   width: fit-content;
   display: flex;
   flex-direction: row;
@@ -436,7 +436,7 @@ main {
   padding-left: 0;
   z-index: 111;
 }
-.header-container > .h-container #nav-list-container li {
+.header-container .h-container #nav-list-container li {
   font-weight: bold;
   font-size: 20px;
   text-transform: uppercase;
@@ -447,29 +447,29 @@ main {
   position: relative;
   opacity: 0.75;
 }
-.header-container > .h-container #nav-list-container li:hover {
+.header-container .h-container #nav-list-container li:hover {
   opacity: 1;
 }
-.header-container > .h-container #nav-list-container li::before {
+.header-container .h-container #nav-list-container li::before {
   transition: 400ms;
   height: 5px;
   content: "";
   color: white;
   position: absolute;
   border-radius: 5px;
-  background-color: rgb(1, 196, 255);
+  background-color: red;
 }
-.header-container > .h-container #nav-list-container li::before {
+.header-container .h-container #nav-list-container li::before {
   width: 0%;
   bottom: 10px;
 }
-.header-container > .h-container #nav-list-container li:hover::before {
+.header-container .h-container #nav-list-container li:hover::before {
   width: 100%;
 }
-.header-container > .h-container #nav-list-container > .nav-item:active {
+.header-container .h-container #nav-list-container > .nav-item:active {
   transform: scale(0.9);
 }
-.header-container > .h-container #nav-list-container .nav-item.is-active::before {
+.header-container .h-container #nav-list-container .nav-item a.nav-active::before {
   transition: 400ms;
   height: 5px;
   content: "";
@@ -478,14 +478,14 @@ main {
   border-radius: 5px;
   background-color: rgb(1, 196, 255);
 }
-.header-container > .h-container #nav-list-container .nav-item.is-active::before {
+.header-container .h-container #nav-list-container .nav-item a.nav-active::before {
   width: 100%;
   bottom: 10px;
 }
-.header-container > .h-container #nav-list-container .nav-item.is-active:hover::before {
+.header-container .h-container #nav-list-container .nav-item a.nav-active:hover::before {
   width: 100%;
 }
-.header-container > .h-container > .switch {
+.header-container .h-container > .switch {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -493,7 +493,7 @@ main {
   z-index: 999999999;
   right: 0;
 }
-.header-container > .h-container > .switch > label {
+.header-container .h-container > .switch > label {
   cursor: pointer;
   text-indent: -9999px;
   width: 60px;
@@ -504,7 +504,7 @@ main {
   border: 2px solid black;
   z-index: 999;
 }
-.header-container > .h-container > .switch > label:after {
+.header-container .h-container > .switch > label:after {
   content: "";
   position: absolute;
   top: 5px;
@@ -516,33 +516,33 @@ main {
   border-radius: 90px;
   transition: 0.3s;
 }
-.header-container > .h-container > .switch > input[type=checkbox] {
+.header-container .h-container > .switch > input[type=checkbox] {
   height: 0;
   width: 0;
   visibility: hidden;
 }
-.header-container > .h-container > .switch > input:checked + label {
+.header-container .h-container > .switch > input:checked + label {
   background: transparent;
 }
-.header-container > .h-container > .switch > input:checked + label:after {
+.header-container .h-container > .switch > input:checked + label:after {
   left: calc(100% - 5px);
   transform: translateX(-100%);
   background-image: url(../src/images/moon.png);
   background-size: cover;
 }
-.header-container > .h-container > .hamburger-icon {
+.header-container .h-container > .hamburger-icon {
   display: none;
   z-index: 1111;
   margin-left: 40px;
 }
-.header-container > .h-container > .hamburger-icon > div {
+.header-container .h-container > .hamburger-icon > div {
   width: 35px;
   height: 3px;
   margin: 6px 0;
   transition: 0.4s;
   border-radius: 50px;
 }
-.header-container > .h-container .hamburger-icon ul {
+.header-container .h-container .hamburger-icon ul {
   background-color: white;
   overflow: hidden;
   margin-left: 20px;
@@ -556,23 +556,23 @@ main {
   height: 420px;
   transition: 0.5s;
 }
-.header-container > .h-container .hamburger-icon ul li {
+.header-container .h-container .hamburger-icon ul li {
   display: none;
 }
-.header-container > .h-container .hamburger-icon ul li a {
+.header-container .h-container .hamburger-icon ul li a {
   font-size: 30px;
   margin: 10px;
 }
-.header-container > .h-container > .open .bar1 {
+.header-container .h-container > .open .bar1 {
   transform: rotate(-45deg) translate(-6px, 6px);
 }
-.header-container > .h-container > .open .bar2 {
+.header-container .h-container > .open .bar2 {
   opacity: 0;
 }
-.header-container > .h-container > .open .bar3 {
+.header-container .h-container > .open .bar3 {
   transform: rotate(45deg) translate(-6px, -8px);
 }
-.header-container > .h-container .open #nav-list-container1 {
+.header-container .h-container .open #nav-list-container1 {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -588,16 +588,16 @@ main {
   box-shadow: 5px 9px 20px 1px rgba(103, 110, 113, 0.4039215686);
   animation: nav-list 0.5s linear ease-out;
 }
-.header-container > .h-container .open #nav-list-container1 li {
+.header-container .h-container .open #nav-list-container1 li {
   display: block;
   margin-left: 10px;
   margin: 10px;
   font-size: 20px;
 }
-.header-container > .h-container .open #nav-list-container1 li:hover {
+.header-container .h-container .open #nav-list-container1 li:hover {
   opacity: 1;
 }
-.header-container > .h-container .open #nav-list-container1 li::before {
+.header-container .h-container .open #nav-list-container1 li::before {
   transition: 400ms;
   height: 5px;
   content: "";
@@ -606,28 +606,28 @@ main {
   border-radius: 5px;
   background-color: rgb(1, 196, 255);
 }
-.header-container > .h-container .open #nav-list-container1 li::before {
+.header-container .h-container .open #nav-list-container1 li::before {
   margin-top: 40px;
   width: 0%;
   max-width: 100px;
 }
-.header-container > .h-container .open #nav-list-container1 li:hover::before {
+.header-container .h-container .open #nav-list-container1 li:hover::before {
   width: 100%;
   max-width: 100px;
 }
-.header-container > .h-container .open #nav-list-container1 li:nth-child(4):hover::before {
+.header-container .h-container .open #nav-list-container1 li:nth-child(4):hover::before {
   width: 100%;
   max-width: 150px;
 }
-.header-container > .h-container .open #nav-list-container1 li:nth-child(2):hover::before {
+.header-container .h-container .open #nav-list-container1 li:nth-child(2):hover::before {
   width: 100%;
   max-width: 115px;
 }
-.header-container > .h-container .open #nav-list-container1 li:nth-child(5):hover::before {
+.header-container .h-container .open #nav-list-container1 li:nth-child(5):hover::before {
   width: 100%;
   max-width: 80px;
 }
-.header-container > .h-container .open #nav-list-container1 li:nth-child(6):hover::before {
+.header-container .h-container .open #nav-list-container1 li:nth-child(6):hover::before {
   width: 100%;
   max-width: 110px;
 }
@@ -720,7 +720,7 @@ body::after {
 }
 
 head::after {
-  text-shadow: 1.5041382756em -0.1037269485em 7px hsla(169.6088624856deg, 100%, 50%, 0.9), 0.8270183175em 0.0536591354em 7px hsla(24.5106401083deg, 100%, 50%, 0.9), -0.3411194554em 2.0752717654em 7px hsla(109.4602893368deg, 100%, 50%, 0.9), -0.069049943em -0.3370917817em 7px hsla(266.9260846908deg, 100%, 50%, 0.9), 0.4177782513em -0.2594209066em 7px hsla(152.4327369834deg, 100%, 50%, 0.9), 1.8794450889em 0.8847196305em 7px hsla(212.3244865148deg, 100%, 50%, 0.9), 1.4221021898em 1.4230475149em 7px hsla(286.2564523543deg, 100%, 50%, 0.9), 1.4819653426em 0.5628861973em 7px hsla(330.9972995627deg, 100%, 50%, 0.9), 1.5494673688em -0.1985006236em 7px hsla(148.2026425013deg, 100%, 50%, 0.9), 1.1677850464em 0.8352850398em 7px hsla(83.7710852507deg, 100%, 50%, 0.9), -0.4138133639em 1.9589633678em 7px hsla(186.9213576162deg, 100%, 50%, 0.9), 0.3902931643em 1.6797001805em 7px hsla(87.0083626619deg, 100%, 50%, 0.9), 1.2832262962em 0.1510402818em 7px hsla(64.039886364deg, 100%, 50%, 0.9), 1.8727070622em -0.0514217293em 7px hsla(10.1805031878deg, 100%, 50%, 0.9), 0.1987322944em 1.5565861145em 7px hsla(85.2571102312deg, 100%, 50%, 0.9), 1.5515552417em 2.0640599562em 7px hsla(59.5529096514deg, 100%, 50%, 0.9), 0.9446025656em -0.4574993885em 7px hsla(358.2092081243deg, 100%, 50%, 0.9), 0.9400281421em 1.3197415309em 7px hsla(261.8011675697deg, 100%, 50%, 0.9), 0.8426055889em 1.13558719em 7px hsla(285.788048581deg, 100%, 50%, 0.9), 1.7377258516em 1.74874179em 7px hsla(31.8869201391deg, 100%, 50%, 0.9), -0.4503180942em 1.778985673em 7px hsla(296.4767109108deg, 100%, 50%, 0.9), 2.287358042em 0.5662501091em 7px hsla(109.2014398902deg, 100%, 50%, 0.9), 1.3156611515em -0.4674029944em 7px hsla(168.9225572718deg, 100%, 50%, 0.9), 0.6376064212em 2.4537937264em 7px hsla(281.4823579596deg, 100%, 50%, 0.9), 2.4603668871em 2.4167541736em 7px hsla(82.3124561937deg, 100%, 50%, 0.9), 0.1369734838em 0.0399294385em 7px hsla(294.0972999624deg, 100%, 50%, 0.9), -0.3294705352em -0.0271301382em 7px hsla(245.2727259248deg, 100%, 50%, 0.9), 1.34279194em -0.1170917477em 7px hsla(220.6629379323deg, 100%, 50%, 0.9), 1.0789993633em 1.1163140215em 7px hsla(309.0631269156deg, 100%, 50%, 0.9), -0.4868416816em 1.3539329538em 7px hsla(317.061588489deg, 100%, 50%, 0.9), 0.8030811778em 0.7416596073em 7px hsla(35.6020169765deg, 100%, 50%, 0.9), -0.250116325em 0.1545449139em 7px hsla(224.4944460419deg, 100%, 50%, 0.9), 1.0826203294em 2.2452881154em 7px hsla(178.252104223deg, 100%, 50%, 0.9), 2.2964044131em 2.2161119464em 7px hsla(84.4749158822deg, 100%, 50%, 0.9), -0.1337004538em 0.377911477em 7px hsla(103.8456964501deg, 100%, 50%, 0.9), 1.7257055326em 2.4172710359em 7px hsla(246.8433916432deg, 100%, 50%, 0.9), 1.965429492em -0.1689787928em 7px hsla(76.371501547deg, 100%, 50%, 0.9), -0.238634383em -0.0359159602em 7px hsla(13.5385989433deg, 100%, 50%, 0.9), 0.1433754315em 2.2628579724em 7px hsla(20.1546260518deg, 100%, 50%, 0.9), 1.2430150898em 1.129743482em 7px hsla(243.4764160025deg, 100%, 50%, 0.9), 2.3157042877em 1.2988920578em 7px hsla(147.1462442845deg, 100%, 50%, 0.9), 0.6381444562em 0.5170483731em 7px hsla(217.2767691312deg, 100%, 50%, 0.9), 1.3331680225em 1.6811043279em 7px hsla(300.2299954661deg, 100%, 50%, 0.9), 2.2452178669em 0.2495290052em 7px hsla(18.523028446deg, 100%, 50%, 0.9), -0.2807601237em 1.4063070079em 7px hsla(330.480352417deg, 100%, 50%, 0.9), -0.0190129122em 0.2945137645em 7px hsla(171.4865001453deg, 100%, 50%, 0.9), 0.7504134111em -0.3552493614em 7px hsla(111.6334603339deg, 100%, 50%, 0.9), 1.5633529245em -0.3228333214em 7px hsla(270.0008796052deg, 100%, 50%, 0.9), 2.2811984796em 1.843256401em 7px hsla(124.46099764deg, 100%, 50%, 0.9), 1.2679087059em 1.4696098803em 7px hsla(312.7269406256deg, 100%, 50%, 0.9), 1.7148730021em 0.7240396893em 7px hsla(337.1083215097deg, 100%, 50%, 0.9);
+  text-shadow: 2.0702221853em 1.3073237475em 7px hsla(175.4962166188deg, 100%, 50%, 0.9), 2.2667515431em 0.6482558043em 7px hsla(312.7090212991deg, 100%, 50%, 0.9), 1.507155686em 0.1220369042em 7px hsla(114.8806348255deg, 100%, 50%, 0.9), 1.4453739263em 0.9119969231em 7px hsla(343.2607054248deg, 100%, 50%, 0.9), 0.9419441103em 0.7581723542em 7px hsla(127.2621612897deg, 100%, 50%, 0.9), 2.2601918653em 1.9896494376em 7px hsla(185.6822376594deg, 100%, 50%, 0.9), 0.7212527585em 1.8422594684em 7px hsla(118.7583439134deg, 100%, 50%, 0.9), 1.8328328124em 0.626657945em 7px hsla(325.1202213815deg, 100%, 50%, 0.9), 1.2375496896em -0.2351217038em 7px hsla(182.9030515121deg, 100%, 50%, 0.9), 1.8347364641em 0.5667460386em 7px hsla(160.1473158002deg, 100%, 50%, 0.9), -0.2858026429em 0.2657653582em 7px hsla(327.3112421262deg, 100%, 50%, 0.9), 1.5695753447em 2.2092094712em 7px hsla(101.0123375697deg, 100%, 50%, 0.9), 2.2826496254em 0.1600056555em 7px hsla(131.8681040411deg, 100%, 50%, 0.9), 2.0202514044em 2.3780547967em 7px hsla(300.3274139624deg, 100%, 50%, 0.9), -0.2443914854em 0.9881162922em 7px hsla(245.9284303411deg, 100%, 50%, 0.9), 0.43757993em 0.7726550956em 7px hsla(278.1490648525deg, 100%, 50%, 0.9), 0.424538779em 0.8140663764em 7px hsla(176.5249841904deg, 100%, 50%, 0.9), 0.0869729217em 1.5290427991em 7px hsla(296.1112104863deg, 100%, 50%, 0.9), 0.7956053259em 1.4572430036em 7px hsla(225.8342060829deg, 100%, 50%, 0.9), 1.4030504161em -0.212948166em 7px hsla(187.6640044655deg, 100%, 50%, 0.9), -0.2058673444em 1.551883531em 7px hsla(3.3953635352deg, 100%, 50%, 0.9), 0.152921416em 2.2724871095em 7px hsla(126.6684796427deg, 100%, 50%, 0.9), 1.8008805925em 2.3044760615em 7px hsla(326.4580433859deg, 100%, 50%, 0.9), -0.4904488218em 0.8037833679em 7px hsla(72.3152459583deg, 100%, 50%, 0.9), 0.0748880242em -0.2907483302em 7px hsla(313.1925341765deg, 100%, 50%, 0.9), 2.2935836777em 1.9621347973em 7px hsla(159.9660574546deg, 100%, 50%, 0.9), 0.9171540223em 0.8060596227em 7px hsla(138.6339193083deg, 100%, 50%, 0.9), 2.1089975209em 0.2130693806em 7px hsla(275.3547677285deg, 100%, 50%, 0.9), 1.1446423949em 0.782248665em 7px hsla(293.3197343157deg, 100%, 50%, 0.9), 0.9784503335em -0.2185755799em 7px hsla(15.4833166007deg, 100%, 50%, 0.9), 1.6798365093em 1.9844137649em 7px hsla(150.9952363419deg, 100%, 50%, 0.9), 1.2860179495em 0.6796318027em 7px hsla(238.9883565682deg, 100%, 50%, 0.9), 1.4836092202em 2.4204935937em 7px hsla(71.820647687deg, 100%, 50%, 0.9), 0.6598331903em 2.172536508em 7px hsla(264.1884143359deg, 100%, 50%, 0.9), 1.9713543242em 0.4480118368em 7px hsla(173.2052553183deg, 100%, 50%, 0.9), 2.0988598923em 1.0757849672em 7px hsla(116.1218849221deg, 100%, 50%, 0.9), 0.4632697797em 0.4921517354em 7px hsla(209.1210896452deg, 100%, 50%, 0.9), 1.6326456525em 1.4220487156em 7px hsla(276.0479208564deg, 100%, 50%, 0.9), 1.9884718788em 0.1916258937em 7px hsla(46.8169843929deg, 100%, 50%, 0.9), 0.6063866375em 2.31173166em 7px hsla(226.4650897113deg, 100%, 50%, 0.9), -0.1011986403em 0.1547067307em 7px hsla(106.9777543868deg, 100%, 50%, 0.9), 0.098163468em -0.3638830941em 7px hsla(248.4351911048deg, 100%, 50%, 0.9), 1.1564912364em 0.2076479219em 7px hsla(157.6696767354deg, 100%, 50%, 0.9), 1.4404784132em 1.7573725281em 7px hsla(42.0041859192deg, 100%, 50%, 0.9), -0.1766200863em 0.3057796692em 7px hsla(142.5594189031deg, 100%, 50%, 0.9), 0.9506331753em 1.4644959174em 7px hsla(123.0205053767deg, 100%, 50%, 0.9), 0.7838581614em 0.0851339257em 7px hsla(301.5836136557deg, 100%, 50%, 0.9), 1.1618103082em 0.5007726162em 7px hsla(353.8746129617deg, 100%, 50%, 0.9), 0.6210009848em 2.3315409425em 7px hsla(333.8793724446deg, 100%, 50%, 0.9), -0.3059625451em 2.3064643405em 7px hsla(210.2210032759deg, 100%, 50%, 0.9), 1.2883338518em 0.2191414322em 7px hsla(337.221878066deg, 100%, 50%, 0.9);
   animation-duration: 41s;
   animation-delay: -29s;
 }
