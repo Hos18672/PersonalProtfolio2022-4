@@ -63,8 +63,8 @@ const data = {
       title: "Personal Portfolio",
       date: "2022-3",
       description: "My first personal portfolio website.",
-      webLink: "https://www.rezahossaini.de/",
-      githubLink: "https://github.com/Hos18672/Personal-Portfolio",
+      webLink: "https://challenge2022-4.netlify.app/",
+      githubLink: "https://github.com/Hos18672/Portfolio_v3",
       img: "https://github.com/Hos18672/PersonalProtfolio2022-4/blob/master/src/images/portfolio.png?raw=true",
     },
 
