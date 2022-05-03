@@ -28,7 +28,7 @@ function setProjectsData(data) {
     if (item.webLink) {
       li.innerHTML = `<time class="time">${item.date}</time>
             <div  class="project-item">
-              <img class="portfolio-img" src=${encodeURI(item.img)}/>
+              <img class="portfolio-img" src=${encodeURI(item.img)} alt="${item.title}"/>
               <h2>${item.title} </h2>
               <p>
               ${item.description} 
@@ -39,12 +39,11 @@ function setProjectsData(data) {
                 <div onClick='itemOnClickT("${item.githubLink}")'> <i class="fa-brands fa-twitter-square"></i></div>
                 <div onClick='itemOnClickF("${item.githubLink}")'> <i class="fa-brands fa-facebook-square"></i></div>
               </div>
-
             </div> `;
     } else {
       li.innerHTML = `<time class="time">${item.date}</time>
             <div class="project-item">
-              <img class="portfolio-img" src=${encodeURI(item.img)}/>
+              <img class="portfolio-img" src=${encodeURI(item.img)} alt="${item.title}"/>
               <h2>${item.title} </h2>
               <p>
               ${item.description} 
