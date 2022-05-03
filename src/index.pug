@@ -4,7 +4,8 @@ html(lang='en')
     meta(charset='UTF-8')
     meta(http-equiv='X-UA-Compatible' content='IE=edge')
     meta(name='author' content='Reza Hossaini')
-    meta(name='viewport' content='width=device-width, initial-scale=1.0')
+    meta(name='description' content='This is my personal Portfolio website')
+    meta(name='viewport' content='width=device-width, initial-scale=1')
     link(rel='stylesheet' href='style.css')
     title Reza Hossaini
   body
@@ -48,19 +49,19 @@ html(lang='en')
             input#switch(type='checkbox')
             label(for='switch') Toggle
       .socials
-        a.items.one(href='https://www.linkedin.com/in/reza-hossaini-bb5ab614b/')
+        a.items.one(href='https://www.linkedin.com/in/reza-hossaini-bb5ab614b/' aria-label='LinkedIn')
           i.fa-brands.fa-linkedin-in.icon-likedin
-        a.items.two(href='https://www.xing.com/profile/reza_hosseini15/cv')
+        a.items.two(href='https://www.xing.com/profile/reza_hosseini15/cv' aria-label='XING')
           i.fa-brands.fa-xing.icon-xing
-        a.items.three(href='https://www.facebook.com/profile.php?id=100008372049580')
+        a.items.three(href='https://www.facebook.com/profile.php?id=100008372049580' aria-label='Facebook')
           i.fa-brands.fa-facebook-f.icon-facebook
       .dots
-        a.dot.dot-active.landing-page1(href='#landing-page1')
-        a.dot.projects-container1(href='#projects-container1')
-        a.dot.works-container1(href='#works-container1')
-        a.dot.edu-container1(href='#edu-container1')
-        a.dot.skills-container1(href='#skills-container1')
-        a.dot.contact-container1(href='#contact-container1')
+        a.dot.dot-active.landing-page1(href='#landing-page1' aria-label='About Container')
+        a.dot.projects-container1(href='#projects-container1' aria-label='Project Container')
+        a.dot.works-container1(href='#works-container1' aria-label='Works Container')
+        a.dot.edu-container1(href='#edu-container1' aria-label='Education Container')
+        a.dot.skills-container1(href='#skills-container1' aria-label='Skills Container')
+        a.dot.contact-container1(href='#contact-container1' aria-label='Contact Container')
       //- Landing page
       section#landing-page1.landing-page.container
         .name-container
@@ -79,7 +80,7 @@ html(lang='en')
             div I
         img(src='./src/images/foto1.png' alt='my Profile Photo')
         a(href='#about-container1')
-          svg#arrow-down.arrow-down(data-name='Layer 1' xmlns='http://www.w3.org/2000/svg' viewbox='0 0 411.12 222.15')
+          svg#arrow-down.arrow-down(data-name='Layer 1' xmlns='http://www.w3.org/2000/svg' viewbox='0 0 411.12 222.15' aria-label='About me Container')
             rect.cls-1(x='213.86' y='251.02' width='32' height='298.95' rx='16' transform='translate(-334.84 -9.39) rotate(-45)')
             rect.cls-1(x='403.22' y='250.62' width='32' height='298.95' rx='16' transform='translate(286.72 -468.46) rotate(45)')
       //- About
