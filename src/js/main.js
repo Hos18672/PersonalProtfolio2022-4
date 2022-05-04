@@ -149,6 +149,21 @@ ds.onclick = function () {
   element.classList.toggle("modalOpen")
 };
 
+im.addEventListener("keypress", (event)=> {
+  if (event.keyCode === 13) { // key code of the keybord key
+    event.preventDefault();
+    modal.style.display = "block"
+    element.classList.toggle("modalOpen")
+  }
+});
+ds.addEventListener("keypress", (event)=> {
+  if (event.keyCode === 13) { // key code of the keybord key
+    event.preventDefault();
+    modal2.style.display = "block"
+    element.classList.toggle("modalOpen")
+  }
+});
+
 // When the user clicks on <span> (x), close the modal
 spanIm.onclick = function () {
   modal.style.display = "none"
@@ -159,6 +174,25 @@ spanDa.onclick = function () {
   modal2.style.display = "none"
   element.classList.remove("modalOpen")
 };
+
+spanIm.addEventListener("keypress", (event)=> {
+  if (event.keyCode === 13) { // key code of the keybord key
+    event.preventDefault();
+    modal.style.display = "none"
+    element.classList.remove("modalOpen")
+  }
+});
+
+spanDa.addEventListener("keypress", (event)=> {
+  if (event.keyCode === 13) { // key code of the keybord key
+    event.preventDefault();
+    modal2.style.display = "none"
+    element.classList.remove("modalOpen")
+  }
+});
+
+
+
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function (event) {
   if (event.target == modal) {

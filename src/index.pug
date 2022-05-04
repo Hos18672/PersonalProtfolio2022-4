@@ -63,7 +63,7 @@ html(lang='en')
         a.dot.skills-container1(href='#skills-container1' aria-label='Skills Container')
         a.dot.contact-container1(href='#contact-container1' aria-label='Contact Container')
       //- Landing page
-      section#landing-page1.landing-page.container(role="region" aria-label="landing page")
+      section#landing-page1.landing-page.container(role="region" aria-label="landing page" tabindex="0")
         .name-container
           .name-container
             div R
@@ -84,7 +84,7 @@ html(lang='en')
             rect.cls-1(x='213.86' y='251.02' width='32' height='298.95' rx='16' transform='translate(-334.84 -9.39) rotate(-45)')
             rect.cls-1(x='403.22' y='250.62' width='32' height='298.95' rx='16' transform='translate(286.72 -468.46) rotate(45)')
       //- About
-      section#about-container1.about-container.container(role="contentinfo" aria-label="aboutMe page")
+      section#about-container1.about-container.container(role="contentinfo" aria-label="aboutMe page" tabindex="0")
         .about-main-container
           img.about-foto(src='./src/images/foto2.png' alt='my Profile Photo')
           .text-container
@@ -93,26 +93,26 @@ html(lang='en')
               h1.container-title.landing-title About me
               p.about-description
       //- Projects
-      section#projects-container1.projects-container.container(role="contentinfo" aria-label="projects page")
+      section#projects-container1.projects-container.container(role="contentinfo" aria-label="projects page" tabindex="0")
         div
           h1.container-title.projects-title Projects
         article
           div
             ul#projects-list.projects-list(role="tree")
       //- works
-      section#works-container1.works-container.container(role="contentinfo" aria-label="works experience page")
+      section#works-container1.works-container.container(role="contentinfo" aria-label="works experience page" tabindex="0")
         h1.container-title.works-title works
         article.works-items
       //- Educations
-      section#edu-container1.educations-container.container(role="contentinfo" aria-label="educations page")
+      section#edu-container1.educations-container.container(role="contentinfo" aria-label="educations page" tabindex="0")
         h1.container-title.edu-title Educations
         article.education-items
       //- Skills
-      section#skills-container1.skills-container.container(role="contentinfo" aria-label="skills page")
+      section#skills-container1.skills-container.container(role="contentinfo" aria-label="skills page" tabindex="0")
         h1 Skills
         article.skills
       //- Contact
-      section#contact-container1.contact-container.container(role="contentinfo" aria-label="contact page")
+      section#contact-container1.contact-container.container(role="contentinfo" aria-label="contact page" tabindex="0")
         .container
           .screen
             .screen-body
@@ -141,16 +141,16 @@ html(lang='en')
                     #status
                     .app-form-group.buttons
                       button.app-form-button(type='submit') SEND
-      footer
+      footer(tabindex="0")
         .line-one
         p.text Created by Reza Hossaini &copy;
         .line-two
         .imda
-          #impressum.impressum(aria-label="Read more about impressum") Impressum
-          #datenschutz.datenschutz(aria-label="Read more about Policy privacy") Privacy policy
-      #impressumBox.impressumBox
-        span#closeIm(aria-label="ImpressumBox close button")  &times;
-        article.impressum-content
+          #impressum.impressum(aria-label="Read more about impressum" tabindex="0") Impressum
+          #datenschutz.datenschutz(aria-label="Read more about Policy privacy" tabindex="0") Privacy policy
+      #impressumBox.impressumBox(tabindex="0" role="dialog" aria-modal="true")
+        span#closeIm(aria-label="ImpressumBox close button" autofocus tabindex="0")  &times;
+        article.impressum-content(tabindex="0")
           h1 Impressum
           h2 Contact details
           p You can reach me Monday to Friday from 9:00 to 18:00.
@@ -160,22 +160,22 @@ html(lang='en')
           h2 Address
           p Haberergasse 1 Wien 1220
           p Programming: Reza Hossaini
-      #datenschutzBox.datenschutzBox
-        span#closeDa(aria-label="datenschutzBox close button") &times;
-        article.datenschutz-content
+      #datenschutzBox.datenschutzBox(tabindex="0" role="dialog" aria-modal="true")
+        span#closeDa(aria-label="datenschutzBox close button" autofocus tabindex="0") &times;
+        article.datenschutz-content(tabindex="0")
           h1 Privacy policy
           p
             | We process your personal data which falls under the following categories
             | of data:
-          ul
-            li Name/Company
-            li Profession/job title
-            li Contact details (telephone number, e-mail address, etc.)
+          ul(role="tree")
+            li(role="treeitem") Name/Company
+            li(role="treeitem") Profession/job title
+            li(role="treeitem") Contact details (telephone number, e-mail address, etc.)
           p
             | You have voluntarily provided us with data about yourself and we process
             | this data based on your consent for the following purposes:
-          ul
-            li
+          ul(role="tree")
+            li(role="treeitem")
               | for own advertising purposes, for example for sending offers,
               | advertising brochures and newsletters (in paper and electronic form),
               | as well as for the purpose of referring to the existing or former

@@ -59,6 +59,7 @@ function setProjectsData(data) {
 
     li.classList.add("project-list-item");
     li.setAttribute("role", "treeitem")
+    li.setAttribute("tabindex", "0")
     projects.appendChild(li);
   });
 }
@@ -77,6 +78,7 @@ function setWorksData(data) {
               </p>
             </div>`;
     div.classList.add("work-item");
+    div.setAttribute("tabindex", "0")
     worksList.appendChild(div);
   });
 }
@@ -95,6 +97,7 @@ function setEducationsData(data) {
               </p>
             </div>`;
     div.classList.add("education-item");
+    div.setAttribute("tabindex", "0")
     worksList.appendChild(div);
   });
 }
