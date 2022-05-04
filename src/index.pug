@@ -9,45 +9,45 @@ html(lang='en')
     link(rel='stylesheet' href='style.css')
     title Reza Hossaini
   body
-    main
+    main(role='main')
       header.header-container
-        nav#h-container.h-container
+        nav#h-container.h-container(role="navigation")
           #hamburger-icon.hamburger-icon
             #bar1.bar1
             #bar2.bar2
             #bar3.bar3
-            ul#nav-list-container1.nav-list
-              li.nav-item
-                a.nav-a-item(href='#landing-page1') About
-              li.nav-item
-                a.nav-a-item1(href='#projects-container1') Projects
-              li.nav-item
-                a.nav-a-item2(href='#works-container1') Works
-              li.nav-item
-                a.nav-a-item3(href='#edu-container1') Educations
-              li.nav-item
-                a.nav-a-item4(href='#skills-container1') Skills
-              li.nav-item
-                a.nav-a-item4(href='#contact-container1') Contact
+            ul#nav-list-container1.nav-list(role="tree")
+              li.nav-item(role="treeitem")
+                a.nav-a-item(href='#landing-page1' aria-label="lanndig page") About
+              li.nav-item(role="treeitem")
+                a.nav-a-item1(href='#projects-container1' aria-label="projects page") Projects
+              li.nav-item(role="treeitem")
+                a.nav-a-item2(href='#works-container1' aria-label="Works page") Works
+              li.nav-item(role="treeitem")
+                a.nav-a-item3(href='#edu-container1' aria-label="Educations page") Educations
+              li.nav-item(role="treeitem")
+                a.nav-a-item4(href='#skills-container1' aria-label="Skills page") Skills
+              li.nav-item(role="treeitem")
+                a.nav-a-item4(href='#contact-container1' aria-label="Contact page") Contact
           a.logo-container(href='#landing-page1')
             span.reza R
             span.hossaini H
-          ul#nav-list-container.nav-list
-            li.nav-item.landing(data-text='About')
-              a.nav-a-item.landing-page1(href='#landing-page1') About
-            li.nav-item.project(data-text='Projects')
-              a.nav-a-item1.projects-container1(href='#projects-container1') Projects
-            li.nav-item.work(data-text='Works')
-              a.nav-a-item2.works-container1(href='#works-container1') Works
-            li.nav-item.edu(data-text='Educations')
-              a.nav-a-item3.edu-container1(href='#edu-container1') Educations
-            li.nav-item.skill(data-text='Skills')
-              a.nav-a-item4.skills-container1(href='#skills-container1') Skills
-            li.nav-item.contact(data-text='Contact')
-              a.nav-a-item4.contact-container1(href='#contact-container1') Contact
+          ul#nav-list-container.nav-list(role="tree")
+            li.nav-item.landing(data-text='About' role="treeitem")
+              a.nav-a-item.landing-page1(href='#landing-page1' aria-label="about page") About
+            li.nav-item.project(data-text='Projects' role="treeitem")
+              a.nav-a-item1.projects-container1(href='#projects-container1' aria-label="Projects page") Projects
+            li.nav-item.work(data-text='Works' role="treeitem")
+              a.nav-a-item2.works-container1(href='#works-container1' aria-label="Works page") Works
+            li.nav-item.edu(data-text='Educations' role="treeitem")
+              a.nav-a-item3.edu-container1(href='#edu-container1' aria-label="Educations page") Educations
+            li.nav-item.skill(data-text='Skills' role="treeitem")
+              a.nav-a-item4.skills-container1(href='#skills-container1' aria-label="Skills page") Skills
+            li.nav-item.contact(data-text='Contact' role="treeitem")
+              a.nav-a-item4.contact-container1(href='#contact-container1' aria-label="Contact page") Contact
           .switch
             input#switch(type='checkbox')
-            label(for='switch') Toggle
+            label(for='switch' aria-label="Switch") Toggle
       .socials
         a.items.one(href='https://www.linkedin.com/in/reza-hossaini-bb5ab614b/' aria-label='LinkedIn')
           i.fa-brands.fa-linkedin-in.icon-likedin
@@ -63,7 +63,7 @@ html(lang='en')
         a.dot.skills-container1(href='#skills-container1' aria-label='Skills Container')
         a.dot.contact-container1(href='#contact-container1' aria-label='Contact Container')
       //- Landing page
-      section#landing-page1.landing-page.container
+      section#landing-page1.landing-page.container(role="region" aria-label="landing page")
         .name-container
           .name-container
             div R
@@ -79,12 +79,12 @@ html(lang='en')
             div N
             div I
         img(src='./src/images/foto1.png' alt='my Profile Photo')
-        a(href='#about-container1')
+        a(href='#about-container1' aria-label="arrow down to about page")
           svg#arrow-down.arrow-down(data-name='Layer 1' xmlns='http://www.w3.org/2000/svg' viewbox='0 0 411.12 222.15' aria-label='About me Container')
             rect.cls-1(x='213.86' y='251.02' width='32' height='298.95' rx='16' transform='translate(-334.84 -9.39) rotate(-45)')
             rect.cls-1(x='403.22' y='250.62' width='32' height='298.95' rx='16' transform='translate(286.72 -468.46) rotate(45)')
       //- About
-      section#about-container1.about-container.container
+      section#about-container1.about-container.container(role="contentinfo" aria-label="aboutMe page")
         .about-main-container
           img.about-foto(src='./src/images/foto2.png' alt='my Profile Photo')
           .text-container
@@ -93,26 +93,26 @@ html(lang='en')
               h1.container-title.landing-title About me
               p.about-description
       //- Projects
-      section#projects-container1.projects-container.container
+      section#projects-container1.projects-container.container(role="contentinfo" aria-label="projects page")
         div
           h1.container-title.projects-title Projects
         article
           div
-            ul#projects-list.projects-list
+            ul#projects-list.projects-list(role="tree")
       //- works
-      section#works-container1.works-container.container
+      section#works-container1.works-container.container(role="contentinfo" aria-label="works experience page")
         h1.container-title.works-title works
         article.works-items
       //- Educations
-      section#edu-container1.educations-container.container
+      section#edu-container1.educations-container.container(role="contentinfo" aria-label="educations page")
         h1.container-title.edu-title Educations
         article.education-items
       //- Skills
-      section#skills-container1.skills-container.container
+      section#skills-container1.skills-container.container(role="contentinfo" aria-label="skills page")
         h1 Skills
         article.skills
       //- Contact
-      section#contact-container1.contact-container.container
+      section#contact-container1.contact-container.container(role="contentinfo" aria-label="contact page")
         .container
           .screen
             .screen-body
@@ -127,14 +127,17 @@ html(lang='en')
                   .email
                     i.fa-solid.fa-envelope
               .screen-body-item.right
-                form#my-form.app-form(action='#' method='POST')
+                form#my-form.app-form(action='#' method='POST' aria-label="Contact form")
                   .app-from-container
                     .app-form-group
-                      input.app-form-control.name(placeholder='Enter your name' type='text' value='' required='')
+                      label(for='input-name') Name
+                      input.app-form-control.name( id='input-name' type='text' value='' required='')
                     .app-form-group
-                      input#email.app-form-control.email(name='email' type='email' placeholder='Enter your E-Mail' required='')
+                      label(for='email') E-mail
+                      input#email.app-form-control.email(name='email' type='email' required='')
                     .app-form-group.message
-                      textarea#message.app-form-control(name='message' placeholder='Write your message')
+                      label(for='message') Message
+                      textarea#message.app-form-control(name='message')
                     #status
                     .app-form-group.buttons
                       button.app-form-button(type='submit') SEND
@@ -143,10 +146,10 @@ html(lang='en')
         p.text Created by Reza Hossaini &copy;
         .line-two
         .imda
-          #impressum.impressum Impressum
-          #datenschutz.datenschutz Privacy policy
+          #impressum.impressum(aria-label="Read more about impressum") Impressum
+          #datenschutz.datenschutz(aria-label="Read more about Policy privacy") Privacy policy
       #impressumBox.impressumBox
-        span#closeIm &times;
+        span#closeIm(aria-label="ImpressumBox close button")  &times;
         article.impressum-content
           h1 Impressum
           h2 Contact details
@@ -158,7 +161,7 @@ html(lang='en')
           p Haberergasse 1 Wien 1220
           p Programming: Reza Hossaini
       #datenschutzBox.datenschutzBox
-        span#closeDa &times;
+        span#closeDa(aria-label="datenschutzBox close button") &times;
         article.datenschutz-content
           h1 Privacy policy
           p

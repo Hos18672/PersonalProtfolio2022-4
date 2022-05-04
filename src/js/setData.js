@@ -28,7 +28,7 @@ function setProjectsData(data) {
     if (item.webLink) {
       li.innerHTML = `<time class="time">${item.date}</time>
             <div  class="project-item">
-              <img class="portfolio-img" src=${encodeURI(item.img)} alt="${item.title}"/>
+              <img class="portfolio-img" src=${encodeURI(item.img)} alt="${item.title}" aria-label="${item.title}"  title="${item.title}" />
               <h2>${item.title} </h2>
               <p>
               ${item.description} 
@@ -43,9 +43,9 @@ function setProjectsData(data) {
     } else {
       li.innerHTML = `<time class="time">${item.date}</time>
             <div class="project-item">
-              <img class="portfolio-img" src=${encodeURI(item.img)} alt="${item.title}"/>
+              <img class="portfolio-img" src=${encodeURI(item.img)} alt="${item.title}" aria-label="${item.title}"  title="${item.title}"/>
               <h2>${item.title} </h2>
-              <p>
+              <p id="project-details">
               ${item.description} 
               </p>    
               <span><a href="${item.githubLink}"> Code </a></span>
@@ -58,6 +58,7 @@ function setProjectsData(data) {
     }
 
     li.classList.add("project-list-item");
+    li.setAttribute("role", "treeitem")
     projects.appendChild(li);
   });
 }

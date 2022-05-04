@@ -10,75 +10,121 @@
     <title>Reza Hossaini</title>
   </head>
   <body>
-    <main>
+    <main role="main">
       <header class="header-container">
-        <nav class="h-container" id="h-container">
+        <nav class="h-container" id="h-container" role="navigation">
           <div class="hamburger-icon" id="hamburger-icon">
             <div class="bar1" id="bar1"></div>
             <div class="bar2" id="bar2"></div>
             <div class="bar3" id="bar3"></div>
-            <ul class="nav-list" id="nav-list-container1">
-              <li class="nav-item">
-                <a class="nav-a-item" href="#landing-page1">About</a>
+            <ul class="nav-list" id="nav-list-container1" role="tree">
+              <li class="nav-item" role="treeitem">
+                <a
+                  class="nav-a-item"
+                  href="#landing-page1"
+                  aria-label="lanndig page"
+                  >About</a
+                >
               </li>
-              <li class="nav-item">
-                <a class="nav-a-item1" href="#projects-container1">Projects</a>
+              <li class="nav-item" role="treeitem">
+                <a
+                  class="nav-a-item1"
+                  href="#projects-container1"
+                  aria-label="projects page"
+                  >Projects</a
+                >
               </li>
-              <li class="nav-item">
-                <a class="nav-a-item2" href="#works-container1">Works</a>
+              <li class="nav-item" role="treeitem">
+                <a
+                  class="nav-a-item2"
+                  href="#works-container1"
+                  aria-label="Works page"
+                  >Works</a
+                >
               </li>
-              <li class="nav-item">
-                <a class="nav-a-item3" href="#edu-container1">Educations</a>
+              <li class="nav-item" role="treeitem">
+                <a
+                  class="nav-a-item3"
+                  href="#edu-container1"
+                  aria-label="Educations page"
+                  >Educations</a
+                >
               </li>
-              <li class="nav-item">
-                <a class="nav-a-item4" href="#skills-container1">Skills</a>
+              <li class="nav-item" role="treeitem">
+                <a
+                  class="nav-a-item4"
+                  href="#skills-container1"
+                  aria-label="Skills page"
+                  >Skills</a
+                >
               </li>
-              <li class="nav-item">
-                <a class="nav-a-item4" href="#contact-container1">Contact</a>
+              <li class="nav-item" role="treeitem">
+                <a
+                  class="nav-a-item4"
+                  href="#contact-container1"
+                  aria-label="Contact page"
+                  >Contact</a
+                >
               </li>
             </ul>
           </div>
           <a class="logo-container" href="#landing-page1"
             ><span class="reza">R</span><span class="hossaini">H</span></a
           >
-          <ul class="nav-list" id="nav-list-container">
-            <li class="nav-item landing" data-text="About">
-              <a class="nav-a-item landing-page1" href="#landing-page1"
+          <ul class="nav-list" id="nav-list-container" role="tree">
+            <li class="nav-item landing" data-text="About" role="treeitem">
+              <a
+                class="nav-a-item landing-page1"
+                href="#landing-page1"
+                aria-label="about page"
                 >About</a
               >
             </li>
-            <li class="nav-item project" data-text="Projects">
+            <li class="nav-item project" data-text="Projects" role="treeitem">
               <a
                 class="nav-a-item1 projects-container1"
                 href="#projects-container1"
+                aria-label="Projects page"
                 >Projects</a
               >
             </li>
-            <li class="nav-item work" data-text="Works">
-              <a class="nav-a-item2 works-container1" href="#works-container1"
+            <li class="nav-item work" data-text="Works" role="treeitem">
+              <a
+                class="nav-a-item2 works-container1"
+                href="#works-container1"
+                aria-label="Works page"
                 >Works</a
               >
             </li>
-            <li class="nav-item edu" data-text="Educations">
-              <a class="nav-a-item3 edu-container1" href="#edu-container1"
+            <li class="nav-item edu" data-text="Educations" role="treeitem">
+              <a
+                class="nav-a-item3 edu-container1"
+                href="#edu-container1"
+                aria-label="Educations page"
                 >Educations</a
               >
             </li>
-            <li class="nav-item skill" data-text="Skills">
-              <a class="nav-a-item4 skills-container1" href="#skills-container1"
+            <li class="nav-item skill" data-text="Skills" role="treeitem">
+              <a
+                class="nav-a-item4 skills-container1"
+                href="#skills-container1"
+                aria-label="Skills page"
                 >Skills</a
               >
             </li>
-            <li class="nav-item contact" data-text="Contact">
+            <li class="nav-item contact" data-text="Contact" role="treeitem">
               <a
                 class="nav-a-item4 contact-container1"
                 href="#contact-container1"
+                aria-label="Contact page"
                 >Contact</a
               >
             </li>
           </ul>
           <div class="switch">
-            <input id="switch" type="checkbox" /><label for="switch"
+            <input id="switch" type="checkbox" /><label
+              for="switch"
+              aria-label="Switch"
               >Toggle</label
             >
           </div>
@@ -134,7 +180,12 @@
           aria-label="Contact Container"
         ></a>
       </div>
-      <section class="landing-page container" id="landing-page1">
+      <section
+        class="landing-page container"
+        id="landing-page1"
+        role="region"
+        aria-label="landing page"
+      >
         <div class="name-container">
           <div class="name-container">
             <div>R</div>
@@ -153,6 +204,7 @@
         </div>
         <img src="./src/images/foto1.png" alt="my Profile Photo" /><a
           href="#about-container1"
+          aria-label="arrow down to about page"
           ><svg
             class="arrow-down"
             id="arrow-down"
@@ -181,7 +233,12 @@
             ></rect></svg
         ></a>
       </section>
-      <section class="about-container container" id="about-container1">
+      <section
+        class="about-container container"
+        id="about-container1"
+        role="contentinfo"
+        aria-label="aboutMe page"
+      >
         <div class="about-main-container">
           <img
             class="about-foto"
@@ -197,25 +254,52 @@
           </div>
         </div>
       </section>
-      <section class="projects-container container" id="projects-container1">
+      <section
+        class="projects-container container"
+        id="projects-container1"
+        role="contentinfo"
+        aria-label="projects page"
+      >
         <div><h1 class="container-title projects-title">Projects</h1></div>
         <article>
-          <div><ul class="projects-list" id="projects-list"></ul></div>
+          <div>
+            <ul class="projects-list" id="projects-list" role="tree"></ul>
+          </div>
         </article>
       </section>
-      <section class="works-container container" id="works-container1">
+      <section
+        class="works-container container"
+        id="works-container1"
+        role="contentinfo"
+        aria-label="works experience page"
+      >
         <h1 class="container-title works-title">works</h1>
         <article class="works-items"></article>
       </section>
-      <section class="educations-container container" id="edu-container1">
+      <section
+        class="educations-container container"
+        id="edu-container1"
+        role="contentinfo"
+        aria-label="educations page"
+      >
         <h1 class="container-title edu-title">Educations</h1>
         <article class="education-items"></article>
       </section>
-      <section class="skills-container container" id="skills-container1">
+      <section
+        class="skills-container container"
+        id="skills-container1"
+        role="contentinfo"
+        aria-label="skills page"
+      >
         <h1>Skills</h1>
         <article class="skills"></article>
       </section>
-      <section class="contact-container container" id="contact-container1">
+      <section
+        class="contact-container container"
+        id="contact-container1"
+        role="contentinfo"
+        aria-label="contact page"
+      >
         <div class="container">
           <div class="screen">
             <div class="screen-body">
@@ -231,33 +315,40 @@
                 </div>
               </div>
               <div class="screen-body-item right">
-                <form class="app-form" id="my-form" action="#" method="POST">
+                <form
+                  class="app-form"
+                  id="my-form"
+                  action="#"
+                  method="POST"
+                  aria-label="Contact form"
+                >
                   <div class="app-from-container">
                     <div class="app-form-group">
-                      <input
+                      <label for="input-name">Name</label
+                      ><input
                         class="app-form-control name"
-                        placeholder="Enter your name"
+                        id="input-name"
                         type="text"
                         value=""
                         required=""
                       />
                     </div>
                     <div class="app-form-group">
-                      <input
+                      <label for="email">E-mail</label
+                      ><input
                         class="app-form-control email"
                         id="email"
                         name="email"
                         type="email"
-                        placeholder="Enter your E-Mail"
                         required=""
                       />
                     </div>
                     <div class="app-form-group message">
-                      <textarea
+                      <label for="message">Message</label
+                      ><textarea
                         class="app-form-control"
                         id="message"
                         name="message"
-                        placeholder="Write your message"
                       ></textarea>
                     </div>
                     <div id="status"></div>
@@ -278,12 +369,26 @@
         <p class="text">Created by Reza Hossaini &copy;</p>
         <div class="line-two"></div>
         <div class="imda">
-          <div class="impressum" id="impressum">Impressum</div>
-          <div class="datenschutz" id="datenschutz">Privacy policy</div>
+          <div
+            class="impressum"
+            id="impressum"
+            aria-label="Read more about impressum"
+          >
+            Impressum
+          </div>
+          <div
+            class="datenschutz"
+            id="datenschutz"
+            aria-label="Read more about Policy privacy"
+          >
+            Privacy policy
+          </div>
         </div>
       </footer>
       <div class="impressumBox" id="impressumBox">
-        <span id="closeIm">&times;</span>
+        <span id="closeIm" aria-label="ImpressumBox close button">
+          &times;</span
+        >
         <article class="impressum-content">
           <h1>Impressum</h1>
           <h2>Contact details</h2>
@@ -297,7 +402,9 @@
         </article>
       </div>
       <div class="datenschutzBox" id="datenschutzBox">
-        <span id="closeDa">&times;</span>
+        <span id="closeDa" aria-label="datenschutzBox close button"
+          >&times;</span
+        >
         <article class="datenschutz-content">
           <h1>Privacy policy</h1>
           <p>
