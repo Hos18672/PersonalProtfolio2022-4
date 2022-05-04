@@ -128,7 +128,7 @@ html(lang='en')
                   .email
                     i.fa-solid.fa-envelope
               .screen-body-item.right
-                form#my-form.app-form(action='#' method='POST' aria-label="Contact form")
+                form#my-form.app-form(action='#' name='my-form' method='POST' aria-label="Contact form")
                   .app-from-container
                     .app-form-group
                       label.input-label(for='input-name') Name
@@ -138,10 +138,10 @@ html(lang='en')
                       input#email.app-form-control.email(name='email' type='email' required='')
                     .app-form-group.message
                       label.input-label(for='message') Message
-                      textarea#message.app-form-control(name='message')
+                      textarea#message.app-form-control(name='message'  required='')
                     #status
                     .app-form-group.buttons
-                      button.app-form-button(type='submit') SEND
+                      button#submitBtn.app-form-button(type='submit' onclick="ValidateEmail(document.my-form.app-form-container.app-form-group.email)") SEND
       footer(tabindex="0")
         .line-one
         p.text Created by Reza Hossaini &copy;

@@ -12,6 +12,8 @@ var ds = document.querySelector(".datenschutz")
 var windowHeight = window.innerHeight
 var navbar1 = navbar.getBoundingClientRect().bottom
 var elementVisible = 60
+var input_email = document.getElementById('email')
+var submit = document.getElementById('submitBtn')
 
 const metaViewport = document.querySelector('meta[name=viewport]')
 metaViewport.setAttribute('content', 'width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0')
@@ -224,5 +226,18 @@ function shareOnTwitter(link) {
       window.open(navUrl, '_blank');
 }
 
-///-------------------------------------------------------
+///-----------------Email Validation --------------------------------------
 
+function ValidateEmail()
+{
+  if(input_email.value != ""){
+      var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+    if(!input_email.value.match(mailformat))
+    {
+      alert("You have entered an invalid email address!");
+      input_email.focus();
+      return false;
+    }
+
+  }
+}
