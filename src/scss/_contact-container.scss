@@ -77,16 +77,47 @@
                             z-index: 111;
                             margin-bottom: 15px;
                             margin-left: -15px;
-                            & input[type="text"]  {  font-size:$font-size-17; }
-                            & input[type="email"] { font-size:$font-size-17; }
-                            & #message {  font-size:$font-size-17;}
-                            & textarea {
-                                background-color: $background-color-red;
+                            & input[type="text"]  {
+                                  font-size:$font-size-17; 
+                                  border-radius:5px;
+                                  border: 1px solid black;
+                                  padding: 10px;
+                                  max-width: 250px;
+                                }
+                            & input[type="email"] {
+                                font-size:$font-size-17; 
+                                border-radius:5px;
+                                border: 1px solid black;
+                                padding: 10px;
+                                max-width: 250px;
+                                 }
+                            & #message {
                                 height: 100px;
-                                max-height: 200px;
+                                max-height: 150px;
                                 min-height: 100px;
                                 max-width: 250px;
+                                width: 250px;
                                 min-width: 250px;
+                                font-size:$font-size-17; 
+                                border-radius:5px;
+                                border: 1px solid black;
+                                padding: 10px;
+                                &:focus{
+                                    border-color: $background-color-blue;
+                                }
+                                }
+
+                            & label{
+                                font-size: $font-size-17;
+                                font-weight: 600;
+                                position: relative;
+                                top:9px;
+                                left:10px;
+                                background-color:$background-color-White;
+                                padding:3px;
+                                &:focus{
+                                    border-color: $background-color-blue;
+                                }
                             }
 
                             & .app-form-control {
@@ -99,16 +130,12 @@
                                 outline: none;
                                 transition: border-color .2s;
 
-                                &::placeholder {
-                                    color: #666;
-                                }
-
-                                &:focus {
-                                    border-bottom-color: #ddd;
+                                &:focus{
+                                    border-color: $background-color-blue;
                                 }
                             }
 
-                            & .app-form-button {
+                            & .app-form-button  {
                                 background: none;
                                 border: none;
                                 min-width: 200px;
@@ -123,7 +150,7 @@
                                 background-color: black;
                                 color: white;
                                 position: relative;
-                                bottom: -140px;
+                                bottom: -80px;
 
                                 &:hover {
                                     color: white;
@@ -150,6 +177,7 @@
 
                 & .left {
                     justify-content: start;
+                    margin-left:30px;
                     height: 280px;
                     min-width: 370px;
                     width: fit-content;
@@ -170,34 +198,19 @@
 
                         & .app-from-container {
                             & .app-form-group {
-
-                                & input {
-                                    max-width: 200px;
-                                    min-width: 200px;
-                                }
-
-                                & textarea {
-                                    height: 10px;
-                                    max-height: 170px;
-                                    min-height: 100px;
-                                    max-width: 200px;
-                                    min-width: 200px;
-                                }
-
-                                & .app-form-control {
-                                    width: 260px;
-
-                                    &::placeholder {
-                                        color: #666;
-                                    }
-
-                                    &:focus {
-                                        border-bottom-color: #ddd;
-                                    }
-                                }
-
+                                & input[type="text"]  {
+                                    max-width: 190px;
+                                  }
+                              & input[type="email"] {
+                                  max-width: 190px;
+                                   }
+                              & #message {
+                                  width: 180px;
+                                  max-width: 190px;
+                                  min-width: 150px;
+                              }
                                 & .app-form-button {
-                                    bottom: -100px;
+                                    bottom: -10px;
                                 }
 
                             }
@@ -243,7 +256,8 @@
                             & .app-form-group {
                                 & input[type="text"]  {  font-size:$font-size-17; }
                                 & input[type="email"] { font-size:$font-size-17; }
-                                & #message {  font-size:$font-size-17;}
+                                & #message { 
+                                    font-size:$font-size-17;}
 
                             }
                         }

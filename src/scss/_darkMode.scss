@@ -2,6 +2,11 @@
     background-color: $background-color-dark-main;
     color: $font-color-white;
     transition: 1s;
+
+    & main{
+        & .skip-to-content{
+            color: $font-color-white;
+        }}
     ///////////////////////   header Container  /////////////////////////////////////////
     .header-container {
         & .h-container.scrolled {

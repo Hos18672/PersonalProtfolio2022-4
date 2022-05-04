@@ -10,6 +10,7 @@ html(lang='en')
     title Reza Hossaini
   body
     main(role='main')
+      a.skip-to-content(href='#landing-page1')
       header.header-container
         nav#h-container.h-container(role="navigation")
           #hamburger-icon.hamburger-icon
@@ -130,13 +131,13 @@ html(lang='en')
                 form#my-form.app-form(action='#' method='POST' aria-label="Contact form")
                   .app-from-container
                     .app-form-group
-                      label(for='input-name') Name
+                      label.input-label(for='input-name') Name
                       input.app-form-control.name( id='input-name' type='text' value='' required='')
                     .app-form-group
-                      label(for='email') E-mail
+                      label.input-label(for='email') E-mail
                       input#email.app-form-control.email(name='email' type='email' required='')
                     .app-form-group.message
-                      label(for='message') Message
+                      label.input-label(for='message') Message
                       textarea#message.app-form-control(name='message')
                     #status
                     .app-form-group.buttons
@@ -148,7 +149,7 @@ html(lang='en')
         .imda
           #impressum.impressum(aria-label="Read more about impressum" tabindex="0") Impressum
           #datenschutz.datenschutz(aria-label="Read more about Policy privacy" tabindex="0") Privacy policy
-      #impressumBox.impressumBox(tabindex="0" role="dialog" aria-modal="true")
+      #impressumBox.impressumBox(tabindex="0" role="dialog" aria-modal="true" aria-label="Impressum Dialog")
         span#closeIm(aria-label="ImpressumBox close button" autofocus tabindex="0")  &times;
         article.impressum-content(tabindex="0")
           h1 Impressum
@@ -160,7 +161,7 @@ html(lang='en')
           h2 Address
           p Haberergasse 1 Wien 1220
           p Programming: Reza Hossaini
-      #datenschutzBox.datenschutzBox(tabindex="0" role="dialog" aria-modal="true")
+      #datenschutzBox.datenschutzBox(tabindex="0" role="dialog" aria-modal="true" aria-label="Datenschutz Dialog")
         span#closeDa(aria-label="datenschutzBox close button" autofocus tabindex="0") &times;
         article.datenschutz-content(tabindex="0")
           h1 Privacy policy
