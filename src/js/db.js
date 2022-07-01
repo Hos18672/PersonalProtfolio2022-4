@@ -74,7 +74,7 @@ const data = {
       date: "2022",
       description:
         "The challenge called Sumsi Painting Competition deals with a platform on which children can submit pictures they have painted themselves for World Savings Day. The challenge is to develop a website that allows users to upload pictures, browse through other users' pictures and also rate them.",
-      webLink: "https://lighthearted-wisp-fb947f.netlify.app/",
+      webLink: "https://sumsi.netlify.app",
       githubLink: "https://github.com/Hos18672/Sumsi-Malwettbewerb",
       img: "https://github.com/Hos18672/PersonalProtfolio2022-4/blob/master/src/images/sumsi.png?raw=true",
     },
