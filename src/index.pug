@@ -1,0 +1,205 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(http-equiv='X-UA-Compatible' content='IE=edge')
+    meta(name='author' content='Reza Hossaini')
+    meta(name='description' content='This is my personal Portfolio website')
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
+    link(rel='stylesheet' href='style.css')
+    title Reza Hossaini
+  body
+    main
+      a.skip-to-content(href='#landing-page1') skip to content 
+      header.header-container
+        nav#h-container.h-container
+          #hamburger-icon.hamburger-icon(tabindex="0")
+            #bar1.bar1
+            #bar2.bar2
+            #bar3.bar3
+            ul#nav-list-container1.nav-list(role="tree")
+              li.nav-item(role="treeitem")
+                a.nav-a-item(href='#landing-page1' ) About
+              li.nav-item(role="treeitem")
+                a.nav-a-item1(href='#projects-container1') Projects
+              li.nav-item(role="treeitem")
+                a.nav-a-item2(href='#works-container1') Works
+              li.nav-item(role="treeitem")
+                a.nav-a-item3(href='#edu-container1') Educations
+              li.nav-item(role="treeitem")
+                a.nav-a-item4(href='#skills-container1') Skills
+              li.nav-item(role="treeitem")
+                a.nav-a-item4(href='#contact-container1') Contact
+          a.logo-container(href='#landing-page1')
+            span.reza R
+            span.hossaini H
+          ul#nav-list-container.nav-list(role="tree")
+            li.nav-item.landing(data-text='About' role="treeitem")
+              a.nav-a-item.landing-page1(href='#landing-page1') About
+            li.nav-item.project(data-text='Projects' role="treeitem")
+              a.nav-a-item1.projects-container1(href='#projects-container1') Projects
+            li.nav-item.work(data-text='Works' role="treeitem")
+              a.nav-a-item2.works-container1(href='#works-container1') Works
+            li.nav-item.edu(data-text='Educations' role="treeitem")
+              a.nav-a-item3.edu-container1(href='#edu-container1') Educations
+            li.nav-item.skill(data-text='Skills' role="treeitem")
+              a.nav-a-item4.skills-container1(href='#skills-container1') Skills
+            li.nav-item.contact(data-text='Contact' role="treeitem")
+              a.nav-a-item4.contact-container1(href='#contact-container1') Contact
+          .switch
+            input#switch(type='checkbox')
+            label(for='switch' aria-label="Switch") Toggle
+      .socials
+        a.items.one(href='https://www.linkedin.com/in/reza-hossaini-bb5ab614b/' aria-label='LinkedIn')
+          i.fa-brands.fa-linkedin-in.icon-likedin
+        a.items.two(href='https://www.xing.com/profile/reza_hosseini15/cv' aria-label='XING')
+          i.fa-brands.fa-xing.icon-xing
+        a.items.three(href='https://www.facebook.com/profile.php?id=100008372049580' aria-label='Facebook')
+          i.fa-brands.fa-facebook-f.icon-facebook
+      .dots
+        a.dot.dot-active.landing-page1(href='#landing-page1' aria-label='About Container')
+        a.dot.projects-container1(href='#projects-container1' aria-label='Project Container')
+        a.dot.works-container1(href='#works-container1' aria-label='Works Container')
+        a.dot.edu-container1(href='#edu-container1' aria-label='Education Container')
+        a.dot.skills-container1(href='#skills-container1' aria-label='Skills Container')
+        a.dot.contact-container1(href='#contact-container1' aria-label='Contact Container')
+      //- Landing page
+      section#landing-page1.landing-page.container( aria-label="landing page")
+        .name-container(aria-label="Reza Hossaini" tabindex="0")
+          .name-container
+            div R
+            div E
+            div Z
+            div A&nbsp;
+            div H
+            div O
+            div S
+            div S
+            div A
+            div I
+            div N
+            div I
+        img(src='./src/images/foto1.png' alt='my Profile Photo'  aria-label="My Profile Photo" tabindex="0")
+        a(href='#about-container1' aria-label="arrow down to about page")
+          svg#arrow-down.arrow-down(data-name='Layer 1' xmlns='http://www.w3.org/2000/svg' viewbox='0 0 411.12 222.15' aria-label='About me Container')
+            rect.cls-1(x='213.86' y='251.02' width='32' height='298.95' rx='16' transform='translate(-334.84 -9.39) rotate(-45)')
+            rect.cls-1(x='403.22' y='250.62' width='32' height='298.95' rx='16' transform='translate(286.72 -468.46) rotate(45)')
+      //- About
+      section#about-container1.about-container.container( aria-label="aboutMe page")
+        .about-main-container(tabindex="0")
+          img.about-foto(src='./src/images/foto2.png' alt='my Profile Photo' tabindex="0")
+          .text-container
+            #about-span.about-span
+            article.main-container(tabindex="0")
+              h1.container-title.landing-title(tabindex="0") About me
+              p.about-description(tabindex="0")
+      //- Projects
+      section#projects-container1.projects-container.container( aria-label="projects page")
+        div
+          h1.container-title.projects-title(tabindex="0") Projects
+        article
+          div
+            ul#projects-list.projects-list(role="tree")
+      //- works
+      section#works-container1.works-container.container( aria-label="works experience page")
+        h1.container-title.works-title(tabindex="0") works
+        article.works-items
+      //- Educations
+      section#edu-container1.educations-container.container( aria-label="educations page")
+        h1.container-title.edu-title(tabindex="0") Educations
+        article.education-items
+      //- Skills
+      section#skills-container1.skills-container.container( aria-label="skills page")
+        h1(tabindex="0") Skills
+        article.skills
+      //- Contact
+      section#contact-container1.contact-container.container(aria-label="contact page")
+        .container
+          .screen
+            .screen-body(tabindex="0")
+              .screen-body-item.left(tabindex="0")  
+                .app-title(tabindex="0")
+                  div CONTACT
+                  div ME
+                .app-contact(tabindex="0")
+                  | CONTACT INFO
+                  .telefon(tabindex="0")
+                    i.fa-solid.fa-phone
+                  .email(tabindex="0")    
+                    i.fa-solid.fa-envelope
+              .screen-body-item.right(tabindex="0")       
+                form#my-form.app-form(action='#' name='my-form' method='POST' aria-label="Contact form")
+                  .app-from-container
+                    .app-form-group
+                      label.input-label(for='input-name') Name
+                      input.app-form-control.name( id='input-name' type='text' value='' required='')
+                    .app-form-group
+                      label.input-label(for='email') E-mail
+                      input#email.app-form-control.email(name='email' type='email' required='')
+                    .app-form-group.message
+                      label.input-label(for='message') Message
+                      textarea#message.app-form-control(name='message'  required='')
+                    #status
+                    .app-form-group.buttons
+                      button#submitBtn.app-form-button(type='submit' onclick="ValidateEmail(document.my-form.app-form-container.app-form-group.email)") SEND
+      footer(tabindex="0")
+        .line-one
+        p.text(tabindex="0") Created by Reza Hossaini &copy;
+        .line-two
+        .imda
+          #impressum.impressum(aria-label="Read more about impressum" tabindex="0") Impressum
+          #datenschutz.datenschutz(aria-label="Read more about Policy privacy" tabindex="0") Privacy policy
+      #impressumBox.impressumBox(tabindex="0" role="dialog" aria-modal="true" aria-label="Impressum Dialog")
+        span#closeIm(aria-label="ImpressumBox close button"  tabindex="0")  &times;
+        article.impressum-content(tabindex="0")
+          h1 Impressum
+          h2 Contact details
+          p You can reach me Monday to Friday from 9:00 to 18:00.
+          p Tel: 06704099219
+          p E-mail: hossaini@gmail.com
+          p www.rezahossaini.de
+          h2 Address
+          p Haberergasse 1 Wien 1220
+          p Programming: Reza Hossaini
+      #datenschutzBox.datenschutzBox(tabindex="0" role="dialog" aria-modal="true" aria-label="Datenschutz Dialog")
+        span#closeDa(aria-label="datenschutzBox close button"  tabindex="0") &times;
+        article.datenschutz-content(tabindex="0")
+          h1 Privacy policy
+          p
+            | We process your personal data which falls under the following categories
+            | of data:
+          ul(role="tree")
+            li(role="treeitem") Name/Company
+            li(role="treeitem") Profession/job title
+            li(role="treeitem") Contact details (telephone number, e-mail address, etc.)
+          p
+            | You have voluntarily provided us with data about yourself and we process
+            | this data based on your consent for the following purposes:
+          ul(role="tree")
+            li(role="treeitem")
+              | for own advertising purposes, for example for sending offers,
+              | advertising brochures and newsletters (in paper and electronic form),
+              | as well as for the purpose of referring to the existing or former
+              | business relationship with the customer (reference).
+          p
+            | You can revoke this consent at any time. A revocation has the
+            | consequence that we no longer process your data for the above-mentioned
+            | purposes from that point on. For a revocation, please contact:
+            | 06704099219
+          p We do not share your information with any other person or company.
+          h2 Information on legal remedies
+          p
+            | In principle, you have the rights to information, correction, deletion,
+            | restriction, data portability and objection. To do this, please contact
+            | us. If you believe that the processing of your data violates data
+            | protection law or that your data protection rights have been violated in
+            | any other way, you can complain to the supervisory authority. In
+            | Austria, the data protection authority is responsible. Translated with
+            | www.DeepL.com/Translator (free version)
+          p You can reach me Monday to Friday from 9:00 to 18:00
+          p Tel: 06704099219
+          p E-mail: hossaini@gmail.com
+    script(src='https://kit.fontawesome.com/ac259ec328.js' crossorigin='anonymous')
+    script(src='src/js/db.js')
+    script(src='src/js/setData.js')
+    script(src='src/js/main.js')

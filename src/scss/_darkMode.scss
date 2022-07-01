@@ -1,0 +1,378 @@
+.dark-mode {
+    background-color: $background-color-dark-main;
+    color: $font-color-white;
+    transition: 1s;
+
+    & main{
+        & .skip-to-content{
+            color: $font-color-white;
+        }}
+    ///////////////////////   header Container  /////////////////////////////////////////
+    .header-container {
+        & .h-container.scrolled {
+            box-shadow: 0px 10px 13px -13px #000000, 5px 5px 150px 5px rgba(0, 0, 0, 0);
+        }
+        &>.h-container {
+            & .logo-container {
+                & .reza {
+                    color: $font-color-white;
+                }
+                & .hossaini {
+                    font-weight: 700;
+                }
+            }
+
+            & #nav-list-container {
+                & li {
+                    &::before {
+                        background-color: #ff0000;
+                    }
+
+                    & a {
+                        color: $font-color-white;
+                    }
+                }
+            }
+
+            & .hamburger-icon {
+                & div {
+                    background-color: $background-color-White;
+                }
+
+                & #nav-list-container1 {
+                    background-color: $background-color-dark-hell-2;
+                    box-shadow: 0px 3px 34px 9px #201f1f62;
+                    & a {
+                        color: $font-color-white;
+                    }
+                }
+            }
+
+            & .switch {
+                & > label {
+                    border: 2px solid $background-color-White;
+                }
+                &>input:checked+label:after {
+                    left: calc(100% - 5px);
+                    transform: translateX(-100%);
+                    background-image: url(../src/images/moon.png);
+                    -webkit-filter: invert(100%);
+        
+                }
+            }
+        }
+    }
+
+    ///////////////////////   Landing Container  /////////////////////////////////////////
+    .landing-page {
+        & .name-container {
+            & div{
+                color:$font-color-white;
+            }
+        }
+        & .arrow-down {
+            fill: $background-color-White !important;
+        }
+
+    }
+
+    ///////////////////////   About Container  /////////////////////////////////////////
+    .about-container {
+   
+        &>.about-main-container {
+    
+            &>.text-container {
+                &>.about-span {
+                    background-color: $background-color-dark-hell-2;
+                }
+                & .main-container {
+                    & h1, p{
+                        color: $font-color-white;
+                    }
+                }
+            }
+        }
+    }
+
+    ///////////////////////   Projects Container  /////////////////////////////////////////
+    .projects-container {
+        & h1 {
+            color: $font-color-white;
+        }
+
+        ul {
+            & li {
+                background-color: $background-color-dark-hell-1;
+                color: $font-color-white;
+
+                &::after {
+                    background: $background-color-dark-hell-2;
+                }
+            }
+
+            & li div {
+                background-color: $background-color-dark-hell-4;
+                box-shadow: 6px 9px 35px -10px rgba(0, 0, 0, 0.24);
+
+                & h2 , p, a{
+                    color: $font-color-white;
+                }
+            }
+
+        }
+    }
+
+    ///////////////////////   Works Container  /////////////////////////////////////////
+    .works-container {
+        & h1 {
+            color: $font-color-white;
+        }
+
+        & .works-items {
+            & .work-item {
+                & time {
+                    background-color: $background-color-dark-hell-2;
+                    color: $font-color-white;
+                }
+            }
+
+            & div.work-item {
+                padding: 10px;
+                border: 3px solid $background-color-dark-hell-1;
+
+
+                & div.item {
+                    background-color: $background-color-dark-hell-4;
+                    box-shadow: 6px 9px 35px -10px rgba(0, 0, 0, 0.24);
+
+                    & h2, p {
+                        color: $font-color-white;
+                    }
+
+                }
+
+                &::after {
+                    background-color: $background-color-dark-hell-2;
+                }
+
+            }
+
+            & div.work-item:nth-of-type(even) {
+                border-top: 3px solid transparent;
+                border-left: 3px solid transparent;
+                border-bottom: 3px solid transparent;
+                &:nth-child(4) {
+                    border-bottom: 3px solid $background-color-dark-hell-1;
+                }
+
+                &::after, &::before {
+                    background-color: $background-color-dark-hell-1;
+                }
+            }
+
+            & div.work-item:nth-of-type(odd) {
+                border-right: 3px solid transparent;
+
+                &::after, &::before {
+                    background-color: $background-color-dark-hell-1;
+                }
+            }
+        }
+    }
+
+
+    ////////////////////////// Education Container //////////////////////////////////////
+
+    .educations-container {
+        & h1 {
+            color: $font-color-white;
+        }
+        & .education-items {
+            & .education-item {
+                & time {
+                    color: $font-color-white;
+                    background-color: transparent;
+                }
+            }
+
+            & .education-item {
+
+                & .item {
+                    background-color: $background-color-dark-hell-4;
+                    box-shadow: 6px 9px 35px -10px rgba(0, 0, 0, 0.24);
+
+                    & h2 , p{
+                        color: $font-color-white;
+                    }
+                }
+            }
+        }
+    }
+
+
+    ////////////////////////// Skills Container //////////////////////////////////////
+    .skills-container {
+
+        & h1 {
+            color: $font-color-white;
+        }
+
+        & .skills {
+            & .skill {
+
+                background-color: $background-color-dark-hell-4;
+                box-shadow: 6px 9px 15px 1px rgba(8, 8, 8, 0.172);
+            }
+
+            & span {
+                color: $font-color-white;
+            }
+        }
+    }
+
+    ////////////////////////// Contact Container //////////////////////////////////////
+
+    .contact-container {
+        & .container {
+            & .screen .screen-body {
+                & .screen-body-item {
+                    & .app-title {
+                        color: $font-color-white;
+                    }
+
+                    & .app-contact {
+                        color: $font-color-white;
+                    }
+
+                    & .app-form {
+                        filter: drop-shadow(10px 5px 3px rgba(0, 0, 0, 0.23));
+
+                    }
+                }
+            }
+        }
+    }
+
+    ////////////////////////// Footer Container //////////////////////////////////////
+
+
+    footer {
+        & .line-one {
+            background-color: $background-color-dark-hell-1;
+        }
+
+        & p {
+            color: $font-color-white;
+        }
+
+    }
+
+
+
+    ////////////////////////////////////////////////////////////////
+    .socials {
+        &> :before {
+            background: $background-color-dark-hell-1;
+        }
+
+        &> :after {
+            background: $background-color-dark-hell-1;
+        }
+
+        &>a i {
+
+            color: $background-color-White;
+
+        }
+
+        & a:hover {
+            color: $background-color-blue-1;
+        }
+
+        &>a i:hover {
+            transform: scale(1.2);
+            color: $background-color-blue-1;
+        }
+
+        & a:nth-child(1)::before,
+        a:nth-child(2)::before,
+        a:nth-child(3)::before {
+            color: $font-color-white;
+            background-color: transparent;
+        }
+    }
+
+
+    @media only screen and(max-width: $media-width-850px) {
+        .header-container {
+            position: absolute;
+            width: 100%;
+            height: 50px;
+            margin: 0;
+
+            .logo-container {
+                display: none;
+            }
+
+            & .h-container.scrolled {
+                backdrop-filter: blur(0px);
+                box-shadow: 0px 0px 0px;
+            }
+
+        }
+    }
+//-------------------------------------------------------------
+ & .impressum , .datenschutz{
+    color: $font-color-white;
+ }
+   
+///------------------------------Impressum -------------------     
+    & .impressumBox{
+        & .impressum-content{
+            background-color: rgba(17, 24, 32, 0.95);
+            box-shadow: 6px 9px 15px 1px rgba(0, 0, 0, 0.172);
+            backdrop-filter: blur(50px);
+            color: $font-color-white;
+
+        }
+        /* The Close Button */
+        #closeIm{
+            color: #d1d1d1;
+            &:hover,
+            &:focus {
+                color: $font-color-white;
+            }
+        }
+    }
+
+///------------------------------Datenschutz -------------------
+    & .datenschutzBox{
+        & .datenschutz-content{
+            background-color: rgba(17, 24, 32, 0.95);
+            box-shadow: 6px 9px 15px 1px rgba(0, 0, 0, 0.172);
+            backdrop-filter: blur(50px);
+            color: $font-color-white;;
+
+        }
+        /* The Close Button */
+        #closeDa{
+            color: #d1d1d1;
+            &:hover,
+            &:focus {
+                color: $font-color-white;
+            }
+        }
+        
+        
+    }
+
+
+    .dots{
+        & a{
+            border:1px solid white;
+        }
+        & a.dot-active{
+            background-color:rgb(255, 255, 255);
+        }
+    }
+}

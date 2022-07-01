@@ -1,0 +1,53 @@
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+
+    & .line-one {
+        height: 2px;
+        width: 50%;
+        transition: 0.5s;
+        background-color: $background-color-dark-black;
+    }
+
+    & p {
+        font-size: $font-size-25;
+        transition: 0.5s;
+        color: $font-color-black;
+    }
+
+    & .imda {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: $font-color-black;
+        font-size: $font-size-25;
+
+        & .impressum,
+        .datenschutz {
+            cursor: pointer;
+            margin-right: 15px;
+
+            &:hover {
+                color: $background-color-blue-2;
+                transform:scale(1.1);
+            }
+        }
+    }
+
+    @media only screen and(max-width: $media-width-450px) {
+        & .line-one {
+            width: 80%;
+        }
+
+        & p {
+            font-size: $font-size-20;
+        }
+
+        & .imda {
+            font-size: $font-size-20;
+        }
+    }
+}

@@ -1,0 +1,105 @@
+.skills-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: 0.5s linear ease-in-out;
+    height: 120vh;
+    min-height: fit-content;
+    z-index: 1;
+
+    & h1 {
+        font-size: $font-size-60;
+        transition: 0.5s linear ease-in-out;
+        color: $font-color-black;
+        text-transform: uppercase;
+    }
+
+    .skills.active {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    & .skills {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        max-width: 600px;
+        transform: translateY(150px);
+        opacity: 0;
+        transition: .5s all ease;
+
+        & .skill {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background-color: $background-color-White;
+            box-shadow: 6px 9px 15px 1px rgba(8, 8, 8, 0.172);
+            margin: 10px;
+            min-width: 100px;
+            min-height: 100px;
+            padding: 10px;
+            border-radius: 10px;
+            transition: 0.5s ease-in-out;
+
+            &:hover {
+                animation: rotate 1s ease-in-out;
+            }
+
+            @keyframes rotate {
+                0% {
+                    transform: rotate(20deg);
+                }
+
+                100% {
+                    transform: rotate(0deg);
+                }
+
+            }
+        }
+
+        & img {
+            width: 50px;
+        }
+
+        & span {
+            font-size: $font-size-30;
+            color: $font-color-black;
+        }
+    }
+
+    @media screen and (max-width: $media-width-600px) {
+        h1 {
+            font-size: $font-size-50;
+        }
+
+        & .skills {
+            & .skill {
+                min-width: 80px;
+                min-height: 80px;
+
+                & span {
+                    font-size: $font-size-25;
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: $media-width-450px) {
+        h1 {
+            font-size: $font-size-40;
+        }
+        & .skills {
+            & .skill {
+                min-width: 65px;
+                min-height: 65px;
+                & span {
+                    font-size: $font-size-20;
+                }
+            }
+        }
+    }
+}

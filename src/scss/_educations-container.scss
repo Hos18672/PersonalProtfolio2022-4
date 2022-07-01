@@ -1,0 +1,211 @@
+.educations-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    margin-bottom: 30px;
+    padding-top: 100px;
+    z-index: 1;
+    min-height: fit-content;
+   & h1 {   
+        font-size: $font-size-60;
+        color: $font-color-black;
+        margin-bottom: 80px;
+        text-transform: uppercase;
+    }
+ 
+    & .education-items {
+        position: relative;
+        & .education-item {
+            display:flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            & time {
+                font-weight: bold;
+                font-size: $font-size-50;
+                color: $font-color-black;
+                position: relative;
+                top: -45px;
+                padding: 0px 5px;
+                border-radius: 5px;
+            }
+        }
+
+        & div.education-item {
+            padding: 10px;
+            & div.item {
+                transition: .5s ease-in-out;
+                opacity: 0;
+                position: relative;
+                top: -30px;
+                margin: 40px;
+                width: 450px;
+                padding: 20px;
+                border-radius: 10px;
+                bottom: 10px;
+                padding-bottom: 20px;
+                background: $background-color-White;
+                box-shadow: 6px 9px 35px -10px rgba(53, 53, 53, 0.24);
+                border-top: 3px solid $background-color-blue;
+
+                &:hover {
+                    box-shadow: 6px 9px 44px -14px rgba(0, 0, 0, 0.64);
+                    transform:scale(1.1);
+  
+                }
+                & h2{
+                    color: $font-color-black;
+                    font-size: $font-size-30;
+                }
+
+                & p{
+                    font-size: $font-size-20;
+                    color: $font-color-black;
+                }
+            }
+
+        }
+
+
+
+        ///////////// Transition /////////////////
+        & div.education-item div {
+            transform: translate3d(0,200px,  0);
+        }
+
+        & div.education-item.active div {
+            transform: none;
+            visibility: visible;
+            opacity: 1;
+        }
+    }
+
+
+    //////////////////////////// Media Queries ////////////////////////////////
+
+    @media screen and (max-width: $media-width-850px) {
+        & h1 {
+            font-size: $font-size-60;
+        }
+
+        & .education-items {
+
+            & .education-item {
+                & time {
+                    font-size: $font-size-50;
+                    top: -45px;
+                }
+            }
+
+            & div.education-item {
+                padding: 10px;
+
+                & div.item {
+                    width: 350px;
+                    margin-left: 15px;
+
+                    & h2 {
+                        font-size: $font-size-30;
+                    }
+
+                    & p {
+                        font-size: $font-size-20;
+                    }
+                }
+            }
+
+            & div.education-item:nth-of-type(even) {
+                width: 400px;
+            }
+
+            & div.education-item:nth-of-type(odd) {
+                width: 400px;
+            }
+        }
+    }
+
+    @media screen and (max-width: $media-width-600px) {
+        & .education-items {
+            margin: 50px;
+
+            & .education-item {
+
+                & time {
+                    font-size: $font-size-40;
+                    top: -45px;
+                }
+            }
+
+            & div.education-item {
+                padding: 10px;
+
+                & div.item {
+                    margin-left: 50px;
+                    width: 250px;
+
+                    & h2 {
+                        font-size: $font-size-25;
+                    }
+
+                    & p {
+                        font-size: $font-size-20;
+                    }
+                }
+            }
+
+            & div.education-item:nth-of-type(even) {
+                width: 300px;
+            }
+
+            & div.education-item:nth-of-type(odd) {
+                width: 300px;
+            }
+        }
+    }
+
+    @media screen and (max-width: $media-width-450px) {
+        h1 {
+            font-size: $font-size-40;
+        }
+
+        & .education-items {
+            margin: 50px;
+            margin-left: 40px;
+            & .education-item {
+                margin-left: 50px;
+                & time {
+                    font-size: $font-size-30;
+                    top: -37px;
+                    left:-10px;
+                }
+            }
+
+            & div.education-item {
+                padding: 10px;
+                & div.item {
+                    width: 200px;
+                    margin-left: 15px;
+
+                    & h2 {
+                        font-size: $font-size-20;
+                    }
+
+                    & p {
+                        font-size: $font-size-15;
+                    }
+                }
+            }
+
+            & div.education-item:nth-of-type(even) {
+                width: 250px;
+            }
+
+            & div.education-item:nth-of-type(odd) {
+                width: 250px;
+            }
+        }
+    }
+
+}

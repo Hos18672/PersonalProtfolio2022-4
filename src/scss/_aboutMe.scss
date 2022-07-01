@@ -1,0 +1,166 @@
+.about-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: fit-content;
+    &>.about-main-container {
+        display: Grid;
+        grid-template-columns: 1fr 1fr;
+        place-items: center;
+        position: relative;
+        opacity: 0;
+        transition: .5s all ease;
+
+        & .text-container {
+            color: black;
+            transition-delay: 0s;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            transform: uppercase;
+
+            & .about-span {
+                background-color: $background-color-dark-black;
+                width: 2px;
+                height: 400px;
+                margin: 0 30px;
+            }
+
+            & .main-container {
+                width: 500px;
+                & h1 {
+                    position: relative;
+                    font-size: 70px;
+                    font-weight: 600;
+                    z-index: -1;
+                    opacity: 0;
+                    transition: 1s;
+                    color: $font-color-black;
+                    transition-delay: 0s;
+                    font-size: $font-size-60;
+                    margin-top: -10px;
+                    animation: textAnim 1.5s linear both;
+                    text-transform: uppercase;
+                }
+
+                & p {
+                    font-size: $font-size-25;
+                    animation: textAnim 1s linear 0.5s both;
+
+                }
+
+                @keyframes textAnim {
+                    from {
+                        opacity: 0;
+                        transform: translate(-100px, 0px);
+                    }
+
+                    to {
+                        opacity: 1;
+                        transform: translate(10px, 0px);
+                        animation-timing-function: ease-in-out;
+                    }
+                }
+            }
+        }
+
+        &>img {
+            transition: .5s;
+            width: 300px;
+            z-index: 11;
+
+            &:hover {
+                transform: scale(1.1);
+                filter: drop-shadow(10px 20px 30px rgba(55, 55, 55, 0.23));
+
+            }
+        }
+    }
+}
+
+
+.about-main-container.active {
+    transform: translateY(0);
+    opacity: 1;
+
+}
+
+@media only screen and(max-width: $media-width-850px) {
+
+    .about-container {
+        &>.about-main-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            &>.text-container {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+
+                &>.about-span {
+                    display: none;
+                }
+
+                &>.dark-span {
+                    background-color: $background-color-White;
+                }
+
+                &>.main-container {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    margin-top: 50px;
+                    width: 400px;
+
+                    &>h1 {
+                        font-size: $font-size-50;
+                        margin-top: -10px;
+                    }
+
+                    &>p {
+                        text-align: center;
+                        font-size: $font-size-20;
+                    }
+                }
+            }
+
+            &>img {
+                width: 250px
+            }
+        }
+    }
+}
+
+@media only screen and(max-width: $media-width-450px) {
+
+    .about-container {
+        & .about-main-container {
+            & .text-container {
+                & .main-container {
+                    margin-top: 50px;
+                    width: 280px;
+                    & h1 {
+                        font-size: $font-size-40;
+                        margin-top: -10px;
+                    }
+
+
+
+                    & p {
+                        text-align: center;
+                        font-size: $font-size-17;
+                    }
+                }
+            }
+
+            &>img {
+                width: 200px
+            }
+        }
+    }
+
+}

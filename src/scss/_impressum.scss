@@ -1,0 +1,103 @@
+.impressumBox {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    margin-top: -250px;
+    padding-top: 340px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 111;
+    transition: 0.5s;
+    backdrop-filter: blur(5px);
+    overflow-y: hidden;
+    & #closeIm {
+        cursor: pointer;
+        position: fixed !important;
+        color: #aaaaaa;
+        right: 10%;
+        font-size: $font-size-40;
+        font-weight: bold;
+        z-index: 11;
+
+        &:hover,
+        &:focus {
+            color: #000;
+            text-decoration: none;
+            cursor: pointer;
+            transform: scale(1.2);
+        }
+    }
+
+    & .impressum-content {
+        background-color: rgba(247, 247, 247, 0.881);
+        -webkit-backdrop-filter: blur(10px);
+        backdrop-filter: blur(10px);
+        margin: auto;
+        padding: 30px;
+        border-radius: 15px;
+        width: 80%;
+        height: 75%;
+        font-size: 100px;
+        transition: 0.5s;
+        overflow-y: scroll;
+        box-shadow: 6px 12px 35px 6px rgba(65, 65, 65, 0.75);
+        color: black;
+
+        & h1 {
+            z-index: 111;
+            font-size: $font-size-30;
+            transition: 0.5s;
+        }
+
+        & h2 {
+            font-size: $font-size-25;
+            transition: 0.5s;
+        }
+
+        & p {
+            font-size: $font-size-20;
+            transition: 0.5s;
+        }
+    }
+
+
+    @media only screen and(max-width: $media-width-850px) {
+        & .impressum-content {
+            width: 80%;
+            height: 65%;
+
+            & h1 {
+                font-size: $font-size-25;
+            }
+
+            & h2 {
+                font-size: $font-size-20;
+            }
+
+            & p {
+                font-size: $font-size-15;
+            }
+        }
+    }
+
+    @media only screen and(max-width: $media-width-850px) {
+        & .impressum-content {
+            width: 80%;
+            height: 60%;
+
+            & h1 {
+                font-size: $font-size-20;
+            }
+
+            & h2 {
+                font-size: $font-size-17;
+            }
+
+            & p {
+                font-size: $font-size-15;
+            }
+        }
+    }
+}
