@@ -73,7 +73,7 @@ const data = {
       title: "Sumsi-Malwettbewerb ",
       date: "2022",
       description:
-        "Die Challenge mit dem Namen Sumsi Malwettbewerb befasst sich mit einer Plattform auf welcher Kinder zum Weltspartag selbst gemalte Bilder einreichen k¨onnen. Hier gilt es eine Webseite zu entwickeln, welche es dem User erm¨oglicht, Bilder hochzuladen, Bilder anderer User zu durchst¨obern und diese auch zu bewerten. ",
+        "The challenge called Sumsi Painting Competition deals with a platform on which children can submit pictures they have painted themselves for World Savings Day. The challenge is to develop a website that allows users to upload pictures, browse through other users' pictures and also rate them.",
       webLink: "https://lighthearted-wisp-fb947f.netlify.app/",
       githubLink: "https://github.com/Hos18672/Sumsi-Malwettbewerb",
       img: "https://github.com/Hos18672/PersonalProtfolio2022-4/blob/master/src/images/sumsi.png?raw=true",
